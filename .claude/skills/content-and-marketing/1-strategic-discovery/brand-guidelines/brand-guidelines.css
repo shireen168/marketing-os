@@ -1,0 +1,448 @@
+/* ============================================================
+   Brand Guidelines PDF Stylesheet
+   For use with md-to-pdf
+   ============================================================ */
+
+/* --- Page Setup --- */
+@page {
+  size: A4;
+  margin: 35mm 22mm 28mm 22mm;
+}
+
+/* --- Base --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 10pt;
+  line-height: 1.65;
+  color: #1c1c1c;
+  background: #ffffff;
+}
+
+/* --- Cover Title --- */
+h1 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 32pt;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: #0d0d0d;
+  margin: 0 0 6px 0;
+  padding: 0;
+  line-height: 1.1;
+  page-break-after: avoid;
+}
+
+/* --- Section Headings --- */
+h2 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 13pt;
+  font-weight: 800;
+  color: #0d0d0d;
+  margin: 40px 0 14px 0;
+  padding: 10px 0 10px 14px;
+  border-left: 4px solid #0d0d0d;
+  letter-spacing: 0.01em;
+  page-break-after: avoid;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #0d0d0d;
+  margin: 24px 0 8px 0;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  page-break-after: avoid;
+}
+
+h4 {
+  font-family: 'Georgia', serif;
+  font-size: 10pt;
+  font-weight: 700;
+  font-style: italic;
+  color: #333;
+  margin: 16px 0 6px 0;
+  page-break-after: avoid;
+}
+
+/* --- Body Text --- */
+p {
+  margin: 0 0 12px 0;
+  orphans: 3;
+  widows: 3;
+}
+
+strong {
+  font-weight: 700;
+  color: #0d0d0d;
+}
+
+em {
+  font-style: italic;
+  color: #555;
+}
+
+/* --- Horizontal Rule --- */
+hr {
+  border: none;
+  border-top: 1px solid #d8d8d8;
+  margin: 32px 0;
+}
+
+/* --- Lists --- */
+ul, ol {
+  margin: 8px 0 14px 0;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+li::marker {
+  color: #888;
+}
+
+/* --- Tables --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 22px 0;
+  font-size: 9pt;
+  page-break-inside: avoid;
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+}
+
+thead tr {
+  background: #0d0d0d;
+}
+
+thead th {
+  color: #ffffff;
+  padding: 9px 12px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 7.5pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  vertical-align: top;
+  color: #2a2a2a;
+  line-height: 1.5;
+}
+
+tbody tr:last-child td {
+  border-bottom: 2px solid #0d0d0d;
+}
+
+tbody tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+/* --- Code --- */
+code {
+  font-family: 'Courier New', 'Consolas', monospace;
+  font-size: 8.5pt;
+  background: #f3f3f3;
+  border: 1px solid #e0e0e0;
+  padding: 1px 5px;
+  border-radius: 3px;
+  color: #333;
+}
+
+pre {
+  background: #f3f3f3;
+  border: 1px solid #e0e0e0;
+  border-left: 3px solid #0d0d0d;
+  padding: 14px 16px;
+  border-radius: 3px;
+  font-size: 8pt;
+  line-height: 1.5;
+  overflow-x: auto;
+  page-break-inside: avoid;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  margin: 16px 0;
+  padding: 12px 18px;
+  border-left: 3px solid #ccc;
+  background: #fafafa;
+  color: #555;
+  font-style: italic;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* ============================================================
+   COLOR SWATCHES
+   Usage in markdown:
+   <div class="swatch-grid">
+     <div class="swatch-card">
+       <div class="swatch" style="background:#XXXXXX;"></div>
+       <div class="swatch-name">Color Name</div>
+       <div class="swatch-hex">#XXXXXX</div>
+       <div class="swatch-rgb">rgb(r, g, b)</div>
+       <div class="swatch-use">Usage description</div>
+     </div>
+   </div>
+   ============================================================ */
+
+.swatch-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 14px 0 22px 0;
+}
+
+.swatch-card {
+  width: calc(33.333% - 8px);
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  page-break-inside: avoid;
+  background: #fff;
+}
+
+.swatch {
+  height: 72px;
+  width: 100%;
+  display: block;
+}
+
+.swatch-name {
+  font-family: 'Arial', 'Helvetica Neue', sans-serif;
+  font-size: 8.5pt;
+  font-weight: 700;
+  color: #0d0d0d;
+  padding: 8px 10px 2px 10px;
+  letter-spacing: 0.01em;
+}
+
+.swatch-hex {
+  font-family: 'Courier New', monospace;
+  font-size: 8pt;
+  color: #333;
+  padding: 0 10px 2px 10px;
+  font-weight: 700;
+}
+
+.swatch-rgb {
+  font-family: 'Courier New', monospace;
+  font-size: 7.5pt;
+  color: #777;
+  padding: 0 10px 2px 10px;
+}
+
+.swatch-use {
+  font-family: 'Georgia', serif;
+  font-size: 7.5pt;
+  font-style: italic;
+  color: #888;
+  padding: 2px 10px 10px 10px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 4px;
+}
+
+/* ============================================================
+   TYPOGRAPHY SPECIMEN
+   Usage in markdown:
+   <div class="type-specimen">
+     <div class="type-label">H1 — Display / 56px / 800</div>
+     <div class="type-sample" style="font-family:'Playfair Display',serif; font-size:28pt; font-weight:800; line-height:1.1;">The quick brown fox</div>
+   </div>
+   ============================================================ */
+
+.type-specimen {
+  margin: 12px 0;
+  padding: 14px 16px;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+  background: #fafafa;
+  page-break-inside: avoid;
+}
+
+.type-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.type-sample {
+  color: #0d0d0d;
+  line-height: 1.2;
+}
+
+/* ============================================================
+   VOICE & TONE CARDS
+   Usage in markdown:
+   <div class="tone-grid">
+     <div class="tone-card">
+       <div class="tone-label">Do</div>
+       <div class="tone-text">"We make it simple."</div>
+     </div>
+     <div class="tone-card tone-card--dont">
+       <div class="tone-label">Don't</div>
+       <div class="tone-text">"Leverage synergistic solutions."</div>
+     </div>
+   </div>
+   ============================================================ */
+
+.tone-grid {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0 20px 0;
+  flex-wrap: wrap;
+}
+
+.tone-card {
+  flex: 1;
+  min-width: 180px;
+  padding: 12px 14px;
+  border-radius: 4px;
+  background: #f0faf0;
+  border-left: 3px solid #4caf50;
+  page-break-inside: avoid;
+}
+
+.tone-card--dont {
+  background: #fdf2f2;
+  border-left-color: #e53935;
+}
+
+.tone-label {
+  font-family: 'Arial', sans-serif;
+  font-size: 7pt;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  color: #4caf50;
+}
+
+.tone-card--dont .tone-label {
+  color: #e53935;
+}
+
+.tone-text {
+  font-family: 'Georgia', serif;
+  font-size: 9.5pt;
+  font-style: italic;
+  color: #2a2a2a;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   BRAND OVERVIEW META LINE
+   Usage: <p class="meta">Version 1.0 &nbsp;·&nbsp; 2026-04-12</p>
+   ============================================================ */
+
+.meta {
+  font-family: 'Arial', sans-serif;
+  font-size: 8pt;
+  color: #aaa;
+  letter-spacing: 0.05em;
+  margin-bottom: 28px;
+  margin-top: -8px;
+}
+
+/* ============================================================
+   DO / DON'T LOGO RULES
+   Usage:
+   <div class="rule-grid">
+     <div class="rule-item rule-item--do">
+       <div class="rule-badge">Do</div>
+       <p>Use on white or light backgrounds</p>
+     </div>
+     <div class="rule-item rule-item--dont">
+       <div class="rule-badge">Don't</div>
+       <p>Stretch or distort the logo</p>
+     </div>
+   </div>
+   ============================================================ */
+
+.rule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 20px 0;
+}
+
+.rule-item {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  background: #f8f8f8;
+  border: 1px solid #e8e8e8;
+}
+
+.rule-item--do {
+  border-top: 3px solid #4caf50;
+}
+
+.rule-item--dont {
+  border-top: 3px solid #e53935;
+}
+
+.rule-badge {
+  font-family: 'Arial', sans-serif;
+  font-size: 7pt;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.rule-item--do .rule-badge {
+  color: #4caf50;
+}
+
+.rule-item--dont .rule-badge {
+  color: #e53935;
+}
+
+.rule-item p {
+  font-size: 8.5pt;
+  color: #444;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* --- Page Break Utility --- */
+.page-break {
+  page-break-before: always;
+}
+
+/* --- Print / Puppeteer overrides --- */
+@media print {
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+  table, .swatch-card, .type-specimen, .tone-card, .rule-item {
+    page-break-inside: avoid;
+  }
+}
