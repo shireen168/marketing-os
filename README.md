@@ -94,21 +94,24 @@ See email opens, clicks, LinkedIn engagement, Medium reads, all in one view.
 
 ## The Real Impact
 
-**Marketing Manager's Day Before Marketing OS:**
-- 8am-10am: Write campaign brief, coordinate with team
-- 10am-12pm: Draft email
-- 1pm-3pm: Draft LinkedIn post
-- 3pm-5pm: Draft Medium article
-- Next 2 days: Reviews, edits, revisions
-- Friday morning: Publish
-- Next week: Chase agency for analytics
+**Before Marketing OS (Team + Agency):**
+- Monday: Manager writes brief
+- Tuesday-Wednesday: Wait for agency to draft email, LinkedIn, Medium
+- Thursday: Receive drafts, request revisions
+- Friday: Agency sends final versions
+- Weekend: Manage publishing across channels
+- Cost: $3-5k per campaign
+- Timeline: 3-5 days
 
-**Marketing Manager's Day With Marketing OS:**
-- 8am-8:30am: Write brief in Claude Desktop
-- 8:30am-9am: Review generated drafts, request one revision
-- 9am-9:15am: Approve final versions
-- 9:15am-9:30am: Publish across all channels
-- Next week: Check analytics in one dashboard
+**With Marketing OS (Team In-House):**
+- Monday 8am: Manager writes brief in Claude Desktop
+- Monday 8:30am: Team reviews generated drafts
+- Monday 9am: Team requests one round of revisions
+- Monday 9:30am: Team publishes across all channels
+- No agency needed
+- Cost: $0 (no external vendor)
+- Timeline: 30 minutes
+- Result: Eliminate 40% of marketing spend, do monthly campaigns instead of quarterly
 
 ---
 
