@@ -36,23 +36,25 @@ jobs:
           test -f packages/api/dist/index.js && echo "API build OK"
           test -f packages/mcp/dist/server.js && echo "MCP build OK"
 
-  docker:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: test
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          dockerfile: packages/api/Dockerfile
-          tags: |
-            ${{ github.actor }}/marketing-os-api:latest
-            ${{ github.actor }}/marketing-os-api:${{ github.sha }}
-          push: false
+  # Docker build disabled for now (user doesn't have Docker locally)
+  # Can be re-enabled when ready for deployment
+  # docker:
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+  #   needs: test
+  #
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #
+  #     - name: Set up Docker Buildx
+  #       uses: docker/setup-buildx-action@v3
+  #
+  #     - name: Build and push Docker image
+  #       uses: docker/build-push-action@v5
+  #       with:
+  #         context: .
+  #         dockerfile: packages/api/Dockerfile
+  #         tags: |
+  #           ${{ github.actor }}/marketing-os-api:latest
+  #           ${{ github.actor }}/marketing-os-api:${{ github.sha }}
+  #         push: false
