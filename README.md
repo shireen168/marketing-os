@@ -135,6 +135,24 @@ To run Marketing OS, you need:
 
 ---
 
+## Demo This System
+
+**One command setup:**
+```bash
+git clone https://github.com/shireen168/marketing-os.git
+cd marketing-os
+npm install
+export ANTHROPIC_API_KEY="your-key-here"
+npm run dev
+```
+
+API runs on `http://localhost:3000`. MCP server connects Claude Desktop to the API.
+
+**Test the workflow:**
+1. Create a brief: `POST http://localhost:3000/briefs`
+2. Check drafts: `GET http://localhost:3000/briefs/{id}`
+3. In Claude Desktop: `/brieftodraft` slash command uses the API you just started
+
 ## Quick Start
 
 I built this to be self-contained. After setup (15 minutes), your team uses it via Claude Desktop.
