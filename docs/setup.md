@@ -24,7 +24,7 @@ The API will start on `http://localhost:3000` with mock data. No database needed
 
 ### 3. Configure Claude Desktop
 
-See [MCP.md](MCP.md) for full setup.
+See [mcp.md](mcp.md) for full setup.
 
 ---
 
@@ -138,7 +138,7 @@ npm install
 npm run build
 ```
 
-3. Configure Claude Desktop (see `docs/MCP.md` for detailed instructions)
+3. Configure Claude Desktop (see `docs/mcp.md` for detailed instructions)
 
 4. Restart Claude Desktop and test:
 ```
@@ -146,7 +146,7 @@ npm run build
 ```
 
 Once set up, all commands work directly in Claude Desktop via slash commands.
-For full MCP documentation, see `docs/MCP.md`.
+For full MCP documentation, see `docs/mcp.md`.
 
 ## Testing
 
@@ -214,7 +214,7 @@ git push origin feature/brief-validation
 
 ## Next Steps
 
-- Read ARCHITECTURE.md for system design
-- Read API.md for endpoint documentation
+- Read architecture.md for system design
+- Read api.md for endpoint documentation
 - Review example briefs in docs/
 - Check GitHub Actions workflows for CI/CD setup

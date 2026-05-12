@@ -152,7 +152,7 @@ if (name === "newcommand") {
 2. Add TypeScript types in `packages/api/src/types/`
 3. Implement business logic in `packages/api/src/services/`
 4. Add tests in `packages/api/src/__tests__/`
-5. Document in `docs/API.md`
+5. Document in `docs/api.md`
 
 ## Git Workflow
 
@@ -241,7 +241,7 @@ curl http://localhost:3000/health
 
 - Database queries should use indexes (created in migrations)
 - Cache frequently accessed data in Redis
-- Use pagination for large result sets (see API.md)
+- Use pagination for large result sets (see api.md)
 - Batch requests from MCP server where possible
 
 ## Security Notes
@@ -271,11 +271,11 @@ curl http://localhost:3000/health
 
 ## Documentation
 
-- `docs/ARCHITECTURE.md` - System architecture and design
-- `docs/API.md` - REST API specification
-- `docs/MCP.md` - Claude Desktop integration
-- `docs/QUICKSTART.md` - Setup for non-developers
-- `docs/SETUP.md` - Detailed setup instructions
+- `docs/architecture.md` - System architecture and design
+- `docs/api.md` - REST API specification
+- `docs/mcp.md` - Claude Desktop integration
+- `docs/quickstart.md` - Setup for non-developers
+- `docs/setup.md` - Detailed setup instructions
 
 ## Code Style
 

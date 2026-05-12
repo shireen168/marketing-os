@@ -284,15 +284,15 @@ Paste your config at https://jsonlint.com/ to check for syntax errors.
 
 ## Next Steps
 
-1. Read `docs/MCP.md` for complete command reference
-2. Read `docs/ARCHITECTURE.md` to understand the system design
-3. Read `docs/API.md` for REST endpoint details
+1. Read `docs/mcp.md` for complete command reference
+2. Read `docs/architecture.md` to understand the system design
+3. Read `docs/api.md` for REST endpoint details
 4. Set up integration credentials above for real sending
 5. Run test campaigns with your team
 
 ## Need Help?
 
-- Check `docs/MCP.md` for detailed command examples
-- Check `docs/ARCHITECTURE.md` for system design overview
-- See `docs/API.md` for complete API reference
+- Check `docs/mcp.md` for detailed command examples
+- Check `docs/architecture.md` for system design overview
+- See `docs/api.md` for complete API reference
 - Open an issue on GitHub with error messages and steps to reproduce

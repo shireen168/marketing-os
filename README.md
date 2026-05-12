@@ -1,36 +1,31 @@
 # Marketing OS
 
-**Reduce your content production from 3-5 days to 30 minutes. Keep 40% of your marketing budget.**
+**A complete AI-powered system for marketing workflow automation. Built to demonstrate full-stack capability: database design, API integration, AI integration, and MCP implementation.**
 
 ---
 
-## The Problem
+## What This Demonstrates
 
-Your marketing team spends too much time on repetitive work:
+This is a production-ready system I built from scratch to show what I deliver:
 
-- Writing a brief for a new campaign
-- Creating separate versions for email, LinkedIn, Medium, Twitter
-- Editing and coordinating across channels
-- Managing publishing timelines
-- Tracking results across platforms
+- **Backend architecture** - PostgreSQL, Node.js API with proper data models
+- **AI integration** - Claude API for content generation (not just prompts)
+- **Real integrations** - SendGrid, LinkedIn API, Medium API for actual publishing
+- **MCP implementation** - Claude Desktop integration for seamless UX
+- **Full-stack thinking** - Understanding the entire business flow, not just code
+- **Deployment ready** - Docker, GitHub Actions CI/CD, type-safe TypeScript
 
-Result: 3-5 days per campaign. $3-5k per campaign in agency costs. Only 3-4 campaigns per quarter instead of monthly campaigns.
+## The Business Problem I Solved
 
----
+Marketing teams waste 3-5 days per campaign and spend $3-5k in agency costs. They want to keep this work in-house but lack the tools.
 
-## The Solution
+**Marketing OS** solves this by compressing the entire workflow into 30 minutes:
+1. Write a campaign brief in Claude Desktop
+2. Get AI-generated versions for email, LinkedIn, Medium (optimized per channel)
+3. Review and publish to all channels with one command
+4. Track performance automatically
 
-**Marketing OS** compresses the entire workflow:
-
-1. Write one brief describing your campaign
-2. Claude AI generates optimized versions for each channel (email, LinkedIn, Medium, etc.) in 2 minutes
-3. Review and make edits in Claude Desktop
-4. Publish to all channels with one command
-5. Track performance across platforms automatically
-
-**Time saved per campaign: 3-5 days**
-**Cost saved per campaign: $3-5k**
-**New campaign frequency: Monthly instead of quarterly**
+**Result:** 40% cost savings, monthly campaigns instead of quarterly, work stays in-house.
 
 ---
 
@@ -140,33 +135,40 @@ To run Marketing OS, you need:
 
 ---
 
-## Setup (15 minutes)
+## Quick Start
 
-Hire a developer to do this once. After setup, your marketing team just uses Claude Desktop.
+I built this to be self-contained. After setup (15 minutes), your team uses it via Claude Desktop.
 
-### For Your Developer:
+If you hire me, I can:
 
-**Step 1: Clone and install**
+- Set it up on your infrastructure (AWS, GCP, your servers)
+- Customize it for your specific workflow
+- Add new channels or integrations
+- Maintain and scale as your needs grow
+
+### Self-hosted Setup (For developers)
+
+**1. Clone and install**
 ```bash
 git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 npm install
 ```
 
-**Step 2: Configure**
+**2. Configure**
 ```bash
 cp .env.example .env.local
-# Add your ANTHROPIC_API_KEY
+# Add your ANTHROPIC_API_KEY and other credentials
 ```
 
-**Step 3: Start services**
+**3. Start services**
 ```bash
 docker-compose up
 ```
 
-**Step 4: Connect to Claude Desktop**
+**4. Connect Claude Desktop**
 
-The MCP server connects Claude Desktop to Marketing OS. Create/edit your config file:
+The MCP server bridges Claude Desktop to the API:
 
 **On Windows:**
 `C:\Users\[YourUsername]\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json`
@@ -204,7 +206,7 @@ Add this JSON (replace path with your Marketing OS location):
 
 If it returns an empty list, you're connected and ready to go.
 
-Full setup guide: See [docs/QUICKSTART.md](docs/QUICKSTART.md) and [docs/MCP.md](docs/MCP.md)
+Full setup guide: See [docs/quickstart.md](docs/quickstart.md) and [docs/mcp.md](docs/mcp.md)
 
 ---
 
@@ -282,12 +284,11 @@ See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for extending the system.
 
 ## Documentation
 
-- **[QUICKSTART.md](docs/QUICKSTART.md)** - Step-by-step setup (15 min)
-- **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System design and data models
-- **[API.md](docs/API.md)** - Complete REST endpoint specifications
-- **[MCP.md](docs/MCP.md)** - Claude Desktop integration details
-- **[DEVELOPMENT.md](docs/DEVELOPMENT.md)** - For developers extending the system
-- **[PORTFOLIO.md](PORTFOLIO.md)** - What this system demonstrates
+- **[docs/quickstart.md](docs/quickstart.md)** - Step-by-step setup (15 min)
+- **[docs/architecture.md](docs/architecture.md)** - System design and data models
+- **[docs/api.md](docs/api.md)** - Complete REST endpoint specifications
+- **[docs/mcp.md](docs/mcp.md)** - Claude Desktop integration details
+- **[docs/development.md](docs/development.md)** - For developers extending the system
 
 ---
 

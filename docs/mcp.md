@@ -11,7 +11,7 @@ MCP is a standard protocol that lets Claude Desktop connect to tools and service
 ### Prerequisites
 
 - Claude Desktop installed (Mac, Windows, or Linux)
-- Marketing OS API running locally (see QUICKSTART.md)
+- Marketing OS API running locally (see quickstart.md)
 - Node.js 20+
 
 ### Step 1: Build the MCP Server
@@ -307,7 +307,7 @@ Claude Desktop
   PostgreSQL + Redis
 ```
 
-Each command maps directly to an API endpoint. See `API.md` for the full REST specification.
+Each command maps directly to an API endpoint. See `api.md` for the full REST specification.
 
 ## Next Steps
 
