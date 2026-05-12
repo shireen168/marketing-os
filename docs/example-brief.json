@@ -1,0 +1,23 @@
+{
+  "title": "Q2 2026 Product Launch Campaign",
+  "description": "Marketing brief for launching our new AI-powered features in Q2. Target engineering and product leaders at mid-market SaaS companies.",
+  "brand_context": "We are a B2B developer tools company. Our tone is technical but accessible. We avoid hype, focus on real ROI and concrete use cases. Audience respects depth and honesty.",
+  "target_audience": "CTOs, Engineering Leads, Product Managers at 20-500 person SaaS companies. Budget-conscious, data-driven decision makers.",
+  "goal": "Generate awareness and drive 500 free trial signups in Q2. Position our AI features as cost-reduction + efficiency levers.",
+  "channels": [
+    "email",
+    "linkedin",
+    "blog",
+    "twitter"
+  ],
+  "tone": "professional, technical, data-driven",
+  "key_messages": [
+    "Reduce marketing ops time by 60% with AI-powered content generation",
+    "Real-world ROI: companies cut agency spend by 40%",
+    "Built for teams, not solo founders"
+  ],
+  "call_to_action": "Start free trial, no credit card required",
+  "additional_context": "Include specific metrics (brief to draft in 30 seconds, 4x faster iteration). Emphasize self-hostability and extensibility to other divisions.",
+  "deadline": "2026-05-15",
+  "created_by": "shireen@example.com"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "marketing-os",
+  "version": "0.1.0",
+  "description": "AI-powered marketing operations system for brief-to-publish automation",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "mcp-server": "npm run --workspace=packages/mcp mcp-server"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

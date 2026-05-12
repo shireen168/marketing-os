@@ -1,0 +1,11 @@
+{
+  "name": "@marketing-os/api",
+  "version": "0.1.0",
+  "description": "REST API backend for Marketing OS",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "test": "jest"
+  }
+}
