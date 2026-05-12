@@ -6,8 +6,10 @@ Complete setup from zero to sending your first campaign. Estimated time: 15 minu
 
 - Claude Desktop installed (get it from https://claude.ai/download)
 - Node.js 20+ (https://nodejs.org/)
-- Docker and Docker Compose installed
 - ANTHROPIC_API_KEY (your Claude API key from https://console.anthropic.com/)
+
+**Optional (for production):**
+- Docker and Docker Compose (for PostgreSQL, Redis, full production setup)
 
 ## Step 1: Clone and Install (3 minutes)
 
@@ -26,13 +28,26 @@ cp .env.example .env.local
 Edit `.env.local` and add your ANTHROPIC_API_KEY:
 ```
 ANTHROPIC_API_KEY=sk-ant-...your-key-here...
-DATABASE_URL=postgresql://marketing:marketing@localhost:5432/marketing_os
-REDIS_URL=redis://localhost:6379
 NODE_ENV=development
 PORT=3000
 ```
 
-## Step 3: Start Backend Services (2 minutes)
+## Step 3: Start the API Server (1 minute)
+
+**Option A: Simple (for Phase 1 testing)**
+
+Run the Node.js API directly:
+
+```bash
+npm run build --workspace=@marketing-os/api
+npm run --workspace=@marketing-os/api --silent -- node dist/index.js
+```
+
+The API will start on `http://localhost:3000` and respond with mock data.
+
+**Option B: Full Production Setup (with Docker)**
+
+If you want PostgreSQL and Redis (needed for production):
 
 ```bash
 docker-compose up
@@ -58,7 +73,12 @@ Find your Claude Desktop config file:
 
 **Windows:**
 ```
-%APPDATA%\Claude\claude_desktop_config.json
+C:\Users\[YourUsername]\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json
+```
+
+**Linux:**
+```
+~/.config/Claude/claude_desktop_config.json
 ```
 
 Open it in a text editor. Find the `mcpServers` section (or create it if it doesn't exist). Add this:
@@ -67,26 +87,34 @@ Open it in a text editor. Find the `mcpServers` section (or create it if it does
 {
   "mcpServers": {
     "marketing-os": {
-      "command": "npm",
-      "args": ["run", "mcp-server"],
-      "cwd": "/absolute/path/to/marketing-os"
+      "command": "node",
+      "args": [
+        "/absolute/path/to/marketing-os/packages/mcp/dist/server.js"
+      ],
+      "env": {
+        "API_URL": "http://localhost:3000"
+      }
     }
   }
 }
 ```
 
-**Important:** Replace `/absolute/path/to/marketing-os` with your actual path:
-- Mac example: `/Users/shireen/Desktop/claude-system/marketing-os`
-- Windows example: `C:\\Users\\username\\Desktop\\claude-system\\marketing-os`
+**Important:** Replace the path with your actual Marketing OS location:
+- Mac example: `/Users/[YourUsername]/Desktop/marketing-os/packages/mcp/dist/server.js`
+- Windows example: `C:/Users/[YourUsername]/Desktop/marketing-os/packages/mcp/dist/server.js`
 
 Your config file should now look like this (full example):
 ```json
 {
   "mcpServers": {
     "marketing-os": {
-      "command": "npm",
-      "args": ["run", "mcp-server"],
-      "cwd": "/Users/shireen/Desktop/claude-system/marketing-os"
+      "command": "node",
+      "args": [
+        "/Users/[YourUsername]/Desktop/marketing-os/packages/mcp/dist/server.js"
+      ],
+      "env": {
+        "API_URL": "http://localhost:3000"
+      }
     }
   }
 }
@@ -222,35 +250,37 @@ LINKEDIN_COMPANY_ID=your-company-id
 MEDIUM_ACCESS_TOKEN=your-token-here
 ```
 
-Restart the API (`docker-compose restart api`) after adding credentials.
+Restart the API server after adding credentials (kill and restart your API process).
 
 ## Troubleshooting
 
 **MCP not connecting in Claude Desktop?**
-1. Check that `docker-compose up` is running and shows healthy services
-2. Verify the path in `claude_desktop_config.json` is absolute, not relative
-3. Make sure there are no typos in the JSON config file
-4. Try closing and reopening Claude Desktop
-5. Check the MCP log by running `npm run mcp-server` manually in a terminal (you'll see errors)
+1. Make sure the API server is running on port 3000 (see Step 3)
+2. Verify the config file path is in the correct location (see Step 4 for OS-specific paths)
+3. Check that the path in `claude_desktop_config.json` uses forward slashes and is absolute (e.g., `C:/Users/...` not `C:\Users\...`)
+4. Make sure there are no typos in the JSON config file (use a JSON validator if unsure)
+5. Close Claude Desktop completely and reopen it (don't just minimize)
+6. Look for "marketing-os" in Settings → Connectors → Desktop section
+7. Run the MCP server directly to see errors:
+   ```bash
+   node packages/mcp/dist/server.js
+   ```
 
 **Getting "Cannot POST /briefs" error?**
-1. Make sure the API container is running: `docker-compose ps` should show `marketing-os-api` as "Up"
-2. The API needs a few seconds to start. Wait and retry.
+1. Make sure the API server is running on `http://localhost:3000`
+2. Check the API logs for errors
 3. Check that ANTHROPIC_API_KEY is set in `.env.local`
+4. The API responds with mock data by default - no database needed
 
 **Can't find claude_desktop_config.json?**
 1. Make sure Claude Desktop is closed
-2. Create the file in the location listed above
-3. Make sure it's named exactly `claude_desktop_config.json`
-4. On Windows, make sure it's not being saved as `.json.txt`
+2. Create the folder if it doesn't exist (especially on Windows)
+3. Create the file in the location listed in Step 4
+4. Make sure it's named exactly `claude_desktop_config.json`
+5. On Windows, make sure it's not being saved as `.json.txt` (use a proper code editor)
 
-**Want to see detailed logs?**
-Run the MCP server directly to see errors:
-```bash
-npm run mcp-server
-```
-
-You'll see what commands are being called and any errors.
+**JSON config is invalid?**
+Paste your config at https://jsonlint.com/ to check for syntax errors.
 
 ## Next Steps
 

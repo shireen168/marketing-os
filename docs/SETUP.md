@@ -1,12 +1,8 @@
 # Setup Instructions
 
-## Prerequisites
+## Quick Start (Phase 1 - Testing)
 
-- Node.js 18+ (https://nodejs.org/)
-- PostgreSQL 14+ (https://www.postgresql.org/)
-- Redis 6+ (https://redis.io/)
-
-## Local Development Setup
+For testing Marketing OS with mock data:
 
 ### 1. Clone and Install
 
@@ -16,7 +12,55 @@ cd marketing-os
 npm install
 ```
 
-### 2. Environment Variables
+### 2. Build and Start API
+
+```bash
+npm run build --workspace=@marketing-os/api
+npm run build --workspace=@marketing-os/mcp
+npm run --workspace=@marketing-os/api --silent -- node dist/index.js
+```
+
+The API will start on `http://localhost:3000` with mock data. No database needed.
+
+### 3. Configure Claude Desktop
+
+See [MCP.md](MCP.md) for full setup.
+
+---
+
+## Production Setup (Phase 2+)
+
+For production use with real database and services.
+
+### Prerequisites
+
+- Node.js 20+ (https://nodejs.org/)
+- PostgreSQL 14+ (https://www.postgresql.org/) OR Docker
+- Redis 6+ (https://redis.io/) OR Docker
+- ANTHROPIC_API_KEY from https://console.anthropic.com/
+
+### Option A: Docker Setup (Recommended)
+
+```bash
+git clone https://github.com/shireen168/marketing-os.git
+cd marketing-os
+npm install
+cp .env.example .env.local
+# Edit .env.local and add ANTHROPIC_API_KEY
+docker-compose up
+```
+
+### Option B: Manual Service Setup
+
+#### 1. Clone and Install
+
+```bash
+git clone https://github.com/shireen168/marketing-os.git
+cd marketing-os
+npm install
+```
+
+#### 2. Environment Variables
 
 Copy `.env.example` to `.env.local`:
 
@@ -30,19 +74,20 @@ Update values with your own API keys:
 ANTHROPIC_API_KEY=your-key-here
 DATABASE_URL=postgresql://user:password@localhost:5432/marketing_os
 REDIS_URL=redis://localhost:6379
+NODE_ENV=production
 ```
 
-### 3. Database Setup
+#### 3. Database Setup
 
 ```bash
 # Create database
 createdb marketing_os
 
-# Run migrations (when migrations are added)
+# Run migrations (when available)
 npm run migrate
 ```
 
-### 4. Run Services
+#### 4. Run Services
 
 Start PostgreSQL and Redis:
 
@@ -54,7 +99,7 @@ pg_ctl -D /usr/local/var/postgres start
 redis-server
 ```
 
-### 5. Development Mode
+#### 5. Development Mode
 
 From the root directory:
 

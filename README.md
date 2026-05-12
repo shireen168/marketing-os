@@ -166,15 +166,30 @@ docker-compose up
 
 **Step 4: Connect to Claude Desktop**
 
-Edit your Claude Desktop config file (location varies by OS) and add:
+The MCP server connects Claude Desktop to Marketing OS. Create/edit your config file:
+
+**On Windows:**
+`C:\Users\[YourUsername]\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json`
+
+**On macOS:**
+`~/Library/Application Support/Claude/claude_desktop_config.json`
+
+**On Linux:**
+`~/.config/Claude/claude_desktop_config.json`
+
+Add this JSON (replace path with your Marketing OS location):
 
 ```json
 {
   "mcpServers": {
     "marketing-os": {
-      "command": "npm",
-      "args": ["run", "mcp-server"],
-      "cwd": "/path/to/marketing-os"
+      "command": "node",
+      "args": [
+        "/full/path/to/marketing-os/packages/mcp/dist/server.js"
+      ],
+      "env": {
+        "API_URL": "http://localhost:3000"
+      }
     }
   }
 }
@@ -182,15 +197,14 @@ Edit your Claude Desktop config file (location varies by OS) and add:
 
 **Step 5: Test**
 
-Restart Claude Desktop. In chat, type:
+1. Make sure the API server is running: `npm run dev --workspace=@marketing-os/api`
+2. Fully restart Claude Desktop (quit and reopen)
+3. Go to Settings → Connectors → look for "marketing-os" server
+4. In chat, type: `/listBriefs`
 
-```
-/listBriefs
-```
+If it returns an empty list, you're connected and ready to go.
 
-If it returns an empty list, you're ready to go.
-
-Full setup guide: See [docs/QUICKSTART.md](docs/QUICKSTART.md)
+Full setup guide: See [docs/QUICKSTART.md](docs/QUICKSTART.md) and [docs/MCP.md](docs/MCP.md)
 
 ---
 

@@ -10,11 +10,19 @@ MCP is a standard protocol that lets Claude Desktop connect to tools and service
 
 ### Prerequisites
 
-- Claude Desktop installed (Mac or Windows)
-- Marketing OS API running locally (via `docker-compose up`)
+- Claude Desktop installed (Mac, Windows, or Linux)
+- Marketing OS API running locally (see QUICKSTART.md)
 - Node.js 20+
 
-### Step 1: Update claude_desktop_config.json
+### Step 1: Build the MCP Server
+
+```bash
+npm run build --workspace=@marketing-os/mcp
+```
+
+This compiles TypeScript to `packages/mcp/dist/server.js`.
+
+### Step 2: Update claude_desktop_config.json
 
 Find your Claude Desktop config file:
 
@@ -25,7 +33,12 @@ Find your Claude Desktop config file:
 
 **Windows:**
 ```
-%APPDATA%\Claude\claude_desktop_config.json
+C:\Users\[YourUsername]\AppData\Local\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude\claude_desktop_config.json
+```
+
+**Linux:**
+```
+~/.config/Claude/claude_desktop_config.json
 ```
 
 Open it and add this to the `mcpServers` section (create the section if it doesn't exist):
@@ -34,23 +47,27 @@ Open it and add this to the `mcpServers` section (create the section if it doesn
 {
   "mcpServers": {
     "marketing-os": {
-      "command": "npm",
-      "args": ["run", "mcp-server"],
-      "cwd": "/full/path/to/marketing-os"
+      "command": "node",
+      "args": [
+        "/full/path/to/marketing-os/packages/mcp/dist/server.js"
+      ],
+      "env": {
+        "API_URL": "http://localhost:3000"
+      }
     }
   }
 }
 ```
 
-Replace `/full/path/to/marketing-os` with your actual path:
-- Mac example: `/Users/shireen/Desktop/claude-system/marketing-os`
-- Windows example: `C:\\Users\\user\\Desktop\\claude-system\\marketing-os`
+Replace the path with your actual Marketing OS location:
+- Mac example: `/Users/[YourUsername]/Desktop/marketing-os/packages/mcp/dist/server.js`
+- Windows example: `C:/Users/[YourUsername]/Desktop/marketing-os/packages/mcp/dist/server.js`
 
-### Step 2: Restart Claude Desktop
+### Step 3: Restart Claude Desktop
 
-Close Claude Desktop completely and open it again. You should see "marketing-os" connected at the bottom of the window.
+Close Claude Desktop completely and open it again. You should see "marketing-os" connected in Settings → Connectors → Desktop section.
 
-### Step 3: Test the Connection
+### Step 4: Test the Connection
 
 In Claude Desktop, type:
 
