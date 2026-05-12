@@ -152,7 +152,7 @@ if (name === "newcommand") {
 2. Add TypeScript types in `packages/api/src/types/`
 3. Implement business logic in `packages/api/src/services/`
 4. Add tests in `packages/api/src/__tests__/`
-5. Document in `docs/api.md`
+5. Document in `docs/API.md`
 
 ## Git Workflow
 
@@ -271,11 +271,11 @@ curl http://localhost:3000/health
 
 ## Documentation
 
-- `docs/architecture.md` - System architecture and design
-- `docs/api.md` - REST API specification
-- `docs/mcp.md` - Claude Desktop integration
-- `docs/quickstart.md` - Setup for non-developers
-- `docs/setup.md` - Detailed setup instructions
+- `docs/ARCHITECTURE.md` - System architecture and design
+- `docs/API.md` - REST API specification
+- `docs/MCP.md` - Claude Desktop integration
+- `docs/QUICKSTART.md` - Setup for non-developers
+- `docs/SETUP.md` - Detailed setup instructions
 
 ## Code Style
 

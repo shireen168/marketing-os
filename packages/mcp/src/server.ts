@@ -109,7 +109,11 @@ server.setRequestHandler(CallToolRequestSchema, async (request: any) => {
     }
 
     if (name === "publish") {
-      const response = await api.post("/drafts/publish", args);
+      // First approve the drafts, then create campaign
+      const response = await api.post("/campaigns", {
+        briefId: args.briefId,
+        draftIds: args.draftIds,
+      });
       return { content: [{ type: "text", text: JSON.stringify(response.data, null, 2) }] };
     }
 
