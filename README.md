@@ -224,7 +224,7 @@ Add this JSON (replace path with your Marketing OS location):
 
 If it returns an empty list, you're connected and ready to go.
 
-Full setup guide: See [docs/quickstart.md](docs/quickstart.md) and [docs/mcp.md](docs/mcp.md)
+Full setup guide: See [docs/QUICKSTART.md](docs/QUICKSTART.md) and [docs/MCP.md](docs/MCP.md)
 
 ---
 
@@ -302,11 +302,11 @@ See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for extending the system.
 
 ## Documentation
 
-- **[docs/quickstart.md](docs/quickstart.md)** - Step-by-step setup (15 min)
-- **[docs/architecture.md](docs/architecture.md)** - System design and data models
-- **[docs/api.md](docs/api.md)** - Complete REST endpoint specifications
-- **[docs/mcp.md](docs/mcp.md)** - Claude Desktop integration details
-- **[docs/development.md](docs/development.md)** - For developers extending the system
+- **[docs/QUICKSTART.md](docs/QUICKSTART.md)** - Step-by-step setup (15 min)
+- **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System design and data models
+- **[docs/API.md](docs/API.md)** - Complete REST endpoint specifications
+- **[docs/MCP.md](docs/MCP.md)** - Claude Desktop integration details
+- **[docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)** - For developers extending the system
 
 ---
 
