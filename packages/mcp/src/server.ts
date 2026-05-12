@@ -1,14 +1,6 @@
-import {
-  Server,
-  StdioServerTransport,
-  TextContent,
-  ToolResultBlockParam,
-} from "@modelcontextprotocol/sdk/server/index.js";
-import {
-  CallToolRequest,
-  ListToolsRequest,
-  Tool,
-} from "@modelcontextprotocol/sdk/types.js";
+import { Server } from "@modelcontextprotocol/sdk/server/index.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { CallToolRequestSchema, ListToolsRequestSchema } from "@modelcontextprotocol/sdk/types.js";
 import axios from "axios";
 import * as dotenv from "dotenv";
 
@@ -22,12 +14,20 @@ const api = axios.create({
   },
 });
 
-const server = new Server({
-  name: "marketing-os",
-  version: "0.1.0",
-});
+const server = new Server(
+  {
+    name: "marketing-os",
+    version: "0.1.0",
+  },
+  {
+    capabilities: {
+      tools: {},
+    },
+  }
+);
 
-server.setRequestHandler(ListToolsRequest, async () => {
+// List available tools
+server.setRequestHandler(ListToolsRequestSchema, async () => {
   return {
     tools: [
       {
@@ -37,59 +37,22 @@ server.setRequestHandler(ListToolsRequest, async () => {
         inputSchema: {
           type: "object" as const,
           properties: {
-            title: {
-              type: "string",
-              description: "Campaign title",
-            },
-            description: {
-              type: "string",
-              description: "Campaign description",
-            },
-            brandContext: {
-              type: "string",
-              description: "Brand tone and values",
-            },
-            targetAudience: {
-              type: "string",
-              description: "Who this campaign targets",
-            },
-            goal: {
-              type: "string",
-              description: "Campaign objective",
-            },
+            title: { type: "string", description: "Campaign title" },
+            description: { type: "string", description: "Campaign description" },
+            brandContext: { type: "string", description: "Brand tone and values" },
+            targetAudience: { type: "string", description: "Who this campaign targets" },
+            goal: { type: "string", description: "Campaign objective" },
             channels: {
               type: "array",
               items: { type: "string" },
-              description:
-                'Channels to generate drafts for: "email", "linkedin", "medium"',
+              description: 'Channels to generate drafts for: "email", "linkedin", "medium"',
             },
-            keyMessages: {
-              type: "array",
-              items: { type: "string" },
-              description: "Key messages to include",
-            },
-            tone: {
-              type: "string",
-              description: "Tone of voice",
-            },
-            cta: {
-              type: "string",
-              description: "Call to action",
-            },
-            feedback: {
-              type: "string",
-              description:
-                "Optional: feedback for regeneration (shorter, more technical, etc)",
-            },
+            keyMessages: { type: "array", items: { type: "string" }, description: "Key messages to include" },
+            tone: { type: "string", description: "Tone of voice" },
+            cta: { type: "string", description: "Call to action" },
+            feedback: { type: "string", description: "Optional: feedback for regeneration" },
           },
-          required: [
-            "title",
-            "description",
-            "targetAudience",
-            "goal",
-            "channels",
-            "keyMessages",
-          ],
+          required: ["title", "description", "targetAudience", "goal", "channels", "keyMessages"],
         },
       },
       {
@@ -98,20 +61,12 @@ server.setRequestHandler(ListToolsRequest, async () => {
         inputSchema: {
           type: "object" as const,
           properties: {
-            briefId: {
-              type: "string",
-              description: "ID of the brief (from brieftodraft result)",
-            },
-            draftIds: {
-              type: "array",
-              items: { type: "string" },
-              description: "IDs of drafts to publish",
-            },
+            briefId: { type: "string", description: "ID of the brief" },
+            draftIds: { type: "array", items: { type: "string" }, description: "IDs of drafts to publish" },
             channels: {
               type: "array",
               items: { type: "string" },
-              description:
-                'Channels to publish to: "email", "linkedin", "medium"',
+              description: 'Channels to publish to: "email", "linkedin", "medium"',
             },
           },
           required: ["briefId", "draftIds", "channels"],
@@ -123,14 +78,8 @@ server.setRequestHandler(ListToolsRequest, async () => {
         inputSchema: {
           type: "object" as const,
           properties: {
-            campaignId: {
-              type: "string",
-              description: "Campaign ID",
-            },
-            days: {
-              type: "number",
-              description: "Number of days to report on (default: 7)",
-            },
+            campaignId: { type: "string", description: "Campaign ID" },
+            days: { type: "number", description: "Number of days to report on (default: 7)" },
           },
           required: ["campaignId"],
         },
@@ -141,93 +90,44 @@ server.setRequestHandler(ListToolsRequest, async () => {
         inputSchema: {
           type: "object" as const,
           properties: {
-            limit: {
-              type: "number",
-              description: "Number of briefs to return (default: 10)",
-            },
+            limit: { type: "number", description: "Number of briefs to return (default: 10)" },
           },
         },
       },
-    ] as Tool[],
+    ],
   };
 });
 
-server.setRequestHandler(CallToolRequest, async (request: CallToolRequest) => {
+// Handle tool calls
+server.setRequestHandler(CallToolRequestSchema, async (request: any) => {
   try {
-    const { name, arguments: args } = request;
+    const { name, arguments: args } = request.params;
 
     if (name === "brieftodraft") {
       const response = await api.post("/briefs", args);
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(response.data, null, 2),
-          },
-        ] as TextContent[],
-      };
+      return { content: [{ type: "text", text: JSON.stringify(response.data, null, 2) }] };
     }
 
     if (name === "publish") {
       const response = await api.post("/drafts/publish", args);
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(response.data, null, 2),
-          },
-        ] as TextContent[],
-      };
+      return { content: [{ type: "text", text: JSON.stringify(response.data, null, 2) }] };
     }
 
     if (name === "report") {
-      const response = await api.get(
-        `/campaigns/${args.campaignId}/analytics`,
-        {
-          params: { days: args.days || 7 },
-        }
-      );
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(response.data, null, 2),
-          },
-        ] as TextContent[],
-      };
+      const response = await api.get(`/campaigns/${args.campaignId}/analytics`, {
+        params: { days: args.days || 7 },
+      });
+      return { content: [{ type: "text", text: JSON.stringify(response.data, null, 2) }] };
     }
 
     if (name === "listBriefs") {
-      const response = await api.get("/briefs", {
-        params: { limit: args.limit || 10 },
-      });
-      return {
-        content: [
-          {
-            type: "text",
-            text: JSON.stringify(response.data, null, 2),
-          },
-        ] as TextContent[],
-      };
+      const response = await api.get("/briefs", { params: { limit: args.limit || 10 } });
+      return { content: [{ type: "text", text: JSON.stringify(response.data, null, 2) }] };
     }
 
-    return {
-      content: [
-        {
-          type: "text",
-          text: `Unknown tool: ${name}`,
-        },
-      ] as TextContent[],
-    };
+    return { content: [{ type: "text", text: `Unknown tool: ${name}` }] };
   } catch (error: any) {
-    return {
-      content: [
-        {
-          type: "text",
-          text: `Error: ${error.message}`,
-        },
-      ] as TextContent[],
-    };
+    return { content: [{ type: "text", text: `Error: ${error.message}` }] };
   }
 });
 

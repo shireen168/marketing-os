@@ -190,7 +190,7 @@ Restart Claude Desktop. In chat, type:
 
 If it returns an empty list, you're ready to go.
 
-Full setup guide: See `docs/QUICKSTART.md`
+Full setup guide: See [docs/QUICKSTART.md](docs/QUICKSTART.md)
 
 ---
 
@@ -262,18 +262,18 @@ Marketing OS is built to be extended:
 - Customize prompt behavior
 - Build custom reporting
 
-See `docs/DEVELOPMENT.md` for extending the system.
+See [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) for extending the system.
 
 ---
 
 ## Documentation
 
-- **`QUICKSTART.md`** - Step-by-step setup (15 min)
-- **`ARCHITECTURE.md`** - System design and data models
-- **`API.md`** - Complete REST endpoint specifications
-- **`MCP.md`** - Claude Desktop integration details
-- **`DEVELOPMENT.md`** - For developers extending the system
-- **`PORTFOLIO.md`** - What this system demonstrates
+- **[QUICKSTART.md](docs/QUICKSTART.md)** - Step-by-step setup (15 min)
+- **[ARCHITECTURE.md](docs/ARCHITECTURE.md)** - System design and data models
+- **[API.md](docs/API.md)** - Complete REST endpoint specifications
+- **[MCP.md](docs/MCP.md)** - Claude Desktop integration details
+- **[DEVELOPMENT.md](docs/DEVELOPMENT.md)** - For developers extending the system
+- **[PORTFOLIO.md](PORTFOLIO.md)** - What this system demonstrates
 
 ---
 
