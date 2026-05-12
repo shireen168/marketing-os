@@ -15,4 +15,5 @@ out/
 coverage/
 .claude-todo.md
 .claude/
+.gstack-source
 PORTFOLIO.md
