@@ -96,10 +96,31 @@ Each stage's output feeds into the next. Nothing falls through the cracks becaus
   - Legal teams: compliance briefs, document workflows
   - Sales teams: outreach sequences, proposal workflows
 
-**Cowork gateway:**
-  - ChatGPT-like interface for non-technical teams
-  - Graduate to `/slash commands` when ready
-  - No terminal scares. VS Code extension = GUI.
+---
+
+## Slash Commands, Not Copy-Paste Prompts
+
+Most teams use AI as a chatbot. Copy-paste prompts into ChatGPT. Lose context between conversations. Start over.
+
+We do something different:
+
+**Why slash commands are special:**
+  - Each `/command` invokes a specialized agent with built-in reasoning
+  - Context flows automatically (Stage 5 knows what Stage 2 decided)
+  - No manual context switching between conversations
+  - Backend skill set handles complexity you'd normally repeat manually
+
+**The 1% difference:**
+  - 99% of teams repeat instructions across conversations
+  - We structure work once, reuse infinitely
+  - Same team member can lead any campaign (system carries context)
+  - New team members ship independently on Day 1 (system teaches them)
+
+**Work anywhere, anytime:**
+  - All 40+ agents available in VS Code (Windows, Mac, Linux)
+  - No infrastructure setup
+  - Clone repo, run setup, ship campaigns
+  - Team stays in sync because all context is preserved in the system
 
 ---
 
