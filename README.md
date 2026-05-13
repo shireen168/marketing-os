@@ -49,7 +49,7 @@ All render in VS Code, downloadable for docs/slides/email
 
 ## Complete Example
 
-See [examples/complete-example.md](examples/complete-example.md): Accounting OS (SaaS) walkthrough. All 6 stages with real inputs and outputs. Time: 75 minutes (or 30 expedited).
+See [docs/complete-example.md](docs/complete-example.md): Accounting OS (SaaS) walkthrough. All 6 stages with real inputs and outputs. Time: 75 minutes (or 30 expedited).
 
 ---
 
@@ -60,7 +60,7 @@ git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 ```
 
-Follow [SETUP.md](SETUP.md) for 15-minute installation. Then see [WORKFLOW.md](WORKFLOW.md) for how to run campaigns.
+Follow [docs/setup.md](docs/setup.md) for 15-minute installation. Then see [docs/workflow.md](docs/workflow.md) for how to run campaigns.
 
 ---
 
@@ -80,10 +80,10 @@ All production-ready. No formatting needed.
 
 ## Documentation
 
-- **[SETUP.md](SETUP.md)** — Installation walkthrough (15 minutes)
-- **[WORKFLOW.md](WORKFLOW.md)** — How to run each stage (30 minutes per campaign)
-- **[CLAUDE.md](CLAUDE.md)** — System prompt and available skills
-- **[examples/complete-example.md](examples/complete-example.md)** — Worked example: Accounting OS
+- **[docs/setup.md](docs/setup.md)** — Installation walkthrough (15 minutes)
+- **[docs/workflow.md](docs/workflow.md)** — How to run each stage (30 minutes per campaign)
+- **[docs/claude.md](docs/claude.md)** — System prompt and available skills
+- **[docs/complete-example.md](docs/complete-example.md)** — Worked example: Accounting OS
 
 ---
 

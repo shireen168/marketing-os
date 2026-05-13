@@ -18,10 +18,8 @@ coverage/
 .gstack-source
 PORTFOLIO.md
 
-# Internal documentation and reports (not for public repo)
+# Internal documentation and working files (not for public repo)
+internal/
 design-api-internal.md
 *-internal.md
-docs/design-*.md
-docs/qa-verification-report.md
-docs/*-report.md
 $HOME/
