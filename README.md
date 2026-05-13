@@ -179,7 +179,7 @@ All ready to publish. No formatting needed.
 
 ## FAQ
 
-**Quick answers to hiring/adoption questions:**
+**Quick answers to common questions:**
 
 - Will our team actually use this?
 - Is this just a marketing tool?
