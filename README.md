@@ -59,14 +59,14 @@ Timeline for Financial Services campaign:
 
 Each stage's output feeds into the next. Nothing falls through the cracks because every step knows what came before it. Behind the scenes, 20+ specialized agents work at each stage.
 
-| Stage | Agent | Input From | Output Goes To | Result |
-|-------|-------|-----------|----------------|--------|
-| 1. Brief | Brainstorm agent | Product + goals | Stage 2, 3, 4 | Aligned team |
-| 2. Brand Voice | Brand guidelines agent | Brief (Stage 1) | Stage 4, 5 | Consistent voice |
-| 3. Research | Research + market analysis agent | Brief (Stage 1) | Stage 4 | Data-driven strategy |
-| 4. Strategy | Strategy + positioning agent | All above | Stage 5 | Clear direction |
-| 5. Content | Content generation agent | Strategy + Voice | Stage 6, publishing | Ready copy |
-| 6. Reports | Analytics + ROI agent | All stages | Board, investors | Proof of impact |
+| Stage | Invoked By | Agent | Input From | Output Goes To | Result |
+|-------|-----------|-------|-----------|----------------|--------|
+| 1. Brief | `/brainstorm` | Brainstorm agent | Product + goals | Stage 2, 3, 4 | Aligned team |
+| 2. Brand Voice | `/brainstorm` | Brand guidelines agent | Brief (Stage 1) | Stage 4, 5 | Consistent voice |
+| 3. Research | `/investigate` | Research + market analysis agent | Brief (Stage 1) | Stage 4 | Data-driven strategy |
+| 4. Strategy | `/plan-ceo-review` | Strategy + positioning agent | All above | Stage 5 | Clear direction |
+| 5. Content | Native Claude | Content generation agent | Strategy + Voice | Stage 6, publishing | Ready copy |
+| 6. Reports | Native Claude | Analytics + ROI agent | All stages | Board, investors | Proof of impact |
 
 **Key:** Each stage inherits context from all previous stages. Your thinking compounds. Each agent is one of 20+ specialized tools built into the system, plus extensibility to create your own.
 
