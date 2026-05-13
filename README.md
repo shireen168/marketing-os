@@ -1,7 +1,7 @@
 # Marketing OS: AI-Powered Marketing Operations System
 
 **Quick Navigation:**
-1. [The Gap](#the-gap) (2 min read)
+1. [The Gap](#the-gap)
 2. [The Promise](#the-promise)
 3. [What We Built](#what-we-built)
 4. [The 6-Stage Workflow](#the-6-stage-workflow)
