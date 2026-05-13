@@ -2,7 +2,7 @@
 
 This example shows how the Marketing OS workflow works. Built with Claude Code + gstack, this same system adapts to **any industry**: HR recruiting, legal briefs, sales campaigns, product launches, internal communications.
 
-**Product:** Accounting OS — SaaS tool that simplifies bookkeeping for small businesses
+**Product:** Accounting OS: a SaaS tool that simplifies bookkeeping for small businesses
 
 **Key insight:** Each stage uses a gstack slash command (/brainstorm, /investigate, /plan-ceo-review) that builds structured thinking. Stage 5+ uses native Claude for content generation. This combination of structured workflow commands + freestyle generation is what makes context preservation work and 40 minutes possible instead of 5-7 days.
 
@@ -266,7 +266,7 @@ VOICEOVER: "What if you could do this instead?"
 The Hidden Cost of QuickBooks for Founders
 
 A founder sent me this spreadsheet last week. It was their 
-"QuickBooks" — 47 tabs, 200+ manual entries, 12 hours a month 
+"QuickBooks": 47 tabs, 200+ manual entries, 12 hours a month 
 of their time.
 
 They're not alone. 65% of SMBs still do this.
@@ -441,4 +441,4 @@ Stages 1-4 use gstack slash commands (/brainstorm, /investigate, /plan-ceo-revie
 
 ---
 
-**Questions?** See [WORKFLOW.md](../WORKFLOW.md) troubleshooting.
+**Questions?** See [workflow.md](../workflow.md) troubleshooting.

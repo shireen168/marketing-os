@@ -37,7 +37,7 @@ Repeat this for every campaign:
 
 This system (Claude Code + gstack) works for **any industry**. Same workflow, different domain.
 
-**Example: Financial Services** — [Full worked example →](docs/complete-example.md)
+**Example: Financial Services**: [Full worked example](docs/complete-example.md)
 
 Built with Claude + gstack, this workflow is easily adapted to:
 - HR recruiting campaigns
@@ -98,9 +98,9 @@ git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 ```
 
-1. **[docs/setup.md](docs/setup.md)** — Installation (15 minutes)
-2. **[docs/workflow.md](docs/workflow.md)** — How to run each stage
-3. **[docs/complete-example.md](docs/complete-example.md)** — Financial Services walkthrough (all 6 stages)
+1. **[docs/setup.md](docs/setup.md)**: Installation (15 minutes)
+2. **[docs/workflow.md](docs/workflow.md)**: How to run each stage
+3. **[docs/complete-example.md](docs/complete-example.md)**: Financial Services walkthrough (all 6 stages)
 
 ---
 

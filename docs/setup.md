@@ -94,7 +94,7 @@ cd marketing-os
 
 ## You're Ready
 
-Next: Follow [WORKFLOW.md](WORKFLOW.md) to run your first campaign.
+Next: Follow [workflow.md](workflow.md) to run your first campaign.
 
 ---
 

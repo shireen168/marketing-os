@@ -22,14 +22,34 @@ You have access to gstack skills for structured thinking and Claude's native cap
 
 ## Available gstack Skills
 
-When the user's request matches a skill, invoke it:
+Invoke these slash commands when the workflow requires structured thinking:
 
-- **`/brainstorm`** — Brainstorm marketing briefs and brand voice definitions. Use for structuring product ideas into marketing strategy.
-- **`/investigate`** — Research markets, competitors, trends. Use for Stage 3 (Research).
-- **`/plan-ceo-review`** — Create positioning and strategy documents. Use for Stage 4 (Strategy).
-- **`/office-hours`** — Validate product ideas and market positioning. Use for feedback loops.
+### Marketing Workflow Commands
 
-For content generation (Stages 5-6), use native Claude prompts (no slash commands needed).
+- **`/brainstorm`**: Brainstorm marketing briefs and brand voice definitions. Use for structuring product ideas into marketing strategy.
+- **`/investigate`**: Research markets, competitors, trends, market sizing. Use for Stage 3 (Research).
+- **`/plan-ceo-review`**: Create positioning and strategy documents. Use for Stage 4 (Strategy).
+- **`/office-hours`**: Validate product ideas and market positioning. Use for feedback loops and iteration.
+
+### Cross-Functional Commands
+
+- **`/plan-eng-review`**: Architecture decisions and technical design. Use for engineering scope and infrastructure choices.
+- **`/design-review`**: Design feedback and visual polish. Use for UI/UX iterations.
+- **`/design-consultation`**: Design system planning and design decisions.
+- **`/autoplan`**: Full workflow automation pipeline. Use for end-to-end campaign orchestration.
+
+### Quality and Publishing Commands
+
+- **`/review`**: Code review and diff inspection. Use before merging work.
+- **`/qa`**: Quality assurance and testing workflows. Use for validation before shipping.
+- **`/ship`**: Deployment and publishing. Use to finalize and release work.
+
+### Context Management Commands
+
+- **`/context-save`**: Save and checkpoint your progress. Use to preserve work state between sessions.
+- **`/context-restore`**: Resume from a previous checkpoint. Use to load saved context.
+
+For content generation (Stages 5-6), use native Claude prompts (not slash commands).
 
 ## Workflow Stages (Copy-Paste Prompts)
 
@@ -161,13 +181,13 @@ See [examples/complete-example.md](examples/complete-example.md) for a complete 
 
 ## Setup Instructions
 
-Follow [SETUP.md](SETUP.md) to install:
+Follow [setup.md](setup.md) to install:
 1. Claude CLI
 2. gstack (globally)
 3. Claude Code extension in VS Code
 4. Clone this repo
 
-Then run [WORKFLOW.md](WORKFLOW.md) for step-by-step instructions on each stage.
+Then run [workflow.md](workflow.md) for step-by-step instructions on each stage.
 
 ## Tips
 

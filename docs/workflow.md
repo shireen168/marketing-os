@@ -4,7 +4,7 @@ Complete end-to-end campaign in 40-90 minutes using Claude Code + gstack.
 
 **This pattern works for:** Marketing, HR recruiting, legal briefs, sales campaigns, product launches, internal communications. Same workflow, different domain.
 
-**Setup first:** Follow [SETUP.md](SETUP.md) before starting.
+**Setup first:** Follow [setup.md](setup.md) before starting.
 
 ---
 
@@ -176,7 +176,7 @@ See [examples/complete-example.md](examples/complete-example.md) for a full walk
 - Use the example prompts from this guide (copy-paste)
 
 **Still stuck?**
-- Check [SETUP.md](SETUP.md) troubleshooting
+- Check [setup.md](setup.md) troubleshooting
 - Review [examples/complete-example.md](examples/complete-example.md) for reference
 
 ---
