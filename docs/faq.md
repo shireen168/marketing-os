@@ -6,10 +6,10 @@
 - Non-technical teams start with Claude Desktop chat (familiar UI). 
 - Technical teams use VS Code with slash commands. 
 - Everyone sees context preserved automatically. 
-- Adoption compounds: 
-    Day 1 → you ship a campaign. 
-    Week 1 → you ship 3-5. 
-    Month 1 → it's your standard operating procedure.
+- Adoption compounds:
+  - Day 1 → you ship a campaign
+  - Week 1 → you ship 3-5
+  - Month 1 → it's your standard operating procedure
 
 ---
 
@@ -41,17 +41,17 @@ If the team already brief products, research markets, and write strategy, this s
 
 Three differences:
 
-1. **Speed:** 
-    → Agencies take 3-5 days. 
-    → This system: 40 minutes. You control the timeline.
+1. **Speed:**
+   - Agencies take 3-5 days
+   - This system: 40 minutes. You control the timeline
 
-2. **Cost:** 
-    → Agency: $3-5K per campaign. 
-    → This system: setup once, run 100 campaigns. Cost per campaign approaches zero.
+2. **Cost:**
+   - Agency: $3-5K per campaign
+   - This system: setup once, run 100 campaigns. Cost per campaign approaches zero
 
-3. **Learning:** 
-    → Agencies deliver outputs. 
-    → This system teaches your team how to think in workflows. After 3 campaigns, your team becomes expert in structuring work.
+3. **Learning:**
+   - Agencies deliver outputs
+   - This system teaches your team how to think in workflows. After 3 campaigns, your team becomes expert in structuring work
 
 ---
 
@@ -83,16 +83,16 @@ That's it.
 
 ## What's the learning curve?
 
-- Day 1: 
-    → Clone repo, run setup, watch onboarding. 
-    → By end of day, you ship your first campaign.
+- **Day 1:**
+  - Clone repo, run setup, watch onboarding
+  - By end of day, you ship your first campaign
 
-- Week 1: 
-    → Your team runs 3-5 campaigns independently. 
-    → Workflow becomes second nature.
+- **Week 1:**
+  - Your team runs 3-5 campaigns independently
+  - Workflow becomes second nature
 
-- Month 1: 
-    → Your team is faster than agencies, and they own the process.
+- **Month 1:**
+  - Your team is faster than agencies, and they own the process
 
 The system teaches as you use it. Each campaign reinforces the workflow.
 
@@ -119,11 +119,11 @@ Yes. MIT license. Free to fork, modify, extend, redistribute. Build on it.
 
 ## Who built this?
 
-→ A team that shipped 50+ marketing campaigns in 6 months using Claude Code + manual workflows. 
-→ We saw the pattern: same 6 stages, every time. 
-→ Same context lost between conversations. Built automation to preserve that context. Works.
+- A team that shipped 50+ marketing campaigns in 6 months using Claude Code + manual workflows
+- We saw the pattern: same 6 stages, every time
+- Same context lost between conversations. Built automation to preserve that context. Works.
 
-**This is a powerful system:** 
-    → Workflow-first
-    → Context-preserving
-    → Scalable-from-day-one
+**This is a powerful system:**
+1. Workflow-first
+2. Context-preserving
+3. Scalable-from-day-one
