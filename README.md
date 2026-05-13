@@ -76,20 +76,18 @@ Each stage's output feeds into the next. Nothing falls through the cracks becaus
 
 ## Why This Works
 
-**Claude Code + gstack:**
-  - Each stage's output becomes the next stage's input
-  - One workflow, not 6 separate chats losing context
-  - Expandable to **any department in your company** (Marketing today → Finance, Legal, Sales, HR tomorrow)
+**The gap:** Most teams know ChatGPT. Few know Claude Code exists. Fewer still structure work as workflows. Result: context lost between conversations, repetitive work, decision fatigue.
+
+**How this closes it:**
+
+Context preservation across stages. Each slash command builds on what the previous stage decided. Stage 5 (Content) doesn't start from scratch because it inherits Brand Voice from Stage 2 and Strategy from Stage 4. That's what makes 40 minutes possible instead of 5-7 days.
+
+Expandable to **any department in your company**. Same workflow-as-context architecture. Different domain. Finance teams run cash flow forecasts. Legal teams structure compliance briefs. Sales teams build outreach sequences.
 
 **Cowork gateway:**
   - ChatGPT-like interface for non-technical teams
   - Graduate to `/slash commands` when ready
   - No terminal scares. VS Code extension = GUI.
-
-**No infrastructure:**
-  - Clone repo, run setup, done
-  - Runs on your laptop
-  - Works offline
 
 ---
 
@@ -106,13 +104,13 @@ cd marketing-os
 
 ---
 
-## How This System Supports Your Team
+## Day 1 to Month 1: What Ships
 
-**Day 1:** Setup complete. Your team runs first campaign end-to-end independently.
+**Day 1:** Setup complete. First campaign runs end-to-end independently.
 
-**Week 1:** 3-5 campaigns shipped. Team operates solo with full system ownership.
+**Week 1:** 3-5 campaigns shipped. Full system ownership. No external dependencies.
 
-**Month 1:** 40+ hours saved vs. agencies. Your team ships campaigns traditional approaches would defer (too niche, too fast-moving, too many iterations).
+**Month 1:** 40+ hours saved vs. agencies. Campaigns ship that traditional approaches would defer (too niche, too fast-moving, too many iterations).
 
 **Ongoing:** This system can expand to:
   - Finance teams (budgeting, forecasting workflows)
@@ -139,14 +137,6 @@ All ready to publish. No formatting needed.
 
 ---
 
-## Phase 2 (Deferred)
-
-Real publishing to social platforms. Live analytics. Campaign calendar.
-
-Why defer? Prove Phase 1 workflow first. Better to ship fast + iterate than over-build.
-
----
-
 ## FAQ
 
 **Q: Why not just use ChatGPT?**
@@ -164,10 +154,6 @@ A: 3-5 days per campaign vs. 1-2 hours with this system. Plus your team owns the
 **Q: Why not build custom tools?**
 
 A: Months of development work. This system works today with tools you already have (Claude Code + VS Code).
-
----
-
-See [docs/faq.md](docs/faq.md) for more.
 
 ---
 
