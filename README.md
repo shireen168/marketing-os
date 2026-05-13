@@ -57,18 +57,20 @@ Timeline for Financial Services campaign:
 
 ## How It Works: Workflow-as-Context
 
-Like Garry Tan's gstack model, each stage's output feeds into the next. Nothing falls through the cracks because every step knows what came before it.
+Each stage's output feeds into the next. Nothing falls through the cracks because every step knows what came before it. Behind the scenes, 20+ specialized agents work at each stage.
 
-| Stage | Command | Input From | Output Goes To | Result |
-|-------|---------|-----------|----------------|--------|
-| 1. Brief | `/brainstorm` | Product + goals | Stage 2, 3, 4 | Aligned team |
-| 2. Brand Voice | `/brainstorm` | Brief (Stage 1) | Stage 4, 5 | Consistent voice |
-| 3. Research | `/investigate` | Brief (Stage 1) | Stage 4 | Data-driven strategy |
-| 4. Strategy | `/plan-ceo-review` | All above | Stage 5 | Clear direction |
-| 5. Content | Native prompt | Strategy + Voice | Stage 6, publishing | Ready copy |
-| 6. Reports | Native prompt | All stages | Board, investors | Proof of impact |
+| Stage | Agent | Input From | Output Goes To | Result |
+|-------|-------|-----------|----------------|--------|
+| 1. Brief | Brainstorm agent | Product + goals | Stage 2, 3, 4 | Aligned team |
+| 2. Brand Voice | Brand guidelines agent | Brief (Stage 1) | Stage 4, 5 | Consistent voice |
+| 3. Research | Research + market analysis agent | Brief (Stage 1) | Stage 4 | Data-driven strategy |
+| 4. Strategy | Strategy + positioning agent | All above | Stage 5 | Clear direction |
+| 5. Content | Content generation agent | Strategy + Voice | Stage 6, publishing | Ready copy |
+| 6. Reports | Analytics + ROI agent | All stages | Board, investors | Proof of impact |
 
-**Key:** Each stage inherits context from all previous stages. Your thinking compounds.
+**Key:** Each stage inherits context from all previous stages. Your thinking compounds. Each agent is one of 20+ specialized tools built into the system, plus extensibility to create your own.
+
+**See all agents:** Full list of available agents and capabilities in [skills.md](docs/skills.md).
 
 ---
 
@@ -88,54 +90,6 @@ Like Garry Tan's gstack model, each stage's output feeds into the next. Nothing 
   - Clone repo, run setup, done
   - Runs on your laptop
   - Works offline
-
----
-
-## The 20+ Agent Ecosystem
-
-This system doesn't limit you to 4 commands. You get 20+ specialized agents built into gstack, ready to use across any workflow:
-
-### Planning & Strategy
-- `/office-hours`: Product validation and forcing questions before commitment
-- `/plan-ceo-review`: Strategic scope decisions (expansion, hold, reduction)
-- `/plan-eng-review`: Architecture review and technical decision-making
-- `/plan-design-review`: Design system auditing with structured feedback
-- `/plan-devex-review`: Developer experience friction assessment
-
-### Design & Frontend
-- `/design-consultation`: Full design system creation from research to mockups
-- `/design-shotgun`: Generate 4-6 design variants and learn visual taste
-- `/design-html`: Convert mockups to production-ready HTML
-- `/design-review`: Live design audit with auto-fixes
-
-### Code & Testing
-- `/review`: Code review with automatic bug fixes
-- `/investigate`: Systematic debugging and root-cause analysis
-- `/qa`: Browser-based testing with regression detection
-- `/qa-only`: Bug reporting without code changes
-- `/devex-review`: Onboarding friction audit with metrics
-
-### Release & Monitoring
-- `/ship`: Test running, coverage audit, PR automation
-- `/land-and-deploy`: Merge, wait for CI, deploy, verify health
-- `/canary`: Post-deploy monitoring for errors and performance
-- `/benchmark`: Performance baseline before/after comparison
-- `/document-release`: Auto-update docs matching shipped code
-
-### Collaboration
-- `/retro`: Weekly team retrospectives with metrics
-- `/pair-agent`: Cross-agent coordination for complex workflows
-- `/cso`: Security auditing (OWASP + STRIDE threat modeling)
-- `/browse`: Real browser control for testing and screenshots
-
-Plus custom Claude Code skills for:
-- Brand guidelines creation
-- Frontend component design
-- Content generation (copy, video scripts, social posts)
-- Market research and competitive analysis
-- And any domain-specific workflow you define
-
-**The math:** 23+ gstack agents + Claude Code extensibility = unlimited specialized workflows. Same system architecture. Different domains.
 
 ---
 
