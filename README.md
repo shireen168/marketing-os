@@ -76,13 +76,25 @@ Each stage's output feeds into the next. Nothing falls through the cracks becaus
 
 ## Why This Works
 
-**The gap:** Most teams know ChatGPT. Few know Claude Code exists. Fewer still structure work as workflows. Result: context lost between conversations, repetitive work, decision fatigue.
+**The gap:**
+  - Most teams know ChatGPT
+  - Few know Claude Code exists
+  - Fewer still structure work as workflows
+  - Result: context lost between conversations, repetitive work, decision fatigue
 
 **How this closes it:**
+  - Context preservation across stages
+  - Each slash command builds on previous stage's output
+  - Stage 5 (Content) inherits Brand Voice (Stage 2) + Strategy (Stage 4)
+  - Doesn't start from scratch each time
+  - That's what makes 40 minutes possible instead of 5-7 days
 
-Context preservation across stages. Each slash command builds on what the previous stage decided. Stage 5 (Content) doesn't start from scratch because it inherits Brand Voice from Stage 2 and Strategy from Stage 4. That's what makes 40 minutes possible instead of 5-7 days.
-
-Expandable to **any department in your company**. Same workflow-as-context architecture. Different domain. Finance teams run cash flow forecasts. Legal teams structure compliance briefs. Sales teams build outreach sequences.
+**Expandable to any department:**
+  - Same workflow-as-context architecture
+  - Different domain, same system
+  - Finance teams: cash flow forecasts, budgeting workflows
+  - Legal teams: compliance briefs, document workflows
+  - Sales teams: outreach sequences, proposal workflows
 
 **Cowork gateway:**
   - ChatGPT-like interface for non-technical teams
