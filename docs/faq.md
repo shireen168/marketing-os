@@ -8,7 +8,7 @@
 - Everyone sees context preserved automatically. 
 - Adoption compounds:
   - Day 1 → Ship a campaign
-  - Week 1 → Ship 3-5 campaign
+  - Week 1 → Ship 3-5 campaigns
   - Month 1 → It has become the team's SOP
 
 ---
