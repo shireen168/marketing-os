@@ -1,5 +1,18 @@
 # Marketing OS: AI-Powered Marketing Operations System
 
+**Quick Navigation:**
+1. [The Gap](#the-gap) (2 min read)
+2. [The Promise](#the-promise)
+3. [What We Built](#what-we-built)
+4. [The 6-Stage Workflow](#the-6-stage-workflow)
+5. [How It Works](#how-it-works-workflow-as-context)
+6. [Why This Works](#why-this-works-context-preservation)
+7. [Get Started](#get-started)
+8. [Day 1 to Month 1](#day-1-to-month-1-what-ships)
+9. [FAQ](#faq)
+
+---
+
 ## The Gap
 
 - **Most teams:** Know ChatGPT/Claude.com
@@ -13,6 +26,21 @@
 - **Subsequent campaigns:** 30-45 minutes (with templates)
 - **Agency baseline:** 3-5 days
 - **You own it.** Team ships independently.
+
+---
+
+## What We Built
+
+Most teams lose context between conversations. Copy-paste prompts into ChatGPT. Start over.
+
+We did something different:
+
+- **One system where 40+ agents work together** (not isolated prompts)
+- **Context preserved across all stages** (Stage 5 knows Stage 2's decisions)
+- **Every team member, every campaign, zero context switching** (structure once, reuse infinitely)
+- **Same architecture works for marketing, HR, legal, finance** (not a marketing-only tool)
+
+That's the difference.
 
 ---
 
@@ -125,21 +153,15 @@ All ready to publish. No formatting needed.
 
 ## FAQ
 
-**Q: Why not just use ChatGPT?**
+**Quick answers to hiring/adoption questions:**
 
-A: You lose context between conversations. Each stage would be a separate chat. This system preserves context across all 6 stages, so Stage 5 knows what Stage 2 decided.
+- Will our team actually use this?
+- Is this just a marketing tool?
+- What if we already have processes?
+- How is this different from hiring an agency?
+- Can we customize it?
 
----
-
-**Q: Why not hire an agency?**
-
-A: 3-5 days per campaign vs. 1-2 hours with this system. Plus your team owns the process and can iterate independently without waiting.
-
----
-
-**Q: Why not build custom tools?**
-
-A: Months of development work. This system works today with tools you already have (Claude Code + VS Code).
+**See:** [docs/faq.md](docs/faq.md) for full answers.
 
 ---
 
