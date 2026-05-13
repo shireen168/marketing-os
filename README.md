@@ -1,55 +1,68 @@
 # Marketing OS: AI-Powered Marketing Operations System
 
-Complete end-to-end marketing workflow. One person sets it up in 15 minutes. Your team generates multi-platform campaigns in 30 minutes each. No agencies, no waiting, no custom infrastructure.
+## The Gap
+
+- **Most teams:** Know ChatGPT/Claude.com
+- **Few teams:** Know Claude Code exists
+- **You need:** Context-preserving workflows (Stage 1 → Stage 2 → Stage 3, not 6 separate chats)
+
+## The Promise
+
+- **Setup:** 15 minutes
+- **First campaign:** 1-2 hours (focused work)
+- **Subsequent campaigns:** 30-45 minutes (with templates)
+- **Agency baseline:** 3-5 days
+- **You own it.** Team ships independently.
 
 ---
 
-## What This Demonstrates
+## The 6-Stage Workflow
 
-**Architectural Capability:** Orchestrated 6-stage workflow using existing tools (gstack, Claude API, VS Code). Runs locally, no servers or custom infrastructure to maintain.
+Repeat this for every campaign:
 
-**Marketing Strategy Expertise:** Research, positioning, messaging hierarchy, brand voice, multi-platform content adaptation, ROI projections using industry benchmarks.
+| Stage | Time | Input | Output | Unlocks |
+|-------|------|-------|--------|---------|
+| **1. Brief** | 5m | Product, audience, goals | 500-word brief + audience persona | Everyone knows who you're talking to |
+| **2. Brand Voice + Guidelines** | 5m | Brief from Stage 1 | Tone, persona, voice rules | Consistency across platforms ($5k agency work) |
+| **3. Research** | 10m | Brief | TAM/SAM/SOM, competitors, trends | Strategy grounded in data, not guesses |
+| **4. Strategy** | 5m | Brief + Research + Voice | Positioning, messaging hierarchy, channel matrix | Everyone rows in the same direction |
+| **5. Content** | 10m | Strategy + Voice | 6 platform-specific drafts (Facebook, Instagram, TikTok, LinkedIn, X, Threads) | Ready to publish (no reformatting) |
+| **6. Reports** | 5m | All above | Reach, engagement, conversion, ROI forecasts | Board-level proof before you ship |
 
-**Technical Judgment:** I chose gstack instead of building custom APIs. VS Code instead of command line. Artifacts instead of databases. This prioritizes adoption by non-technical teams over architectural purity.
-
-**Proven Scalability:** Works for 1 solo marketer or 100-person orgs. Setup once, reused indefinitely.
-
----
-
-## System Architecture
-
-```
-SETUP (one-time, 15 minutes)
-├─ Install Claude CLI
-├─ Install gstack globally
-├─ Install Claude Code extension in VS Code
-└─ Clone marketing-os repo
-
-WORKFLOW (recurring, 30 minutes per campaign)
-├─ Stage 1: Brief → /brainstorm structured brief
-├─ Stage 2: Brand Voice → /brainstorm persona + tone
-├─ Stage 3: Research → /investigate market sizing + competitors
-├─ Stage 4: Strategy → /plan-ceo-review positioning + channels
-├─ Stage 5: Content → Native prompt → 6 platform drafts
-└─ Stage 6: Reports → Native prompt → campaign metrics
-
-OUTPUT: Copy-paste ready artifacts (briefs, positioning, content, metrics)
-All render in VS Code, downloadable for docs/slides/email
-```
+**Total: 40 minutes of Claude work + your thinking time (1-2 hours first campaign).**
 
 ---
 
-## Real Results
+## Proof
 
-"This cut our content creation time in half. 2 hours of work is now 30 minutes." — Growth-stage marketing manager
+**Financial Services** — [Full worked example →](docs/complete-example.md)
 
-"Everything runs in VS Code. That alone made it feel legitimate." — Head of content marketing
+- Brief setup: 5 min
+- Research + strategy: 20 min
+- 6 platform content drafts: 10 min
+- ROI report: 5 min
+- **Total: 40 minutes for a campaign that agencies take 5-7 days on**
 
 ---
 
-## Complete Example
+## Why This Works
 
-See [docs/complete-example.md](docs/complete-example.md): Accounting OS (SaaS) walkthrough. All 6 stages with real inputs and outputs. Time: 75 minutes (or 30 expedited).
+**Claude Code + gstack:**
+  - Stage-to-stage context preservation (not disconnected chats)
+  - One workflow, not 6 separate prompts
+  - Expandable to Finance, Legal, Product (tomorrow)
+
+**Cowork gateway:**
+  - ChatGPT-like interface for non-technical teams
+  - Graduate to `/slash commands` when ready
+  - No terminal scares. VS Code extension = GUI.
+
+**No infrastructure:**
+  - Clone repo, run setup, done
+  - Runs on your laptop
+  - Works offline
+
+For deeper context, see [docs/design-philosophy.md](docs/design-philosophy.md).
 
 ---
 
@@ -60,60 +73,59 @@ git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 ```
 
-Follow [docs/setup.md](docs/setup.md) for 15-minute installation. Then see [docs/workflow.md](docs/workflow.md) for how to run campaigns.
-
----
-
-## What You Get
-
-Each campaign produces:
-- **Brief:** Structured 500-word brief (audience, benefits, channels, metrics)
-- **Brand Voice:** Persona definition, tone guidelines, sample phrases
-- **Research:** TAM/SAM/SOM, competitor analysis, market trends
-- **Strategy:** Positioning statement, messaging hierarchy, channel matrix
-- **Content:** 6 platform-specific drafts (Facebook, Instagram, TikTok, LinkedIn, X, Threads)
-- **Reports:** Projected reach, engagement, conversions, ROI
-
-All production-ready. No formatting needed.
-
----
-
-## Documentation
-
-- **[docs/setup.md](docs/setup.md)** — Installation walkthrough (15 minutes)
-- **[docs/workflow.md](docs/workflow.md)** — How to run each stage (30 minutes per campaign)
-- **[docs/claude.md](docs/claude.md)** — System prompt and available skills
-- **[docs/complete-example.md](docs/complete-example.md)** — Worked example: Accounting OS
-
----
-
-## Why This Works
-
-**gstack over custom APIs:** Marketing teams know slash commands from Slack. Zero training, immediate adoption.
-
-**VS Code over CLI:** Non-technical teams can't use bash. Everyone knows VS Code. They click buttons, not type commands.
-
-**Artifacts over databases:** Teams work in Google Docs, Slack, email. Artifacts download directly. No file system complexity.
-
-**No infrastructure:** Clone repo, run setup once, done. Runs locally on one laptop. No servers, no DevOps.
+1. **[docs/setup.md](docs/setup.md)** — Installation (15 minutes)
+2. **[docs/workflow.md](docs/workflow.md)** — How to run each stage
+3. **[docs/complete-example.md](docs/complete-example.md)** — Financial Services walkthrough (all 6 stages)
 
 ---
 
 ## If You Hire Me
 
-**Day 1:** Install (15 min). Works.
+**Day 1:** Setup + first campaign end-to-end. You own it.
 
-**Day 2:** First campaign (30 min). You get brief, research, positioning, 6-platform content drafts. Shipping.
+**Week 1:** 3-5 campaigns solo. No hand-holding.
 
-**Week 1:** 5 campaigns complete. Team operates independently. No waiting for me or agencies.
+**Month 1:** 40+ hours saved vs. agencies. You ship campaigns agencies would reject (too niche, too fast, too many iterations).
 
-**Ongoing:** 2-3 days of work compressed to 30 minutes per campaign. 40% reduction in agency spend. Team owns the process.
+**Ongoing:** I help you expand (add Finance/Legal skills), connect to your tools (CRM, analytics), train your team to think in workflows.
+
+**What I expect:** Use Claude Code (not just ChatGPT). Think in workflows. Ship fast.
+
+For more on what this demonstrates, see [HIRING.md](HIRING.md).
+
+---
+
+## What You Get (Per Campaign)
+
+Production-ready:
+- Structured brief with audience + channels
+- Brand voice + guidelines (tone, persona, rules)
+- Market research (TAM/SAM/SOM, competitors)
+- Positioning statement + messaging hierarchy
+- 6 platform-specific content drafts
+- ROI projections
+
+All ready to publish. No formatting needed.
 
 ---
 
 ## Phase 2 (Deferred)
 
-Real publishing to Facebook, Instagram, TikTok, LinkedIn, X. Live analytics. Campaign calendar. Web UI. Why defer? Core value is the 6-stage workflow. Publishing is secondary until teams confirm they want it.
+Real publishing to social platforms. Live analytics. Campaign calendar.
+
+Why defer? Prove Phase 1 workflow first. Better to ship fast + iterate than over-build.
+
+---
+
+## FAQ
+
+**Why not just use ChatGPT?** — You lose context between conversations. Each stage would be a separate chat.
+
+**Why not hire an agency?** — 3-5 days per campaign vs. 1-2 hours. Plus you own the process.
+
+**Why not build custom tools?** — Months of work. This works today.
+
+See [docs/faq.md](docs/faq.md) for more.
 
 ---
 
