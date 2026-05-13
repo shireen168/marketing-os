@@ -3,7 +3,7 @@
 **Quick Navigation:**
 1. [The Gap](#the-gap)
 2. [The Promise](#the-promise)
-3. [Brand Building & Consistency](#brand-building--consistency-stage-2)
+3. [Brand Building & Consistency](#brand-building--consistency)
 4. [What We Built](#what-we-built)
 5. [The 6-Stage Workflow](#the-6-stage-workflow)
 6. [How It Works](#how-it-works-workflow-as-context)
@@ -40,13 +40,13 @@
 
 ---
 
-## Brand Building & Consistency (Stage 2)
+## Brand Building & Consistency
 
 Most agencies charge $5K for brand guidelines and voice work. This is where brand consistency lives.
 
 In this system:
-- **Stage 2 (5 minutes):** Define brand persona, tone, messaging pillars, sample phrases
-- **Reusable forever:** Stage 4 (Strategy) and Stage 5 (Content) inherit your voice automatically
+- **Define brand (5 minutes):** Persona, tone, messaging pillars, sample phrases
+- **Reusable forever:** Strategy and content inherit your voice automatically
 - **Consistency guaranteed:** All 6 platforms sound like the same brand
 - **In-house:** You control evolution. No external agency gatekeeping brand decisions.
 - **Teachable:** Every team member learns your brand logic. New hires onboard to a documented system, not tribal knowledge.
