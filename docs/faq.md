@@ -2,7 +2,14 @@
 
 ## Will our team actually use this?
 
-Yes, because it meets teams where they are. Non-technical teams start with Claude Desktop chat (familiar UI). Technical teams use VS Code with slash commands. Everyone sees context preserved automatically. Adoption compounds: Day 1 you ship a campaign. Week 1 you ship 3-5. Month 1 it's your standard operating procedure.
+- Yes, because it meets teams where they are. 
+- Non-technical teams start with Claude Desktop chat (familiar UI). 
+- Technical teams use VS Code with slash commands. 
+- Everyone sees context preserved automatically. 
+- Adoption compounds: 
+    Day 1 → you ship a campaign. 
+    Week 1 → you ship 3-5. 
+    Month 1 → it's your standard operating procedure.
 
 ---
 
@@ -15,15 +22,15 @@ No. The architecture works for any workflow that involves stages building on pre
 - Legal: Case Brief → Regulatory Research → Risk Analysis → Compliance Strategy
 - Finance: Budget → Forecasting → Scenario Analysis → Board Report
 
-Same 6-stage pattern. Same context preservation. Different domain. We've built templates for marketing first, but the system is domain-agnostic.
+Same 6-stage pattern. Same context preservation. Different domain. I built templates for marketing first, but the system is domain-agnostic.
 
 ---
 
 ## What if we already have processes?
 
-You keep them. This system doesn't replace your workflow, it structures it so nothing falls through the cracks.
+No issue, keep them. This system doesn't replace the current workflow, it's structured so nothing falls through the cracks.
 
-If you already brief products, research markets, and write strategy, this system makes that work 5-10x faster by:
+If the team already brief products, research markets, and write strategy, this system makes that work 5-10x faster by:
 - Automating context switching between stages
 - Making decisions visible (every stage documents its choices)
 - Enabling team members to pick up campaigns mid-stream (full context preserved)
@@ -34,9 +41,17 @@ If you already brief products, research markets, and write strategy, this system
 
 Three differences:
 
-1. **Speed:** Agencies take 3-5 days. This system: 40 minutes. You control the timeline.
-2. **Cost:** Agency: $3-5K per campaign. This system: setup once, run 100 campaigns. Cost per campaign approaches zero.
-3. **Learning:** Agencies deliver outputs. This system teaches your team how to think in workflows. After 3 campaigns, your team becomes expert in structuring work.
+1. **Speed:** 
+    → Agencies take 3-5 days. 
+    → This system: 40 minutes. You control the timeline.
+
+2. **Cost:** 
+    → Agency: $3-5K per campaign. 
+    → This system: setup once, run 100 campaigns. Cost per campaign approaches zero.
+
+3. **Learning:** 
+    → Agencies deliver outputs. 
+    → This system teaches your team how to think in workflows. After 3 campaigns, your team becomes expert in structuring work.
 
 ---
 
@@ -50,7 +65,7 @@ Examples:
 - Integrate with your CRM to auto-populate brief data
 - Connect to your Slack for notifications
 
-Or email us. We've adapted this to 5+ custom workflows already.
+I can built for the team anytime.
 
 ---
 
@@ -68,35 +83,22 @@ That's it.
 
 ## What's the learning curve?
 
-Day 1: Clone repo, run setup, watch onboarding. By end of day, you ship your first campaign.
+- Day 1: 
+    → Clone repo, run setup, watch onboarding. 
+    → By end of day, you ship your first campaign.
 
-Week 1: Your team runs 3-5 campaigns independently. Workflow becomes second nature.
+- Week 1: 
+    → Your team runs 3-5 campaigns independently. 
+    → Workflow becomes second nature.
 
-Month 1: Your team is faster than agencies, and they own the process.
+- Month 1: 
+    → Your team is faster than agencies, and they own the process.
 
 The system teaches as you use it. Each campaign reinforces the workflow.
 
 ---
 
-## Can we use this offline?
-
-Yes. Everything runs locally on your laptop. No cloud dependency (except calling Claude API for inference).
-
----
-
-## What happens in Phase 2?
-
-Phase 2 adds:
-- Real publishing to social platforms (Facebook, Instagram, TikTok, LinkedIn, X, Threads)
-- Live analytics dashboard
-- Campaign calendar
-- Scheduling automation
-
-But we're not building Phase 2 until Phase 1 proves itself with real teams. Better to ship fast, iterate based on feedback, than over-build.
-
----
-
-## Why not just use ChatGPT's API directly?
+## Why not just use ChatGPT/Gemini/Deepseek/other LLMs directly?
 
 You could. You'd rebuild:
 - Context management (tracking what each stage decided)
@@ -111,12 +113,17 @@ That's 2-3 months of engineering. We've done it. You don't have to.
 
 ## Is this open source?
 
-Yes. MIT license. You can fork, modify, extend, redistribute. Build on it.
+Yes. MIT license. Free to fork, modify, extend, redistribute. Build on it.
 
 ---
 
 ## Who built this?
 
-A team that shipped 50+ marketing campaigns in 6 months using Claude Code + manual workflows. We saw the pattern: same 6 stages, every time. Same context lost between conversations. Built automation to preserve that context. Works.
+→ A team that shipped 50+ marketing campaigns in 6 months using Claude Code + manual workflows. 
+→ We saw the pattern: same 6 stages, every time. 
+→ Same context lost between conversations. Built automation to preserve that context. Works.
 
-Now we're hiring engineers who think this way: workflow-first, context-preserving, scalable-from-day-one.
+**This is a powerful system:** 
+    → Workflow-first
+    → Context-preserving
+    → Scalable-from-day-one
