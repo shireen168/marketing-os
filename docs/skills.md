@@ -4,33 +4,34 @@ Marketing OS gives you access to 40+ specialized agents built into Claude Code, 
 
 ---
 
-## gstack Workflow Agents (23 agents)
+## gstack Workflow Agents (22 agents)
 
-| Agent | Category | Purpose |
-|-------|----------|---------|
-| `/office-hours` | Planning | Product validation with forcing questions before commitment |
-| `/plan-ceo-review` | Planning | Strategic scope decisions (expansion, hold, reduction modes) |
-| `/plan-eng-review` | Planning | Architecture review, data flow, edge cases, test coverage |
-| `/plan-design-review` | Planning | Design system auditing with 0-10 structural ratings |
-| `/plan-devex-review` | Planning | Developer experience audit with friction point analysis |
-| `/design-consultation` | Design | Complete design system creation from research to mockups |
-| `/design-shotgun` | Design | Generate 4-6 visual mockup variants with taste learning |
-| `/design-html` | Design | Convert mockups to production-ready HTML with dynamic layouts |
-| `/design-review` | Design | Live design audit with automatic fixes and atomic commits |
-| `/review` | Code | Production bug detection with auto-fixes for obvious issues |
-| `/investigate` | Code | Systematic root-cause debugging methodology |
-| `/devex-review` | Code | Live developer onboarding audit with timing metrics |
-| `/qa` | Testing | Browser-based testing with bug fixes and regression detection |
-| `/qa-only` | Testing | Bug reporting without code changes |
-| `/ship` | Deployment | Test running, coverage audit, and PR opening |
-| `/land-and-deploy` | Deployment | PR merging, CI wait, production deploy, health verification |
-| `/canary` | Monitoring | Post-deploy monitoring for errors and performance regressions |
-| `/benchmark` | Performance | Performance baseline comparison before/after changes |
-| `/document-release` | Documentation | Automatic documentation updates matching shipped code |
-| `/retro` | Collaboration | Weekly retrospective with per-person breakdown and streaks |
-| `/pair-agent` | Collaboration | Cross-agent browser coordination with security scoping |
-| `/cso` | Security | Security auditing: OWASP Top 10 + STRIDE threat modeling |
-| `/browse` | Tools | Real Chromium browser control with screenshots and interaction |
+Source: [garrytan/gstack](https://github.com/garrytan/gstack)
+
+| Skill | Your Specialist | What They Do |
+|-------|-----------------|--------------|
+| `/office-hours` | YC Office Hours | Start here. Six forcing questions that reframe your product before you write code. |
+| `/plan-ceo-review` | CEO / Founder | Rethink the problem and find hidden product opportunities. Four modes: Expansion, Selective Expansion, Hold Scope, Reduction. |
+| `/plan-eng-review` | Eng Manager | Lock in architecture, data flow, diagrams, edge cases, and tests. |
+| `/plan-design-review` | Senior Designer | Rates design dimensions 0-10, explains what excellence looks like, edits plans accordingly. |
+| `/plan-devex-review` | Developer Experience Lead | Interactive DX review exploring personas, benchmarks, friction points. Three modes: DX EXPANSION, DX POLISH, DX TRIAGE. |
+| `/design-consultation` | Design Partner | Build complete design systems from scratch with landscape research and mockups. |
+| `/review` | Staff Engineer | Find production bugs that pass CI, auto-fix obvious ones, flag gaps. |
+| `/investigate` | Debugger | Systematic root-cause analysis with hypothesis testing and data flow tracing. |
+| `/design-review` | Designer Who Codes | Same audit as planning stage, then implements fixes with atomic commits. |
+| `/devex-review` | DX Tester | Live developer experience testing: navigates docs, times setup, screenshots errors. |
+| `/design-shotgun` | Design Explorer | Generates 4-6 mockup variants, opens comparison board, learns your taste preferences. |
+| `/design-html` | Design Engineer | Converts mockups into production HTML with dynamic layouts and framework detection. |
+| `/qa` | QA Lead | Test apps, find bugs, fix with atomic commits, generate regression tests. |
+| `/qa-only` | QA Reporter | Reports bugs without code changes. |
+| `/cso` | Chief Security Officer | OWASP Top 10 + STRIDE threat model. Zero-noise: 17 false positive exclusions. |
+| `/ship` | Release Engineer | Sync main, run tests, audit coverage, push, open PR. |
+| `/land-and-deploy` | Release Engineer | Merge PR, wait for CI, deploy, verify production health. |
+| `/canary` | SRE | Post-deploy monitoring for console errors and performance regressions. |
+| `/benchmark` | Performance Engineer | Baseline page load times and Core Web Vitals before/after comparisons. |
+| `/document-release` | Technical Writer | Update project documentation to match shipped changes. |
+| `/retro` | Eng Manager | Weekly retrospective with per-person breakdowns and shipping trends. |
+| `/browse` | QA Engineer | Real Chromium browser access with clicks and screenshots (~100ms per command). |
 
 ---
 
@@ -114,10 +115,10 @@ Use `/mcp-builder` or `/skill-creator` to build new agents that plug into the sy
 
 ## Total Agent Count
 
-- gstack workflow agents: 23
+- gstack workflow agents: 22
 - Anthropic native skills: 17
 - Marketing OS custom agents: 5
-- **Total built-in: 45 agents**
+- **Total built-in: 44 agents**
 
 Plus unlimited custom agents you build yourself.
 
