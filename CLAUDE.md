@@ -1,0 +1,183 @@
+# Claude Settings for Marketing OS
+
+System prompt and configuration for marketing workflow automation.
+
+## System Prompt
+
+You are Claude, helping marketing teams run end-to-end campaign workflows using the gstack ecosystem.
+
+Your role:
+1. Help teams structure product ideas into comprehensive marketing briefs
+2. Define brand voice, messaging pillars, and tone guidelines
+3. Research markets, competitors, and trends
+4. Build positioning and channel strategies
+5. Generate multi-platform content (copy-paste ready)
+6. Project campaign performance with industry benchmarks
+
+You have access to gstack skills for structured thinking and Claude's native capabilities for generation.
+
+## Available gstack Skills
+
+When the user's request matches a skill, invoke it:
+
+- **`/brainstorm`** — Brainstorm marketing briefs and brand voice definitions. Use for structuring product ideas into marketing strategy.
+- **`/investigate`** — Research markets, competitors, trends. Use for Stage 3 (Research).
+- **`/plan-ceo-review`** — Create positioning and strategy documents. Use for Stage 4 (Strategy).
+- **`/office-hours`** — Validate product ideas and market positioning. Use for feedback loops.
+
+For content generation (Stages 5-6), use native Claude prompts (no slash commands needed).
+
+## Workflow Stages (Copy-Paste Prompts)
+
+### Stage 1: Brief
+**Command:** `/brainstorm`
+
+**Prompt template:**
+```
+Create a marketing brief for [PRODUCT].
+
+Include: product description, target audience, key benefits, 
+primary channels, success metrics.
+```
+
+**Example:** 
+```
+Create a marketing brief for Accounting OS, a SaaS tool that 
+automates bookkeeping for small businesses. The tool integrates 
+with bank accounts and generates financial reports automatically.
+
+Include: product description, target audience, key benefits, 
+primary channels, success metrics.
+```
+
+**Output:** Structured brief artifact (copy/paste directly)
+
+### Stage 2: Brand Voice
+**Command:** `/brainstorm`
+
+**Prompt template:**
+```
+Define brand voice for [PRODUCT].
+
+Provide: target persona, tone of voice, key messaging pillars, 
+sample phrases that sound like our brand.
+```
+
+**Example:**
+```
+Define brand voice for Accounting OS. Our target is busy small 
+business owners who find accounting overwhelming.
+
+Provide: target persona, tone of voice, key messaging pillars, 
+sample phrases that sound like our brand.
+```
+
+**Output:** Brand guidelines artifact with persona, tone, pillars, sample phrases
+
+### Stage 3: Research
+**Command:** `/investigate`
+
+**Prompt template:**
+```
+Research the [MARKET] for [PRODUCT].
+
+Provide: PESTLE analysis summary, TAM/SAM/SOM, top 3 competitors, 
+market trends, customer pain points.
+```
+
+**Example:**
+```
+Research the small business accounting software market for 
+Accounting OS.
+
+Provide: PESTLE analysis summary, TAM/SAM/SOM, top 3 competitors, 
+market trends, customer pain points.
+```
+
+**Output:** Market research artifact with sizing, competitors, trends, pains
+
+### Stage 4: Strategy
+**Command:** `/plan-ceo-review`
+
+**Prompt template:**
+```
+Create marketing strategy for [PRODUCT] using this research 
+and brand voice.
+
+Provide: positioning statement, messaging hierarchy, 
+recommended channels with rationale, go-to-market timeline.
+```
+
+**Example:**
+```
+Create marketing strategy for Accounting OS using the research 
+and brand voice above.
+
+Provide: positioning statement, messaging hierarchy, 
+recommended channels with rationale, go-to-market timeline.
+```
+
+**Output:** Strategy artifact with positioning, messaging hierarchy, channels, GTM timeline
+
+### Stage 5: Content
+**Command:** Native Claude prompt (no slash command)
+
+**Prompt template:**
+```
+Using the brief, brand voice, and strategy above, create 
+content drafts for these platforms:
+
+- Facebook (200 char post)
+- Instagram (caption + hashtags)
+- TikTok (short script)
+- LinkedIn (professional post)
+- Twitter/X (thread, 3 tweets)
+- Threads (casual post)
+
+Make each sound like our brand voice.
+```
+
+**Output:** 6 artifact files, one per platform (all copy-paste ready)
+
+### Stage 6: Reports
+**Command:** Native Claude prompt (no slash command)
+
+**Prompt template:**
+```
+Create a sample campaign report for [PRODUCT] showing: 
+projected reach per platform, estimated engagement rates, 
+projected conversions, ROI estimate. Use industry benchmarks.
+```
+
+**Output:** Campaign metrics artifact with platform performance, conversions, revenue projection
+
+## Full Workflow Example
+
+See [examples/complete-example.md](examples/complete-example.md) for a complete walkthrough from Brief to Reports using Accounting OS as the example product.
+
+## Setup Instructions
+
+Follow [SETUP.md](SETUP.md) to install:
+1. Claude CLI
+2. gstack (globally)
+3. Claude Code extension in VS Code
+4. Clone this repo
+
+Then run [WORKFLOW.md](WORKFLOW.md) for step-by-step instructions on each stage.
+
+## Tips
+
+- **Each stage is independent:** Create a brief once, use for multiple strategies
+- **Copy outputs directly:** All artifacts are formatted for immediate use
+- **Iterate:** Don't like an output? Run the stage again with adjusted prompt
+- **Download:** Each artifact has a download button. Use files directly in docs, slides, email
+- **Team workflow:** One person runs setup once. Team runs stages repeatedly via VS Code IDE
+
+## What's Next
+
+Phase 2 will add:
+- Real social media publishing (Facebook, Instagram, TikTok, LinkedIn, Twitter/X)
+- Analytics dashboard showing live campaign performance
+- Campaign calendar and scheduling automation
+- Consulting-grade market research reports (50+ pages with PESTLE, Porter's, SWOT, TAM/SAM/SOM)
+- Web UI alongside IDE option
