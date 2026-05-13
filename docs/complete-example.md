@@ -1,8 +1,10 @@
-# Complete Example: SaaS Accounting Tool
+# Complete Example: Financial Services Campaign
 
-Walk through all 6 stages of the Marketing OS system with a real example.
+This example shows how the Marketing OS workflow works. Built with Claude Code + gstack, this same system adapts to **any industry**: HR recruiting, legal briefs, sales campaigns, product launches, internal communications.
 
 **Product:** Accounting OS — SaaS tool that simplifies bookkeeping for small businesses
+
+**Key insight:** Notice how each stage inherits context from the previous one. Stage 5 (Content) uses Brand Voice from Stage 2 and Strategy from Stage 4. Nothing is disconnected. That's what makes 40 minutes possible instead of 5-7 days.
 
 ---
 

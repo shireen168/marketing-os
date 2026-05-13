@@ -33,24 +33,51 @@ Repeat this for every campaign:
 
 ---
 
-## Proof
+## Proof: Works Across Industries
 
-**Financial Services** — [Full worked example →](docs/complete-example.md)
+This system (Claude Code + gstack) works for **any industry**. Same workflow, different domain.
 
+**Example: Financial Services** — [Full worked example →](docs/complete-example.md)
+
+Built with Claude + gstack, this workflow is easily adapted to:
+- HR recruiting campaigns
+- Legal/compliance briefs
+- Sales outreach sequences
+- Product launches
+- Internal communications
+
+Timeline for Financial Services campaign:
 - Brief setup: 5 min
 - Research + strategy: 20 min
 - 6 platform content drafts: 10 min
 - ROI report: 5 min
-- **Total: 40 minutes for a campaign that agencies take 5-7 days on**
+- **Total: 40 minutes** (vs. 5-7 days with agencies)
+
+---
+
+## How It Works: Workflow-as-Context
+
+Like Garry Tan's gstack model, each stage's output feeds into the next. Nothing falls through the cracks because every step knows what came before it.
+
+| Stage | Command | Input From | Output Goes To | Result |
+|-------|---------|-----------|----------------|--------|
+| 1. Brief | `/brainstorm` | Product + goals | Stage 2, 3, 4 | Aligned team |
+| 2. Brand Voice | `/brainstorm` | Brief (Stage 1) | Stage 4, 5 | Consistent voice |
+| 3. Research | `/investigate` | Brief (Stage 1) | Stage 4 | Data-driven strategy |
+| 4. Strategy | `/plan-ceo-review` | All above | Stage 5 | Clear direction |
+| 5. Content | Native prompt | Strategy + Voice | Stage 6, publishing | Ready copy |
+| 6. Reports | Native prompt | All stages | Board, investors | Proof of impact |
+
+**Key:** Each stage inherits context from all previous stages. Your thinking compounds.
 
 ---
 
 ## Why This Works
 
 **Claude Code + gstack:**
-  - Stage-to-stage context preservation (not disconnected chats)
-  - One workflow, not 6 separate prompts
-  - Expandable to Finance, Legal, Product (tomorrow)
+  - Each stage's output becomes the next stage's input
+  - One workflow, not 6 separate chats losing context
+  - Expandable to **any department in your company** (Marketing today → Finance, Legal, Sales, HR tomorrow)
 
 **Cowork gateway:**
   - ChatGPT-like interface for non-technical teams
@@ -61,8 +88,6 @@ Repeat this for every campaign:
   - Clone repo, run setup, done
   - Runs on your laptop
   - Works offline
-
-For deeper context, see [docs/design-philosophy.md](docs/design-philosophy.md).
 
 ---
 
@@ -79,19 +104,24 @@ cd marketing-os
 
 ---
 
-## If You Hire Me
+## How This System Supports Your Team
 
-**Day 1:** Setup + first campaign end-to-end. You own it.
+**Day 1:** Setup complete. Your team runs first campaign end-to-end independently.
 
-**Week 1:** 3-5 campaigns solo. No hand-holding.
+**Week 1:** 3-5 campaigns shipped. Team operates solo with full system ownership.
 
-**Month 1:** 40+ hours saved vs. agencies. You ship campaigns agencies would reject (too niche, too fast, too many iterations).
+**Month 1:** 40+ hours saved vs. agencies. Your team ships campaigns traditional approaches would defer (too niche, too fast-moving, too many iterations).
 
-**Ongoing:** I help you expand (add Finance/Legal skills), connect to your tools (CRM, analytics), train your team to think in workflows.
+**Ongoing:** This system can expand to:
+  - Finance teams (budgeting, forecasting workflows)
+  - Legal teams (compliance briefs, document workflows)
+  - Sales teams (outreach sequences, proposal workflows)
+  - HR teams (recruiting campaigns, onboarding workflows)
+  - Product teams (launch workflows, feature communication)
 
-**What I expect:** Use Claude Code (not just ChatGPT). Think in workflows. Ship fast.
+**For best results:** Embrace Claude Code capabilities (beyond ChatGPT). Structure work in workflows. Iterate quickly.
 
-For more on what this demonstrates, see [HIRING.md](HIRING.md).
+For technical details and team readiness guidelines, see [HIRING.md](HIRING.md).
 
 ---
 
@@ -119,11 +149,23 @@ Why defer? Prove Phase 1 workflow first. Better to ship fast + iterate than over
 
 ## FAQ
 
-**Why not just use ChatGPT?** — You lose context between conversations. Each stage would be a separate chat.
+**Q: Why not just use ChatGPT?**
 
-**Why not hire an agency?** — 3-5 days per campaign vs. 1-2 hours. Plus you own the process.
+A: You lose context between conversations. Each stage would be a separate chat. This system preserves context across all 6 stages, so Stage 5 knows what Stage 2 decided.
 
-**Why not build custom tools?** — Months of work. This works today.
+---
+
+**Q: Why not hire an agency?**
+
+A: 3-5 days per campaign vs. 1-2 hours with this system. Plus your team owns the process and can iterate independently without waiting.
+
+---
+
+**Q: Why not build custom tools?**
+
+A: Months of development work. This system works today with tools you already have (Claude Code + VS Code).
+
+---
 
 See [docs/faq.md](docs/faq.md) for more.
 

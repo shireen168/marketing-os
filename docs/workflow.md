@@ -1,6 +1,8 @@
 # Workflow Guide: Running Your First Campaign
 
-Complete end-to-end marketing campaign in 30 minutes using gstack + Claude.
+Complete end-to-end campaign in 40-90 minutes using Claude Code + gstack.
+
+**This pattern works for:** Marketing, HR recruiting, legal briefs, sales campaigns, product launches, internal communications. Same workflow, different domain.
 
 **Setup first:** Follow [SETUP.md](SETUP.md) before starting.
 
@@ -12,7 +14,9 @@ Complete end-to-end marketing campaign in 30 minutes using gstack + Claude.
 Brief → Brand Voice → Research → Strategy → Content → Reports
 ```
 
-Each stage is independent. You can pause, resume, or skip stages.
+**Key:** Each stage's output feeds into the next stage. Your thinking compounds. Nothing disconnected, nothing lost.
+
+You can pause/resume between stages, but you'll keep the full context from all previous stages.
 
 ---
 
@@ -29,7 +33,7 @@ Include: product description, target audience, key benefits,
 primary channels, success metrics."
 ```
 
-**You'll get:** Structured brief as artifact (copy to file or download)
+**Output:** Structured brief artifact (copy to file or download)
 
 **Example input:** "SaaS tool that automates social media posting for small businesses"
 
