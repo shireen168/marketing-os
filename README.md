@@ -6,7 +6,7 @@
 
 ## What This Demonstrates
 
-As a hiring manager evaluates this project, you'll see:
+As you evaluate this project, you'll see:
 
 1. **Architectural Capability**
    - Orchestrated 6-stage workflow using existing tools (gstack ecosystem, Claude API, VS Code IDE)
