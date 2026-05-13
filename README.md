@@ -3,29 +3,55 @@
 **Quick Navigation:**
 1. [The Gap](#the-gap)
 2. [The Promise](#the-promise)
-3. [What We Built](#what-we-built)
-4. [The 6-Stage Workflow](#the-6-stage-workflow)
-5. [How It Works](#how-it-works-workflow-as-context)
-6. [Why This Works](#why-this-works-context-preservation)
-7. [Get Started](#get-started)
-8. [Day 1 to Month 1](#day-1-to-month-1-what-ships)
-9. [FAQ](#faq)
+3. [Brand Building & Consistency](#brand-building--consistency-stage-2)
+4. [What We Built](#what-we-built)
+5. [The 6-Stage Workflow](#the-6-stage-workflow)
+6. [How It Works](#how-it-works-workflow-as-context)
+7. [Why This Works](#why-this-works-context-preservation)
+8. [Get Started](#get-started)
+9. [Day 1 to Month 1](#day-1-to-month-1-what-ships)
+10. [FAQ](#faq)
 
 ---
 
 ## The Gap
 
-- **Most teams:** Know ChatGPT/Claude.com
-- **Few teams:** Know Claude Code exists
-- **You need:** Context-preserving workflows (Stage 1 → Stage 2 → Stage 3, not 6 separate chats)
+- **Most teams:** Use ChatGPT, Gemini, or DeepSeek as chatbots. Copy-paste prompts. Lose context.
+- **All teams:** Either hire agencies ($3-5K per campaign) or build in-house (2-3 months dev work)
+- **You need:** A system that runs in-house immediately. No agency costs. No development timeline. Your team ships independently.
 
 ## The Promise
 
-- **Setup:** 15 minutes
-- **First campaign:** 1-2 hours (focused work)
-- **Subsequent campaigns:** 30-45 minutes (with templates)
-- **Agency baseline:** 3-5 days
-- **You own it.** Team ships independently.
+**Speed:**
+- Setup: 15 minutes
+- First campaign: 1-2 hours (focused work)
+- Subsequent campaigns: 30-45 minutes (with templates)
+- vs. agencies: 3-5 days per campaign
+
+**In-house & Independent:**
+- Run on your laptop. No infrastructure. No vendors.
+- Team ships independently from Day 1. No waiting for agencies.
+- Full control over brand voice, positioning, messaging.
+
+**Cost Savings:**
+- No agency fees ($3-5K per campaign disappear)
+- No dev cost (2-3 months of engineering eliminated)
+- First campaign pays for itself. Subsequent campaigns: near-zero cost.
+
+---
+
+## Brand Building & Consistency (Stage 2)
+
+Most agencies charge $5K for brand guidelines and voice work. This is where brand consistency lives.
+
+In this system:
+- **Stage 2 (5 minutes):** Define brand persona, tone, messaging pillars, sample phrases
+- **Reusable forever:** Stage 4 (Strategy) and Stage 5 (Content) inherit your voice automatically
+- **Consistency guaranteed:** All 6 platforms sound like the same brand
+- **In-house:** You control evolution. No external agency gatekeeping brand decisions.
+- **Teachable:** Every team member learns your brand logic. New hires onboard to a documented system, not tribal knowledge.
+
+This system turns brand consistency from a one-time agency cost into a living, reusable system.
 
 ---
 
