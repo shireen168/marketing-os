@@ -33,28 +33,6 @@ Repeat this for every campaign:
 
 ---
 
-## Proof: Works Across Industries
-
-This system (Claude Code + gstack) works for **any industry**. Same workflow, different domain.
-
-**Example: Financial Services**: [Full worked example](docs/complete-example.md)
-
-Built with Claude + gstack, this workflow is easily adapted to:
-- HR recruiting campaigns
-- Legal/compliance briefs
-- Sales outreach sequences
-- Product launches
-- Internal communications
-
-Timeline for Financial Services campaign:
-- Brief setup: 5 min
-- Research + strategy: 20 min
-- 6 platform content drafts: 10 min
-- ROI report: 5 min
-- **Total: 40 minutes** (vs. 5-7 days with agencies)
-
----
-
 ## How It Works: Workflow-as-Context
 
 Each stage's output feeds into the next. Nothing falls through the cracks because every step knows what came before it. Behind the scenes, 20+ specialized agents work at each stage.
@@ -74,53 +52,35 @@ Each stage's output feeds into the next. Nothing falls through the cracks becaus
 
 ---
 
-## Why This Works
+## Why This Works: Context Preservation
 
-**The gap:**
-  - Most teams know ChatGPT
-  - Few know Claude Code exists
-  - Fewer still structure work as workflows
-  - Result: context lost between conversations, repetitive work, decision fatigue
-
-**How this closes it:**
-  - Context preservation across stages
-  - Each slash command builds on previous stage's output
+**The core advantage:**
+  - Context preserved across all 6 stages (not 6 separate chats)
   - Stage 5 (Content) inherits Brand Voice (Stage 2) + Strategy (Stage 4)
-  - Doesn't start from scratch each time
+  - Each slash command builds on previous output
+  - Doesn't require manual context switching
   - That's what makes 40 minutes possible instead of 5-7 days
 
-**Expandable to any department:**
-  - Same workflow-as-context architecture
-  - Different domain, same system
-  - Finance teams: cash flow forecasts, budgeting workflows
-  - Legal teams: compliance briefs, document workflows
-  - Sales teams: outreach sequences, proposal workflows
-
----
-
-## Slash Commands, Not Copy-Paste Prompts
-
-Most teams use AI as a chatbot. Copy-paste prompts into ChatGPT. Lose context between conversations. Start over.
-
-We do something different:
-
-**Why slash commands are special:**
-  - Each `/command` invokes a specialized agent with built-in reasoning
-  - Context flows automatically (Stage 5 knows what Stage 2 decided)
-  - No manual context switching between conversations
+**Slash commands vs copy-paste prompts:**
+  - Most teams: Copy-paste prompts into ChatGPT, lose context, restart
+  - This system: Agents preserve context automatically
+  - Each `/command` invokes specialized agent with built-in reasoning
   - Backend skill set handles complexity you'd normally repeat manually
 
 **The 1% difference:**
   - 99% of teams repeat instructions across conversations
   - We structure work once, reuse infinitely
-  - Same team member can lead any campaign (system carries context)
-  - New team members ship independently on Day 1 (system teaches them)
+  - Same team member leads any campaign (system carries context)
+  - New team members ship independently on Day 1 (system teaches workflow)
 
-**Work anywhere, anytime:**
-  - All 40+ agents available in VS Code (Windows, Mac, Linux)
-  - No infrastructure setup
-  - Clone repo, run setup, ship campaigns
-  - Team stays in sync because all context is preserved in the system
+**Works across any department:**
+  - Same workflow-as-context architecture
+  - Different domain, same system
+  - Finance teams: cash flow forecasts, budgeting workflows
+  - Legal teams: compliance briefs, document workflows
+  - Sales teams: outreach sequences, proposal workflows
+  - HR teams: recruiting campaigns, onboarding workflows
+  - Product teams: launch workflows, feature communication
 
 ---
 
@@ -144,13 +104,6 @@ cd marketing-os
 **Week 1:** 3-5 campaigns shipped. Full system ownership. No external dependencies.
 
 **Month 1:** 40+ hours saved vs. agencies. Campaigns ship that traditional approaches would defer (too niche, too fast-moving, too many iterations).
-
-**Ongoing:** This system can expand to:
-  - Finance teams (budgeting, forecasting workflows)
-  - Legal teams (compliance briefs, document workflows)
-  - Sales teams (outreach sequences, proposal workflows)
-  - HR teams (recruiting campaigns, onboarding workflows)
-  - Product teams (launch workflows, feature communication)
 
 **For best results:** Embrace Claude Code capabilities (beyond ChatGPT). Structure work in workflows. Iterate quickly.
 
