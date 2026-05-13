@@ -91,6 +91,54 @@ Like Garry Tan's gstack model, each stage's output feeds into the next. Nothing 
 
 ---
 
+## The 20+ Agent Ecosystem
+
+This system doesn't limit you to 4 commands. You get 20+ specialized agents built into gstack, ready to use across any workflow:
+
+### Planning & Strategy
+- `/office-hours`: Product validation and forcing questions before commitment
+- `/plan-ceo-review`: Strategic scope decisions (expansion, hold, reduction)
+- `/plan-eng-review`: Architecture review and technical decision-making
+- `/plan-design-review`: Design system auditing with structured feedback
+- `/plan-devex-review`: Developer experience friction assessment
+
+### Design & Frontend
+- `/design-consultation`: Full design system creation from research to mockups
+- `/design-shotgun`: Generate 4-6 design variants and learn visual taste
+- `/design-html`: Convert mockups to production-ready HTML
+- `/design-review`: Live design audit with auto-fixes
+
+### Code & Testing
+- `/review`: Code review with automatic bug fixes
+- `/investigate`: Systematic debugging and root-cause analysis
+- `/qa`: Browser-based testing with regression detection
+- `/qa-only`: Bug reporting without code changes
+- `/devex-review`: Onboarding friction audit with metrics
+
+### Release & Monitoring
+- `/ship`: Test running, coverage audit, PR automation
+- `/land-and-deploy`: Merge, wait for CI, deploy, verify health
+- `/canary`: Post-deploy monitoring for errors and performance
+- `/benchmark`: Performance baseline before/after comparison
+- `/document-release`: Auto-update docs matching shipped code
+
+### Collaboration
+- `/retro`: Weekly team retrospectives with metrics
+- `/pair-agent`: Cross-agent coordination for complex workflows
+- `/cso`: Security auditing (OWASP + STRIDE threat modeling)
+- `/browse`: Real browser control for testing and screenshots
+
+Plus custom Claude Code skills for:
+- Brand guidelines creation
+- Frontend component design
+- Content generation (copy, video scripts, social posts)
+- Market research and competitive analysis
+- And any domain-specific workflow you define
+
+**The math:** 23+ gstack agents + Claude Code extensibility = unlimited specialized workflows. Same system architecture. Different domains.
+
+---
+
 ## Get Started
 
 ```bash
