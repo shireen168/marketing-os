@@ -4,13 +4,15 @@ This example shows how the Marketing OS workflow works. Built with Claude Code +
 
 **Product:** Accounting OS — SaaS tool that simplifies bookkeeping for small businesses
 
-**Key insight:** Notice how each stage inherits context from the previous one. Stage 5 (Content) uses Brand Voice from Stage 2 and Strategy from Stage 4. Nothing is disconnected. That's what makes 40 minutes possible instead of 5-7 days.
+**Key insight:** Each stage uses a gstack slash command (/brainstorm, /investigate, /plan-ceo-review) that builds structured thinking. Stage 5+ uses native Claude for content generation. This combination of structured workflow commands + freestyle generation is what makes context preservation work and 40 minutes possible instead of 5-7 days.
 
 ---
 
 ## Stage 1: Brief
 
-**Prompt:**
+**Command:** `/brainstorm`
+
+**Input:**
 ```
 Create a marketing brief for Accounting OS, a SaaS tool that 
 automates bookkeeping for small businesses. The tool integrates 
@@ -55,7 +57,9 @@ TikTok (younger founders), Twitter/X (founder network)
 
 ## Stage 2: Brand Voice
 
-**Prompt:**
+**Command:** `/brainstorm`
+
+**Input:**
 ```
 Define brand voice for Accounting OS. Our target is busy small 
 business owners who find accounting overwhelming.
@@ -98,7 +102,9 @@ and getting back to work.
 
 ## Stage 3: Research
 
-**Prompt:**
+**Command:** `/investigate`
+
+**Input:**
 ```
 Research the small business accounting software market for 
 Accounting OS.
@@ -145,7 +151,9 @@ market trends, customer pain points.
 
 ## Stage 4: Strategy
 
-**Prompt:**
+**Command:** `/plan-ceo-review`
+
+**Input:**
 ```
 Create marketing strategy for Accounting OS using the research 
 and brand voice above.
@@ -198,7 +206,9 @@ focus on building. Accounting that doesn't feel like accounting."
 
 ## Stage 5: Content
 
-**Prompt:**
+**Context:** Paste Brief (Stage 1), Brand Voice (Stage 2), and Strategy (Stage 4) into Claude panel. Then send native prompt below.
+
+**Prompt (Native Claude):**
 ```
 Using the brief, brand voice, and strategy above, create 
 content drafts for these platforms:
@@ -339,7 +349,9 @@ come at me
 
 ## Stage 6: Reports
 
-**Prompt:**
+**Context:** Paste all previous stage outputs into Claude panel. Then send native prompt below.
+
+**Prompt (Native Claude):**
 ```
 Create a sample campaign report for Accounting OS showing: 
 projected reach per platform, estimated engagement rates, 
@@ -412,14 +424,18 @@ projected conversions, ROI estimate. Use industry benchmarks.
 ## Summary
 
 **From idea to metrics in 6 stages:**
-- Brief: 10 min
-- Brand Voice: 10 min
-- Research: 10 min
-- Strategy: 15 min
-- Content: 20 min
-- Reports: 10 min
+- Brief: 10 min (slash command: /brainstorm)
+- Brand Voice: 10 min (slash command: /brainstorm)
+- Research: 10 min (slash command: /investigate)
+- Strategy: 15 min (slash command: /plan-ceo-review)
+- Content: 20 min (native Claude prompt)
+- Reports: 10 min (native Claude prompt)
 
 **Total: 75 minutes** (or 30 min if you're fast)
+
+### Why This Works
+
+Stages 1-4 use gstack slash commands (/brainstorm, /investigate, /plan-ceo-review) for structured thinking. These skills preserve context automatically from previous stages. Stages 5-6 use native Claude for freestyle content generation, pasting in all prior outputs as context. This hybrid approach gives you structured workflow benefits plus creative generation flexibility.
 
 **Next:** Copy these artifacts. Use them directly. Iterate. Ship.
 

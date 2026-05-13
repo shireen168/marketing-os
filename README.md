@@ -121,8 +121,6 @@ cd marketing-os
 
 **For best results:** Embrace Claude Code capabilities (beyond ChatGPT). Structure work in workflows. Iterate quickly.
 
-For technical details and team readiness guidelines, see [HIRING.md](HIRING.md).
-
 ---
 
 ## What You Get (Per Campaign)

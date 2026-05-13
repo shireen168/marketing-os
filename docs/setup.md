@@ -4,9 +4,27 @@ Get your system ready to run marketing ops workflows in 15 minutes.
 
 ## Prerequisites
 
+### Technical Requirements
 - macOS, Windows, or Linux
 - Administrator access (for global gstack installation)
 - ~500MB disk space
+- Active Claude account (free or paid)
+- Basic terminal/command line familiarity
+
+### Team Readiness
+Before starting, your team should understand:
+
+- **Marketing:** How to brief a product idea (target audience, channels, success metrics)
+- **Non-technical teams:** Comfortable with VS Code UI or Claude Desktop chat interface
+- **Cross-functional:** Willingness to iterate (outputs are drafts, not final publishing-ready copy)
+
+This is not a "set and forget" system. It's a structured thinking tool that requires team input at each stage.
+
+### What You'll Get After Setup
+- Ability to run 6-stage marketing workflows in parallel chat sessions
+- All gstack skills available globally (/brainstorm, /investigate, /plan-ceo-review)
+- Claude Code context preservation across stages
+- Ready to adapt to HR recruiting, legal briefs, sales campaigns, or other departments
 
 ## Step 1: Install Claude CLI
 
