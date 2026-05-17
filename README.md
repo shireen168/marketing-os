@@ -107,6 +107,26 @@ This system breaks campaign execution into 6 sequential stages, each with clear 
 
 ---
 
+## What are Skills?
+
+Skills are the engine that makes this system work. Think of them as recipes: each skill is a markdown file that teaches AI agents how to do specific tasks well.
+
+**How skills enable this system:**
+- **Specialized knowledge**: Each skill contains best practices, frameworks, and decision logic for a specific domain (copywriting, SEO, CRO, sales, etc.)
+- **AI agent guidance**: When a skill is active, the AI agent has context and expertise it wouldn't have otherwise. It knows what questions to ask, what tradeoffs matter, and what outcomes to optimize for.
+- **Consistency without micromanagement**: Skills encode your best practices once, then apply them automatically across all campaigns and team members. No need to repeat instructions.
+- **Cross-skill collaboration**: Skills reference each other intelligently. When copywriting and CRO skills work together, the AI understands how messaging affects conversion rates.
+- **Layered expertise**: Some skills orchestrate workflows (gstack skills). Others provide domain expertise (marketing skills). Together, they create a complete system.
+
+**In this system:**
+- **Layer 1 skills** (gstack) control HOW work flows: brainstorming, planning, review, quality gates
+- **Layer 2 skills** (marketing) provide WHAT to do: copywriting expertise, SEO frameworks, growth tactics, sales strategies
+- **Both layers** work together so you get structured workflows (from gstack) powered by domain knowledge (from marketing skills)
+
+**Why this matters**: Without skills, you're back to copy-paste prompts and lost context. With skills, your AI agents become true partners who understand your domain and enforce your standards automatically.
+
+---
+
 ## Skills Architecture: The Two-Layer Approach
 
 I designed Marketing OS with two distinct layers of AI agents working in concert:
