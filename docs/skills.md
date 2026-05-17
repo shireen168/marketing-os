@@ -1,6 +1,6 @@
 # Available Skills and Agents
 
-Marketing OS gives you access to 40+ specialized agents built into Claude Code, gstack, and Anthropic's skills ecosystem. Use them across any workflow.
+Marketing OS gives you access to 84 specialized agents and skills built into Claude Code, gstack, Anthropic's ecosystem, and custom marketing expertise. Use them across any workflow.
 
 ---
 
@@ -61,7 +61,7 @@ These skills extend Claude Code with native capabilities:
 
 ---
 
-## Marketing OS Custom Agents
+## Marketing OS Custom Agents (5 agents)
 
 | Agent | Purpose |
 |-------|---------|
@@ -70,6 +70,57 @@ These skills extend Claude Code with native capabilities:
 | `strategy` | Positioning, messaging hierarchy, channel selection |
 | `content-gen` | Platform-specific content drafts (6 channels) |
 | `reporting` | Campaign metrics, ROI projections, performance analysis |
+
+---
+
+## Marketing OS Skills (40 skills)
+
+Domain-specific expertise skills for every aspect of modern marketing:
+
+| Skill | Category | Purpose |
+|-------|----------|---------|
+| `ab-testing` | Testing | A/B test design, hypothesis formation, statistical analysis, result interpretation |
+| `ad-creative` | Creative | Ad copy, headlines, visuals, CTA optimization for paid campaigns |
+| `ads` | Paid Advertising | Campaign strategy, audience targeting, budget allocation, performance tracking |
+| `ai-seo` | SEO | AI-powered SEO strategies, content optimization, keyword research, AI indexing |
+| `analytics` | Data & Analytics | Tracking setup, metrics definition, dashboard creation, data-driven decisions |
+| `aso` | Mobile | App Store Optimization, keyword strategy, screenshot design, review management |
+| `churn-prevention` | Retention | Identifying churn signals, win-back campaigns, retention strategies |
+| `co-marketing` | Partnerships | Partner identification, joint campaigns, co-branded content, partnership ROI |
+| `cold-email` | Outreach | Copywriting, personalization, sequencing, deliverability, response optimization |
+| `community-marketing` | Community | Community building, engagement strategies, member retention, exclusive programs |
+| `competitor-profiling` | Research | Competitor analysis, positioning mapping, feature comparison, strategy gaps |
+| `competitors` | Research | Competitive intelligence, market positioning, differentiation strategy |
+| `content-strategy` | Strategy | Content pillars, editorial calendars, topic clusters, distribution planning |
+| `copy-editing` | Writing | Grammar, clarity, tone consistency, readability optimization |
+| `copywriting` | Writing | Persuasive copy, headlines, email body, sales pages, conversion optimization |
+| `cro` | Optimization | Conversion rate optimization, funnel analysis, testing frameworks, lift calculation |
+| `customer-research` | Research | User interviews, surveys, feedback analysis, persona development, pain points |
+| `directory-submissions` | SEO | Directory listings, local citations, NAP consistency, review management |
+| `emails` | Email Marketing | Email strategy, templates, personalization, automation, deliverability |
+| `free-tools` | Growth | Lead magnet creation, tool development, conversion strategy, usage data |
+| `image` | Creative | Image selection, design principles, visual hierarchy, brand consistency |
+| `launch` | Product Launch | Pre-launch strategy, launch timeline, post-launch monitoring, momentum maintenance |
+| `lead-magnets` | Growth | Lead magnet design, landing page optimization, follow-up sequences |
+| `marketing-ideas` | Ideation | Campaign brainstorming, unconventional tactics, guerrilla marketing, novelty |
+| `marketing-psychology` | Strategy | Behavioral psychology, persuasion principles, cognitive biases, decision making |
+| `onboarding` | Retention | User onboarding flows, activation tactics, feature discovery, early value |
+| `paywalls` | Monetization | Paywall design, pricing strategy, conversion optimization, customer lifecycle |
+| `popups` | Conversion | Popup strategy, timing, messaging, exit-intent tactics, GDPR compliance |
+| `pricing` | Pricing Strategy | Price elasticity, positioning, competitor benchmarking, revenue optimization |
+| `product-marketing` | Product Strategy | Positioning, messaging architecture, value proposition, market differentiation |
+| `programmatic-seo` | SEO | Large-scale content creation, template-based SEO, dynamic page generation |
+| `referrals` | Growth | Referral program design, incentive structure, viral mechanics, tracking |
+| `revops` | Sales Operations | Pipeline management, sales metrics, forecasting, deal acceleration |
+| `sales-enablement` | Sales | Sales collateral, competitive battle cards, training materials, deal frameworks |
+| `schema` | Technical SEO | Structured data markup, rich snippets, JSON-LD, schema validation |
+| `seo-audit` | SEO | Technical audit, on-page optimization, link analysis, competitive benchmarking |
+| `signup` | Conversion | Signup page optimization, friction reduction, social proof, conversion testing |
+| `site-architecture` | SEO | Information architecture, URL structure, internal linking, crawlability |
+| `social` | Social Media | Platform strategy, content calendars, community management, trend monitoring |
+| `video` | Video Marketing | Video strategy, scriptwriting, production guidance, platform optimization |
+
+Source: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 
 ---
 
@@ -118,7 +169,8 @@ Use `/mcp-builder` or `/skill-creator` to build new agents that plug into the sy
 - gstack workflow agents: 22
 - Anthropic native skills: 17
 - Marketing OS custom agents: 5
-- **Total built-in: 44 agents**
+- Marketing OS skills: 40
+- **Total built-in: 84 agents**
 
 Plus unlimited custom agents you build yourself.
 

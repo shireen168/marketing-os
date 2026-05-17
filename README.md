@@ -79,7 +79,7 @@ This transforms brand consistency from a one-time expense into a living, scalabl
 Most teams lose context between conversations. I designed this system differently: AI agents that work together intelligently, preserving context across all stages of a campaign.
 
 **Core design principles:**
-- **40+ AI agents working in tandem** (not isolated chat prompts, but coordinated expertise)
+- **84 AI agents working in tandem** (not isolated chat prompts, but coordinated expertise)
 - **Context flows across all 6 stages** (Stage 5 content generation inherits Stage 2's brand voice and Stage 4's strategy)
 - **No context switching required** (structure work once, reuse infinitely across teams and campaigns)
 - **Division-agnostic foundation** (same architecture works for marketing, HR recruiting, legal compliance, finance forecasting)
@@ -145,9 +145,9 @@ These skills control HOW you work across all 6 stages:
 - `/context-save` / `/context-restore`: Preserve work across sessions
 
 **Layer 2: Marketing Skills (Domain Expertise)**
-40+ specialized skills provide WHAT to do at each stage, organized in 7 functional categories:
+40 specialized skills provide WHAT to do at each stage, organized across copywriting, SEO, ads, growth, sales, analytics, and optimization:
 
-![Marketing Skills Hierarchy](assets/marketing-skills-hierarchy.png)
+Source: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
 
 ### How They Work Together
 
