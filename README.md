@@ -127,20 +127,7 @@ These skills control HOW you work across all 6 stages:
 **Layer 2: Marketing Skills (Domain Expertise)**
 40+ specialized skills provide WHAT to do at each stage, organized in 7 functional categories:
 
-```
-                    ┌──────────────────────────────┐
-                    │      product-marketing       │
-                    │ (foundation: read by all)    │
-                    └──────────────┬────────────────┘
-                                   │
-        ┌──────────┬────────┬──────┼──────┬──────────┬──────────┐
-        ▼          ▼        ▼      ▼      ▼          ▼          ▼
-    ┌────────┐ ┌─────┐ ┌────────┐ ┌──────────┐ ┌──────────┐ ┌──────┐ ┌────────┐
-    │  SEO & │ │ CRO │ │Content │ │ Paid &   │ │ Growth & │ │Sales │ │Strategy│
-    │Content │ │     │ │& Copy  │ │Measuremt │ │Retention │ │& GTM │ │        │
-    └────────┘ └─────┘ └────────┘ └──────────┘ └──────────┘ └──────┘ └────────┘
-    40 skills total across all categories
-```
+![Marketing Skills Hierarchy](assets/marketing-skills-hierarchy.png)
 
 ### How They Work Together
 
