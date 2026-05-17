@@ -147,7 +147,7 @@ These skills control HOW you work across all 6 stages:
 **Layer 2: Marketing Skills (Domain Expertise)**
 40 specialized skills provide WHAT to do at each stage, organized across copywriting, SEO, ads, growth, sales, analytics, and optimization:
 
-Source: [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills)
+**See all 40 skills:** [docs/skills.md](docs/skills.md)
 
 ### How They Work Together
 
