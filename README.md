@@ -266,11 +266,18 @@ cd marketing-os
 2. **[docs/workflow.md](docs/workflow.md):** Step-by-step guide to each of the 6 stages
 3. **[docs/complete-example.md](docs/complete-example.md):** End-to-end Financial Services case study (all 6 stages)
 
+**Real-World Case Studies:**
+These show the system in production use:
+- **[docs/showcase/case-study-linkedin-pipeline.md](docs/showcase/case-study-linkedin-pipeline.md):** From 45 min/day to 5 min/day LinkedIn posting (daily automation)
+- **[docs/showcase/case-study-infographic.md](docs/showcase/case-study-infographic.md):** From 3 hours to 30 minutes branded infographics (design system)
+- **[docs/showcase/in-house-vs-outsource.md](docs/showcase/in-house-vs-outsource.md):** Strategic framework: what stays in-house vs what to delegate
+
 **What this demonstrates:**
 - How to architect multi-stage AI workflows with context preservation
 - System design that works across any department or domain
 - Rapid deployment approach for team independence
 - Measurable business impact (time savings, cost reduction, team capacity)
+- Strategic resource allocation: automation for commodity tasks, humans for judgment
 
 ---
 
