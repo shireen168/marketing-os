@@ -72,9 +72,9 @@ graph TD
     A -->|Produces briefs, strategies| B
     B -->|Approved outputs| C
     
-    style A fill:#e1f5ff
-    style B fill:#fff3e0
-    style C fill:#e8f5e9
+    style A fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style B fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
+    style C fill:#006644,stroke:#00d999,color:#ffffff,stroke-width:2px
 ```
 
 **Why three tiers matter:**
@@ -127,9 +127,12 @@ graph LR
     D --> E["5️⃣ Content<br/>10m"]
     E --> F["6️⃣ Reports<br/>5m<br/>👥 Review in Cowork"]
     
-    style B fill:#fff3e0
-    style D fill:#fff3e0
-    style F fill:#fff3e0
+    style A fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style B fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
+    style C fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style D fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
+    style E fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style F fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
 ```
 
 **40 minutes end-to-end** (Tier 1: Claude Code) + approval time in Claude Desktop Cowork (Tier 2) + execution (Tier 3)
@@ -200,8 +203,17 @@ graph TB
     Layer1 -->|orchestrates| Output
     Layer2 -->|powers| Output
     
-    style Layer1 fill:#e3f2fd
-    style Layer2 fill:#f3e5f5
+    style Layer1 fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style Layer2 fill:#663399,stroke:#cc99ff,color:#ffffff,stroke-width:2px
+    style G1 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style G2 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style G3 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style G4 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style M1 fill:#4d2666,stroke:#cc99ff,color:#ffffff
+    style M2 fill:#4d2666,stroke:#cc99ff,color:#ffffff
+    style M3 fill:#4d2666,stroke:#cc99ff,color:#ffffff
+    style M4 fill:#4d2666,stroke:#cc99ff,color:#ffffff
+    style Output fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
 ```
 
 **Layer 1 (gstack)**: Orchestration, context preservation, quality gates  
@@ -260,9 +272,15 @@ graph TD
     S6 --> Tier2["TIER 2: Cowork<br/>Team reviews &<br/>approves"]
     Tier2 --> Tier3["TIER 3: Execution<br/>Approved playbook<br/>goes to team"]
     
-    style Tier1 fill:#e1f5ff
-    style Tier2 fill:#fff3e0
-    style Tier3 fill:#e8f5e9
+    style Tier1 fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style S1 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style S2 fill:#cc6600,stroke:#ffb366,color:#ffffff
+    style S3 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style S4 fill:#cc6600,stroke:#ffb366,color:#ffffff
+    style S5 fill:#004d99,stroke:#00d9ff,color:#ffffff
+    style S6 fill:#cc6600,stroke:#ffb366,color:#ffffff
+    style Tier2 fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
+    style Tier3 fill:#006644,stroke:#00d999,color:#ffffff,stroke-width:2px
 ```
 
 **The flow:** 
