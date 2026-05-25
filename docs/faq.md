@@ -23,7 +23,7 @@ No. The architecture works for any workflow that involves stages building on pre
 - Legal: Case Brief → Regulatory Research → Risk Analysis → Compliance Strategy
 - Finance: Budget → Forecasting → Scenario Analysis → Board Report
 
-Same 6-stage pattern. Same context preservation. Different domain. I built templates for marketing first, but the system is domain-agnostic.
+Same 6-stage pattern. Same context preservation. Different domain. Templates exist for marketing, but the system is domain-agnostic.
 
 ---
 
@@ -87,7 +87,7 @@ Examples:
 - Integrate with your CRM to auto-populate brief data
 - Connect to your Slack for notifications
 
-I can built for the team anytime.
+Customization extends the base system without breaking core workflows.
 
 ---
 

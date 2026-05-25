@@ -2,27 +2,28 @@
 
 **Portfolio Case Study: For Companies Building In-House AI Operations**
 
-A production-ready marketing automation system I designed to help teams operate independently without external agencies. This case study demonstrates:
+A production-ready marketing automation system designed to help teams operate independently without external agencies. This case study demonstrates:
 - How to architect multi-stage AI workflows with context preservation
 - Scalable, division-agnostic system design that extends beyond marketing
 - Rapid team onboarding and autonomous operation
 - Measurable business impact (time, cost, team capacity)
 
-The same architecture I built for marketing extends to any division: HR Recruiting, Legal Compliance, Finance Forecasting, Product Launches, Sales Operations.
+The same three-tier architecture extends to any division: HR Recruiting, Legal Compliance, Finance Forecasting, Product Launches, Sales Operations.
 
 **Quick Navigation:**
 1. [The Problem](#the-problem)
 2. [What This System Enables](#what-this-system-enables)
-3. [Brand Into the Foundation](#how-i-built-brand-into-the-foundation)
-4. [How I Structured the System](#how-i-structured-the-system)
-5. [The 6-Stage Workflow](#the-6-stage-workflow)
-6. [Skills Architecture](#skills-architecture-the-two-layer-approach)
-7. [How It Works](#how-it-works-workflow-as-context)
-8. [Why This Works](#why-this-works-the-design-approach)
-9. [Explore the System](#explore-the-system)
-10. [Business Outcomes](#business-outcomes-day-1-to-month-1)
-11. [Deliverables](#deliverables-per-campaign)
-12. [FAQ](#faq)
+3. [Three-Tier Architecture](#the-three-tier-architecture)
+4. [How This System Is Built](#how-this-system-is-built)
+5. [System Architecture](#system-architecture-how-context-preservation-works)
+6. [The 6-Stage Workflow](#the-6-stage-workflow)
+7. [Skills Architecture](#skills-architecture-two-layers-powering-tier-1)
+8. [How It Works](#how-it-works-workflow-as-context-across-three-tiers)
+9. [Why This Works](#why-this-works-three-tier-separation--context-preservation)
+10. [Explore the System](#explore-the-system)
+11. [Business Outcomes](#business-outcomes-day-1-to-month-1)
+12. [Deliverables](#deliverables-per-campaign)
+13. [FAQ](#faq)
 
 ---
 
@@ -44,11 +45,12 @@ This system bridges that gap by enabling teams to operate independently.
 - Subsequent campaigns: 30-45 minutes (with templates reuse)
 - Compare: Traditional agencies take 3-5 days per campaign
 
-**Complete In-House Ownership:**
-- Runs entirely in-house. No SaaS dependencies. No vendor lock-in.
-- Teams ship independently from Day 1. No external dependencies.
-- Full control over brand voice, messaging strategy, and platform decisions.
-- Eliminates agency gatekeeping and slow external feedback loops.
+**Complete Strategic Control:**
+- Your team makes all strategic decisions. No external agency gatekeeping.
+- Owns brand voice, messaging, and platform choices throughout the workflow.
+- Clear approval trail through Claude Desktop Cowork keeps decisions transparent.
+- No vendor lock-in for your proprietary strategy, data, or team knowledge.
+- Ship independently from Day 1 with no external approval bottlenecks.
 
 **Financial Impact:**
 - Removes $3-5K per campaign in agency fees
@@ -59,32 +61,53 @@ This system bridges that gap by enabling teams to operate independently.
 
 ---
 
-## How I Built Brand Into the Foundation
+## The Three-Tier Architecture
 
-Traditional agencies charge $5K-$10K for brand guidelines. I designed brand consistency into the system's core, making it reusable and cost-free.
+Marketing OS is organized into three distinct, separated layers:
+
+| Tier | Layer | Purpose | Tools | Who |
+|------|-------|---------|-------|-----|
+| **Tier 1** | Strategic Intelligence | Build marketing strategy using AI orchestration + infrastructure | Claude Code + MCP + Custom Skills | Strategic thinker / consultant |
+| **Tier 2** | Human-AI Collaboration | Review and refine outputs with approval gates before execution | Claude Desktop Cowork | Team members (non-technical OK) |
+| **Tier 3** | Team Execution | Publish, track, and optimize using simple tools | Canva, spreadsheets, schedulers | Execution team |
+
+**Why three tiers matter:**
+- **Tier 1 scales:** Build strategy once, reuse infinitely. Strategist effort doesn't increase with scale.
+- **Tier 2 keeps humans in control:** Every major decision (Stages 2, 4, 6) goes through Claude Desktop Cowork where team members approve outputs before execution
+- **Tier 3 stays simple:** Non-technical team members execute using straightforward tools, following an approved playbook
+
+**The flow:** Strategic expertise (Tier 1) → Team reviews & refines (Tier 2 in Cowork) → Team executes (Tier 3)
+
+---
+
+## How This System Is Built
+
+Traditional agencies charge $5K-$10K for brand guidelines. This system builds brand consistency into the core, making it reusable and cost-free through Tier 1 and Tier 2.
 
 **How it works:**
-- **Brand definition (5 minutes):** Personas, tone, messaging pillars, sample phrases are captured once
-- **Systematic reuse:** Every strategy and content piece inherits the brand voice automatically
+- **Brand definition (5 minutes):** Personas, tone, messaging pillars, sample phrases are captured once in Stage 2 (Brand Voice)
+- **Systematic reuse:** Every strategy and content piece inherits the brand voice automatically (Stage 4 Strategy and Stage 5 Content both reference Stage 2)
+- **Team approval:** Brand voice is refined in Claude Desktop Cowork before content generation (Tier 2 approval gate at Stage 2)
 - **Cross-platform consistency:** All 6 platforms (Facebook, Instagram, TikTok, LinkedIn, X, Threads) sound like the same brand without manual effort
-- **Team ownership:** No external agency gatekeeping. Your team controls brand evolution.
+- **Team ownership:** No external agency gatekeeping. Your team controls brand evolution through approval gates.
 - **Knowledge transfer:** New hires onboard to documented systems, not tribal knowledge. Brand logic is codified and accessible.
 
 This transforms brand consistency from a one-time expense into a living, scalable asset owned by your team.
 
 ---
 
-## How I Structured the System
+## System Architecture: How Context Preservation Works
 
-Most teams lose context between conversations. I designed this system differently: AI agents that work together intelligently, preserving context across all stages of a campaign.
+Most teams lose context between conversations. This system preserves it by using AI agents that work together intelligently across all stages of a campaign.
 
 **Core design principles:**
-- **84 AI agents working in tandem** (not isolated chat prompts, but coordinated expertise)
-- **Context flows across all 6 stages** (Stage 5 content generation inherits Stage 2's brand voice and Stage 4's strategy)
-- **No context switching required** (structure work once, reuse infinitely across teams and campaigns)
-- **Division-agnostic foundation** (same architecture works for marketing, HR recruiting, legal compliance, finance forecasting)
+- **Tier 1 orchestration:** 84 AI agents (from gstack + marketing skills) work in tandem, not isolated chat prompts
+- **Context flows across all 6 stages (Tier 1):** Stage 5 content generation inherits Stage 2's brand voice and Stage 4's strategy automatically
+- **Human oversight at key stages (Tier 2):** Approval gates at Stages 2, 4, 6 in Claude Desktop Cowork ensure team stays in control
+- **Execution separation (Tier 3):** No context switching required — execution team uses approved outputs with simple tools
+- **Division-agnostic foundation:** Same architecture works for marketing, HR recruiting, legal compliance, finance forecasting
 
-The insight that shaped this design: AI agents are most powerful when they share context and specialize by function, not when they operate in isolation.
+**Key insight:** AI agents are most powerful when they share context and specialize by function. Combined with human approval gates (Tier 2), this prevents the "black-box AI" problem.
 
 ---
 
@@ -127,11 +150,13 @@ Skills are the engine that makes this system work. Think of them as recipes: eac
 
 ---
 
-## Skills Architecture: The Two-Layer Approach
+## Skills Architecture: Two Layers Powering Tier 1
 
-I designed Marketing OS with two distinct layers of AI agents working in concert:
+Marketing OS Tier 1 (Strategic Intelligence) uses two distinct layers of AI agents working in concert:
 - **Layer 1: gstack Skills** (workflow orchestration and context preservation)
 - **Layer 2: Marketing Skills** (domain-specific expertise)
+
+These layers power Tier 1 to produce the structured outputs that flow into Tier 2 (Cowork approvals) and Tier 3 (execution).
 
 ### The Two-Layer System
 
@@ -197,11 +222,17 @@ Marketing skills reference each other automatically. For example:
 
 ---
 
-## How It Works: Workflow-as-Context
+## How It Works: Workflow-as-Context Across Three Tiers
 
-The core principle here: context preservation is the difference between AI tools and AI systems.
+The core principle: context preservation is the difference between AI tools and AI systems.
 
-Each stage's output automatically becomes the next stage's input. Nothing falls through the cracks because every step knows what came before it. This is possible because the architecture chains context through all 6 stages.
+**Within Tier 1:** Each stage's output automatically becomes the next stage's input. Stage 5 content generation knows the brand voice from Stage 2 and strategy from Stage 4. Nothing falls through the cracks.
+
+**From Tier 1 → Tier 2:** Structured outputs flow into Claude Desktop Cowork where teams review and refine.
+
+**From Tier 2 → Tier 3:** Approved outputs become the execution playbook for non-technical teams using simple tools.
+
+This context flows seamlessly across all 6 stages and all 3 tiers.
 
 | Stage | Invoked By | Agent | Input From | Output Goes To | Result |
 |-------|-----------|-------|-----------|----------------|--------|
@@ -218,29 +249,40 @@ Each stage's output automatically becomes the next stage's input. Nothing falls 
 
 ---
 
-## Why This Works: The Design Approach
+## Why This Works: Three-Tier Separation + Context Preservation
 
-**The foundational advantage: Context Preservation**
+**Tier 1 advantage: Context Preservation**
   - Context automatically flows across all 6 stages (not 6 isolated chats)
   - Stage 5 (Content) inherits Brand Voice (Stage 2) + Strategy (Stage 4) without manual re-entry
   - Each `/command` builds directly on previous output
   - No manual context switching or copy-paste friction
-  - This is why execution time is 40 minutes instead of 5-7 days
+  - This is why Tier 1 execution time is 40 minutes instead of 5-7 days
+
+**Tier 2 advantage: Human-AI Collaboration at Decision Points**
+  - Tier 1 produces outputs, but humans approve them in Claude Desktop Cowork
+  - Approval gates at Stages 2 (Voice), 4 (Strategy), 6 (Reports) prevent misalignment before Tier 3 execution
+  - Non-technical team members can refine outputs directly in Cowork (no technical skills required)
+  - Clear governance trail: what was approved, when, and by whom
+
+**Tier 3 advantage: Execution Simplicity**
+  - Once Tier 2 approves, Tier 3 execution is plug-and-play
+  - Non-technical team members use simple tools (Canva, spreadsheets, schedulers)
+  - No need to understand strategy, AI, or the system itself — just follow the approved playbook
+  - Scales cheaply: 1 strategist, 100+ executors
 
 **How this differs from traditional AI usage:**
   - Traditional: Copy-paste prompts into ChatGPT, Claude, Gemini per stage, lose context, restart
-  - This system: Context preserved automatically across all stages
-  - Each `/command` invokes specialized agent with embedded domain reasoning
-  - Backend skill set handles complexity that teams normally repeat manually
+  - This system: Context preserved automatically across 6 stages, humans approve before execution, non-experts can operate
 
 **Scalability principle: Structure Once, Reuse Infinitely**
   - Most teams: Repeat instructions across conversations for every campaign
-  - This system: Define workflow once, deploy infinitely
+  - This system: Define workflow once, deploy infinitely across teams and campaigns
   - Same team member can lead any campaign (system carries the institutional knowledge)
   - New hires ship independently on Day 1 (system teaches the workflow)
+  - Tier 1 effort stays constant; Tier 2 and 3 scale horizontally with team size
 
 **Works across any division:**
-The same workflow-as-context pattern extends beyond marketing:
+The same three-tier pattern (strategic thinking → team approval → execution) extends beyond marketing:
   - **Finance:** Budget planning, cash flow forecasting, financial reporting
   - **Legal:** Compliance briefs, contract reviews, legal documentation workflows
   - **Sales:** Outreach sequences, proposal generation, deal qualification

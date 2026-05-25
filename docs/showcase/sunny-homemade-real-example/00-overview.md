@@ -140,8 +140,6 @@
 - ✅ Emotional storytelling works (not just product specs)
 - ✅ Paid ads have clear CPA (RM1.99 is measurable)
 
-**What they learn:** "I can do this. It doesn't require a team or a big budget. It requires strategy + consistency + willingness to iterate."
-
 ### Enterprise VP Marketing (100M+ Revenue)
 
 **"How does this scale?"**
