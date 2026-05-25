@@ -162,9 +162,9 @@
 
 ---
 
-## The Approval Gates (THE KEY DIFFERENTIATOR)
+## Human-AI Collaboration: Approval Gates at Each Stage
 
-Every stage has a human approval checkpoint in **Claude Desktop Cowork:**
+Every stage has a human approval checkpoint. The team reviews each output in **Claude Desktop Cowork** — a dedicated interface for collaborative refinement — before moving to execution:
 
 - **Stage 1 approval:** Does this brief reflect our brand? Are we targeting the right audience?
 - **Stage 2 approval:** Does the voice guide feel authentic? Are messaging pillars comprehensive?

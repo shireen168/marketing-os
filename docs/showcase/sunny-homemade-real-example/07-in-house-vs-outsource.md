@@ -266,20 +266,11 @@ Sunny Homemade provides the real example of what was built in-house at SMB scale
 
 ---
 
-## For the Showcase
+## The Scaling Principle
 
-### SMB Founders See
+You don't have to do everything yourself. But you have to own:
+- **The thinking** (Tier 1 strategy)
+- **The voice** (brand consistency)
+- **The approval gates** (human-in-the-loop at each stage)
 
-"I can start this alone (8 hours/week, RM100/month). As I grow, I hire people to do Tier 3 (execution), but I stay on Tier 1 (strategy). I don't need to hire a consultant permanently — I do it once, then I own it."
-
-### Enterprise VPs See
-
-"This consultant understands which work is core (keep in-house, always) and which can scale through hiring or outsourcing (execution). The system doesn't collapse if a team member leaves because core thinking is documented and processes are clear. We can hire junior people for Tier 3 without degrading quality."
-
----
-
-## The Take-Away
-
-**You don't have to do everything yourself at scale. But you have to own the thinking, the voice, and the approval gates.**
-
-That's what makes the system scale without losing quality or control.
+Everything else can scale through hiring or outsourcing. This is how the system stays coherent as it grows.

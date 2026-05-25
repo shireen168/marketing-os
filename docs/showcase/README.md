@@ -1,12 +1,6 @@
 # Marketing OS Showcase: Complete System Architecture
 
-Welcome. This showcase demonstrates the Marketing OS framework through real-world examples (Sunny Homemade) and visual architecture guides.
-
-**Location:** `docs/showcase/`  
-**Date:** 2026-05-25 (MYT)  
-**Status:** Complete — Ready for hiring managers + investors
-
----
+This showcase demonstrates the Marketing OS framework through real-world examples and visual architecture guides.
 
 ## What Is Marketing OS?
 
