@@ -253,7 +253,7 @@ The architecture is domain-agnostic. Only the skill sets change.
 
 ## Explore the System
 
-**Live demonstration available:** This repository contains a fully functional system ready for evaluation and deployment.
+**Complete system documentation with real-world examples:**
 
 **Getting started:**
 ```bash
@@ -261,23 +261,35 @@ git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 ```
 
+### Quick Links
+
+**👉 Start here: [Complete Showcase](docs/showcase/README.md)**
+Full architecture breakdown with real Sunny Homemade example. Shows three-tier system, all 6 stages, and human-AI collaboration in Claude Desktop Cowork.
+- **For SMB founders:** See proof it works at your scale (RM1.99 CPA, 255% growth)
+- **For Enterprise VPs:** Understand governance, scaling, and approval gates
+- **For anyone:** Explore the system through a real business (not abstract theory)
+
 **Documentation:**
 1. **[docs/setup.md](docs/setup.md):** Installation and configuration (15 minutes)
 2. **[docs/workflow.md](docs/workflow.md):** Step-by-step guide to each of the 6 stages
-3. **[docs/complete-example.md](docs/complete-example.md):** End-to-end Financial Services case study (all 6 stages)
+3. **[docs/faq.md](docs/faq.md):** Answers to common questions about governance, cost, learning curve
+4. **[docs/claude.md](docs/claude.md):** System prompt and skill configuration
 
-**Real-World Case Studies:**
-These show the system in production use:
-- **[docs/showcase/case-study-linkedin-pipeline.md](docs/showcase/case-study-linkedin-pipeline.md):** From 45 min/day to 5 min/day LinkedIn posting (daily automation)
-- **[docs/showcase/case-study-infographic.md](docs/showcase/case-study-infographic.md):** From 3 hours to 30 minutes branded infographics (design system)
-- **[docs/showcase/in-house-vs-outsource.md](docs/showcase/in-house-vs-outsource.md):** Strategic framework: what stays in-house vs what to delegate
+**Complete Real-World Example:**
+- **[docs/showcase/](docs/showcase/):** Complete three-tier architecture with Sunny Homemade
+  - Architecture overview (three-tier system + scaling)
+  - All 6 stages with real examples (Brief → Voice → Research → Strategy → Content → Reports)
+  - In-house vs outsource breakdown with cost modeling
+  - Real metrics: RM1.99 CPA, 50.8% thru-play, 255% growth
+  - Approval gates in Claude Desktop Cowork
 
-**What this demonstrates:**
-- How to architect multi-stage AI workflows with context preservation
-- System design that works across any department or domain
-- Rapid deployment approach for team independence
-- Measurable business impact (time savings, cost reduction, team capacity)
-- Strategic resource allocation: automation for commodity tasks, humans for judgment
+**What the showcase demonstrates:**
+- Complete three-tier architecture (Tier 1: Claude Code, Tier 2: Cowork approval gates, Tier 3: team execution)
+- Multi-stage AI workflows with context flowing through all 6 stages
+- Human-AI collaboration at decision points (Stages 2, 4, 6 approval gates in Cowork)
+- Real-world SMB proof point with measurable business results
+- In-house vs outsource trade-offs and scaling patterns
+- Rapid deployment approach for team independence (40 min to 100+ campaigns)
 
 ---
 
