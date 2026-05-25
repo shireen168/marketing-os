@@ -1,8 +1,16 @@
-# Claude Settings for Workflow OS
+# Claude Settings for Marketing OS
 
-System prompt and configuration for workflow automation.
+System prompt and configuration for the three-tier workflow automation system.
 
 **This pattern works for any domain:** Marketing campaigns, HR briefs, legal docs, sales outreach, product launches, internal comms. Same system, different input.
+
+## Three-Tier Architecture
+
+**Tier 1 (Strategic Intelligence):** Claude Code + MCP + custom skills power the workflow
+**Tier 2 (Human-AI Collaboration):** Claude Desktop Cowork approval gates ensure team reviews before execution
+**Tier 3 (Team Execution):** Non-technical teams use simple tools to publish, track, and iterate
+
+This system is designed so Tier 1 produces strategic outputs, Tier 2 teams review and refine those outputs, and Tier 3 executes with confidence.
 
 ## System Prompt
 
@@ -10,13 +18,15 @@ You are Claude, helping teams run end-to-end workflows using the gstack ecosyste
 
 Your role:
 1. Help teams structure ideas into comprehensive strategic briefs (Stage 1)
-2. Define voice, messaging, tone, personality (Stage 2)
+2. Define voice, messaging, tone, personality (Stage 2) → **review in Cowork**
 3. Research context, markets, competitors, trends (Stage 3)
-4. Build positioning and channel strategy (Stage 4)
+4. Build positioning and channel strategy (Stage 4) → **review in Cowork**
 5. Generate content that's copy-paste ready (Stage 5)
-6. Project performance with industry benchmarks (Stage 6)
+6. Project performance with industry benchmarks (Stage 6) → **review in Cowork**
 
-**Key principle:** Each stage's output feeds into the next. Stage 5 uses outputs from Stage 2 + Stage 4. Stage 6 uses all previous outputs. Nothing is disconnected. This is what makes 40 minutes possible instead of 5+ days.
+**Key principle:** Each stage's output feeds into the next. Stage 5 uses outputs from Stage 2 + Stage 4. Stage 6 uses all previous outputs. Nothing is disconnected. This is what makes 40-45 minutes of Claude Code work + approval gates possible instead of 5+ days.
+
+**Approval gates in Claude Desktop Cowork:** Stages 2, 4, and 6 pause for team review in Cowork. Non-technical team members refine outputs directly in the conversation before Tier 3 execution. This ensures human judgment stays in the loop at strategic decision points.
 
 You have access to gstack skills for structured thinking and Claude's native capabilities for generation.
 
@@ -175,9 +185,33 @@ projected conversions, ROI estimate. Use industry benchmarks.
 
 **Output:** Campaign metrics artifact with platform performance, conversions, revenue projection
 
+## Cowork Approval Gates: The Human-AI Collaboration Loop
+
+**Stages 2, 4, and 6 pause in Claude Desktop Cowork for team review.**
+
+This is the core differentiator: AI generates strategic outputs, but your team reviews and refines them before execution. Non-technical team members can directly edit captions, adjust strategy, or request changes — no context switching, no copy-paste friction.
+
+**How it works:**
+
+1. **Stage 2 (Brand Voice) in Cowork:** Team reviews tone, persona, messaging pillars. Founder or marketing lead can refine directly. If tone doesn't feel right, fix it before Stage 5 uses it.
+
+2. **Stage 4 (Strategy) in Cowork:** Team reviews positioning, channel selection, content calendar. CFO approves budget. Product lead validates messaging. Changes flow directly to Stage 5 content generation.
+
+3. **Stage 6 (Reports) in Cowork:** Team analyzes performance, approves learnings, prioritizes next-cycle changes. Cowork conversation becomes the input for Stage 1 of next week's cycle.
+
+**Why Cowork matters:** 
+- No "AI generated this, I have to accept it" — teams actively shape outputs
+- One unified conversation for all approvals (not 6 separate files)
+- Context preserved from Brief through Reports to next cycle
+- Non-technical team members stay in control at decision points
+
+**Result:** Tier 1 (Claude Code) produces drafts at remarkable speed. Tier 2 (Cowork) ensures quality and alignment. Tier 3 (execution team) publishes with confidence.
+
 ## Full Workflow Example
 
-See [examples/complete-example.md](examples/complete-example.md) for a complete walkthrough from Brief to Reports using Accounting OS as the example product.
+See [docs/showcase/](docs/showcase/) for a real-world three-tier example with Sunny Homemade (SMB proof point).
+
+See [docs/complete-example.md](docs/complete-example.md) for a walkthrough from Brief to Reports using Accounting OS as the example product.
 
 ## Setup Instructions
 
@@ -191,17 +225,20 @@ Then run [workflow.md](workflow.md) for step-by-step instructions on each stage.
 
 ## Tips
 
+- **Tier 1 (Claude Code) runs fast:** Stages 1-6 complete in 40-45 minutes
+- **Tier 2 (Cowork) is where decisions happen:** Don't skip the approval gates at Stages 2, 4, 6. Teams refine outputs directly in Cowork.
+- **Tier 3 (Execution) gets simple, proven output:** Once Cowork approves, execution teams publish with confidence (no re-work)
 - **Each stage is independent:** Create a brief once, use for multiple strategies
 - **Copy outputs directly:** All artifacts are formatted for immediate use
-- **Iterate:** Don't like an output? Run the stage again with adjusted prompt
-- **Download:** Each artifact has a download button. Use files directly in docs, slides, email
-- **Team workflow:** One person runs setup once. Team runs stages repeatedly via VS Code IDE
+- **Iterate quickly:** Don't like Stage 4 strategy? Run it again with adjusted prompt in Claude Code. Cowork refines the result.
+- **Download for offline work:** Each artifact has a download button. Use files in docs, slides, email
+- **Team workflow:** Tier 1 operator (strategic thinker) runs Claude Code. Tier 2 team (non-technical reviewers) refines in Cowork. Tier 3 team (execution) publishes.
 
 ## What's Next
 
 Phase 2 will add:
-- Real social media publishing (Facebook, Instagram, TikTok, LinkedIn, Twitter/X)
+- Real social media publishing (Facebook, Instagram, TikTok, LinkedIn, Twitter/X) from Tier 3
 - Analytics dashboard showing live campaign performance
 - Campaign calendar and scheduling automation
 - Consulting-grade market research reports (50+ pages with PESTLE, Porter's, SWOT, TAM/SAM/SOM)
-- Web UI alongside IDE option
+- Web UI alongside IDE option for non-technical teams
