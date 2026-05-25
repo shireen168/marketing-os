@@ -39,7 +39,7 @@
 │  ║   └─────────────────────────────────────────┘               ║  │
 │  ║                                                             ║  │
 │  ║  Each stage inherits previous stage's context              ║  │
-│  ║  Real example: Sunny Homemade outputs at each stage        ║  │
+│  ║  Real example: Smart Sleep Device product launch           ║  │
 │  ╚═════════════════════════════════════════════════════════════╝  │
 │           ↓ (approved outputs become inputs for Tier 3)           │
 │  ╔════════════════════════════════════════════════════════════╗  │
@@ -113,7 +113,7 @@
 - ✅ Team is actively involved (not just executing blindly)
 - ✅ Claude Desktop Cowork makes it accessible (no terminal, no technical skills needed)
 - ✅ Approval gates prevent misalignment before execution
-- ✅ Real Sunny Homemade examples show what these outputs look like
+- ✅ Examples show what these outputs look like across all 6 stages
 
 **Human-AI collaboration workflow:**
 - Tier 1 produces output → Team opens in Claude Desktop Cowork
@@ -121,13 +121,12 @@
 - Claude refines in real-time (in the same interface)
 - Team approves → Output locked for Tier 3 execution
 
-**Sunny Homemade proof:**
-- Stage 1: Real brief from initial planning
-- Stage 2: Real voice guidelines from brand-identity.md
-- Stage 3: Real research from tracker performance data
-- Stage 4: Real strategy from weekly planning docs
-- Stage 5: Real content samples from actual posts + captions
-- Stage 6: Real performance report with tracker metrics + ad ROI
+**Smart Sleep Device example:**
+See [docs/workflow.md](../workflow.md) for a complete walkthrough showing how a smart sleep tracking device product moves through all 6 stages:
+- Stage 3 research reveals market gap (competitors focus on metrics, buyers want outcomes)
+- Stage 4 strategy shifts positioning based on research findings
+- Stage 5 content inherits both the research insight and strategic positioning
+- Full context flow showing how one research finding reshapes all downstream stages
 
 ---
 

@@ -14,28 +14,29 @@
 
 ## Tier 1: Strategic Intelligence Scaling
 
-### SMB (Sunny Homemade)
+### SMB (Product Launch Example)
 
 **The system:**
-- Claude Code + 2-3 MCP servers (public data: market trends, competitor pricing, audience demographics)
-- Manual decision-making (Shireen reviews output, decides next step)
-- Time per cycle: 5 minutes system + 10 minutes manual review = 15 minutes
-- Run frequency: Weekly (once per week)
+- Claude Code + 2-3 MCP servers (public data: market trends, competitor analysis, audience demographics)
+- Manual decision-making (founder/strategist reviews output, decides next step)
+- Time per cycle: 40 minutes system work + approval time
+- Run frequency: Per campaign (product launch, seasonal campaign, etc.)
 
 **What it produces:**
-- Brief: 500-word strategic direction
-- Research: Competitor analysis (3-5 competitors), audience insights from tracker data
-- Strategy: Channel focus (Instagram reels), content angle (heritage + family duty)
+- Brief: Strategic direction + positioning options
+- Research: Competitor positioning analysis, audience insights, market gaps
+- Strategy: Channel recommendations, messaging hierarchy, positioning statement
 
 **Constraints:**
-- Data sources are public (Twitter trends, Instagram insights, Google Trends)
-- Decision-making is manual (Shireen makes the calls)
+- Data sources are public (market research, competitor websites, trend analysis)
+- Decision-making is manual (team reviews and approves)
 - Limited to what's publicly available
 
 **Cost:**
-- Time: 15 minutes weekly
+- Time: 40 minutes per campaign
 - Infrastructure: Claude Code + public MCP servers
 - Expertise: Mid-level marketing strategy
+- ROI: $6-10K agency cost replaced by 40 minutes of work
 
 ---
 
@@ -71,25 +72,26 @@
 
 ## Tier 2: Workflow Outputs Scaling
 
-### SMB (Sunny Homemade)
+### SMB (Product Launch)
 
 **What gets produced at each stage:**
-- **Stage 1 (Brief):** 500-word strategic brief + featured products for the week
-- **Stage 2 (Voice):** 1-page voice guide (Mandarin-first tone, product-specific voice)
-- **Stage 3 (Research):** 1-page competitor + audience analysis (3-5 competitors, tracker trends)
-- **Stage 4 (Strategy):** 1-page channel strategy (Instagram reels + Facebook carousel, format decisions)
-- **Stage 5 (Content):** 6 posts with captions, design specs (bilingual, emotion-driven hook)
-- **Stage 6 (Reports):** 1-page performance report (weekly metrics, ad ROI, next week recommendations)
+- **Stage 1 (Brief):** Strategic brief with audience, channels, KPIs
+- **Stage 2 (Voice):** 1-page voice guide (tone, persona, messaging pillars)
+- **Stage 3 (Research):** Competitor analysis, audience insights, market gaps
+- **Stage 4 (Strategy):** Positioning statement, channel recommendations, messaging hierarchy
+- **Stage 5 (Content):** 6+ content pieces with captions, design specs, platform-specific versions
+- **Stage 6 (Reports):** Performance projections and ROI estimates
 
 **Team review (Claude Desktop Cowork):**
-- Shireen reviews each output before execution
-- Questions Claude if something feels off ("Is this tone right for our audience?")
+- Founder/marketing lead reviews each output before execution
+- Questions Claude if positioning feels off ("Does this resonate with our target audience?")
 - Approves and passes to Tier 3
+- See [workflow.md](../../workflow.md) for complete Smart Sleep Device example
 
 **Collaboration depth:**
-- One person reviewing (Shireen)
-- 15-20 minutes review per stage
-- Changes are minor (tone tweaks, copy adjustments)
+- One person reviewing (founder or marketing lead)
+- 15-30 minutes review per stage
+- Changes are strategic (positioning, tone, channel focus)
 
 ---
 
@@ -120,36 +122,35 @@
 
 ## Tier 3: Post-Approval Execution Scaling
 
-### SMB (Sunny Homemade)
+### SMB (Product Launch Campaign)
 
 **The team:**
-- 1 person (Shireen)
-- Roles: Content creation, design, posting, tracking
+- 1-2 people (content coordinator, designer)
+- Roles: Design, posting, tracking
 
 **Tools used:**
-- Gemini/ChatGPT: Generate reel images (5 images per reel)
-- Canva: Create labels, design adjustments, text overlays
-- CapCut: Edit reel, add bilingual text, add transitions
-- Instagram/Facebook: Post reels, add captions, track engagement
-- Spreadsheet: Update performance tracker
+- Canva: Design graphics, templates, visual consistency
+- Email platform: Send newsletters, drip campaigns
+- Social schedulers: Schedule posts across platforms
+- Spreadsheet: Track performance, calendars
+- Landing page tool: Build campaign landing pages
 
 **Execution process:**
-- Takes approved content plan from Tier 2
-- Generates images (Gemini)
-- Designs in Canva
-- Edits in CapCut
-- Posts on Instagram/Facebook
+- Takes approved content plan + strategy from Tier 2
+- Designs social assets (Canva)
+- Schedules posts (native schedulers or Linktree)
+- Sets up email campaigns
 - Logs performance in tracker
+- Iterates based on weekly reports
 
-**Time per week:**
-- 6 reels: 4 hours (40 minutes per reel)
-- Posting: 30 minutes
-- Tracking: 15 minutes
-- **Total: 4.75 hours/week**
+**Time per campaign:**
+- Campaign launch: 3-5 hours (design, setup, scheduling)
+- Weekly monitoring: 30 minutes
+- **Total: ~5-10 hours over campaign lifecycle**
 
 **Cost:**
-- 1 person at junior/mid-level ($2-3K/month)
-- Tool subscriptions: Canva, CapCut (~$100/month)
+- 1 person at mid-level ($2-3K/month)
+- Tool subscriptions: Canva, scheduler, email (~$50-100/month)
 
 ---
 

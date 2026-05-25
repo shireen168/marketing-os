@@ -25,20 +25,12 @@ docs/showcase/
 │   ├── 01-why-three-tiers.md (system design: why separate strategy, approval, execution)
 │   └── 02-tier-scaling.md (SMB → Enterprise growth)
 │
-├── sunny-homemade-real-example/
-│   ├── 00-overview.md (what is Sunny Homemade + real metrics)
-│   ├── 01-stage-1-brief.md (strategic direction example)
-│   ├── 02-stage-2-voice.md (brand tone + messaging pillars)
-│   ├── 03-stage-3-research.md (audience insights + performance data)
-│   ├── 04-stage-4-strategy.md (channel + format decisions)
-│   ├── 05-stage-5-content.md (captions + design specs)
-│   ├── 06-stage-6-reports.md (performance data + optimization)
-│   └── 07-in-house-vs-outsource.md (what to do yourself vs hire for)
-│
-└── enterprise-adaptation/
-    ├── 00-enterprise-overview.md (how tiers scale to Fortune 500)
-    └── 01-governance-and-scaling.md (approval gates, team structure)
+└── in-house-vs-outsource.md (what to do yourself vs hire for)
 ```
+
+**Complete workflow walkthrough:**
+- See [docs/workflow.md](../workflow.md) for the Smart Sleep Device product launch example
+- Shows all 6 stages with under-the-hood orchestration, context flow, and decision loops
 
 ---
 
@@ -46,13 +38,12 @@ docs/showcase/
 
 ### For SMB Founders (0–50M Revenue)
 
-**Your question:** "Does this work at my scale?"
+**Your question:** "How does this system work? What's the under-the-hood orchestration?"
 
 **Read this path:**
-1. `architecture-overview/00-three-tier-stack.md` (2 min) — Understand the system
-2. `sunny-homemade-real-example/00-overview.md` (5 min) — See real SMB metrics
-3. `sunny-homemade-real-example/01-stage-1-brief.md` (5 min) — Strategy thinking
-4. `sunny-homemade-real-example/07-in-house-vs-outsource.md` (5 min) — What you can do yourself
+1. `architecture-overview/00-three-tier-stack.md` (5 min) — Understand the three-tier system
+2. [docs/workflow.md](../workflow.md) — Smart Sleep Device walkthrough (15 min) — See how all 6 stages work with full context flow
+3. `architecture-overview/02-tier-scaling.md` (10 min) — How this scales as you grow
 
 ---
 
@@ -61,28 +52,27 @@ docs/showcase/
 **Your question:** "Can this scale? How do we govern it?"
 
 **Read this path:**
-1. `architecture-overview/00-three-tier-stack.md` (2 min) — Understand the system
+1. `architecture-overview/00-three-tier-stack.md` (5 min) — Understand the system
 2. `architecture-overview/01-why-three-tiers.md` (5 min) — System architecture: why three tiers matter
-3. `architecture-overview/02-tier-scaling.md` (10 min) — SMB → Enterprise comparison
-4. `enterprise-adaptation/00-enterprise-overview.md` (10 min) — How this scales to your size
-5. `enterprise-adaptation/01-governance-and-scaling.md` (10 min) — Governance + team structure
+3. `architecture-overview/02-tier-scaling.md` (10 min) — SMB → Enterprise scaling comparison
+4. [docs/workflow.md](../workflow.md) (15 min) — Smart Sleep Device example showing orchestration + context preservation
 
 ---
 
 ## The Six-Stage Framework Explained
 
-Every stage of the Marketing OS system is demonstrated through Sunny Homemade real outputs:
+The six stages form a continuous workflow where each stage's output feeds the next:
 
-| Stage | What | File | Real Sunny Homemade Example |
-|-------|------|------|---------------------------|
-| **1. Brief** | Strategic direction + product focus | `01-stage-1-brief.md` | Weekly theme, product rotation, format decisions |
-| **2. Voice** | Brand tone + messaging pillars | `02-stage-2-voice.md` | Mandarin-first, emotional hooks, no clinical language |
-| **3. Research** | Audience insights + performance data | `03-stage-3-research.md` | 45-64F audience, reels 255% growth, ginger reach engine |
-| **4. Strategy** | Channel + format + content mix | `04-stage-4-strategy.md` | 80% reels, ginger 2x, collagen varied angles |
-| **5. Content** | Captions + design specs + final output | `05-stage-5-content.md` | Exact caption + 4-screen reel breakdown + design tone |
-| **6. Reports** | Performance data + optimization | `06-stage-6-reports.md` | RM1.99 CPA, 50.8% hook rate, next-week recommendations |
+| Stage | What | Where to See It |
+|-------|------|-----------------|
+| **1. Brief** | Strategic direction + product focus | [docs/workflow.md](../workflow.md) — Smart Sleep Device Brief section |
+| **2. Voice** | Brand tone + messaging pillars | [docs/workflow.md](../workflow.md) — Smart Sleep Device Brand Voice section |
+| **3. Research** | Audience insights + market gaps | [docs/workflow.md](../workflow.md) — Shows how research reveals positioning gap |
+| **4. Strategy** | Channel + format + positioning | [docs/workflow.md](../workflow.md) — Decision loop: research reshapes strategy |
+| **5. Content** | Captions + design specs | [docs/workflow.md](../workflow.md) — Content inherits all previous context |
+| **6. Reports** | Performance data + optimization | [docs/workflow.md](../workflow.md) — Projections based on all 5 previous stages |
 
-**Key insight:** Each stage feeds the next. Reports close the loop and feed back into next week's Brief.
+**Key insight:** Each stage inherits context from all previous stages. Stage 5 content automatically knows about Stage 2 voice, Stage 3 research findings, and Stage 4 strategic decisions.
 
 ---
 
@@ -126,22 +116,16 @@ Only after Tier 2 approval does Tier 3 (execution) happen.
 
 ---
 
-## Real Sunny Homemade Metrics
+## Complete Workflow Example
 
-**The proof this works:**
-- **Product:** Homemade condiments (real, credible)
-- **Budget:** RM5/day paid ads
-- **CPA:** RM1.99 per conversation (target was RM2.50)
-- **Hook Rate:** 50.8% video thru-play on cold audience
-- **Reel Growth:** 255% month-over-month
-- **Team:** 1 person (founder)
-- **Execution Time:** 4–5 hours/week
-- **Audience:** 45-64F, Selangor/KL, family + heritage focused
+For a detailed walkthrough showing all 6 stages with the **under-the-hood processes**, see [docs/workflow.md](../workflow.md):
 
-**Links to real output:**
-- Instagram: [@sunnyhomemade](https://instagram.com/sunnyhomemade)
-- Facebook: [Sunny Homemade](https://facebook.com/sunnyhomemade)
-- Linktree: [linktr.ee/sunnyhomemade](https://linktr.ee/sunnyhomemade)
+**Smart Sleep Device Product Launch example includes:**
+- How `/brainstorming` skill orchestrates thinking at each stage
+- How research findings reshape strategy decisions (decision loop)
+- How context flows automatically from Stage 3 research → Stage 4 strategy → Stage 5 content
+- Cost comparison: System (40 min + approval) vs Agency (2-3 weeks, $6-10K)
+- Why this eliminates the need to hire agency consultants
 
 ---
 
@@ -152,45 +136,32 @@ Only after Tier 2 approval does Tier 3 (execution) happen.
 
 ### If you have 15 minutes:
 - `architecture-overview/00-three-tier-stack.md`
-- `architecture-overview/01-why-three-tiers.md`
-- `sunny-homemade-real-example/00-overview.md`
+- Skim [docs/workflow.md](../workflow.md) Smart Sleep Device section
 
 ### If you have 30 minutes:
 - Read everything in `architecture-overview/`
-- Read `sunny-homemade-real-example/00-overview.md` + any 2 stage files (e.g., Stage 1 Brief + Stage 5 Content)
+- Read [docs/workflow.md](../workflow.md) Smart Sleep Device example (complete walkthrough)
 
 ### If you have 1 hour:
 - Read entire `architecture-overview/` folder
-- Read entire `sunny-homemade-real-example/` folder
-- You'll understand the full system + see it applied to a real business
+- Read entire [docs/workflow.md](../workflow.md)
+- You'll understand the full system, see it applied end-to-end, and understand the under-the-hood orchestration
 
 ---
 
-## Next Steps After Reading
+## Questions?
 
-If you're interested in working together:
-
-1. **SMB Founders:** Schedule a 30-min call. Discuss your current state, see if this framework fits.
-2. **Enterprise VPs:** Review governance + scaling sections. Discuss team structure and approval processes.
-3. **Investors:** Review the proof (Sunny Homemade metrics) and the system (architecture docs). Ask about pipeline and replication.
-
----
-
-## Contact & Links
-
-- **Portfolio site:** [aiwithshireen.com](https://aiwithshireen.com)
-- **Marketing OS repo:** [github.com/aiwithshireen/marketing-os](https://github.com/aiwithshireen/marketing-os)
-- **Sunny Homemade:** [@sunnyhomemade](https://instagram.com/sunnyhomemade)
+Start with [docs/workflow.md](../workflow.md) for the complete Smart Sleep Device walkthrough showing all 6 stages, under-the-hood orchestration, context flow, and cost comparison with agencies.
 
 ---
 
 ## Document Dates & Versions
 
-- **Showcase created:** 2026-05-25 (MYT)
-- **Last updated:** [see file timestamps in respective folders]
-- **Current status:** Complete
-- **Sunny Homemade data:** May 2026 (live, updated weekly)
+- **Showcase redesigned:** 2026-05-25 (MYT)
+- **Last updated:** [see git history]
+- **Current focus:** ARCHITECTURE and PROCESSES, not just outputs
+- **Example:** Smart Sleep Device product launch (shows decision loops, context inheritance, skill orchestration)
 
 ---
 
-**This is the system. This is how it works. This is the proof. Questions? Read the docs, then reach out.**
+**This is the system. This is how it works. Read docs/workflow.md to see it in action.**
