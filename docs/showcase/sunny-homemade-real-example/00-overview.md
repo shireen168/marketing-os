@@ -151,8 +151,6 @@
 - ✅ Metrics are transparent (no black-box AI outputs, humans approve at each stage)
 - ✅ Framework is extensible (same 6 stages work for 1K SKU launch)
 
-**What they learn:** "This consultant understands both speed (SMB iteration) and governance (approval gates, human oversight). She built something that scales."
-
 ---
 
 ## The 6-Stage Framework Applied to Sunny Homemade

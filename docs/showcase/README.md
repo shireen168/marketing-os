@@ -54,8 +54,6 @@ docs/showcase/
 3. `sunny-homemade-real-example/01-stage-1-brief.md` (5 min) — Strategy thinking
 4. `sunny-homemade-real-example/07-in-house-vs-outsource.md` (5 min) — What you can do yourself
 
-**Key takeaway:** Real business (Sunny Homemade), real results (RM1.99 CPA, 255% reel growth), one founder executing. You can do this.
-
 ---
 
 ### For Enterprise VP Marketing (100M+ Revenue)
@@ -64,25 +62,10 @@ docs/showcase/
 
 **Read this path:**
 1. `architecture-overview/00-three-tier-stack.md` (2 min) — Understand the system
-2. `architecture-overview/01-why-three-tiers.md` (5 min) — Why it's not just ChatGPT
+2. `architecture-overview/01-why-three-tiers.md` (5 min) — System architecture: why three tiers matter
 3. `architecture-overview/02-tier-scaling.md` (10 min) — SMB → Enterprise comparison
 4. `enterprise-adaptation/00-enterprise-overview.md` (10 min) — How this scales to your size
 5. `enterprise-adaptation/01-governance-and-scaling.md` (10 min) — Governance + team structure
-
-**Key takeaway:** This consultant understands systems architecture. She won't hand you black-box AI outputs. She's built in approval gates, governance, and team structure for enterprise scale.
-
----
-
-### For Investors / Decision-Makers
-
-**Your question:** "Is this consultant differentiated? Can she scale?"
-
-**Read this path:**
-1. `architecture-overview/01-why-three-tiers.md` (5 min) — Differentiator story
-2. `sunny-homemade-real-example/00-overview.md` (5 min) — Proof of execution
-3. `sunny-homemade-real-example/06-stage-6-reports.md` (5 min) — Data-driven optimization
-
-**Key takeaway:** This isn't "I use Claude for marketing." This is a documented system with real results, governance, and scaling pathway.
 
 ---
 
@@ -180,36 +163,6 @@ Only after Tier 2 approval does Tier 3 (execution) happen.
 - Read entire `architecture-overview/` folder
 - Read entire `sunny-homemade-real-example/` folder
 - You'll understand the full system + see it applied to a real business
-
----
-
-## What Makes This Different
-
-**Most marketing consultants say:** "I'll build your strategy and hand it off"
-
-**This system shows:**
-- ✅ How strategy is built (Tier 1 detailed)
-- ✅ How execution flows from strategy (6 stages with real outputs)
-- ✅ How teams stay in control (approval gates in Cowork)
-- ✅ How it scales (SMB → Enterprise with same architecture)
-- ✅ How performance feeds back (Reports → next week's Brief)
-- ✅ Where it works at scale (Sunny Homemade is proof, scaling notes included)
-
-**Not vague.** Not black-box. Not "trust me." Just documented system + real results.
-
----
-
-## The Hiring Decision
-
-**If you're considering this consultant, ask:**
-
-1. **"Can you show me the system?"** ✅ (This showcase)
-2. **"Do you have real examples?"** ✅ (Sunny Homemade with tracker data)
-3. **"How do we stay in control?"** ✅ (Approval gates in Cowork, human-in-the-loop)
-4. **"How does this scale?"** ✅ (SMB to Enterprise breakdowns)
-5. **"What if we need to change something?"** ✅ (Framework is documented, not consultant-dependent)
-
-**All answered in this showcase.**
 
 ---
 
