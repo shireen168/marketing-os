@@ -367,9 +367,9 @@ You still review everything (Tier 2 Cowork) — you just don't have to wait 2 we
 
 ---
 
-### Real-World Reference
+### Learn More
 
-For a complete working example with real metrics, see [docs/showcase/sunny-homemade-real-example/](docs/showcase/sunny-homemade-real-example/) (SMB Tier 3 execution proof point).
+For system architecture details, see [docs/showcase/](showcase/README.md) (three-tier architecture breakdown and scaling patterns).
 
 ---
 
