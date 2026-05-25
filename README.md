@@ -65,16 +65,23 @@ This system bridges that gap by enabling teams to operate independently.
 
 ```mermaid
 graph TD
-    A["<b>TIER 1: Strategic Intelligence</b><br/>Claude Code + MCP + Custom Skills<br/>Build strategy once, reuse infinitely"] 
-    B["<b>TIER 2: Human-AI Collaboration</b><br/>Claude Desktop Cowork<br/>Team reviews & approves at decision points"]
-    C["<b>TIER 3: Team Execution</b><br/>Canva, Spreadsheets, Schedulers<br/>Non-technical teams execute playbook"]
+    A["<b>TIER 1</b><br/>Strategic Intelligence<br/>━━━━━━━<br/>Claude Code<br/>MCP Servers<br/>Custom Skills<br/>━━━━━━━<br/>Build once,<br/>reuse infinitely"]
     
-    A -->|Produces briefs, strategies| B
-    B -->|Approved outputs| C
+    Arrow1["Produces briefs<br/>& strategies"]
     
-    style A fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px
-    style B fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
-    style C fill:#006644,stroke:#00d999,color:#ffffff,stroke-width:2px
+    B["<b>TIER 2</b><br/>Human-AI Collaboration<br/>━━━━━━━<br/>Claude Desktop Cowork<br/>━━━━━━━<br/>Team reviews<br/>& approves<br/>at decision points"]
+    
+    Arrow2["Approved<br/>outputs"]
+    
+    C["<b>TIER 3</b><br/>Team Execution<br/>━━━━━━━<br/>Canva<br/>Spreadsheets<br/>Schedulers<br/>━━━━━━━<br/>Non-technical<br/>teams execute"]
+    
+    A --> Arrow1 --> B --> Arrow2 --> C
+    
+    style A fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:3px,padding:40px
+    style B fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:3px,padding:40px
+    style C fill:#006644,stroke:#00d999,color:#ffffff,stroke-width:3px,padding:40px
+    style Arrow1 fill:#262629,stroke:#0099cc,color:#ffffff,text-anchor:middle
+    style Arrow2 fill:#262629,stroke:#0099cc,color:#ffffff,text-anchor:middle
 ```
 
 **Why three tiers matter:**
@@ -120,18 +127,25 @@ Most teams lose context between conversations. This system preserves it by using
 ## The 6-Stage Workflow
 
 ```mermaid
-graph LR
-    A["1️⃣ Brief<br/>5m"] --> B["2️⃣ Voice<br/>5m<br/>👥 Review in Cowork"]
-    B --> C["3️⃣ Research<br/>10m"]
-    C --> D["4️⃣ Strategy<br/>5m<br/>👥 Review in Cowork"]
-    D --> E["5️⃣ Content<br/>10m"]
-    E --> F["6️⃣ Reports<br/>5m<br/>👥 Review in Cowork"]
+graph TD
+    subgraph workflow["6-STAGE WORKFLOW"]
+        direction LR
+        A["1️⃣<br/>Brief<br/>5m"]
+        B["2️⃣<br/>Voice<br/>5m<br/>👥 Review"]
+        C["3️⃣<br/>Research<br/>10m"]
+        D["4️⃣<br/>Strategy<br/>5m<br/>👥 Review"]
+        E["5️⃣<br/>Content<br/>10m"]
+        F["6️⃣<br/>Reports<br/>5m<br/>👥 Review"]
+        
+        A --> B --> C --> D --> E --> F
+    end
     
-    style A fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style workflow fill:#1a1a20,stroke:#0099cc,color:#ffffff,stroke-width:2px
+    style A fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:2px
     style B fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
-    style C fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style C fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:2px
     style D fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
-    style E fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style E fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:2px
     style F fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
 ```
 
@@ -178,42 +192,64 @@ Skills are markdown files that teach AI agents how to do specific tasks well —
 Tier 1 uses two distinct skill layers working together:
 
 ```mermaid
-graph TB
-    subgraph Layer1 ["LAYER 1: Workflow (gstack)<br/>HOW you work"]
-        direction LR
-        G1["/brainstorm"]
-        G2["/investigate"]
-        G3["/plan-ceo-review"]
-        G4["/qa, /context-save"]
+graph TD
+    L1Title["<b>LAYER 1: Workflow (gstack)</b><br/>HOW you work"]
+    
+    subgraph Layer1[""]
+        direction TB
+        G1["<b>/brainstorm</b><br/>Ideas & planning"]
+        SP1[" "]
+        G2["<b>/investigate</b><br/>Research & analysis"]
+        SP2[" "]
+        G3["<b>/plan-ceo-review</b><br/>Strategy validation"]
+        SP3[" "]
+        G4["<b>/qa, /context-save</b><br/>Quality & context"]
     end
     
-    subgraph Layer2 ["LAYER 2: Domain Expertise (Marketing)<br/>WHAT to do"]
-        direction LR
-        M1["copywriting<br/>product-marketing"]
-        M2["customer-research<br/>competitors"]
-        M3["cro, messaging<br/>positioning"]
-        M4["analytics<br/>ab-testing"]
+    L2Title["<b>LAYER 2: Domain Expertise (Marketing)</b><br/>WHAT to do"]
+    
+    subgraph Layer2[""]
+        direction TB
+        M1["<b>copywriting</b><br/>product-marketing"]
+        SM1[" "]
+        M2["<b>customer-research</b><br/>competitors"]
+        SM2[" "]
+        M3["<b>cro, messaging</b><br/>positioning"]
+        SM3[" "]
+        M4["<b>analytics</b><br/>ab-testing"]
     end
     
-    Layer1 -.->|activates| Layer2
-    Layer2 -.->|informs| Layer1
+    Activate["←→<br/>activates & informs"]
     
-    Output["Structured outputs<br/>Brief → Voice → Research → Strategy → Content → Reports"]
+    Output["<b>Structured Outputs</b><br/>Brief → Voice → Research<br/>Strategy → Content → Reports"]
     
-    Layer1 -->|orchestrates| Output
-    Layer2 -->|powers| Output
+    L1Title --> Layer1
+    Layer1 --> Activate
+    Activate --> Layer2 --> L2Title
+    Layer2 --> Output
     
-    style Layer1 fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px
-    style Layer2 fill:#663399,stroke:#cc99ff,color:#ffffff,stroke-width:2px
-    style G1 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style G2 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style G3 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style G4 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style M1 fill:#4d2666,stroke:#cc99ff,color:#ffffff
-    style M2 fill:#4d2666,stroke:#cc99ff,color:#ffffff
-    style M3 fill:#4d2666,stroke:#cc99ff,color:#ffffff
-    style M4 fill:#4d2666,stroke:#cc99ff,color:#ffffff
-    style Output fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px
+    style L1Title fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px,padding:10px
+    style Layer1 fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px,padding:20px
+    style G1 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px
+    style G2 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px
+    style G3 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px
+    style G4 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px
+    style SP1 fill:none,stroke:none
+    style SP2 fill:none,stroke:none
+    style SP3 fill:none,stroke:none
+    
+    style L2Title fill:#663399,stroke:#cc99ff,color:#ffffff,stroke-width:2px,padding:10px
+    style Layer2 fill:#663399,stroke:#cc99ff,color:#ffffff,stroke-width:2px,padding:20px
+    style M1 fill:#4d2666,stroke:#cc99ff,color:#ffffff,stroke-width:1px
+    style M2 fill:#4d2666,stroke:#cc99ff,color:#ffffff,stroke-width:1px
+    style M3 fill:#4d2666,stroke:#cc99ff,color:#ffffff,stroke-width:1px
+    style M4 fill:#4d2666,stroke:#cc99ff,color:#ffffff,stroke-width:1px
+    style SM1 fill:none,stroke:none
+    style SM2 fill:none,stroke:none
+    style SM3 fill:none,stroke:none
+    
+    style Activate fill:#262629,stroke:#0099cc,color:#0099cc,stroke-width:2px
+    style Output fill:#1a4d80,stroke:#00d9ff,color:#ffffff,stroke-width:2px,padding:15px
 ```
 
 **Layer 1 (gstack)**: Orchestration, context preservation, quality gates  
@@ -250,37 +286,45 @@ Context preservation is the difference between AI tools and AI systems.
 
 ```mermaid
 graph TD
-    Tier1["TIER 1: Stages 1–6<br/>Claude Code orchestrates context"]
-    S1["1. Brief<br/>Product + Goals"]
-    S2["2. Voice<br/>(+Stage 1 context)<br/>👥 Review"]
-    S3["3. Research<br/>(+Stage 1)"]
-    S4["4. Strategy<br/>(+S1,S2,S3)<br/>👥 Review"]
-    S5["5. Content<br/>(+S2,S4)<br/>Ready to Publish"]
-    S6["6. Reports<br/>(+All)<br/>👥 Review"]
+    Title["<b>TIER 1: Context Preservation Across 6 Stages</b><br/>Claude Code orchestrates all context"]
     
+    S1["<b>1. Brief</b><br/>Product + Goals"]
+    S2["<b>2. Voice</b><br/>Brand definition<br/>👥 Review"]
+    S3["<b>3. Research</b><br/>Market analysis"]
+    S4["<b>4. Strategy</b><br/>Positioning<br/>👥 Review"]
+    S5["<b>5. Content</b><br/>Publication-ready<br/>6 platforms"]
+    S6["<b>6. Reports</b><br/>Performance + ROI<br/>👥 Review"]
+    
+    Space1[" "]
+    
+    T2["<b>TIER 2</b><br/>Cowork Approvals<br/>Team reviews & decides"]
+    
+    Space2[" "]
+    
+    T3["<b>TIER 3</b><br/>Team Execution<br/>Simple tools"]
+    
+    Title --> S1
     S1 --> S2
-    S1 --> S3
-    S2 --> S4
+    S2 --> S3
     S3 --> S4
     S4 --> S5
-    S1 --> S6
-    S2 --> S6
-    S3 --> S6
-    S4 --> S6
     S5 --> S6
     
-    S6 --> Tier2["TIER 2: Cowork<br/>Team reviews &<br/>approves"]
-    Tier2 --> Tier3["TIER 3: Execution<br/>Approved playbook<br/>goes to team"]
+    S6 --> Space1 --> T2 --> Space2 --> T3
     
-    style Tier1 fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px
-    style S1 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style S2 fill:#cc6600,stroke:#ffb366,color:#ffffff
-    style S3 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style S4 fill:#cc6600,stroke:#ffb366,color:#ffffff
-    style S5 fill:#004d99,stroke:#00d9ff,color:#ffffff
-    style S6 fill:#cc6600,stroke:#ffb366,color:#ffffff
-    style Tier2 fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px
-    style Tier3 fill:#006644,stroke:#00d999,color:#ffffff,stroke-width:2px
+    style Title fill:#0066cc,stroke:#00d9ff,color:#ffffff,stroke-width:2px,padding:15px
+    style S1 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px,padding:10px
+    style S2 fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:1px,padding:10px
+    style S3 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px,padding:10px
+    style S4 fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:1px,padding:10px
+    style S5 fill:#004d99,stroke:#00d9ff,color:#ffffff,stroke-width:1px,padding:10px
+    style S6 fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:1px,padding:10px
+    
+    style Space1 fill:none,stroke:none
+    style Space2 fill:none,stroke:none
+    
+    style T2 fill:#cc6600,stroke:#ffb366,color:#ffffff,stroke-width:2px,padding:15px
+    style T3 fill:#006644,stroke:#00d999,color:#ffffff,stroke-width:2px,padding:15px
 ```
 
 **The flow:** 
