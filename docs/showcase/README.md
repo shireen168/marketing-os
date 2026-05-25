@@ -20,12 +20,10 @@ A three-tier system for building marketing strategy at any scale:
 docs/showcase/
 ├── README.md (this file)
 │
-├── architecture-overview/
-│   ├── 00-three-tier-stack.md ⭐ START HERE (visual + explanation)
-│   ├── 01-why-three-tiers.md (system design: why separate strategy, approval, execution)
-│   └── 02-tier-scaling.md (SMB → Enterprise growth)
-│
-└── in-house-vs-outsource.md (what to do yourself vs hire for)
+└── architecture-overview/
+    ├── 00-three-tier-stack.md ⭐ START HERE (visual + explanation)
+    ├── 01-why-three-tiers.md (system design: why separate strategy, approval, execution)
+    └── 02-tier-scaling.md (SMB → Enterprise growth)
 ```
 
 **Complete workflow walkthrough:**
