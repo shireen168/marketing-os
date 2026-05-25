@@ -2,10 +2,11 @@
 
 ## Will our team actually use this?
 
-- Yes, because it meets teams where they are. 
-- Non-technical teams start with Claude Desktop chat (familiar UI). 
-- Technical teams use VS Code with slash commands. 
-- Everyone sees context preserved automatically. 
+- Yes, because it's designed for non-technical teams to actively participate.
+- **Tier 1 (Strategic thinking):** One person runs Claude Code + gstack skills (40-45 minutes)
+- **Tier 2 (Approvals):** Your team reviews outputs in Claude Desktop Cowork. Non-technical team members can edit captions, adjust strategy, or request changes directly. No context switching, no copy-paste friction.
+- **Tier 3 (Execution):** Simple tools (Linktree, Canva, scheduling) publish approved work
+- Everyone sees context preserved automatically
 - Adoption compounds:
   - Day 1 → Ship a campaign
   - Week 1 → Ship 3-5 campaigns
@@ -26,6 +27,23 @@ Same 6-stage pattern. Same context preservation. Different domain. I built templ
 
 ---
 
+## How does governance work? Who approves what?
+
+This system is designed so your team stays in control at decision points:
+
+**Tier 1 (Claude Code)** produces drafts at speed. Strategic thinker runs Stages 1-6.
+
+**Tier 2 (Claude Desktop Cowork)** is where approvals happen:
+- **Stage 2 (Brand Voice):** Brand/marketing lead reviews tone, persona, messaging. CFO approves if brand costs involved.
+- **Stage 4 (Strategy):** Product lead validates messaging, CFO reviews channel budget, team approves positioning.
+- **Stage 6 (Reports):** Performance analyst reviews metrics, leadership approves learnings for next cycle.
+
+**Tier 3 (Execution)** publishes once Cowork approves. No surprises, no re-work.
+
+Cowork is a single conversation where all stakeholders see the same context. Non-technical team members can edit copy directly — they don't need to understand gstack or Claude Code.
+
+---
+
 ## What if we already have processes?
 
 No issue, keep them. This system doesn't replace the current workflow, it's structured so nothing falls through the cracks.
@@ -39,17 +57,21 @@ If the team already brief products, research markets, and write strategy, this s
 
 ## How is this different from hiring an agency that uses Claude Code?
 
-Three differences:
+Four key differences:
 
 1. **Speed:**
    - Agencies take 3-5 days
-   - This system: 40 minutes. You control the timeline
+   - This system: 40 minutes (Claude Code) + approval time (Cowork). You control the timeline
 
 2. **Cost:**
    - Agency: $3-5K per campaign
    - This system: setup once, run 100 campaigns. Cost per campaign approaches zero
 
-3. **Learning:**
+3. **Control:**
+   - Agencies deliver final copy
+   - This system: your team reviews and refines at Stages 2, 4, 6 in Cowork before anything ships. If the brand voice feels off or the strategy doesn't align, fix it in Cowork (not after publishing)
+
+4. **Learning:**
    - Agencies deliver outputs
    - This system teaches your team how to think in workflows. After 3 campaigns, your team becomes expert in structuring work
 
