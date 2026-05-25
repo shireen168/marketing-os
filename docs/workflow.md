@@ -173,9 +173,7 @@ Test/sample campaigns: review projected metrics in Cowork. Are the estimates rea
 
 ## Complete Example
 
-See [docs/showcase/](docs/showcase/) for a real-world example with Sunny Homemade (SMB proof point) showing all three tiers in action.
-
-See [docs/complete-example.md](docs/complete-example.md) for a full walkthrough with Accounting OS as the example product.
+See [docs/showcase/](docs/showcase/) for a real-world complete example with Sunny Homemade (SMB proof point). Shows all three tiers, all 6 stages, approval gates, and cost modeling in action.
 
 ---
 
@@ -217,8 +215,8 @@ See [docs/complete-example.md](docs/complete-example.md) for a full walkthrough 
 
 **Still stuck?**
 - Check [setup.md](setup.md) troubleshooting
-- Review [docs/showcase/](docs/showcase/) for a real-world example
-- Review [docs/complete-example.md](docs/complete-example.md) for reference
+- Review [docs/showcase/](docs/showcase/) for a real-world example with all three tiers
+- Review [README.md](README.md) for system overview
 
 ---
 

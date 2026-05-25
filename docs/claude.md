@@ -207,11 +207,9 @@ This is the core differentiator: AI generates strategic outputs, but your team r
 
 **Result:** Tier 1 (Claude Code) produces drafts at remarkable speed. Tier 2 (Cowork) ensures quality and alignment. Tier 3 (execution team) publishes with confidence.
 
-## Full Workflow Example
+## Real-World Example
 
-See [docs/showcase/](docs/showcase/) for a real-world three-tier example with Sunny Homemade (SMB proof point).
-
-See [docs/complete-example.md](docs/complete-example.md) for a walkthrough from Brief to Reports using Accounting OS as the example product.
+See [docs/showcase/](docs/showcase/) for a complete three-tier example with Sunny Homemade (SMB proof point). Shows all 6 stages, approval gates, and the three-tier architecture in action.
 
 ## Setup Instructions
 
