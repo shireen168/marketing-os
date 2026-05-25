@@ -63,20 +63,26 @@ This system bridges that gap by enabling teams to operate independently.
 
 ## The Three-Tier Architecture
 
-Marketing OS is organized into three distinct, separated layers:
-
-| Tier | Layer | Purpose | Tools | Who |
-|------|-------|---------|-------|-----|
-| **Tier 1** | Strategic Intelligence | Build marketing strategy using AI orchestration + infrastructure | Claude Code + MCP + Custom Skills | Strategic thinker / consultant |
-| **Tier 2** | Human-AI Collaboration | Review and refine outputs with approval gates before execution | Claude Desktop Cowork | Team members (non-technical OK) |
-| **Tier 3** | Team Execution | Publish, track, and optimize using simple tools | Canva, spreadsheets, schedulers | Execution team |
+```mermaid
+graph TD
+    A["<b>TIER 1: Strategic Intelligence</b><br/>Claude Code + MCP + Custom Skills<br/>Build strategy once, reuse infinitely"] 
+    B["<b>TIER 2: Human-AI Collaboration</b><br/>Claude Desktop Cowork<br/>Team reviews & approves at decision points"]
+    C["<b>TIER 3: Team Execution</b><br/>Canva, Spreadsheets, Schedulers<br/>Non-technical teams execute playbook"]
+    
+    A -->|Produces briefs, strategies| B
+    B -->|Approved outputs| C
+    
+    style A fill:#e1f5ff
+    style B fill:#fff3e0
+    style C fill:#e8f5e9
+```
 
 **Why three tiers matter:**
 - **Tier 1 scales:** Build strategy once, reuse infinitely. Strategist effort doesn't increase with scale.
 - **Tier 2 keeps humans in control:** Every major decision (Stages 2, 4, 6) goes through Claude Desktop Cowork where team members approve outputs before execution
 - **Tier 3 stays simple:** Non-technical team members execute using straightforward tools, following an approved playbook
 
-**The flow:** Strategic expertise (Tier 1) → Team reviews & refines (Tier 2 in Cowork) → Team executes (Tier 3)
+**Learn more:** [docs/showcase/architecture-overview/00-three-tier-stack.md](docs/showcase/architecture-overview/00-three-tier-stack.md) for visual diagrams and detailed breakdown.
 
 ---
 
@@ -113,18 +119,34 @@ Most teams lose context between conversations. This system preserves it by using
 
 ## The 6-Stage Workflow
 
-This system breaks campaign execution into 6 sequential stages, each with clear inputs and outputs. Teams repeat this for every campaign:
+```mermaid
+graph LR
+    A["1️⃣ Brief<br/>5m"] --> B["2️⃣ Voice<br/>5m<br/>👥 Review in Cowork"]
+    B --> C["3️⃣ Research<br/>10m"]
+    C --> D["4️⃣ Strategy<br/>5m<br/>👥 Review in Cowork"]
+    D --> E["5️⃣ Content<br/>10m"]
+    E --> F["6️⃣ Reports<br/>5m<br/>👥 Review in Cowork"]
+    
+    style B fill:#fff3e0
+    style D fill:#fff3e0
+    style F fill:#fff3e0
+```
 
-| Stage | Time | Input | Output | Business Impact |
-|-------|------|-------|--------|-----------------|
-| **1. Brief** | 5m | Product, audience, goals | 500-word brief + audience persona | Team alignment on target audience |
-| **2. Brand Voice + Guidelines** | 5m | Brief from Stage 1 | Tone, persona, voice rules | Cross-platform consistency (normally $5K agency cost) |
-| **3. Research** | 10m | Brief | TAM/SAM/SOM, competitors, trends | Data-driven strategy, removes guesswork |
-| **4. Strategy** | 5m | Brief + Research + Voice | Positioning, messaging hierarchy, channel matrix | Unified direction across team |
-| **5. Content** | 10m | Strategy + Voice | 6 platform-specific drafts (Facebook, Instagram, TikTok, LinkedIn, X, Threads) | Publication-ready, no reformatting needed |
-| **6. Reports** | 5m | All above | Reach, engagement, conversion, ROI forecasts | Board-ready proof of campaign impact |
+**40 minutes end-to-end** (Tier 1: Claude Code) + approval time in Claude Desktop Cowork (Tier 2) + execution (Tier 3)
 
-**Execution:** 40 minutes of AI agent work + strategic thinking time (1-2 hours first campaign, 30-45 minutes subsequent)
+<details>
+<summary><b>Detailed stage breakdown</b> (timing, inputs, outputs)</summary>
+
+| Stage | Time | What Gets Produced | Tier 2 Review |
+|-------|------|-------------------|---------------|
+| **1. Brief** | 5m | 500-word strategic direction + audience persona | — |
+| **2. Voice** | 5m | Tone, persona, voice rules | ✅ Team refines in Cowork |
+| **3. Research** | 10m | TAM/SAM/SOM, competitors, trends | — |
+| **4. Strategy** | 5m | Positioning, messaging hierarchy, channels | ✅ Team validates in Cowork |
+| **5. Content** | 10m | 6 platform-specific drafts (ready to publish) | — |
+| **6. Reports** | 5m | Reach, engagement, conversion, ROI forecasts | ✅ Team reviews in Cowork |
+
+</details>
 
 **Comparison:** Traditional agencies require 3-5 days per campaign. In-house engineering build requires 2-3 months.
 
@@ -132,120 +154,135 @@ This system breaks campaign execution into 6 sequential stages, each with clear 
 
 ## What are Skills?
 
-Skills are the engine that makes this system work. Think of them as recipes: each skill is a markdown file that teaches AI agents how to do specific tasks well.
+Skills are markdown files that teach AI agents how to do specific tasks well — think of them as recipes with best practices, frameworks, and decision logic built in.
 
-**How skills enable this system:**
-- **Specialized knowledge**: Each skill contains best practices, frameworks, and decision logic for a specific domain (copywriting, SEO, CRO, sales, etc.)
-- **AI agent guidance**: When a skill is active, the AI agent has context and expertise it wouldn't have otherwise. It knows what questions to ask, what tradeoffs matter, and what outcomes to optimize for.
-- **Consistency without micromanagement**: Skills encode your best practices once, then apply them automatically across all campaigns and team members. No need to repeat instructions.
-- **Cross-skill collaboration**: Skills reference each other intelligently. When copywriting and CRO skills work together, the AI understands how messaging affects conversion rates.
-- **Layered expertise**: Some skills orchestrate workflows (gstack skills). Others provide domain expertise (marketing skills). Together, they create a complete system.
+<details>
+<summary><b>How skills work</b> (why this architecture matters)</summary>
 
-**In this system:**
-- **Layer 1 skills** (gstack) control HOW work flows: brainstorming, planning, review, quality gates
-- **Layer 2 skills** (marketing) provide WHAT to do: copywriting expertise, SEO frameworks, growth tactics, sales strategies
-- **Both layers** work together so you get structured workflows (from gstack) powered by domain knowledge (from marketing skills)
+- **Specialized knowledge**: Each skill encodes domain expertise (copywriting, SEO, CRO, sales, etc.)
+- **Context & guidance**: Skills give agents the reasoning they'd need otherwise — what questions to ask, what tradeoffs matter, what outcomes to optimize for
+- **Consistency**: Best practices are defined once, applied automatically across all campaigns
+- **Cross-skill intelligence**: Skills reference each other. When copywriting and CRO skills work together, the system understands how messaging affects conversions
+- **Without skills**: Copy-paste prompts, lost context, no institutional knowledge
+- **With skills**: AI agents become domain partners who enforce your standards automatically
 
-**Why this matters**: Without skills, you're back to copy-paste prompts and lost context. With skills, your AI agents become true partners who understand your domain and enforce your standards automatically.
+</details>
 
 ---
 
 ## Skills Architecture: Two Layers Powering Tier 1
 
-Marketing OS Tier 1 (Strategic Intelligence) uses two distinct layers of AI agents working in concert:
-- **Layer 1: gstack Skills** (workflow orchestration and context preservation)
-- **Layer 2: Marketing Skills** (domain-specific expertise)
+Tier 1 uses two distinct skill layers working together:
 
-These layers power Tier 1 to produce the structured outputs that flow into Tier 2 (Cowork approvals) and Tier 3 (execution).
+```mermaid
+graph TB
+    subgraph Layer1 ["LAYER 1: Workflow (gstack)<br/>HOW you work"]
+        direction LR
+        G1["/brainstorm"]
+        G2["/investigate"]
+        G3["/plan-ceo-review"]
+        G4["/qa, /context-save"]
+    end
+    
+    subgraph Layer2 ["LAYER 2: Domain Expertise (Marketing)<br/>WHAT to do"]
+        direction LR
+        M1["copywriting<br/>product-marketing"]
+        M2["customer-research<br/>competitors"]
+        M3["cro, messaging<br/>positioning"]
+        M4["analytics<br/>ab-testing"]
+    end
+    
+    Layer1 -.->|activates| Layer2
+    Layer2 -.->|informs| Layer1
+    
+    Output["Structured outputs<br/>Brief → Voice → Research → Strategy → Content → Reports"]
+    
+    Layer1 -->|orchestrates| Output
+    Layer2 -->|powers| Output
+    
+    style Layer1 fill:#e3f2fd
+    style Layer2 fill:#f3e5f5
+```
 
-### The Two-Layer System
+**Layer 1 (gstack)**: Orchestration, context preservation, quality gates  
+**Layer 2 (Marketing)**: 40+ specialized skills across copywriting, SEO, ads, growth, sales, analytics  
 
-**Layer 1: gstack Skills (Workflow)**
-These skills control HOW you work across all 6 stages:
-- `/brainstorming`: Explore product intent, audience, and goals
-- `/plan-ceo-review`: Validate strategy and scope
-- `/plan-eng-review`: Review technical feasibility and architecture
-- `/design-review`: QA visual consistency and interactions
-- `/qa`: Test output quality before publishing
-- `/context-save` / `/context-restore`: Preserve work across sessions
+**See all skills:** [docs/skills.md](docs/skills.md)
 
-**Layer 2: Marketing Skills (Domain Expertise)**
-40 specialized skills provide WHAT to do at each stage, organized across copywriting, SEO, ads, growth, sales, analytics, and optimization:
+<details>
+<summary><b>How layers work together at each stage</b></summary>
 
-**See all 40 skills:** [docs/skills.md](docs/skills.md)
+| Stage | Workflow | Domain Expertise | Purpose |
+|-------|----------|------------------|---------|
+| 1. Brief | `/brainstorm` | product-marketing | What you're building & who you're selling to |
+| 2. Voice | `/brainstorm` | copywriting, product-marketing | Brand voice and messaging rules |
+| 3. Research | `/investigate` | customer-research, competitors | Market, audience, competition |
+| 4. Strategy | `/plan-ceo-review` | cro, product-marketing | Positioning and messaging |
+| 5. Content | Native Claude | copywriting, ad-creative | Platform-specific drafts |
+| 6. Reports | `/qa` | analytics, ab-testing | Quality and ROI impact |
 
-### How They Work Together
+**The interaction flow:**
+1. gstack skill initiates the stage
+2. Relevant marketing skills activate based on context
+3. Output includes reasoning from all applicable skills
+4. Quality gates verify against brand standards
+5. If needed, restore previous work and refine
 
-**In each stage, gstack and marketing skills collaborate:**
-
-| Stage | gstack Skill | Marketing Skills | Purpose |
-|-------|--------------|------------------|---------|
-| 1. Brief | `/brainstorming` | product-marketing | Explore what you're building and who you're selling to |
-| 2. Voice | `/brainstorming` | copywriting, product-marketing | Define brand voice and messaging rules |
-| 3. Research | `/investigate` | customer-research, competitors, analytics | Understand your market, audience, and competition |
-| 4. Strategy | `/plan-ceo-review` | mktg-ideas, product-marketing, cro | Validate positioning and messaging before writing |
-| 5. Content | Native Claude | copywriting, ad-creative, emails, social | Generate platform-specific content using brand voice |
-| 6. Reports | `/design-review`, `/qa` | analytics, ab-testing | Verify quality and project ROI impact |
-
-**The flow:**
-1. **gstack skill initiates**: `/brainstorming` starts, reads product-marketing foundation
-2. **Marketing skills activate**: Relevant expertise skills (copywriting, cro, ads, etc.) engage based on context
-3. **Context flows forward**: Each stage's output includes reasoning from all applicable marketing skills
-4. **Quality gates**: gstack skills like `/qa` verify the output meets brand and campaign standards
-5. **Iteration loop**: If quality checks fail, `/context-restore` brings back previous work, marketing skills refine
-
-**Cross-skill references:**
-Marketing skills reference each other automatically. For example:
-- `copywriting` ↔ `cro` ↔ `ab-testing` (messaging affects conversion)
-- `revops` ↔ `sales-enablement` ↔ `cold-email` (sales workflows)
-- `seo-audit` ↔ `schema` ↔ `ai-seo` (technical SEO)
-- `customer-research` → `copywriting`, `cro`, `competitors` (data informs creative)
-
-### When to Use Each Skill Type
-
-**Use gstack skills when you:**
-- Need to make decisions (brainstorming, planning, review)
-- Want to save/restore work across sessions
-- Need systematic QA or design review
-
-**Use marketing skills when you:**
-- Write copy, ad creative, emails, social content
-- Conduct SEO, CRO, or growth analysis
-- Research competitors or analyze customer behavior
-- Design paid ad campaigns or analytics dashboards
-- Build sales or GTM strategies
-
-**Both together when you:**
-- Run a full campaign (all 6 stages use both)
-- Onboard new team members (gstack structure, marketing expertise)
-- Scale rapidly (gstack enforces discipline, marketing skills add speed)
+</details>
 
 ---
 
 ## How It Works: Workflow-as-Context Across Three Tiers
 
-The core principle: context preservation is the difference between AI tools and AI systems.
+Context preservation is the difference between AI tools and AI systems.
 
-**Within Tier 1:** Each stage's output automatically becomes the next stage's input. Stage 5 content generation knows the brand voice from Stage 2 and strategy from Stage 4. Nothing falls through the cracks.
+```mermaid
+graph TD
+    Tier1["TIER 1: Stages 1–6<br/>Claude Code orchestrates context"]
+    S1["1. Brief<br/>Product + Goals"]
+    S2["2. Voice<br/>(+Stage 1 context)<br/>👥 Review"]
+    S3["3. Research<br/>(+Stage 1)"]
+    S4["4. Strategy<br/>(+S1,S2,S3)<br/>👥 Review"]
+    S5["5. Content<br/>(+S2,S4)<br/>Ready to Publish"]
+    S6["6. Reports<br/>(+All)<br/>👥 Review"]
+    
+    S1 --> S2
+    S1 --> S3
+    S2 --> S4
+    S3 --> S4
+    S4 --> S5
+    S1 --> S6
+    S2 --> S6
+    S3 --> S6
+    S4 --> S6
+    S5 --> S6
+    
+    S6 --> Tier2["TIER 2: Cowork<br/>Team reviews &<br/>approves"]
+    Tier2 --> Tier3["TIER 3: Execution<br/>Approved playbook<br/>goes to team"]
+    
+    style Tier1 fill:#e1f5ff
+    style Tier2 fill:#fff3e0
+    style Tier3 fill:#e8f5e9
+```
 
-**From Tier 1 → Tier 2:** Structured outputs flow into Claude Desktop Cowork where teams review and refine.
+**The flow:** 
+- **Within Tier 1:** Each stage inherits context from all previous stages. Stage 5 content knows the voice (Stage 2) and strategy (Stage 4) automatically.
+- **Tier 1 → Tier 2:** Outputs flow into Claude Desktop Cowork for team review at decision points.
+- **Tier 2 → Tier 3:** Approved outputs become the execution playbook.
 
-**From Tier 2 → Tier 3:** Approved outputs become the execution playbook for non-technical teams using simple tools.
+<details>
+<summary><b>Context inheritance details by stage</b></summary>
 
-This context flows seamlessly across all 6 stages and all 3 tiers.
+| Stage | Inputs | Purpose | Output Goes To |
+|-------|--------|---------|----------------|
+| 1. Brief | Product, goals | Strategic direction | Stages 2, 3, 4, 6 |
+| 2. Voice | Brief | Brand tone + rules | Stages 4, 5, 6 (team review) |
+| 3. Research | Brief | Market intelligence | Stages 4, 6 |
+| 4. Strategy | Brief + Voice + Research | Positioning + channels | Stages 5, 6 (team review) |
+| 5. Content | Voice + Strategy | Platform-specific copy | Stage 6, publishing |
+| 6. Reports | All stages | Performance & ROI | Team, board (team review) |
 
-| Stage | Invoked By | Agent | Input From | Output Goes To | Result |
-|-------|-----------|-------|-----------|----------------|--------|
-| 1. Brief | `/brainstorm` | Brainstorm agent | Product + goals | Stage 2, 3, 4 | Aligned team |
-| 2. Brand Voice | `/brainstorm` | Brand guidelines agent | Brief (Stage 1) | Stage 4, 5 | Consistent voice |
-| 3. Research | `/investigate` | Research + market analysis agent | Brief (Stage 1) | Stage 4 | Data-driven strategy |
-| 4. Strategy | `/plan-ceo-review` | Strategy + positioning agent | All above | Stage 5 | Clear direction |
-| 5. Content | Native Claude | Content generation agent | Strategy + Voice | Stage 6, publishing | Ready copy |
-| 6. Reports | Native Claude | Analytics + ROI agent | All stages | Board, investors | Proof of impact |
-
-**Key:** Each stage inherits context from all previous stages. Your thinking compounds. Each agent is one of 20+ specialized tools built into the system, plus extensibility to create your own.
-
-**See all agents:** Full list of available agents and capabilities in [skills.md](docs/skills.md).
+</details>
 
 ---
 
