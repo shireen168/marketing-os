@@ -22,7 +22,7 @@ docs/showcase/
 │
 ├── architecture-overview/
 │   ├── 00-three-tier-stack.md ⭐ START HERE (visual + explanation)
-│   ├── 01-why-three-tiers.md (differentiator story for VPs)
+│   ├── 01-why-three-tiers.md (system design: why separate strategy, approval, execution)
 │   └── 02-tier-scaling.md (SMB → Enterprise growth)
 │
 ├── sunny-homemade-real-example/

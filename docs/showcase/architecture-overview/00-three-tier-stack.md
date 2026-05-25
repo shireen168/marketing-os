@@ -191,4 +191,4 @@ Every stage has a human approval checkpoint. The team reviews each output in **C
 
 **The flow:** Consulting expertise (Tier 1) → Team collaboration & approval (Tier 2 in Cowork) → Execution (Tier 3)
 
-**What hiring managers understand:** You build the system, the team refines it together, and execution is simple. That's how you scale without adding headcount.
+**Result:** System scales without proportional cost increases. One strategist builds the system once. Multiple approval gates keep the team in control. Many executors use simple tools. Headcount grows in Tiers 2 and 3, but Tier 1 effort stays constant.
