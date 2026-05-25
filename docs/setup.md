@@ -1,6 +1,14 @@
 # Setup Guide: Marketing OS System
 
-Get your system ready to run marketing ops workflows in 15 minutes.
+Get your system ready to run marketing ops workflows using the three-tier architecture in 15 minutes.
+
+## Three-Tier Architecture
+
+| Tier | Layer | Setup |
+|------|-------|-------|
+| **Tier 1** | Strategic Intelligence | Claude Code in VS Code (this setup) |
+| **Tier 2** | Human-AI Collaboration | Claude Desktop (separate download) for approval gates |
+| **Tier 3** | Team Execution | Simple tools (Linktree, Canva, etc.) |
 
 ## Prerequisites
 
@@ -10,18 +18,24 @@ Get your system ready to run marketing ops workflows in 15 minutes.
 - ~500MB disk space
 - Active Claude account (free or paid)
 - Basic terminal/command line familiarity
+- **Tier 1:** VS Code with Claude Code extension
+- **Tier 2:** Claude Desktop (for Cowork approval gates with your team)
 
 ### Team Readiness
 Before starting, your team should understand:
 
 - **Marketing:** How to brief a product idea (target audience, channels, success metrics)
-- **Non-technical teams:** Comfortable with VS Code UI or Claude Desktop chat interface
-- **Cross-functional:** Willingness to iterate (outputs are drafts, not final publishing-ready copy)
+- **Tier 1 operator:** Comfortable with VS Code + Claude Code + gstack commands
+- **Tier 2 reviewers:** Comfortable with Claude Desktop (non-technical OK, this is where teams approve outputs)
+- **Tier 3 executors:** Can use simple tools (Linktree, Canva, scheduling software)
+- **Cross-functional:** Willingness to iterate (outputs are approved in Cowork, not published directly)
 
 This is not a "set and forget" system. It's a structured thinking tool that requires team input at each stage.
 
 ### What You'll Get After Setup
-- Ability to run 6-stage marketing workflows in parallel chat sessions
+- **Tier 1:** Ability to run 6-stage marketing workflows in VS Code (40-45 minutes per campaign)
+- **Tier 2:** Approval gates in Claude Desktop Cowork where teams refine outputs at Stages 2, 4, 6
+- **Tier 3:** Publication-ready outputs that execution teams can publish with confidence
 - All gstack skills available globally (/brainstorm, /investigate, /plan-ceo-review)
 - Claude Code context preservation across stages
 - Ready to adapt to HR recruiting, legal briefs, sales campaigns, or other departments
@@ -73,6 +87,17 @@ You should see version output. If not, re-run `./setup`.
 
 **Verify:** You should see a Claude icon in the sidebar.
 
+## Step 3b: Install Claude Desktop (For Tier 2 Approvals)
+
+Claude Desktop is where your team reviews and refines outputs at approval gates (Stages 2, 4, 6).
+
+1. Download Claude Desktop from [claude.ai](https://claude.ai/desktop)
+2. Install on your machine
+3. Sign in with your Claude account
+4. Share workflow URLs with your team in Cowork conversations
+
+**Verify:** You can create a new conversation in Claude Desktop.
+
 ## Step 4: Clone Marketing OS Repo
 
 ```bash
@@ -94,10 +119,16 @@ cd marketing-os
 
 ## You're Ready
 
-Next: Follow [workflow.md](workflow.md) to run your first campaign.
+Your Tier 1 and Tier 2 infrastructure is set up. Next:
+
+1. **Tier 1 (Claude Code):** Follow [workflow.md](workflow.md) to run your first campaign (40-45 minutes)
+2. **Tier 2 (Cowork):** Invite your team to Claude Desktop. Share campaign outputs. Refine at approval gates (Stages 2, 4, 6)
+3. **Tier 3 (Execution):** Once Cowork approves, team publishes, tracks performance, feeds learnings back
 
 ---
 
-**Total time:** ~15 minutes (first time only)
+**Total setup time:** ~15 minutes (first time only)
 
-**Need help?** See [WORKFLOW.md](WORKFLOW.md) troubleshooting section.
+**See it in action:** [docs/showcase/](docs/showcase/) shows all three tiers with Sunny Homemade real data.
+
+**Need help?** See [workflow.md](workflow.md) troubleshooting section.
