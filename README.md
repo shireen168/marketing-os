@@ -404,11 +404,11 @@ cd marketing-os
 
 ### Quick Links
 
-**👉 Start here: [Complete Showcase](docs/showcase/README.md)**
-Full architecture breakdown with real Sunny Homemade example. Shows three-tier system, all 6 stages, and human-AI collaboration in Claude Desktop Cowork.
-- **For SMB founders:** See proof it works at your scale (RM1.99 CPA, 255% growth)
-- **For Enterprise VPs:** Understand governance, scaling, and approval gates
-- **For anyone:** Explore the system through a real business (not abstract theory)
+**👉 Start here: [Complete Showcase](docs/showcase/README.md) → [Full Workflow Example](docs/workflow.md)**
+See the Smart Sleep Device product launch walkthrough showing all 6 stages, under-the-hood orchestration, context flow, and how this eliminates agency costs.
+- **For SMB founders:** Understand the complete workflow in 15-30 minutes
+- **For Enterprise VPs:** See governance, approval gates, and scaling patterns
+- **For anyone:** Explore the system through a real product example with decision loops, context inheritance, and cost comparison
 
 **Documentation:**
 1. **[docs/setup.md](docs/setup.md):** Installation and configuration (15 minutes)
@@ -416,21 +416,21 @@ Full architecture breakdown with real Sunny Homemade example. Shows three-tier s
 3. **[docs/faq.md](docs/faq.md):** Answers to common questions about governance, cost, learning curve
 4. **[docs/claude.md](docs/claude.md):** System prompt and skill configuration
 
-**Complete Real-World Example:**
-- **[docs/showcase/](docs/showcase/):** Complete three-tier architecture with Sunny Homemade
+**Complete Workflow Example:**
+- **[docs/workflow.md](docs/workflow.md):** Smart Sleep Device product launch walkthrough
   - Architecture overview (three-tier system + scaling)
-  - All 6 stages with real examples (Brief → Voice → Research → Strategy → Content → Reports)
-  - In-house vs outsource breakdown with cost modeling
-  - Real metrics: RM1.99 CPA, 50.8% thru-play, 255% growth
+  - All 6 stages with examples (Brief → Voice → Research → Strategy → Content → Reports)
+  - Under-the-hood orchestration showing context flow and decision loops
   - Approval gates in Claude Desktop Cowork
+  - Cost comparison: System (40 min + approval) vs Agency (2-3 weeks, $6-10K)
 
-**What the showcase demonstrates:**
+**What the workflow demonstrates:**
 - Complete three-tier architecture (Tier 1: Claude Code, Tier 2: Cowork approval gates, Tier 3: team execution)
 - Multi-stage AI workflows with context flowing through all 6 stages
+- How research findings reshape strategy (decision loops)
 - Human-AI collaboration at decision points (Stages 2, 4, 6 approval gates in Cowork)
-- Real-world SMB proof point with measurable business results
-- In-house vs outsource trade-offs and scaling patterns
-- Rapid deployment approach for team independence (40 min to 100+ campaigns)
+- Why system eliminates the need for external agency consultants
+- Rapid deployment approach for team independence (40 min per campaign)
 
 ---
 
