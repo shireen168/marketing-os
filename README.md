@@ -1,6 +1,6 @@
 # Marketing OS: AI-Powered Marketing Operations System
 
-**Build market-ready campaigns in-house. No agencies. No copy-paste. 1-2 hours strategic work vs 2-3 weeks agency turnaround.**
+**Build market-ready campaigns in-house. No agencies. No copy-paste. 4-8 hours strategic work vs $20-30K agency cost + 2-3 weeks turnaround.**
 
 A production-ready system for marketing teams to operate autonomously using three-tier architecture:
 - **Tier 1 (Claude Code):** Strategic thinking + multi-stage workflows with context preservation
@@ -38,11 +38,11 @@ cat docs/marketing-campaigns/README.md
 | **5. Content** | 10m | 6 platform-specific drafts | — |
 | **6. Reports** | 5m | ROI forecasts + metrics | ✅ Team reviews |
 
-**Total Tier 1:** 1-2 hours of strategic work (Claude Code) + Tier 2 approval time + Tier 3 execution
+**Total Tier 1:** 4-8 hours of strategic thinking (Claude Code Stages 1-6) + Tier 2 approval time + Tier 3 execution
 
 **Realistic Timeline:**
-- Small campaign: 1-2 hours Tier 1 + 1 day approval + 1 day execution = ~3 days (vs 2-3 weeks agency)
-- Large campaign: 2-3 hours Tier 1 + 2 days approval + 2-3 days execution = ~1 week (vs 3-4 weeks agency)
+- Small campaign: 4-5 hours Tier 1 + 1 day approval + 1 day execution = ~2-3 days (vs $20-30K + 2-3 weeks agency)
+- Large campaign: 6-8 hours Tier 1 + 2 days approval + 2-3 days execution = ~1 week (vs $25-30K + 3-4 weeks agency)
 
 ---
 

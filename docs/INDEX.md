@@ -52,10 +52,10 @@
 - **Starting point:** [SLEEP-DEVICE-WORKFLOW-README.md](./product-launch/SLEEP-DEVICE-WORKFLOW-README.md)
 
 **Three-Tier System (Marketing Campaigns)**
-- **Timeline:** 1-2 hours Tier 1 strategic work + approval + execution
+- **Timeline:** 4-8 hours Tier 1 strategic work + approval + execution (vs 2-3 weeks + $20-30K agency)
 - **Stages:** 6 (brief → reports)
 - **Skills:** 40+ marketing-specific
-- **Use case:** In-house campaign execution vs agency turnaround
+- **Use case:** In-house campaign execution vs agency dependency
 - **Starting point:** [setup.md](./marketing-campaigns/setup.md)
 
 ---

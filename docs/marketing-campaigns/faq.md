@@ -3,7 +3,7 @@
 ## Will our team actually use this?
 
 - Yes, because it's designed for non-technical teams to actively participate.
-- **Tier 1 (Strategic thinking):** One person runs Claude Code + gstack skills (1-2 hours for full workflow)
+- **Tier 1 (Strategic thinking):** One person runs Claude Code + gstack skills (4-8 hours for full 6-stage workflow)
 - **Tier 2 (Approvals):** Your team reviews outputs in Claude Desktop Cowork. Non-technical team members can edit captions, adjust strategy, or request changes directly. No context switching, no copy-paste friction.
 - **Tier 3 (Execution):** Simple tools (Linktree, Canva, scheduling) publish approved work
 - Everyone sees context preserved automatically
@@ -61,11 +61,11 @@ Four key differences:
 
 1. **Speed:**
    - Agencies take 2-3 weeks (scope, draft, revisions, final)
-   - This system: 1-2 hours strategic work (Claude Code) + 1-2 days approval (Cowork) + execution. You control the timeline and iterate faster
+   - This system: 4-8 hours strategic work (Claude Code) + 1-2 days approval (Cowork) + execution. You control the timeline and iterate faster
 
 2. **Cost:**
-   - Agency: $3-5K per campaign
-   - This system: setup once, run 100 campaigns. Cost per campaign approaches zero
+   - Agency: $20-30K per campaign (depending on scope and complexity)
+   - This system: 4-8 hours of one person's time. Setup once, run unlimited campaigns. Cost per campaign approaches marginal
 
 3. **Control:**
    - Agencies deliver final copy
