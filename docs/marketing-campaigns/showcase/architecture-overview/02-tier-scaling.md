@@ -19,7 +19,7 @@
 **The system:**
 - Claude Code + 2-3 MCP servers (public data: market trends, competitor analysis, audience demographics)
 - Manual decision-making (founder/strategist reviews output, decides next step)
-- Time per cycle: 40 minutes system work + approval time
+- Time per cycle: 1-2 hours strategic work + approval time vs 2-3 weeks agency
 - Run frequency: Per campaign (product launch, seasonal campaign, etc.)
 
 **What it produces:**
@@ -33,10 +33,10 @@
 - Limited to what's publicly available
 
 **Cost:**
-- Time: 40 minutes per campaign
+- Time: 1-2 hours strategic work per campaign (vs 2-3 weeks agency turnaround)
 - Infrastructure: Claude Code + public MCP servers
 - Expertise: Mid-level marketing strategy
-- ROI: $6-10K agency cost replaced by 40 minutes of work
+- ROI: $6-10K agency cost eliminated by in-house operation
 
 ---
 

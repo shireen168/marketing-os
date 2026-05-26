@@ -33,7 +33,7 @@ Before starting, your team should understand:
 This is not a "set and forget" system. It's a structured thinking tool that requires team input at each stage.
 
 ### What You'll Get After Setup
-- **Tier 1:** Ability to run 6-stage marketing workflows in VS Code (40-45 minutes per campaign)
+- **Tier 1:** Ability to run 6-stage marketing workflows in VS Code (1-2 hours strategic work per campaign vs 2-3 weeks agency)
 - **Tier 2:** Approval gates in Claude Desktop Cowork where teams refine outputs at Stages 2, 4, 6
 - **Tier 3:** Publication-ready outputs that execution teams can publish with confidence
 - All gstack skills available globally (/brainstorm, /investigate, /plan-ceo-review)
@@ -121,7 +121,7 @@ cd marketing-os
 
 Your Tier 1 and Tier 2 infrastructure is set up. Next:
 
-1. **Tier 1 (Claude Code):** Follow [workflow.md](workflow.md) to run your first campaign (40-45 minutes)
+1. **Tier 1 (Claude Code):** Follow [workflow.md](workflow.md) to run your first campaign (1-2 hours strategic work)
 2. **Tier 2 (Cowork):** Invite your team to Claude Desktop. Share campaign outputs. Refine at approval gates (Stages 2, 4, 6)
 3. **Tier 3 (Execution):** Once Cowork approves, team publishes, tracks performance, feeds learnings back
 

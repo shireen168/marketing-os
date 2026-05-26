@@ -24,7 +24,7 @@ Your role:
 5. Generate content that's copy-paste ready (Stage 5)
 6. Project performance with industry benchmarks (Stage 6) → **review in Cowork**
 
-**Key principle:** Each stage's output feeds into the next. Stage 5 uses outputs from Stage 2 + Stage 4. Stage 6 uses all previous outputs. Nothing is disconnected. This is what makes 40-45 minutes of Claude Code work + approval gates possible instead of 5+ days.
+**Key principle:** Each stage's output feeds into the next. Stage 5 uses outputs from Stage 2 + Stage 4. Stage 6 uses all previous outputs. Nothing is disconnected. This structured approach means 1-2 hours of Claude Code strategic work instead of 5+ days of fragmented agency communication.
 
 **Approval gates in Claude Desktop Cowork:** Stages 2, 4, and 6 pause for team review in Cowork. Non-technical team members refine outputs directly in the conversation before Tier 3 execution. This ensures human judgment stays in the loop at strategic decision points.
 
@@ -223,7 +223,7 @@ Then run [workflow.md](workflow.md) for step-by-step instructions on each stage.
 
 ## Tips
 
-- **Tier 1 (Claude Code) runs fast:** Stages 1-6 complete in 40-45 minutes
+- **Tier 1 (Claude Code) runs focused:** Stages 1-6 strategic thinking in 1-2 hours (vs 2-3 weeks agency turnaround)
 - **Tier 2 (Cowork) is where decisions happen:** Don't skip the approval gates at Stages 2, 4, 6. Teams refine outputs directly in Cowork.
 - **Tier 3 (Execution) gets simple, proven output:** Once Cowork approves, execution teams publish with confidence (no re-work)
 - **Each stage is independent:** Create a brief once, use for multiple strategies

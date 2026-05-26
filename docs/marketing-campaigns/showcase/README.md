@@ -122,7 +122,7 @@ For a detailed walkthrough showing all 6 stages with the **under-the-hood proces
 - How `/brainstorming` skill orchestrates thinking at each stage
 - How research findings reshape strategy decisions (decision loop)
 - How context flows automatically from Stage 3 research → Stage 4 strategy → Stage 5 content
-- Cost comparison: System (40 min + approval) vs Agency (2-3 weeks, $6-10K)
+- Cost comparison: System (1-2 hours strategic work + approval) vs Agency (2-3 weeks, $6-10K)
 - Why this eliminates the need to hire agency consultants
 
 ---
