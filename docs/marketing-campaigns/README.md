@@ -1,6 +1,10 @@
-# Marketing OS: 6-Stage Campaign System
+# Marketing OS: Build Campaigns In-House, Not Through Agencies
 
-This system shows how to structure and execute marketing campaigns using a three-tier architecture (strategic, approval gates, execution).
+**Capability:** Execute agency-quality campaigns in 4-8 hours of strategic work (vs $20-30K + 2-3 weeks agency turnaround).
+
+**Two ways to use this:**
+- **Hire me:** I run your campaigns as your Marketing/Brand Manager
+- **Build it yourself:** I guide you through the 6-stage system so you own the process
 
 ## Quick Start
 

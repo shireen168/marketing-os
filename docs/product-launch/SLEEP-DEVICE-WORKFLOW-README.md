@@ -1,6 +1,10 @@
-# Smart Sleep Device: Complete Product Workflow
+# Complete Product Workflow: Validation to Operations in 10 Days
 
-**Build a market-ready product in 10 days. One person. 75 Claude Code skills. Zero context loss.**
+**Smart Sleep Device case study:** How to structure product launches for speed, quality, and strategic control.
+
+**Two ways to work with me:**
+- **Hire me:** I lead your product launches end-to-end as your Director/VP
+- **Build together:** You own the system, I guide you through the workflow
 
 ---
 
@@ -26,15 +30,15 @@ OPERATE (Ongoing)
 
 ---
 
-## What This Proves
+## How This Works
 
-| Metric | Impact |
-|--------|--------|
-| **Timeline** | 10 days from idea to shipped (normally 4-6 weeks) |
-| **Team size** | 1 person (normally 3-5 person team) |
-| **Skills used** | 75 distinct Claude Code skills (validation → growth) |
-| **Cost** | 90% strategic thinking (kept in-house) + 10% tactical execution |
-| **Context loss** | 0% (checkpoints preserve all decisions across sessions) |
+| Dimension | What You Get |
+|-----------|--------------|
+| **Timeline** | 10 days from validation to operations (vs 4-6 weeks traditional) |
+| **Team** | 2-3 core people (vs 4-5 person team) |
+| **Strategic depth** | 90% strategic thinking, 10% tactical execution—strategic decisions stay connected |
+| **Control** | Full in-house ownership—no external dependencies for core product decisions |
+| **Continuity** | 0% context loss across sessions—all decisions preserved, no knowledge silos |
 
 ---
 

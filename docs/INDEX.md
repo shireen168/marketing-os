@@ -1,4 +1,12 @@
-# Documentation Index
+# Marketing OS & Product Launch Capabilities
+
+How we can work together to build market-ready products and campaigns with full strategic control.
+
+**Two engagement models:**
+1. **Hire:** I manage your product launches or marketing campaigns as your Director/Manager
+2. **Build Together:** You own the system, I guide you through the proven workflow
+
+---
 
 ## Quick Navigation
 
@@ -28,35 +36,32 @@
 
 ---
 
-## What's Here
+## Documentation Map
 
-| File/Folder | Purpose | Audience |
-|-------------|---------|----------|
-| product-launch/SLEEP-DEVICE-WORKFLOW-README.md | 10-day product launch overview | Founders, operators, hiring managers |
-| product-launch/PHASES/ | 8-phase detailed walkthroughs | Anyone shipping products |
-| product-launch/SKILLS-INVENTORY.md | All 75 skills reference | Implementation reference |
-| marketing-campaigns/setup.md | System installation | Technical setup |
-| marketing-campaigns/CLAUDE.md | System prompt + configuration | Configuration reference |
-| marketing-campaigns/faq.md | Common Q&A | General reference |
-| marketing-campaigns/showcase/ | Three-tier architecture docs | Architecture deep-dive |
+| Section | What It Covers | Who It's For |
+|---------|----------------|-------------|
+| **product-launch/** | 8-phase workflow from validation to operations | Founders, product teams, hiring managers |
+| **SLEEP-DEVICE-WORKFLOW-README.md** | Complete example: smart sleep device launch | See how the system works in practice |
+| **PHASES/** | Detailed walkthrough of each phase | Implementation guide (if you build it yourself) |
+| **marketing-campaigns/** | 6-stage campaign system + three-tier architecture | Marketing teams, campaign managers, business operators |
+| **showcase/** | Architecture diagrams, scaling patterns, deep-dives | Understanding how the system scales from SMB to enterprise |
 
 ---
 
-## Two Distinct Workflows
+## Two Core Capabilities
 
-**Smart Sleep Device (Product Launches)**
-- **Timeline:** 10 days
-- **Phases:** 8 (validation → operations)
-- **Skills:** 75
-- **Use case:** Building market-ready products from scratch
-- **Starting point:** [SLEEP-DEVICE-WORKFLOW-README.md](./product-launch/SLEEP-DEVICE-WORKFLOW-README.md)
+**Product Launches: Validation to Operations in 10 Days**
+- **What you get:** End-to-end product strategy, architecture, build, test, launch, and growth
+- **Timeline:** 10 days (vs 4-6 weeks typical)
+- **Team:** 2-3 core people
+- **How to work with me:** Hire me as your Product Director, or I guide your team through the workflow
+- **Read:** [SLEEP-DEVICE-WORKFLOW-README.md](./product-launch/SLEEP-DEVICE-WORKFLOW-README.md)
 
-**Three-Tier System (Marketing Campaigns)**
-- **Timeline:** 4-8 hours Tier 1 strategic work + approval + execution (vs 2-3 weeks + $20-30K agency)
-- **Stages:** 6 (brief → reports)
-- **Skills:** 40+ marketing-specific
-- **Use case:** In-house campaign execution vs agency dependency
-- **Starting point:** [setup.md](./marketing-campaigns/setup.md)
+**Marketing Campaigns: Agency-Quality in-House in 4-8 Hours**
+- **What you get:** Strategic briefs, brand voice, research, positioning, content, performance projections
+- **Timeline:** 4-8 hours strategic work + approval + execution (vs 2-3 weeks + $20-30K agency cost)
+- **How to work with me:** Hire me as your Marketing Manager, or I help you build your own 6-stage system
+- **Read:** [setup.md](./marketing-campaigns/setup.md)
 
 ---
 
