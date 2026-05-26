@@ -87,22 +87,6 @@ Example: Save work Friday evening → Come back Tuesday morning → Resume with 
 
 ---
 
-## The Hiring Signal
-
-When you ship a complete product using this workflow, you prove:
-
-✓ **Validation before code** — reduce rework by 70%  
-✓ **Strategy before tactics** — positioning is intentional, not accidental  
-✓ **Design rigor** — taste, not speed  
-✓ **Testing discipline** — health data = zero tolerance for bugs  
-✓ **Marketing ownership** — you don't hand off to someone else  
-✓ **Context preservation** — you don't lose institutional knowledge  
-✓ **Sustainable ops** — you document processes for scale  
-
-**Result:** You're a force multiplier hire. You own the entire value chain.
-
----
-
 ## Quick Start
 
 **1. Read the overview** (you're reading it — 5 min)  
@@ -148,23 +132,6 @@ docs/
 └── diagrams/
     └── workflow-diagram.png
 ```
-
----
-
-## For Hiring Managers / Partnership Scouts
-
-**What this shows:**
-- One person can own idea → design → build → test → ship → grow
-- AI-leveraged workflow saves 70% of time + cost
-- Context preservation keeps knowledge in-house (not lost between contractors)
-- Systematic approach prevents chaos
-
-**The person who ships this:**
-- Thinks strategically (not just tactically)
-- Validates before building
-- Owns marketing, not just code
-- Documents processes for repeatability
-- Works smarter, not just faster
 
 ---
 
