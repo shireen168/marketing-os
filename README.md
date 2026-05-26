@@ -89,7 +89,7 @@ graph TD
 - **Tier 2 keeps humans in control:** Every major decision (Stages 2, 4, 6) goes through Claude Desktop Cowork where team members approve outputs before execution
 - **Tier 3 stays simple:** Non-technical team members execute using straightforward tools, following an approved playbook
 
-**Learn more:** [docs/showcase/architecture-overview/00-three-tier-stack.md](docs/showcase/architecture-overview/00-three-tier-stack.md) for visual diagrams and detailed breakdown.
+**Learn more:** [docs/marketing-campaigns/showcase/architecture-overview/00-three-tier-stack.md](docs/marketing-campaigns/showcase/architecture-overview/00-three-tier-stack.md) for visual diagrams and detailed breakdown.
 
 ---
 
@@ -255,7 +255,7 @@ graph TD
 **Layer 1 (gstack)**: Orchestration, context preservation, quality gates  
 **Layer 2 (Marketing)**: 40+ specialized skills across copywriting, SEO, ads, growth, sales, analytics  
 
-**See all skills:** [docs/skills.md](docs/skills.md)
+**See all skills:** [docs/product-launch/SKILLS-INVENTORY.md](docs/product-launch/SKILLS-INVENTORY.md)
 
 <details>
 <summary><b>How layers work together at each stage</b></summary>
@@ -402,35 +402,51 @@ git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 ```
 
+---
+
+## Documentation Structure
+
+**Two distinct workflows:**
+
+| Workflow | Purpose | Timeline | Files |
+|----------|---------|----------|-------|
+| **Smart Sleep Device** | Full product launch (idea → ship → scale) | 10 days | `SLEEP-DEVICE-WORKFLOW-README.md` + `PHASES/` |
+| **Three-Tier System** | Marketing campaigns (brief → launch → analyze) | 40-45 min | `setup.md`, `faq.md`, `CLAUDE.md`, `showcase/` |
+
+---
+
 ### Quick Links
 
-**👉 Start here: [Complete Showcase](docs/showcase/README.md) → [Full Workflow Example](docs/workflow.md)**
-See the Smart Sleep Device product launch walkthrough showing all 6 stages, under-the-hood orchestration, context flow, and how this eliminates agency costs.
-- **For SMB founders:** Understand the complete workflow in 15-30 minutes
-- **For Enterprise VPs:** See governance, approval gates, and scaling patterns
-- **For anyone:** Explore the system through a real product example with decision loops, context inheritance, and cost comparison
+**🚀 Real-World Walkthrough: [Smart Sleep Device — 10-Day Product Launch](docs/product-launch/SLEEP-DEVICE-WORKFLOW-README.md)**
 
-**Documentation:**
-1. **[docs/setup.md](docs/setup.md):** Installation and configuration (15 minutes)
-2. **[docs/workflow.md](docs/workflow.md):** Step-by-step guide to each of the 6 stages
-3. **[docs/faq.md](docs/faq.md):** Answers to common questions about governance, cost, learning curve
-4. **[docs/claude.md](docs/claude.md):** System prompt and skill configuration
+Complete end-to-end workflow showing how one person uses **75 Claude Code skills** to build, validate, design, test, launch, and grow a market-ready product in 10 days.
 
-**Complete Workflow Example:**
-- **[docs/workflow.md](docs/workflow.md):** Smart Sleep Device product launch walkthrough
-  - Architecture overview (three-tier system + scaling)
-  - All 6 stages with examples (Brief → Voice → Research → Strategy → Content → Reports)
-  - Under-the-hood orchestration showing context flow and decision loops
-  - Approval gates in Claude Desktop Cowork
-  - Cost comparison: System (40 min + approval) vs Agency (2-3 weeks, $6-10K)
+- **8 phases** from validation through sustainable operations
+- **5 context checkpoints** to preserve decisions across sessions  
+- **Skills inventory** showing every skill invoked in sequence
+- **Hiring signal proof:** Own the entire value chain (validation → design → build → test → ship → grow → operate)
 
-**What the workflow demonstrates:**
-- Complete three-tier architecture (Tier 1: Claude Code, Tier 2: Cowork approval gates, Tier 3: team execution)
-- Multi-stage AI workflows with context flowing through all 6 stages
-- How research findings reshape strategy (decision loops)
-- Human-AI collaboration at decision points (Stages 2, 4, 6 approval gates in Cowork)
-- Why system eliminates the need for external agency consultants
-- Rapid deployment approach for team independence (40 min per campaign)
+**Who should read this:**
+- **Hiring managers:** See how one operator owns entire product lifecycle
+- **Founders/startup teams:** Understand the complete launch workflow
+- **Operations leaders:** Learn context preservation + process automation
+- **Anyone shipping products:** A repeatable, scalable process
+
+→ [**Start with the overview** (5 min read)](docs/product-launch/SLEEP-DEVICE-WORKFLOW-README.md)  
+→ [**View all 75 skills** (reference table)](docs/product-launch/SKILLS-INVENTORY.md)  
+→ [**Dive into any phase** (detailed walkthrough)](docs/product-launch/PHASES/)
+
+---
+
+**📋 Marketing OS System:**
+
+**Getting Started:**
+- **[docs/marketing-campaigns/setup.md](docs/marketing-campaigns/setup.md):** Installation and system configuration (15 min)
+- **[docs/marketing-campaigns/CLAUDE.md](docs/marketing-campaigns/CLAUDE.md):** System prompt, skill routing, stage-by-stage workflow
+
+**System Architecture & Reference:**
+- **[docs/marketing-campaigns/showcase/](docs/marketing-campaigns/showcase/):** Three-tier architecture, visual diagrams, scaling patterns
+- **[docs/marketing-campaigns/faq.md](docs/marketing-campaigns/faq.md):** Common questions about governance, cost, learning curve
 
 ---
 
