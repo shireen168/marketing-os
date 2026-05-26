@@ -2,10 +2,6 @@
 
 **Smart Sleep Device case study:** How to structure product launches for speed, quality, and strategic control.
 
-**Two ways to work with me:**
-- **Hire me:** I lead your product launches end-to-end as your Director/VP
-- **Build together:** You own the system, I guide you through the workflow
-
 ---
 
 ## The Flow
