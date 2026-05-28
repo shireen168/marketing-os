@@ -209,7 +209,7 @@ This is the core differentiator: AI generates strategic outputs, but your team r
 
 ## Real-World Example
 
-See [docs/showcase/](docs/showcase/) for a complete three-tier example with Sunny Homemade (SMB proof point). Shows all 6 stages, approval gates, and the three-tier architecture in action.
+See [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) for a complete three-tier example. Shows all 6 stages, approval gates, and the three-tier architecture in action.
 
 ## Setup Instructions
 
@@ -219,7 +219,7 @@ Follow [setup.md](setup.md) to install:
 3. Claude Code extension in VS Code
 4. Clone this repo
 
-Then run [workflow.md](workflow.md) for step-by-step instructions on each stage.
+For step-by-step instructions on each stage, see the [8-phase implementation guide](./phases/).
 
 ## Tips
 

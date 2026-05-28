@@ -15,4 +15,4 @@ How this system grows from one team to enterprise operations.
 
 ---
 
-For the complete product workflow example, see [../product-launch/sleep-device-workflow-readme.md](../product-launch/sleep-device-workflow-readme.md).
+For the complete product workflow example, see [../../product-launch/sleep-device-workflow-readme.md](../../product-launch/sleep-device-workflow-readme.md).

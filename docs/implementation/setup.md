@@ -121,7 +121,7 @@ cd marketing-os
 
 Your Tier 1 and Tier 2 infrastructure is set up. Next:
 
-1. **Tier 1 (Claude Code):** Follow [workflow.md](workflow.md) to run your first campaign (4-8 hours strategic work across 6 stages)
+1. **Tier 1 (Claude Code):** Follow the [8-phase implementation guide](./phases/) to run your first campaign (4-8 hours strategic work across 6 stages)
 2. **Tier 2 (Cowork):** Invite your team to Claude Desktop. Share campaign outputs. Refine at approval gates (Stages 2, 4, 6)
 3. **Tier 3 (Execution):** Once Cowork approves, team publishes, tracks performance, feeds learnings back
 
@@ -129,6 +129,6 @@ Your Tier 1 and Tier 2 infrastructure is set up. Next:
 
 **Total setup time:** ~15 minutes (first time only)
 
-**See it in action:** [docs/showcase/](docs/showcase/) shows all three tiers with Sunny Homemade real data.
+**See it in action:** [docs/marketing-campaigns/showcase/](../../marketing-campaigns/showcase/) shows the three-tier architecture in detail.
 
-**Need help?** See [workflow.md](workflow.md) troubleshooting section.
+**For help:** Refer to the phase documentation or the [skills inventory](./skills-inventory.md).

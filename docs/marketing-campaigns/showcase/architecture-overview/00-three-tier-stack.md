@@ -122,11 +122,11 @@
 - Team approves → Output locked for Tier 3 execution
 
 **Smart Sleep Device example:**
-See [docs/workflow.md](../workflow.md) for a complete walkthrough showing how a smart sleep tracking device product moves through all 6 stages:
-- Stage 3 research reveals market gap (competitors focus on metrics, buyers want outcomes)
-- Stage 4 strategy shifts positioning based on research findings
-- Stage 5 content inherits both the research insight and strategic positioning
-- Full context flow showing how one research finding reshapes all downstream stages
+See [../../product-launch/sleep-device-workflow-readme.md](../../product-launch/sleep-device-workflow-readme.md) for a complete walkthrough showing how a smart sleep tracking device product moves through all 8 phases:
+- Validation research reveals market gap (competitors focus on metrics, buyers want outcomes)
+- Strategy shifts positioning based on research findings
+- Content inherits both the research insight and strategic positioning
+- Full context flow showing how findings reshape decisions across all phases
 
 ---
 
