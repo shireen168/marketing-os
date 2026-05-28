@@ -32,9 +32,9 @@ OPERATE (Ongoing)
 |-----------|--------------|
 | **Timeline** | 10 days from validation to operations (vs 4-6 weeks traditional) |
 | **Team** | 2-3 core people (vs 4-5 person team) |
-| **Strategic depth** | 90% strategic thinking, 10% tactical execution—strategic decisions stay connected |
-| **Control** | Full in-house ownership—no external dependencies for core product decisions |
-| **Continuity** | 0% context loss across sessions—all decisions preserved, no knowledge silos |
+| **Strategic depth** | 90% strategic thinking, 10% tactical execution (strategic decisions stay connected) |
+| **Control** | Full in-house ownership (no external dependencies for core product decisions) |
+| **Continuity** | 0% context loss across sessions (all decisions preserved, no knowledge silos) |
 
 ---
 
@@ -67,9 +67,9 @@ Each phase shows which skills to invoke, when, and what output feeds into the ne
 
 ### Skill Invocation Pattern
 Each skill:
-- **Does one thing** — validates, plans, designs, builds, tests, or markets
-- **Produces output** — document, audit, component, test result, asset
-- **Feeds next skill** — output becomes input for the next step
+- **Does one thing**: validates, plans, designs, builds, tests, or markets
+- **Produces output**: document, audit, component, test result, asset
+- **Feeds next skill**: output becomes input for the next step
 
 ### Context Checkpoints
 5 strategic save points prevent context loss:
@@ -85,8 +85,8 @@ Example: Save work Friday evening → Come back Tuesday morning → Resume with 
 
 ## Quick Start
 
-**1. Read the overview** (you're reading it — 5 min)  
-**2. Check the skills** ([75-skill inventory](./SKILLS-INVENTORY.md) — 10 min)  
+**1. Read the overview** (you're reading it: 5 min)  
+**2. Check the skills** ([75-skill inventory](./SKILLS-INVENTORY.md): 10 min)  
 **3. Pick a phase** (start with [Phase 1: Validation](./PHASES/phase-1-validation.md))  
 **4. Follow the skills** (exact invocation order, linked throughout)  
 **5. Save at checkpoints** (use `/context-save` to preserve work)
@@ -133,5 +133,5 @@ docs/
 
 ## Start Here
 
-→ [**Phase 1: Validation** — Day 1-2 skills](./PHASES/phase-1-validation.md)
+→ [**Phase 1: Validation** (Day 1-2 skills)](./PHASES/phase-1-validation.md)
 

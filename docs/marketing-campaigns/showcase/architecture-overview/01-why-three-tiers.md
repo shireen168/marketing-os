@@ -153,4 +153,4 @@ Benefits:
 
 **With three tiers:** Each layer has a clear job. Strategists think. Teams approve. Executors do. Scales from 1 person to 1,000.
 
-**The architecture is the system.** It's not about the specific tools (Claude Code, Cowork, Canva) — it's about the separation of concerns that makes growth possible.
+**The architecture is the system.** It's not about the specific tools (Claude Code, Cowork, Canva): it's about the separation of concerns that makes growth possible.

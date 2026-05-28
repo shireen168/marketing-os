@@ -9,7 +9,7 @@
 │                                                                   │
 │  ╔════════════════════════════════════════════════════════════╗  │
 │  ║  TIER 1: STRATEGIC INTELLIGENCE LAYER                     ║  │
-│  ║  (The "Brain" — where consulting expertise lives)         ║  │
+│  ║  (The "Brain": where consulting expertise lives)         ║  │
 │  ║                                                             ║  │
 │  ║  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐    ║  │
 │  ║  │ Claude Code  │→ │ MCP Servers  │→ │ Custom       │    ║  │
@@ -24,7 +24,7 @@
 │           ↓ (context flows down + Tier 1 approval needed)         │
 │  ╔════════════════════════════════════════════════════════════╗  │
 │  ║  TIER 2: WORKFLOW OUTPUTS + TEAM COLLABORATION            ║  │
-│  ║  (The "What" — structured outputs + Claude Desktop review)║  │
+│  ║  (The "What": structured outputs + Claude Desktop review)║  │
 │  ║                                                             ║  │
 │  ║  Stage 1    Stage 2    Stage 3    Stage 4    Stage 5 Stage 6  ║  │
 │  ║  ┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐  ┌─────┐  ║  │
@@ -44,7 +44,7 @@
 │           ↓ (approved outputs become inputs for Tier 3)           │
 │  ╔════════════════════════════════════════════════════════════╗  │
 │  ║  TIER 3: POST-APPROVAL EXECUTION LAYER                    ║  │
-│  ║  (The "How" — teams execute using simple tools)           ║  │
+│  ║  (The "How": teams execute using simple tools)           ║  │
 │  ║                                                             ║  │
 │  ║  Canva  ↔  Spreadsheets  ↔  Social Schedulers             ║  │
 │  ║  (design) (planning)        (posting)                      ║  │
@@ -101,7 +101,7 @@
 
 **How the team works:**
 - Team reviews each stage output in **Claude Desktop Cowork** (better UI than CLI, built for collaboration)
-- Each stage has a **human-approval checkpoint** — team member reviews, asks Claude questions, refines if needed
+- Each stage has a **human-approval checkpoint**: team member reviews, asks Claude questions, refines if needed
 - **Cowork advantages:**
   - Non-technical team members can edit + discuss outputs with Claude in real-time
   - Approval gates are clear (thumbs up = move to next stage)
@@ -137,9 +137,9 @@ See [docs/workflow.md](../workflow.md) for a complete walkthrough showing how a 
 **What they do:**
 - **Take Tier 2 outputs** (the approved playbook)
 - **Execute using simple tools:** Canva (design), spreadsheets (planning), schedulers (posting)
-- **No coding, no AI prompting required** — the smarts are already locked in Tier 2
-- **Fast, repeatable** — once Tier 1 + 2 are done and approved, Tier 3 is plug-and-play
-- **Only starts after Tier 2 approval** — clear hand-off from strategy to execution
+- **No coding, no AI prompting required**: the smarts are already locked in Tier 2
+- **Fast, repeatable**: once Tier 1 + 2 are done and approved, Tier 3 is plug-and-play
+- **Only starts after Tier 2 approval**: clear hand-off from strategy to execution
 
 **Why it matters:**
 - ✅ Shows team members don't need to be technical to execute
@@ -163,7 +163,7 @@ See [docs/workflow.md](../workflow.md) for a complete walkthrough showing how a 
 
 ## Human-AI Collaboration: Approval Gates at Each Stage
 
-Every stage has a human approval checkpoint. The team reviews each output in **Claude Desktop Cowork** — a dedicated interface for collaborative refinement — before moving to execution:
+Every stage has a human approval checkpoint. The team reviews each output in **Claude Desktop Cowork** (a dedicated interface for collaborative refinement) before moving to execution:
 
 - **Stage 1 approval:** Does this brief reflect our brand? Are we targeting the right audience?
 - **Stage 2 approval:** Does the voice guide feel authentic? Are messaging pillars comprehensive?
