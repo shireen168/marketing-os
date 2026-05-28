@@ -2,59 +2,7 @@
 
 ## Visual Diagram
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    MARKETING OS SYSTEM                           │
-├─────────────────────────────────────────────────────────────────┤
-│                                                                   │
-│  ╔════════════════════════════════════════════════════════════╗  │
-│  ║  TIER 1: STRATEGIC INTELLIGENCE LAYER                     ║  │
-│  ║  (The "Brain": where consulting expertise lives)         ║  │
-│  ║                                                             ║  │
-│  ║  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐    ║  │
-│  ║  │ Claude Code  │→ │ MCP Servers  │→ │ Custom       │    ║  │
-│  ║  │ Orchestrator │  │ (Market data,│  │ Skills       │    ║  │
-│  ║  │              │  │  competitors,│  │ (coordinate  │    ║  │
-│  ║  │ Coordinates  │  │  research)   │  │ decisions)   │    ║  │
-│  ║  │ 6-stage flow │  │              │  │              │    ║  │
-│  ║  └──────────────┘  └──────────────┘  └──────────────┘    ║  │
-│  ║                                                             ║  │
-│  ║  OUTPUT: Strategic decisions, briefs, content direction    ║  │
-│  ╚═════════════════════════════════════════════════════════════╝  │
-│           ↓ (context flows down + Tier 1 approval needed)         │
-│  ╔════════════════════════════════════════════════════════════╗  │
-│  ║  TIER 2: WORKFLOW OUTPUTS + TEAM COLLABORATION            ║  │
-│  ║  (The "What": structured outputs + Claude Desktop review)║  │
-│  ║                                                             ║  │
-│  ║  Stage 1    Stage 2    Stage 3    Stage 4    Stage 5 Stage 6  ║  │
-│  ║  ┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐  ┌─────┐  ║  │
-│  ║  │Brief │→ │Voice │→ │      │→ │      │→ │Content│ │     │  ║  │
-│  ║  │      │  │Guide │  │Rsrch │  │Strat │  │Plans  │ │RPT  │  ║  │
-│  ║  └──┬───┘  └──┬───┘  └──┬───┘  └──┬───┘  └──┬───┘  └┬────┘  ║  │
-│  ║     │         │         │         │         │       │        ║  │
-│  ║     ↓ Team reviews in Claude Desktop Cowork         │        ║  │
-│  ║   ┌─────────────────────────────────────────┐      │        ║  │
-│  ║   │ Human-AI Collaboration & Approval Gate  │◄─────┘        ║  │
-│  ║   │ (Team refines + approves each stage)    │               ║  │
-│  ║   └─────────────────────────────────────────┘               ║  │
-│  ║                                                             ║  │
-│  ║  Each stage inherits previous stage's context              ║  │
-│  ║  Real example: Smart Sleep Device product launch           ║  │
-│  ╚═════════════════════════════════════════════════════════════╝  │
-│           ↓ (approved outputs become inputs for Tier 3)           │
-│  ╔════════════════════════════════════════════════════════════╗  │
-│  ║  TIER 3: POST-APPROVAL EXECUTION LAYER                    ║  │
-│  ║  (The "How": teams execute using simple tools)           ║  │
-│  ║                                                             ║  │
-│  ║  Canva  ↔  Spreadsheets  ↔  Social Schedulers             ║  │
-│  ║  (design) (planning)        (posting)                      ║  │
-│  ║                                                             ║  │
-│  ║  Only executes after Tier 2 approval is given              ║  │
-│  ║  Non-technical team members follow the approved playbook   ║  │
-│  ╚═════════════════════════════════════════════════════════════╝  │
-│                                                                   │
-└─────────────────────────────────────────────────────────────────┘
-```
+![Three-tier stack architecture diagram](../../../../assets/three-tier-stack-architecture.png)
 
 ---
 
