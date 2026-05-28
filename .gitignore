@@ -31,3 +31,4 @@ package.json
 package-lock.json
 .env.example
 packages/
+.gstack/
