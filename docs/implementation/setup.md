@@ -129,6 +129,6 @@ Your Tier 1 and Tier 2 infrastructure is set up. Next:
 
 **Total setup time:** ~15 minutes (first time only)
 
-**See it in action:** [docs/marketing-campaigns/showcase/](../../marketing-campaigns/showcase/) shows the three-tier architecture in detail.
+**See it in action:** [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) shows the three-tier architecture in detail.
 
 **For help:** Refer to the phase documentation or the [skills inventory](./skills-inventory.md).

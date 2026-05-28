@@ -86,7 +86,7 @@
 - Founder/marketing lead reviews each output before execution
 - Questions Claude if positioning feels off ("Does this resonate with our target audience?")
 - Approves and passes to Tier 3
-- See [Sleep Device case study](../../product-launch/sleep-device-workflow-readme.md) for complete example
+- See [Sleep Device case study](../../../product-launch/sleep-device-workflow-readme.md) for complete example
 
 **Collaboration depth:**
 - One person reviewing (founder or marketing lead)
