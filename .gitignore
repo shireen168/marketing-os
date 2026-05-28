@@ -25,3 +25,5 @@ design-api-internal.md
 
 # Brainstorming sessions (working documents, not for public repo)
 brainstorming/
+.gstack/
+AUDIT_AND_RECOMMENDATIONS.md
