@@ -42,7 +42,7 @@ OPERATE (Ongoing)
 
 **All 75 skills** mapped to 8 phases with execution order.
 
-→ [View Complete Skills Inventory](./SKILLS-INVENTORY.md)
+→ [View Complete Skills Inventory](../IMPLEMENTATION/SKILLS-INVENTORY.md)
 
 ---
 
@@ -52,14 +52,14 @@ Each phase shows which skills to invoke, when, and what output feeds into the ne
 
 | Phase | Skills | Deliverable |
 |-------|--------|-------------|
-| [**Phase 1: Validation**](./PHASES/phase-1-validation.md) | 7 skills | MVP scope locked |
-| [**Phase 2: Strategy**](./PHASES/phase-2-strategy.md) | 6 skills | GTM + positioning |
-| [**Phase 3: Design**](./PHASES/phase-3-design.md) | 6 skills | Design system shipped |
-| [**Phase 4: Build**](./PHASES/phase-4-build.md) | 5 skills | Code + security audit |
-| [**Phase 5: Test**](./PHASES/phase-5-test.md) | 7 skills | Beta ready |
-| [**Phase 6: Launch**](./PHASES/phase-6-launch.md) | 15 skills | All marketing assets |
-| [**Phase 7: Grow**](./PHASES/phase-7-grow.md) | 13 skills | Scaling engine online |
-| [**Phase 8: Operate**](./PHASES/phase-8-operate.md) | 10 skills | Sustainable ops |
+| [**Phase 1: Validation**](../IMPLEMENTATION/PHASES/phase-1-validation.md) | 7 skills | MVP scope locked |
+| [**Phase 2: Strategy**](../IMPLEMENTATION/PHASES/phase-2-strategy.md) | 6 skills | GTM + positioning |
+| [**Phase 3: Design**](../IMPLEMENTATION/PHASES/phase-3-design.md) | 6 skills | Design system shipped |
+| [**Phase 4: Build**](../IMPLEMENTATION/PHASES/phase-4-build.md) | 5 skills | Code + security audit |
+| [**Phase 5: Test**](../IMPLEMENTATION/PHASES/phase-5-test.md) | 7 skills | Beta ready |
+| [**Phase 6: Launch**](../IMPLEMENTATION/PHASES/phase-6-launch.md) | 15 skills | All marketing assets |
+| [**Phase 7: Grow**](../IMPLEMENTATION/PHASES/phase-7-grow.md) | 13 skills | Scaling engine online |
+| [**Phase 8: Operate**](../IMPLEMENTATION/PHASES/phase-8-operate.md) | 10 skills | Sustainable ops |
 
 ---
 
@@ -110,28 +110,9 @@ Each skill invocation shown with exact syntax in phase docs.
 
 ---
 
-## Files in This Repo
+## Implementation Details
 
-```
-docs/
-├── SLEEP-DEVICE-WORKFLOW-README.md (this file)
-├── SKILLS-INVENTORY.md (all 75 skills, one table)
-├── PHASES/
-│   ├── phase-1-validation.md
-│   ├── phase-2-strategy.md
-│   ├── phase-3-design.md
-│   ├── phase-4-build.md
-│   ├── phase-5-test.md
-│   ├── phase-6-launch.md
-│   ├── phase-7-grow.md
-│   └── phase-8-operate.md
-└── diagrams/
-    └── workflow-diagram.png
-```
+For detailed phase walkthroughs and skill inventory, see [docs/IMPLEMENTATION/](../IMPLEMENTATION/):
 
----
-
-## Start Here
-
-→ [**Phase 1: Validation** (Day 1-2 skills)](./PHASES/phase-1-validation.md)
+→ [**Phase 1: Validation** (Day 1-2 skills)](../IMPLEMENTATION/PHASES/phase-1-validation.md)
 
