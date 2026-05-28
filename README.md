@@ -39,14 +39,14 @@ Validates → Strategizes → Designs → Builds → Tests → Launches → Grow
 
 This isn't a marketing template. It's a complete project management framework that scales across any division: product launches, marketing campaigns, finance operations, legal strategy, HR systems, sales enablement, or any complex work.
 
-1. **[Phase 1: Validation](docs/product-launch/PHASES/phase-1-validation.md)**: Prove the problem is real
-2. **[Phase 2: Strategy](docs/product-launch/PHASES/phase-2-strategy.md)**: Define positioning + market fit
-3. **[Phase 3: Design](docs/product-launch/PHASES/phase-3-design.md)**: Architecture + brand identity
-4. **[Phase 4: Build](docs/product-launch/PHASES/phase-4-build.md)**: Code + security + infrastructure
-5. **[Phase 5: Test](docs/product-launch/PHASES/phase-5-test.md)**: QA + performance validation
-6. **[Phase 6: Launch](docs/product-launch/PHASES/phase-6-launch.md)**: Go-to-market assets
-7. **[Phase 7: Grow](docs/product-launch/PHASES/phase-7-grow.md)**: Sustainable growth
-8. **[Phase 8: Operate](docs/product-launch/PHASES/phase-8-operate.md)**: Ongoing operations & optimization
+1. **[Phase 1: Validation](docs/implementation/phases/phase-1-validation.md)**: Prove the problem is real
+2. **[Phase 2: Strategy](docs/implementation/phases/phase-2-strategy.md)**: Define positioning + market fit
+3. **[Phase 3: Design](docs/implementation/phases/phase-3-design.md)**: Architecture + brand identity
+4. **[Phase 4: Build](docs/implementation/phases/phase-4-build.md)**: Code + security + infrastructure
+5. **[Phase 5: Test](docs/implementation/phases/phase-5-test.md)**: QA + performance validation
+6. **[Phase 6: Launch](docs/implementation/phases/phase-6-launch.md)**: Go-to-market assets
+7. **[Phase 7: Grow](docs/implementation/phases/phase-7-grow.md)**: Sustainable growth
+8. **[Phase 8: Operate](docs/implementation/phases/phase-8-operate.md)**: Ongoing operations & optimization
 
 **Proof: Smart Sleep Device**
 
@@ -56,7 +56,7 @@ Applied to a hardware product over 10 days:
 - Launch: Coordinating GTM assets with product readiness
 - Result: Product-market clarity in 10 days (vs 4-6 weeks typical)
 
-→ **[Full case study walkthrough](docs/product-launch/SLEEP-DEVICE-WORKFLOW-README.md)**
+→ **[Full case study walkthrough](docs/product-launch/sleep-device-workflow-readme.md)**
 
 ---
 
@@ -109,12 +109,12 @@ Timeline:
 
 **15-minute assessment:**
 - [How the system works](docs/marketing-campaigns/showcase/architecture-overview/00-three-tier-stack.md) (strategic analysis → decisions → execution)
-- [Smart Sleep Device case study](docs/product-launch/SLEEP-DEVICE-WORKFLOW-README.md) (8-phase framework in practice)
+- [Smart Sleep Device case study](docs/product-launch/sleep-device-workflow-readme.md) (8-phase framework in practice)
 
 **30-minute deep-dive:**
 - All three files above
 - [Why this approach works](docs/marketing-campaigns/showcase/architecture-overview/01-why-three-tiers.md) (keeping humans in control while accelerating thinking)
-- Any of the [8 phase docs](docs/product-launch/PHASES/) that align with your role
+- Any of the [8 phase docs](docs/implementation/phases/) that align with your role
 
 ---
 

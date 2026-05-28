@@ -213,12 +213,12 @@ Skills: 64-75, 64-74
 ## Details on Each Phase
 
 Each skill has full invocation syntax + output in the phase docs:
-- [**Phase 1: Validation**](./PHASES/phase-1-validation.md) (Skills 1-7)
-- [**Phase 2: Strategy**](./PHASES/phase-2-strategy.md) (Skills 8-14)
-- [**Phase 3: Design**](./PHASES/phase-3-design.md) (Skills 15-21)
-- [**Phase 4: Build**](./PHASES/phase-4-build.md) (Skills 22-27)
-- [**Phase 5: Test**](./PHASES/phase-5-test.md) (Skills 28-34)
-- [**Phase 6: Launch**](./PHASES/phase-6-launch.md) (Skills 35-50)
-- [**Phase 7: Grow**](./PHASES/phase-7-grow.md) (Skills 51-63)
-- [**Phase 8: Operate**](./PHASES/phase-8-operate.md) (Skills 64-75)
+- [**Phase 1: Validation**](./phases/phase-1-validation.md) (Skills 1-7)
+- [**Phase 2: Strategy**](./phases/phase-2-strategy.md) (Skills 8-14)
+- [**Phase 3: Design**](./phases/phase-3-design.md) (Skills 15-21)
+- [**Phase 4: Build**](./phases/phase-4-build.md) (Skills 22-27)
+- [**Phase 5: Test**](./phases/phase-5-test.md) (Skills 28-34)
+- [**Phase 6: Launch**](./phases/phase-6-launch.md) (Skills 35-50)
+- [**Phase 7: Grow**](./phases/phase-7-grow.md) (Skills 51-63)
+- [**Phase 8: Operate**](./phases/phase-8-operate.md) (Skills 64-75)
 

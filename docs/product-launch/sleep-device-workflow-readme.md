@@ -42,7 +42,7 @@ OPERATE (Ongoing)
 
 **All 75 skills** mapped to 8 phases with execution order.
 
-→ [View Complete Skills Inventory](../IMPLEMENTATION/SKILLS-INVENTORY.md)
+→ [View Complete Skills Inventory](../implementation/skills-inventory.md)
 
 ---
 
@@ -52,14 +52,14 @@ Each phase shows which skills to invoke, when, and what output feeds into the ne
 
 | Phase | Skills | Deliverable |
 |-------|--------|-------------|
-| [**Phase 1: Validation**](../IMPLEMENTATION/PHASES/phase-1-validation.md) | 7 skills | MVP scope locked |
-| [**Phase 2: Strategy**](../IMPLEMENTATION/PHASES/phase-2-strategy.md) | 6 skills | GTM + positioning |
-| [**Phase 3: Design**](../IMPLEMENTATION/PHASES/phase-3-design.md) | 6 skills | Design system shipped |
-| [**Phase 4: Build**](../IMPLEMENTATION/PHASES/phase-4-build.md) | 5 skills | Code + security audit |
-| [**Phase 5: Test**](../IMPLEMENTATION/PHASES/phase-5-test.md) | 7 skills | Beta ready |
-| [**Phase 6: Launch**](../IMPLEMENTATION/PHASES/phase-6-launch.md) | 15 skills | All marketing assets |
-| [**Phase 7: Grow**](../IMPLEMENTATION/PHASES/phase-7-grow.md) | 13 skills | Scaling engine online |
-| [**Phase 8: Operate**](../IMPLEMENTATION/PHASES/phase-8-operate.md) | 10 skills | Sustainable ops |
+| [**Phase 1: Validation**](../implementation/phases/phase-1-validation.md) | 7 skills | MVP scope locked |
+| [**Phase 2: Strategy**](../implementation/phases/phase-2-strategy.md) | 6 skills | GTM + positioning |
+| [**Phase 3: Design**](../implementation/phases/phase-3-design.md) | 6 skills | Design system shipped |
+| [**Phase 4: Build**](../implementation/phases/phase-4-build.md) | 5 skills | Code + security audit |
+| [**Phase 5: Test**](../implementation/phases/phase-5-test.md) | 7 skills | Beta ready |
+| [**Phase 6: Launch**](../implementation/phases/phase-6-launch.md) | 15 skills | All marketing assets |
+| [**Phase 7: Grow**](../implementation/phases/phase-7-grow.md) | 13 skills | Scaling engine online |
+| [**Phase 8: Operate**](../implementation/phases/phase-8-operate.md) | 10 skills | Sustainable ops |
 
 ---
 
@@ -86,8 +86,8 @@ Example: Save work Friday evening → Come back Tuesday morning → Resume with 
 ## Quick Start
 
 **1. Read the overview** (you're reading it: 5 min)  
-**2. Check the skills** ([75-skill inventory](./SKILLS-INVENTORY.md): 10 min)  
-**3. Pick a phase** (start with [Phase 1: Validation](./PHASES/phase-1-validation.md))  
+**2. Check the skills** ([75-skill inventory](../implementation/skills-inventory.md): 10 min)  
+**3. Pick a phase** (start with [Phase 1: Validation](../implementation/phases/phase-1-validation.md))  
 **4. Follow the skills** (exact invocation order, linked throughout)  
 **5. Save at checkpoints** (use `/context-save` to preserve work)
 
@@ -112,7 +112,7 @@ Each skill invocation shown with exact syntax in phase docs.
 
 ## Implementation Details
 
-For detailed phase walkthroughs and skill inventory, see [docs/IMPLEMENTATION/](../IMPLEMENTATION/):
+For detailed phase walkthroughs and skill inventory, see [docs/implementation/](../implementation/):
 
-→ [**Phase 1: Validation** (Day 1-2 skills)](../IMPLEMENTATION/PHASES/phase-1-validation.md)
+→ [**Phase 1: Validation** (Day 1-2 skills)](../implementation/phases/phase-1-validation.md)
 
