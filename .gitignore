@@ -27,3 +27,7 @@ design-api-internal.md
 brainstorming/
 .gstack/
 AUDIT_AND_RECOMMENDATIONS.md
+package.json
+package-lock.json
+.env.example
+packages/
