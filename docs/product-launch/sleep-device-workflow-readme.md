@@ -71,6 +71,26 @@ Each skill:
 - **Produces output**: document, audit, component, test result, asset
 - **Feeds next skill**: output becomes input for the next step
 
+### Orchestration System
+The workflow uses an **automated orchestration engine** that:
+- Gathers clarifying questions for each phase (adapted to your specific context)
+- Coordinates multiple subagents (research, investigation, customer research, competitor profiling)
+- Manages approval gates (human review before proceeding)
+- Synthesizes outputs for strategic decision-making
+- Tracks all decisions across sessions
+
+**Invoke the orchestrator:**
+```bash
+python orchestration/cli/run_workflow.py --project marketing-os --phase 1
+```
+
+Options:
+- `--phase` (1-6): Which phase to execute
+- `--checkpoint <path>`: Restore from previous checkpoint
+- `--save-checkpoint <name>`: Save results for later
+- `--no-approval`: Auto-approve (skip gate)
+- `--verbose`: See all subagent calls
+
 ### Context Checkpoints
 5 strategic save points prevent context loss:
 - **Checkpoint 1** (Day 2): Validation → Strategy resume
@@ -80,6 +100,8 @@ Each skill:
 - **Checkpoint 5** (Day 10): Launch → Growth resume
 
 Example: Save work Friday evening → Come back Tuesday morning → Resume with zero context loss → Decisions preserved → No repeating questions.
+
+**Checkpoints auto-save to:** `~/.gstack/projects/claude-system/checkpoints/`
 
 ---
 
@@ -97,13 +119,29 @@ Example: Save work Friday evening → Come back Tuesday morning → Resume with 
 
 This isn't theoretical. It's the actual command sequence:
 
+### With Orchestration Engine (Recommended)
+```bash
+# Day 1-2: Phase 1 Validation
+python orchestration/cli/run_workflow.py --project marketing-os --phase 1 --save-checkpoint day2-validation-done
+
+# Day 3: Resume from checkpoint (zero context loss)
+python orchestration/cli/run_workflow.py --project marketing-os --phase 2 --checkpoint ~/.gstack/projects/claude-system/checkpoints/day2-validation-done.md
+
+# Continue through phases 3-6
+python orchestration/cli/run_workflow.py --project marketing-os --phase 3
+python orchestration/cli/run_workflow.py --project marketing-os --phase 4
+python orchestration/cli/run_workflow.py --project marketing-os --phase 5
+python orchestration/cli/run_workflow.py --project marketing-os --phase 6
+```
+
+### Manual Workflow (Without Orchestration)
 ```
 /office-hours → /investigate → /learn → /customer-research → /competitor-profiling 
 → /marketing-psychology → /pair-agent → /context-save
 [NEXT SESSION: /context-restore]
 → /plan-ceo-review → /plan-devex-review → /product-marketing → /pricing 
 → /sales-enablement → /marketing-ideas → /context-save
-[... continues through all 8 phases]
+[... continues through all phases]
 ```
 
 Each skill invocation shown with exact syntax in phase docs.
