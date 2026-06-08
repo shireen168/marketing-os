@@ -37,11 +37,6 @@ outputs/
     └── smart-sleep-device/
 ```
 
-**Note:** These outputs are automatically synced from the main orchestration system. Run the sync script to update:
-```bash
-python sync-outputs.py
-```
-
 ---
 
 ## The 8-Phase Orchestration System
