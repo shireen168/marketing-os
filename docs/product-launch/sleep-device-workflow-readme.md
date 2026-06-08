@@ -59,7 +59,7 @@ outputs/
 - Key competitors: Oura Ring ($349-549), WHOOP ($239/yr), Apple Watch ($249-799)
 
 **View Sample Output:**
-- [Phase 1 Research Report](./outputs/phase_01_research/smart-sleep-device/research_report.md) (50+ pages with citations and competitive analysis)
+- [Phase 1 Research Report](./outputs/phase_01_research/research_report.md) (50+ pages with citations and competitive analysis)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device`
@@ -81,7 +81,7 @@ System asks 6 clarifying questions, then synthesizes findings using Tavily API +
 - **Timeline:** 3-4 month MVP to market, sequential channel launch Months 0-12
 
 **View Complete Output:**
-- [Phase 2 Strategy Report](./outputs/phase_02_strategy/smart-sleep-device/strategy_report.md) (25 pages, fully cited)
+- [Phase 2 Strategy Report](./outputs/phase_02_strategy/strategy_report.md) (25 pages, fully cited)
   - Section 2: GTM Strategy & Positioning Options (3 options analyzed)
   - Section 3: Tiered Pricing Architecture (DTC, B2B, B2B2C)
   - Section 4: Financial Projections (Year 1-3 P&L, unit economics, KPIs)
@@ -112,7 +112,7 @@ System asks 6 strategy clarifying questions, then synthesizes positioning, prici
 - **Implementation Roadmap:** MVP Phase (0-3 months), Post-MVP Phase 1 (3-6 months), Phase 2 (6-9 months)
 
 **View Complete Output:**
-- [Phase 3 Design Report](./outputs/phase_03_design/smart-sleep-device/design_report.md) (28 pages, fully cited)
+- [Phase 3 Design Report](./outputs/phase_03_design/design_report.md) (28 pages, fully cited)
   - Section 2: Design Philosophy & User-Centered Principles (design system, personas, accessibility)
   - Section 3: User Experience & Information Architecture (3 customer journey maps with wireframe descriptions)
   - Section 4: Technical Architecture (device specs, cloud backend, APIs, database schema, security framework)
@@ -141,7 +141,7 @@ Command: `/orchestration smart-sleep-device --phase 3`
 - **Risk Register:** 10 technical risks with contingency plans
 
 **View Complete Output:**
-- [Phase 4 Build & Development Report](./outputs/phase_04_build/smart-sleep-device/build_development_report.md) (28 pages, fully cited)
+- [Phase 4 Build & Development Report](./outputs/phase_04_build/build_development_report.md) (28 pages, fully cited)
   - Section 1: Executive Summary (9-month thesis, resource plan, success criteria)
   - Section 2: Development Team Structure (13 FTE, cross-functional dependencies)
   - Section 3: Hardware Firmware Development (STM32L496, sensor integration, connectivity, battery optimization)
@@ -171,7 +171,7 @@ Command: `/orchestration smart-sleep-device --phase 4`
 - **Contingency Procedures:** Post-launch critical issue handling (firmware crashes, API timeouts, HIPAA breaches) with rollback strategies
 
 **View Complete Output:**
-- [Phase 5 QA Testing Plan](./outputs/phase_05_testing/smart-sleep-device/qa_testing_plan.md) (28 pages, fully cited)
+- [Phase 5 QA Testing Plan](./outputs/phase_05_testing/qa_testing_plan.md) (28 pages, fully cited)
   - Section 1: Executive Summary (testing thesis, timeline, quality targets, risk prioritization)
   - Section 2: QA Strategy Overview (philosophy, test pyramid, methodology, defect classification)
   - Section 3: Hardware Firmware Testing (unit testing, HIL, sensor validation, battery life, connectivity, environmental)
@@ -193,7 +193,7 @@ Command: `/orchestration smart-sleep-device --phase 5`
 **Deliverable:** Complete launch kit, marketing campaigns, ad creative, PR materials, sales collateral, go-live plan.
 
 **View Sample Output:**
-- [Phase 6 Launch Kit](./outputs/phase_06_launch/smart-sleep-device/) (when generated)
+- [Phase 6 Launch Kit](./outputs/phase_06_launch/launch_kit.md) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 6`
@@ -206,7 +206,7 @@ Command: `/orchestration smart-sleep-device --phase 6`
 **Deliverable:** Growth playbook with CAC/LTV improvements, retention tactics, 90-day roadmap.
 
 **View Sample Output:**
-- [Phase 7 Growth Playbook](./outputs/phase_07_growth/smart-sleep-device/) (when generated)
+- [Phase 7 Growth Playbook](./outputs/phase_07_growth/growth_playbook.md) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 7`
@@ -219,7 +219,7 @@ Command: `/orchestration smart-sleep-device --phase 7`
 **Deliverable:** Retrospective, process documentation, team development plan, strategic roadmap.
 
 **View Sample Output:**
-- [Phase 8 Operations Summary](./outputs/phase_08_operations/smart-sleep-device/) (when generated)
+- [Phase 8 Operations Summary](./outputs/phase_08_operations/operations_summary.md) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 8`
