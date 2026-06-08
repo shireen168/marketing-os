@@ -32,3 +32,6 @@ package-lock.json
 .env.example
 packages/
 .gstack/
+# Development/utility scripts
+sync-outputs.py
+*.py
