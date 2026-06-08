@@ -20,13 +20,13 @@ All completed phase outputs are linked below and stored in the `./outputs/` fold
 outputs/
 ├── phase_01_research/
 │   └── smart-sleep-device/
-│       └── research_report.md (✅ 50+ pages)
+│       └── research_report.md (✅ 50 pages)
 ├── phase_02_strategy/
 │   └── smart-sleep-device/
-│       └── strategy_report.md (✅ 1,350+ lines)
+│       └── strategy_report.md (✅ 25 pages)
 ├── phase_03_design/
 │   └── smart-sleep-device/
-│       └── design_report.md (✅ 10,000+ words)
+│       └── design_report.md (✅ 28 pages)
 ├── phase_04_build/
 │   └── smart-sleep-device/
 │       └── build_plan.md (📋 coming soon)
@@ -81,7 +81,7 @@ System asks 6 clarifying questions, then synthesizes findings using Tavily API +
 - **Timeline:** 3-4 month MVP to market, sequential channel launch Months 0-12
 
 **View Complete Output:**
-- [Phase 2 Strategy Report](./outputs/phase_02_strategy/smart-sleep-device/strategy_report.md) (1,350+ lines, fully cited)
+- [Phase 2 Strategy Report](./outputs/phase_02_strategy/smart-sleep-device/strategy_report.md) (25 pages, fully cited)
   - Section 2: GTM Strategy & Positioning Options (3 options analyzed)
   - Section 3: Tiered Pricing Architecture (DTC, B2B, B2B2C)
   - Section 4: Financial Projections (Year 1-3 P&L, unit economics, KPIs)
@@ -112,7 +112,7 @@ System asks 6 strategy clarifying questions, then synthesizes positioning, prici
 - **Implementation Roadmap:** MVP Phase (0-3 months), Post-MVP Phase 1 (3-6 months), Phase 2 (6-9 months)
 
 **View Complete Output:**
-- [Phase 3 Design Report](./outputs/phase_03_design/smart-sleep-device/design_report.md) (10,000+ words, fully cited)
+- [Phase 3 Design Report](./outputs/phase_03_design/smart-sleep-device/design_report.md) (28 pages, fully cited)
   - Section 2: Design Philosophy & User-Centered Principles (design system, personas, accessibility)
   - Section 3: User Experience & Information Architecture (3 customer journey maps with wireframe descriptions)
   - Section 4: Technical Architecture (device specs, cloud backend, APIs, database schema, security framework)
