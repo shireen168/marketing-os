@@ -47,12 +47,12 @@ outputs/
 **Deliverable:** 50+ page research report with market sizing, customer personas, competitive analysis, and regulatory assessment.
 
 **Example Finding:**
-- Global sleep tech market: $29.3B (2025) → $153.7B (2035), 18% CAGR
+- Global sleep tech market: $29.3B (2025) - $153.7B (2035), 18% CAGR
 - Primary segments: Insomnia (47.9%), Sleep Apnea (28%), Narcolepsy (6%)
 - Key competitors: Oura Ring ($349-549), WHOOP ($239/yr), Apple Watch ($249-799)
 
 **View Sample Output:**
-→ [Phase 1 Research Report](./outputs/phase_01_research/smart-sleep-device/research_report.md) (50+ pages with citations and competitive analysis)
+- [Phase 1 Research Report](./outputs/phase_01_research/smart-sleep-device/research_report.md) (50+ pages with citations and competitive analysis)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device`
@@ -73,7 +73,7 @@ System asks 6 clarifying questions, then synthesizes findings using Tavily API +
 - Projections: Year 1: 5-8 customers, $200-400K | Year 3: 50-75 customers, $4-6M
 
 **View Sample Output:**
-→ [Phase 2 Strategy Document](./outputs/phase_02_strategy/smart-sleep-device/) (when generated)
+- [Phase 2 Strategy Document](./outputs/phase_02_strategy/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 2`
@@ -88,7 +88,7 @@ System synthesizes product marketing, pricing, and sales enablement.
 **Deliverable:** Product specification, UX/UI direction, technical architecture, brand guidelines, implementation roadmap.
 
 **View Sample Output:**
-→ [Phase 3 Design Specification](./outputs/phase_03_design/smart-sleep-device/) (when generated)
+- [Phase 3 Design Specification](./outputs/phase_03_design/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 3`
@@ -101,7 +101,7 @@ Command: `/orchestration smart-sleep-device --phase 3`
 **Deliverable:** Functioning MVP with core features, security compliance, documented architecture.
 
 **View Sample Output:**
-→ [Phase 4 Build Plan](./outputs/phase_04_build/smart-sleep-device/) (when generated)
+- [Phase 4 Build Plan](./outputs/phase_04_build/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 4`
@@ -114,7 +114,7 @@ Command: `/orchestration smart-sleep-device --phase 4`
 **Deliverable:** QA report with test coverage, performance metrics, security audit, launch readiness.
 
 **View Sample Output:**
-→ [Phase 5 QA Report](./outputs/phase_05_testing/smart-sleep-device/) (when generated)
+- [Phase 5 QA Report](./outputs/phase_05_testing/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 5`
@@ -124,10 +124,10 @@ Command: `/orchestration smart-sleep-device --phase 5`
 ### Phase 6: Launch Execution
 **Duration:** 2-4 weeks | **Confidence:** 80%
 
-**Deliverable:** Complete launch kit—marketing campaigns, ad creative, PR materials, sales collateral, go-live plan.
+**Deliverable:** Complete launch kit, marketing campaigns, ad creative, PR materials, sales collateral, go-live plan.
 
 **View Sample Output:**
-→ [Phase 6 Launch Kit](./outputs/phase_06_launch/smart-sleep-device/) (when generated)
+- [Phase 6 Launch Kit](./outputs/phase_06_launch/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 6`
@@ -140,7 +140,7 @@ Command: `/orchestration smart-sleep-device --phase 6`
 **Deliverable:** Growth playbook with CAC/LTV improvements, retention tactics, 90-day roadmap.
 
 **View Sample Output:**
-→ [Phase 7 Growth Playbook](./outputs/phase_07_growth/smart-sleep-device/) (when generated)
+- [Phase 7 Growth Playbook](./outputs/phase_07_growth/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 7`
@@ -153,7 +153,7 @@ Command: `/orchestration smart-sleep-device --phase 7`
 **Deliverable:** Retrospective, process documentation, team development plan, strategic roadmap.
 
 **View Sample Output:**
-→ [Phase 8 Operations Summary](./outputs/phase_08_operations/smart-sleep-device/) (when generated)
+- [Phase 8 Operations Summary](./outputs/phase_08_operations/smart-sleep-device/) (when generated)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 8`
