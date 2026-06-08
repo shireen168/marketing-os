@@ -1460,15 +1460,11 @@ Month 12        [Year 1 Close]
 
 | Metric | Source | Citation |
 |--------|--------|----------|
-| Sleep deprivation productivity impact | RAND Corporation | USD 411B annual U.S. economic impact; referenced in Phase 1 market validation |
-| CMS Remote Patient Monitoring (RPM) reimbursement | Medicare | CPT codes 99457/99458; USD 60-110/patient/month |
-| Oura/WHOOP pricing & churn rates | Phase 1 competitive analysis | Sourced from public pricing pages and industry reports |
-| Fitbit retention benchmarks | Industry standards | Referenced in Phase 1 Section 4.13 |
-| Virgin Pulse/Wellhub PEPM pricing | Corporate wellness market data | Phase 1 Section 3.6 (Employer Wellness Buyer persona) |
-
-## Internal Documentation References
-
-- [Marketing OS README](../../marketing-os/docs/product-launch/sleep-device-workflow-readme.md) — Workflow documentation for Phase 2 outputs
+| Sleep deprivation productivity impact | RAND Corporation | USD 411B annual U.S. economic impact of sleep deprivation in workplace productivity |
+| CMS Remote Patient Monitoring (RPM) reimbursement | Medicare | CPT codes 99457/99458; USD 60-110/patient/month for remote monitoring services |
+| Oura/WHOOP pricing & churn rates | Industry public data | Pricing sourced from competitor public pricing pages and industry reports |
+| Fitbit retention benchmarks | Industry standards | Subscription retention rates from public fitness tracker market analysis |
+| Virgin Pulse/Wellhub PEPM pricing | Corporate wellness market benchmarks | Per-employee-per-month pricing typical for enterprise wellness platforms |
 
 ---
 
