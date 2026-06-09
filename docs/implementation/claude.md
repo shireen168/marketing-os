@@ -123,42 +123,30 @@ What orchestration happens under the hood at each phase:
 
 ## Workflow: How to Run
 
-### Non-Technical Path (Recommended)
+### CLI Path
+
+Run orchestration phases via command line:
 
 ```bash
-# Phase 1: Research
-/orchestration [product-name]
-
-# Phase 2: Strategy (when Phase 1 approved)
-/orchestration [product-name] --phase 2
-
-# Continue through phases 3-8
-/orchestration [product-name] --phase 3
-# ... and so on
-```
-
-**Each phase:**
-1. Asks 6 clarifying questions about your product/market
-2. Runs subagents (Tavily, skills, Opus synthesis)
-3. Presents results for approval
-4. Saves checkpoint automatically
-5. Proceeds to next phase when approved
-
-### Technical Path (CLI)
-
-```bash
-python orchestration/cli/run_workflow.py \
+python cli/run_workflow.py \
   --project [product-name] \
   --phase 1 \
   --save-checkpoint phase1-complete
 
 # With checkpoint restore
-python orchestration/cli/run_workflow.py \
+python cli/run_workflow.py \
   --project [product-name] \
   --phase 2 \
-  --checkpoint ~/.gstack/projects/claude-system/checkpoints/phase1-complete.md \
+  --checkpoint ~/.gstack/checkpoints/phase1-complete.md \
   --save-checkpoint phase2-complete
 ```
+
+**Each phase:**
+1. Asks 6 clarifying questions about your product/market
+2. Runs subagents (Tavily, market research, synthesis)
+3. Presents results for approval
+4. Saves checkpoint automatically
+5. Proceeds to next phase when approved
 
 ### Options
 
@@ -189,7 +177,7 @@ This is the core differentiator: The orchestration runs all subagents and synthe
 
 ## Checkpoint Management
 
-The system auto-saves checkpoints in `~/.gstack/projects/claude-system/checkpoints/`:
+The system auto-saves checkpoints in `~/.gstack/checkpoints/`:
 
 - **Format:** `ddmmyy-hhmm-[description].md` (e.g., `090624-1430-phase1-research-approved.md`)
 - **Contents:** Metadata, all answered questions, phase results, synthesis output
@@ -197,8 +185,10 @@ The system auto-saves checkpoints in `~/.gstack/projects/claude-system/checkpoin
 
 **Resume example:**
 ```bash
-/orchestration [product-name] --phase 3 \
-  --checkpoint ~/.gstack/projects/claude-system/checkpoints/060626-1500-phase2-strategy-approved.md
+python cli/run_workflow.py \
+  --project [product-name] \
+  --phase 3 \
+  --checkpoint ~/.gstack/checkpoints/060626-1500-phase2-strategy-approved.md
 ```
 
 ## Real-World Example
@@ -228,8 +218,7 @@ For step-by-step instructions on each phase, see [phases/](./phases/).
 
 ## Status
 
-✅ **Phases 1-8:** Fully implemented and tested (305 tests passing)  
-📋 **Phases 3-8:** Specification ready, implementation in progress
+✅ **All 8 Phases:** Fully implemented and tested (305 tests passing)
 
 ## Next Steps
 

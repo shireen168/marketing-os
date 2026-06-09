@@ -167,14 +167,20 @@ This runs a full Phase 1 (market research) without asking for approval. You shou
 
 Your orchestration system is set up. Next:
 
-1. **Tier 1 (Orchestration):** Run `/orchestration [product-name]` or use CLI commands from [phases/](./phases/)
+1. **Tier 1 (Orchestration):** Run phases using CLI commands (see [claude.md](./claude.md#workflow-how-to-run))
 2. **Tier 2 (Review):** Answer clarifying questions and review each phase output. Approve, revise, or ask for more info.
 3. **Tier 3 (Execution):** Implement the approved strategy using simple tools.
+
+**Example:**
+```bash
+python cli/run_workflow.py --project my-product --phase 1 --save-checkpoint phase1-complete
+```
 
 ---
 
 **Total setup time:** ~30 minutes (first time only)
 
-**See it in action:** [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) shows a complete sleep device product launch (Phases 1-4).
-
-**For help:** Refer to [phases/phase-1-orchestration.md](./phases/phase-1-orchestration.md) or orchestration troubleshooting.
+**For help:** 
+- See [claude.md](./claude.md) for detailed workflow instructions
+- See [phases/phase-1-orchestration.md](./phases/phase-1-orchestration.md) for Phase 1 specifics
+- Check troubleshooting section if issues arise

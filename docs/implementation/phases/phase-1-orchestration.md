@@ -1,4 +1,4 @@
-# Phase 1: Validation - Orchestration Guide
+# Phase 1: Research - Orchestration Guide
 
 | | |
 |---|---|
@@ -15,9 +15,7 @@
 ### 1. Run Phase 1 with Orchestration
 
 ```bash
-cd /path/to/claude-system
-
-python orchestration/cli/run_workflow.py \
+python cli/run_workflow.py \
   --project marketing-os \
   --phase 1 \
   --save-checkpoint phase1-validation-complete
