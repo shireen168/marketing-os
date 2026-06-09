@@ -89,47 +89,50 @@ You need 3 API keys:
 3. Go to API settings
 4. Copy and save your API key
 
-## Step 3: Configure .env File
+## Step 3: Clone Orchestration Repository
 
-Create a `.env` file in your project root:
+The orchestration system is available as a standalone package in marketing-os:
 
 ```bash
-cd /path/to/claude-system
+# Clone marketing-os repository
+git clone <marketing-os-repository-url>
+cd marketing-os
+
+# Navigate to orchestration directory
+cd orchestration
 ```
 
-Create the file with your keys:
+## Step 4: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Step 5: Configure .env File
+
+Copy the template and add your API keys:
+
+```bash
+cp .env.example .env
+```
+
+Edit `.env` with your keys:
 
 ```
 ANTHROPIC_API_KEY=sk-ant-...
 TAVILY_API_KEY=tvly-...
 PERPLEXITY_API_KEY=pplx-...
+DEBUG=false
 ```
 
-**Save and secure:** Never commit this file to git. Add to `.gitignore`:
+**Important:** The `.env` file is gitignored by default. Never commit it to version control.
 
-```bash
-echo ".env" >> .gitignore
-git add .gitignore && git commit -m "chore: add .env to gitignore"
-```
-
-## Step 4: Clone Repositories
-
-```bash
-# Clone parent repo
-git clone https://github.com/shireen168/claude-system.git
-cd claude-system
-
-# The marketing-os submodule should already be included
-# If not, initialize submodules:
-git submodule update --init --recursive
-```
-
-## Step 5: Test Installation
+## Step 6: Test Installation
 
 Test that the orchestration system can access all APIs:
 
 ```bash
-python orchestration/cli/run_workflow.py --help
+python cli/run_workflow.py --help
 ```
 
 You should see available commands and options. If not:
@@ -137,11 +140,11 @@ You should see available commands and options. If not:
 - Check `.env` file has all 3 API keys
 - Check keys are valid (test in web consoles)
 
-## Step 6: Run Phase 1 Test
+## Step 7: Run Phase 1 Test
 
 ```bash
 # Run Phase 1 of orchestration (non-interactive mode)
-python orchestration/cli/run_workflow.py \
+python cli/run_workflow.py \
   --project test-product \
   --phase 1 \
   --no-approval
