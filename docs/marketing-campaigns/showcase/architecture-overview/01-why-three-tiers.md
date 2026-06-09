@@ -18,9 +18,9 @@ Three-tier architecture solves all three.
 
 **What it includes:**
 - Claude Code running gstack skills (brainstorming, planning, research, strategy)
-- MCP servers for data integration and context preservation
+- Tavily API + Perplexity fallback for real-time research and data integration
 - Custom skills encoding domain expertise (marketing, CRO, copywriting, etc.)
-- 6-stage workflow that preserves context across all stages
+- 8-phase workflow that preserves context across all phases
 
 **Why separate from execution:**
 - Strategy requires domain expertise, systems thinking, and access to decision-making logic
@@ -32,20 +32,20 @@ Three-tier architecture solves all three.
 
 ---
 
-## Tier 2: Human-AI Collaboration (Claude Desktop Cowork)
+## Tier 2: Human-AI Collaboration (Claude Code)
 
 **Purpose:** Approval gates where teams review and refine outputs before execution
 
 **What it includes:**
-- Claude Desktop Cowork conversations where team members can see all outputs
-- Structured review points at Stages 2 (Voice), 4 (Strategy), 6 (Reports)
-- Ability for non-technical team members to directly edit captions, adjust strategy, request changes
+- Claude Code conversations where team members review all outputs
+- Structured review points built into the workflow (Phases 2, 4, 6, and others)
+- Ability to directly edit outputs, adjust strategy, and request changes in conversation
 - Full context preservation across all approvals
 
 **Why this matters:**
 - AI generates outputs, but humans decide what ships
 - Team stays in control at decision points (not just executing blindly)
-- Approval gates catch misalignment before expensive execution (e.g., if tone is wrong, fix it in Cowork, not after 100 posts)
+- Approval gates catch misalignment before expensive execution (e.g., if tone is wrong, fix it in Claude Code, not after 100 posts)
 - Creates a governance trail (who approved what, when)
 - Non-technical team members can participate without understanding gstack or Claude Code
 
@@ -94,14 +94,14 @@ Issues:
 ```
 Tier 1: Expert builds strategy once (Claude Code)
    ↓
-Tier 2: Team reviews and approves (Cowork)
+Tier 2: Team reviews and approves (Claude Code)
    ↓
 Tier 3: Team executes at scale (Simple tools)
 ```
 
 Benefits:
 - Expert workload is fixed (builds system once, not per campaign)
-- Team understands decisions (visible in Cowork)
+- Team understands decisions (visible in Claude Code)
 - Approvals are transparent (governance trail)
 - Scales: 1 strategist → 1 team of 10 executors
 - Non-experts can execute
@@ -116,7 +116,7 @@ Benefits:
 | Tier | Owner | Time | Output |
 |------|-------|------|--------|
 | 1 | Founder (strategic) | 45 min | Brief, Voice, Strategy, Content briefs |
-| 2 | Founder (approval) | 30 min | Reviews own outputs, refines in Cowork |
+| 2 | Founder (approval) | 30 min | Reviews own outputs, refines in Claude Code |
 | 3 | Founder (execution) | 2-3 hrs | Designs, schedules, publishes |
 
 **Total:** One person, 4 hours per week, complete control
@@ -128,7 +128,7 @@ Benefits:
 | Tier | Owner | Time | Output |
 |------|-------|------|--------|
 | 1 | Founder (strategy) | 45 min | Brief, Voice, Strategy, Content briefs |
-| 2 | Marketing lead + founder | 30 min | Reviews in Cowork, refines copy |
+| 2 | Marketing lead + founder | 30 min | Reviews in Claude Code, refines copy |
 | 3 | 2 Content operators | 4 hrs | Design, schedule, publish, track |
 
 **Total:** 3 people, clear roles, founder can focus on strategy
@@ -153,4 +153,4 @@ Benefits:
 
 **With three tiers:** Each layer has a clear job. Strategists think. Teams approve. Executors do. Scales from 1 person to 1,000.
 
-**The architecture is the system.** It's not about the specific tools (Claude Code, Cowork, Canva): it's about the separation of concerns that makes growth possible.
+**The architecture is the system.** It's not about the specific tools (Claude Code, Canva): it's about the separation of concerns that makes growth possible.

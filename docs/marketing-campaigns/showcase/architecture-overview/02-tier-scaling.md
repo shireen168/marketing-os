@@ -6,7 +6,7 @@
 - Six stages still flow in order (Brief → Voice → Research → Strategy → Content → Reports)
 - Context still preserved end-to-end (Stage 5 references Stage 2 + 4 automatically)
 - Claude Code still orchestrates (central decision-making logic)
-- Approval gates still happen in Claude Desktop Cowork (human-in-the-loop at each checkpoint)
+- Approval gates still happen in Claude Code (human-in-the-loop at each checkpoint)
 
 **The flow is identical.** What changes is volume, complexity, and integration depth.
 
@@ -17,7 +17,7 @@
 ### SMB (Product Launch Example)
 
 **The system:**
-- Claude Code + 2-3 MCP servers (public data: market trends, competitor analysis, audience demographics)
+- Claude Code + Tavily API (market trends, competitor analysis, audience demographics)
 - Manual decision-making (founder/strategist reviews output, decides next step)
 - Time per cycle: 4-8 hours strategic work + approval time vs $20-30K + 2-3 weeks agency
 - Run frequency: Per campaign (product launch, seasonal campaign, etc.)
@@ -34,7 +34,7 @@
 
 **Cost:**
 - Time: 4-8 hours strategic work per campaign (vs $20-30K + 2-3 weeks agency turnaround)
-- Infrastructure: Claude Code + public MCP servers
+- Infrastructure: Claude Code + Tavily API
 - Expertise: Mid-level marketing strategy
 - ROI: $20-30K per campaign eliminated by in-house operation
 
@@ -43,7 +43,7 @@
 ### Enterprise (Fortune 500 Marketing Department)
 
 **The system:**
-- Claude Code + 10+ MCP servers (proprietary: sales CRM data, brand guidelines, legal review, exec reporting, customer NPS, pricing data)
+- Claude Code + proprietary API integrations (sales CRM, brand guidelines, legal review, exec reporting, customer NPS, pricing data)
 - Automated workflows (approval gates, stakeholder notifications, legal review automation)
 - Time per cycle: 5 minutes system + 30 minutes automated review = 35 minutes
 - Run frequency: Daily or per-campaign (triggered by new product launch, quarter planning)
@@ -65,7 +65,7 @@
 
 **Cost:**
 - Time: 35 minutes per cycle + integration overhead
-- Infrastructure: Enterprise MCP servers, internal system integrations
+- Infrastructure: Claude Code + internal API integrations
 - Expertise: Senior strategy + legal + product alignment
 
 ---
@@ -82,7 +82,7 @@
 - **Stage 5 (Content):** 6+ content pieces with captions, design specs, platform-specific versions
 - **Stage 6 (Reports):** Performance projections and ROI estimates
 
-**Team review (Claude Desktop Cowork):**
+**Team review (Claude Code):**
 - Founder/marketing lead reviews each output before execution
 - Questions Claude if positioning feels off ("Does this resonate with our target audience?")
 - Approves and passes to Tier 3
@@ -105,7 +105,7 @@
 - **Stage 5 (Content):** 500+ content variations (A/B tests, regional variants, channel-specific creative briefs, 50+ pieces for different segments)
 - **Stage 6 (Reports):** 20-page board-ready report (real metrics, variance analysis, ROI by region/channel, forecast for next quarter)
 
-**Team review (Claude Desktop Cowork):**
+**Team review (Claude Code):**
 - Regional marketing managers review (EMEA, APAC, Americas each have a manager)
 - Product managers review (each product line has a PM)
 - Brand compliance reviews (legal, brand team)
@@ -116,7 +116,7 @@
 - 5-10 people reviewing at different stages
 - 2-4 hours per stage for full stakeholder review
 - Changes are strategic (new markets, new positioning, competitive response)
-- Cowork tracks who approved what and why
+- Claude Code tracks who approved what and why
 
 ---
 
@@ -166,7 +166,7 @@
   - Analytics (1)
 
 **Tools used:**
-- AI tools: Claude Desktop Cowork, Gemini, ChatGPT (for variations)
+- AI tools: Claude, Gemini, ChatGPT (for copy variations)
 - Design: Canva, Adobe Creative Suite, custom brand asset management
 - Video: CapCut, Adobe Premiere, DaVinci Resolve
 - Social: Hootsuite, Sprout Social, native platform dashboards
@@ -207,13 +207,13 @@
 ### The Core Architecture Doesn't Change
 
 **At SMB level (Sunny Homemade):**
-- Tier 1: Claude Code + 2-3 MCP servers = 15 minutes
-- Tier 2: 6 stage outputs = 1-2 hours
+- Tier 1: Claude Code + Tavily API = 15 minutes
+- Tier 2: 8 phase outputs = 1-2 hours
 - Tier 3: 1 person executes = 4-5 hours/week
 
 **At Enterprise level (Fortune 500):**
-- Tier 1: Claude Code + 10+ MCP servers = 35 minutes
-- Tier 2: 6 stage outputs (bigger, more variants) = 4-6 hours
+- Tier 1: Claude Code + API integrations = 35 minutes
+- Tier 2: 8 phase outputs (bigger, more variants) = 4-6 hours
 - Tier 3: 10-20 people execute in parallel = same time, higher throughput
 
 **The ratio stays consistent:**
@@ -241,7 +241,7 @@
 
 ### To Enterprise VPs
 
-> "This framework scales to your 100-person team without breaking. What changes is the depth of data sources and the number of executors. The fundamentals—six stages, approval gates, context preservation—stay the same. That's why it scales."
+> "This framework scales to your 100-person team without breaking. What changes is the depth of data sources and the number of executors. The fundamentals—eight phases, approval gates, context preservation—stay the same. That's why it scales."
 
 **What they understand:**
 - Architectural soundness (doesn't break at scale)

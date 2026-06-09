@@ -9,9 +9,9 @@
 ## Tier 1: Strategic Intelligence (THE CONSULTANT'S LAYER)
 
 **What it does:**
-- Claude Code orchestrates the entire 6-stage workflow
-- MCP servers pull real data: Market research, competitor analysis, audience insights (not guessing)
-- Custom skills coordinate decisions across stages (not isolated prompts)
+- Claude Code orchestrates the entire 8-phase workflow
+- Tavily API and research integrations pull real market data: competitor analysis, audience insights, industry trends (not guessing)
+- Custom skills coordinate decisions across phases (not isolated prompts)
 - Context preservation: Stage 5 content inherits Stage 2 voice + Stage 4 strategy automatically
 
 **Why it matters:**
@@ -21,14 +21,15 @@
 - ✅ Scales to enterprise: At larger orgs, Tier 1 complexity increases (more data sources, stakeholder workflows, approval gates)
 
 **Tools in Tier 1:**
-- Claude Code (IDE, workflows, orchestration)
-- MCP servers (market data sources, research tools, real-time data)
+- Claude Code (CLI, workflows, orchestration)
+- Tavily API + Perplexity fallback (market research, competitor analysis, real-time search)
+- Anthropic API: Claude Opus 4.7 (Phases 1-3) / Claude Sonnet 4.6 (Phases 4-8)
 - Custom AI skills (decision coordination, content planning, context management)
 
 **What gets handed to Tier 2:**
 - Structured outputs at each stage (briefs, guidelines, research, strategy, content plans, reports)
 - Context flows through all stages
-- Everything ready for team review in Claude Desktop
+- Everything ready for team review in Claude Code
 
 **Not Tier 1 (handled by Tier 2/3):**
 - Actual content writing or refinement (Tier 2 + Team approval)
@@ -48,23 +49,22 @@
 - **Stage 6:** Performance projections (reach, engagement, ROI forecast + board-ready report)
 
 **How the team works:**
-- Team reviews each stage output in **Claude Desktop Cowork** (better UI than CLI, built for collaboration)
+- Team reviews each stage output in **Claude Code** (structured approval gates built into the workflow)
 - Each stage has a **human-approval checkpoint**: team member reviews, asks Claude questions, refines if needed
-- **Cowork advantages:**
-  - Non-technical team members can edit + discuss outputs with Claude in real-time
-  - Approval gates are clear (thumbs up = move to next stage)
-  - Changes are tracked (what changed and why)
-  - Easy for remote teams to collaborate
+- **Approval advantages:**
+  - Outputs are structured markdown files, easy to review and discuss in Claude Code conversations
+  - Approval gates are clear (confirm before the next phase runs)
+  - Context flows forward (what's approved in earlier phases shapes all later outputs)
+  - Teams can review outputs in any editor; no specialized tooling required
 
 **Why this matters:**
 - ✅ Each stage feeds the next (no context loss, full collaboration trail)
 - ✅ Team is actively involved (not just executing blindly)
-- ✅ Claude Desktop Cowork makes it accessible (no terminal, no technical skills needed)
 - ✅ Approval gates prevent misalignment before execution
-- ✅ Examples show what these outputs look like across all 6 stages
+- ✅ Examples show what these outputs look like across all 8 phases
 
 **Human-AI collaboration workflow:**
-- Tier 1 produces output → Team opens in Claude Desktop Cowork
+- Tier 1 produces output → Team reviews in Claude Code
 - Team asks: "Is this right for our audience?" "Can we make this more aggressive?"
 - Claude refines in real-time (in the same interface)
 - Team approves → Output locked for Tier 3 execution
@@ -104,14 +104,14 @@ See [../../../product-launch/sleep-device-workflow-readme.md](../../../product-l
 **What's NOT in Tier 3 (handled by Tier 1/2):**
 - Strategy thinking (Tier 1)
 - Content research/planning (Tier 2)
-- Approval workflows (Tier 2 in Claude Desktop)
+- Approval workflows (Tier 2 in Claude Code)
 - Context preservation (Tier 1 + Tier 2)
 
 ---
 
 ## Human-AI Collaboration: Approval Gates at Each Stage
 
-Every stage has a human approval checkpoint. The team reviews each output in **Claude Desktop Cowork** (a dedicated interface for collaborative refinement) before moving to execution:
+Every phase has a human approval checkpoint. The team reviews each output in **Claude Code** (structured approval gates in conversation) before moving to execution:
 
 - **Stage 1 approval:** Does this brief reflect our brand? Are we targeting the right audience?
 - **Stage 2 approval:** Does the voice guide feel authentic? Are messaging pillars comprehensive?
@@ -132,10 +132,10 @@ Every stage has a human approval checkpoint. The team reviews each output in **C
 
 | What | Who | Where | Output |
 |------|-----|-------|--------|
-| **Tier 1** | Consultant (you) | Claude Code + MCP + Skills | Structured briefs, strategies, guidelines |
-| **Tier 2** | Team (non-technical) | Claude Desktop Cowork | Approved outputs ready for execution |
+| **Tier 1** | Consultant (you) | Claude Code + Research APIs + Skills | Structured briefs, strategies, guidelines |
+| **Tier 2** | Team | Claude Code | Approved outputs ready for execution |
 | **Tier 3** | Execution team | Canva, schedulers, simple tools | Final deliverables (posts, campaigns, reports) |
 
-**The flow:** Consulting expertise (Tier 1) → Team collaboration & approval (Tier 2 in Cowork) → Execution (Tier 3)
+**The flow:** Consulting expertise (Tier 1) → Team collaboration & approval (Tier 2 in Claude Code) → Execution (Tier 3)
 
 **Result:** System scales without proportional cost increases. One strategist builds the system once. Multiple approval gates keep the team in control. Many executors use simple tools. Headcount grows in Tiers 2 and 3, but Tier 1 effort stays constant.
