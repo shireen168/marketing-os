@@ -1,4 +1,4 @@
-# Phase 1: Validation (Day 1-2)
+# Phase 1: Research (Day 1-2)
 
 **Goal:** Prove the problem is real. Talk to actual users. Validate demand before building anything.
 

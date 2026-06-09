@@ -1,4 +1,4 @@
-# Phase 8: Operate (Ongoing)
+# Phase 8: Operations (Ongoing)
 
 **Goal:** Sustainable operations. Monitor health, learn, document, iterate.
 

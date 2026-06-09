@@ -1,4 +1,4 @@
-# Phase 5: Test (Day 7-8)
+# Phase 5: Testing (Day 7-8)
 
 **Goal:** Rigorous testing. Health data = zero tolerance for bugs.
 
