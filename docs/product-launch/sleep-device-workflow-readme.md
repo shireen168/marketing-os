@@ -60,7 +60,7 @@ outputs/
 - **Barriers & Risks:** Clinical validation (18-24 months), reimbursement uncertainty, competitive intensity, physician adoption, regulatory delays
 
 **View Complete Output:**
-- [Phase 1 Research Report](./outputs/phase_01_research/smart-sleep-device/research_report.md) (50 pages, fully cited)
+- [Phase 1 Research Report](./outputs/phase_01_research/smart-sleep-device/phase_01_research.md) (50 pages, fully cited)
   - Section 1: Executive Summary (TAM analysis, key findings, go-to-market recommendation)
   - Section 2: Global Sleep Tech Market (size, growth rates, CAGR, 2035 projections)
   - Section 3: Market Segmentation (4 primary segments with sizing and growth)
@@ -92,7 +92,7 @@ System asks 6 clarifying questions, then synthesizes findings using Tavily API +
 - **Timeline:** 3-4 month MVP to market, sequential channel launch Months 0-12
 
 **View Complete Output:**
-- [Phase 2 Strategy Report](./outputs/phase_02_strategy/smart-sleep-device/strategy_report.md) (25 pages, fully cited)
+- [Phase 2 Strategy Report](./outputs/phase_02_strategy/smart-sleep-device/phase_02_strategy.md) (25 pages, fully cited)
   - Section 2: GTM Strategy & Positioning Options (3 options analyzed)
   - Section 3: Tiered Pricing Architecture (DTC, B2B, B2B2C)
   - Section 4: Financial Projections (Year 1-3 P&L, unit economics, KPIs)
@@ -123,7 +123,7 @@ System asks 6 strategy clarifying questions, then synthesizes positioning, prici
 - **Implementation Roadmap:** MVP Phase (0-3 months), Post-MVP Phase 1 (3-6 months), Phase 2 (6-9 months)
 
 **View Complete Output:**
-- [Phase 3 Design Report](./outputs/phase_03_design/smart-sleep-device/design_report.md) (28 pages, fully cited)
+- [Phase 3 Design Report](./outputs/phase_03_design/smart-sleep-device/phase_03_design.md) (28 pages, fully cited)
   - Section 2: Design Philosophy & User-Centered Principles (design system, personas, accessibility)
   - Section 3: User Experience & Information Architecture (3 customer journey maps with wireframe descriptions)
   - Section 4: Technical Architecture (device specs, cloud backend, APIs, database schema, security framework)
@@ -152,7 +152,7 @@ Command: `/orchestration smart-sleep-device --phase 3`
 - **Risk Register:** 10 technical risks with contingency plans
 
 **View Complete Output:**
-- [Phase 4 Build & Development Report](./outputs/phase_04_build/smart-sleep-device/build_development_report.md) (28 pages, fully cited)
+- [Phase 4 Build & Development Report](./outputs/phase_04_build/smart-sleep-device/phase_04_build.md) (28 pages, fully cited)
   - Section 1: Executive Summary (9-month thesis, resource plan, success criteria)
   - Section 2: Development Team Structure (13 FTE, cross-functional dependencies)
   - Section 3: Hardware Firmware Development (STM32L496, sensor integration, connectivity, battery optimization)
@@ -182,7 +182,7 @@ Command: `/orchestration smart-sleep-device --phase 4`
 - **Contingency Procedures:** Post-launch critical issue handling (firmware crashes, API timeouts, HIPAA breaches) with rollback strategies
 
 **View Complete Output:**
-- [Phase 5 QA Testing Plan](./outputs/phase_05_testing/qa_testing_plan.md) (28 pages, fully cited)
+- [Phase 5 QA Testing Plan](./outputs/phase_05_testing/phase_05_testing.md) (28 pages, fully cited)
   - Section 1: Executive Summary (testing thesis, timeline, quality targets, risk prioritization)
   - Section 2: QA Strategy Overview (philosophy, test pyramid, methodology, defect classification)
   - Section 3: Hardware Firmware Testing (unit testing, HIL, sensor validation, battery life, connectivity, environmental)
@@ -215,7 +215,7 @@ Command: `/orchestration smart-sleep-device --phase 5`
 - **Success Metrics:** D2C/healthcare/operational KPIs, feedback collection, competitive monitoring
 
 **View Complete Output:**
-- [Phase 6 Launch Execution Plan](./outputs/phase_06_launch/launch_execution_plan.md) (38 pages, fully cited)
+- [Phase 6 Launch Execution Plan](./outputs/phase_06_launch/phase_06_launch.md) (38 pages, fully cited)
   - Section 1: Executive Summary (6-month thesis, 3-phase timeline, USD 12.5M revenue target)
   - Section 2: Market Entry Strategy (4 segments, positioning vs. Oura/Fitbit/ResMed, dual-channel model)
   - Section 3: Consumer D2C Launch (e-commerce, retail partnerships, influencer strategy, USD 1.6M paid acquisition)
@@ -249,7 +249,7 @@ Command: `/orchestration smart-sleep-device --phase 6`
 - **Profitability:** Breakeven EBITDA Month 21; 24% EBITDA margin by Month 27
 
 **View Complete Output:**
-- [Phase 7 Growth & Optimization Plan](./outputs/phase_07_growth/growth_optimization_plan.md) (30-35 pages, fully cited)
+- [Phase 7 Growth & Optimization Plan](./outputs/phase_07_growth/phase_07_growth.md) (30-35 pages, fully cited)
   - Section 1: Executive Summary (12-month targets, success criteria, capital requirements)
   - Section 2: Growth Strategy & Market Expansion (D2C/B2B acquisition, segment GTM, geographic expansion, partnerships)
   - Section 3: CAC & LTV Analysis (D2C/healthcare/corporate unit economics, payback period, profitability projections)
@@ -282,7 +282,7 @@ Command: `/orchestration smart-sleep-device --phase 7`
 - Investor-ready annual report
 
 **View Sample Output:**
-- [Phase 8 Operations Summary](./outputs/phase_08_operations/operations_summary.md) (target: 25-35 pages)
+- [Phase 8 Operations Summary](./outputs/phase_08_operations/phase_08_operations.md) (target: 25-35 pages)
 
 **How It Works:**
 Command: `/orchestration smart-sleep-device --phase 8`
