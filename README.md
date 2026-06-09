@@ -33,11 +33,11 @@ Why it works:
 
 ## LEVEL 2: Framework: The 8-Phase Approach
 
-### Complete Product & Campaign Lifecycle
+### Complete Product, Service & Campaign Lifecycle
 
 Validates → Strategizes → Designs → Builds → Tests → Launches → Grows → Operates
 
-This isn't a marketing template. It's a complete project management framework that scales across any division: product launches, marketing campaigns, finance operations, legal strategy, HR systems, sales enablement, or any complex work.
+This isn't a marketing template. It's a universal project management framework that works for any offering — physical products, software, services, campaigns, or internal programs. One command kicks off the full 8-phase workflow: `/orchestration [what you're launching]`
 
 1. **[Phase 1: Validation](docs/implementation/phases/phase-1-validation.md)**: Prove the problem is real
 2. **[Phase 2: Strategy](docs/implementation/phases/phase-2-strategy.md)**: Define positioning + market fit
@@ -50,7 +50,7 @@ This isn't a marketing template. It's a complete project management framework th
 
 **Proof: Smart Sleep Device**
 
-Applied to a hardware-software product. The orchestration system generated a complete strategic playbook across all 8 phases — fully cited, decision-ready documents a team can act on immediately.
+One `/orchestration` command. The system ran all 8 phases and generated a complete strategic playbook — fully cited, decision-ready documents a team can act on immediately. Works the same for a SaaS product, a consulting service, a consumer brand, or a new market entry.
 
 - **Phase 1:** 50-page market research report (TAM $153.7B, 10 competitors profiled, 5 customer personas, FDA regulatory pathway)
 - **Phase 2:** 25-page GTM strategy (3-tier pricing, 3-year P&L, unit economics across D2C + B2B + corporate wellness)
@@ -102,7 +102,8 @@ Timeline:
 - ✅ **Scalable framework**: Applies to any division (product, marketing, finance, legal, HR, sales) not just marketing
 - ✅ **AI integration at scale**: Orchestrates complex workflows with AI while maintaining decision quality and team collaboration
 - ✅ **Domain expertise**: Deep understanding of both traditional marketing fundamentals AND modern AI capabilities
-- ✅ **Proven output**: 267 pages of investor-grade documentation across 8 phases, covering a complete product from research to operations
+- ✅ **Universal applicability**: Works for any offering — physical products, software, services, campaigns, or internal programs — triggered by a single `/orchestration` command
+- ✅ **Proven output**: 267 pages of investor-grade documentation across 8 phases, covering a complete launch from research to operations
 
 ---
 
