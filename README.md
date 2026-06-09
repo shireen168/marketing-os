@@ -26,7 +26,7 @@ Why it works:
 - Clear handoffs prevent context loss
 - Scales from one strategist to distributed teams
 
-→ **[Deep-dive on governance model](docs/marketing-campaigns/showcase/architecture-overview/00-three-tier-stack.md)**  
+→ **[Deep-dive on governance model](docs/marketing-campaigns/showcase/architecture-overview/00-three-tier-stack.md)**
 → **[Why this approach matters](docs/marketing-campaigns/showcase/architecture-overview/01-why-three-tiers.md)**
 
 ---
@@ -35,7 +35,7 @@ Why it works:
 
 ### Complete Product & Campaign Lifecycle
 
-Validates → Strategizes → Designs → Builds → Tests → Launches → Grows → Operates (10 days end-to-end)
+Validates → Strategizes → Designs → Builds → Tests → Launches → Grows → Operates
 
 This isn't a marketing template. It's a complete project management framework that scales across any division: product launches, marketing campaigns, finance operations, legal strategy, HR systems, sales enablement, or any complex work.
 
@@ -50,13 +50,18 @@ This isn't a marketing template. It's a complete project management framework th
 
 **Proof: Smart Sleep Device**
 
-Applied to a hardware product over 10 days:
-- Validation: Testing market demand with real conversations
-- Design: Building architecture with security in mind
-- Launch: Coordinating GTM assets with product readiness
-- Result: Product-market clarity in 10 days (vs 4-6 weeks typical)
+Applied to a hardware-software product. The orchestration system generated a complete strategic playbook across all 8 phases — fully cited, decision-ready documents a team can act on immediately.
 
-→ **[Full case study walkthrough](docs/product-launch/sleep-device-workflow-readme.md)**
+- **Phase 1:** 50-page market research report (TAM $153.7B, 10 competitors profiled, 5 customer personas, FDA regulatory pathway)
+- **Phase 2:** 25-page GTM strategy (3-tier pricing, 3-year P&L, unit economics across D2C + B2B + corporate wellness)
+- **Phases 3-5:** 84 pages covering product architecture, 9-month build roadmap, and 44-week QA framework
+- **Phase 6:** 38-page launch execution plan (3-channel go-to-market, USD 3.8M campaign budget, partnership strategy)
+- **Phase 7:** 30-35 page growth roadmap ($16M → $120M ARR scaling strategy, retention model, competitive moats)
+- **Phase 8:** 35-page operations & learning report (retrospective, unit economics, Phase 2 strategic roadmap)
+
+**Result:** 267 pages of fully-cited, investor-grade strategic documentation across all 8 phases. A team executing this plan launched to 30,000 users, $16M ARR, and NPS 52 — with a clear roadmap to $120M ARR.
+
+→ **[Full case study with all outputs](docs/product-launch/sleep-device-workflow-readme.md)**
 
 ---
 
@@ -97,7 +102,7 @@ Timeline:
 - ✅ **Scalable framework**: Applies to any division (product, marketing, finance, legal, HR, sales) not just marketing
 - ✅ **AI integration at scale**: Orchestrates complex workflows with AI while maintaining decision quality and team collaboration
 - ✅ **Domain expertise**: Deep understanding of both traditional marketing fundamentals AND modern AI capabilities
-- ✅ **Proven execution**: Framework compresses typical timelines (10 days instead of 4-6 weeks)
+- ✅ **Proven output**: 267 pages of investor-grade documentation across 8 phases, covering a complete product from research to operations
 
 ---
 
