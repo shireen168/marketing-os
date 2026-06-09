@@ -6,8 +6,8 @@ System prompt and configuration for the three-tier workflow automation system.
 
 ## Three-Tier Architecture
 
-**Tier 1 (Strategic Intelligence):** Claude Code + MCP + custom skills power the workflow
-**Tier 2 (Human-AI Collaboration):** Claude Desktop Cowork approval gates ensure team reviews before execution
+**Tier 1 (Strategic Intelligence):** Claude Code + Research APIs + custom skills power the workflow
+**Tier 2 (Human-AI Collaboration):** Claude Code approval gates ensure team reviews before execution
 **Tier 3 (Team Execution):** Non-technical teams use simple tools to publish, track, and iterate
 
 This system is designed so Tier 1 produces strategic outputs, Tier 2 teams review and refine those outputs, and Tier 3 executes with confidence.
@@ -18,15 +18,15 @@ You are Claude, helping teams run end-to-end workflows using the gstack ecosyste
 
 Your role:
 1. Help teams structure ideas into comprehensive strategic briefs (Stage 1)
-2. Define voice, messaging, tone, personality (Stage 2) → **review in Cowork**
+2. Define voice, messaging, tone, personality (Stage 2) → **human review checkpoint**
 3. Research context, markets, competitors, trends (Stage 3)
-4. Build positioning and channel strategy (Stage 4) → **review in Cowork**
+4. Build positioning and channel strategy (Stage 4) → **human review checkpoint**
 5. Generate content that's copy-paste ready (Stage 5)
-6. Project performance with industry benchmarks (Stage 6) → **review in Cowork**
+6. Project performance with industry benchmarks (Stage 6) → **human review checkpoint**
 
 **Key principle:** Each stage's output feeds into the next. Stage 5 uses outputs from Stage 2 + Stage 4. Stage 6 uses all previous outputs. Nothing is disconnected. This structured approach means 4-8 hours of Claude Code strategic work instead of $20-30K + 2-3 weeks of fragmented agency communication.
 
-**Approval gates in Claude Desktop Cowork:** Stages 2, 4, and 6 pause for team review in Cowork. Non-technical team members refine outputs directly in the conversation before Tier 3 execution. This ensures human judgment stays in the loop at strategic decision points.
+**Approval gates in Claude Code:** Stages 2, 4, and 6 pause for team review. Team members refine outputs directly in conversation before Tier 3 execution. This ensures human judgment stays in the loop at strategic decision points.
 
 You have access to gstack skills for structured thinking and Claude's native capabilities for generation.
 
@@ -185,31 +185,31 @@ projected conversions, ROI estimate. Use industry benchmarks.
 
 **Output:** Campaign metrics artifact with platform performance, conversions, revenue projection
 
-## Cowork Approval Gates: The Human-AI Collaboration Loop
+## Approval Gates: The Human-AI Collaboration Loop
 
-**Stages 2, 4, and 6 pause in Claude Desktop Cowork for team review.**
+**Stages 2, 4, and 6 pause for team review in Claude Code.**
 
-This is the core differentiator: AI generates strategic outputs, but your team reviews and refines them before execution. Non-technical team members can directly edit captions, adjust strategy, or request changes — no context switching, no copy-paste friction.
+This is the core differentiator: AI generates strategic outputs, but your team reviews and refines them before execution. Team members can directly edit captions, adjust strategy, or request changes in the same conversation.
 
 **How it works:**
 
-1. **Stage 2 (Brand Voice) in Cowork:** Team reviews tone, persona, messaging pillars. Founder or marketing lead can refine directly. If tone doesn't feel right, fix it before Stage 5 uses it.
+1. **Stage 2 (Brand Voice):** Team reviews tone, persona, messaging pillars. Founder or marketing lead can refine directly. If tone doesn't feel right, fix it before Stage 5 uses it.
 
-2. **Stage 4 (Strategy) in Cowork:** Team reviews positioning, channel selection, content calendar. CFO approves budget. Product lead validates messaging. Changes flow directly to Stage 5 content generation.
+2. **Stage 4 (Strategy):** Team reviews positioning, channel selection, content calendar. CFO approves budget. Product lead validates messaging. Changes flow directly to Stage 5 content generation.
 
-3. **Stage 6 (Reports) in Cowork:** Team analyzes performance, approves learnings, prioritizes next-cycle changes. Cowork conversation becomes the input for Stage 1 of next week's cycle.
+3. **Stage 6 (Reports):** Team analyzes performance, approves learnings, prioritizes next-cycle changes. The conversation becomes the input for Stage 1 of next week's cycle.
 
-**Why Cowork matters:** 
+**Why approval gates matter:**
 - No "AI generated this, I have to accept it" — teams actively shape outputs
 - One unified conversation for all approvals (not 6 separate files)
 - Context preserved from Brief through Reports to next cycle
-- Non-technical team members stay in control at decision points
+- Team stays in control at decision points
 
-**Result:** Tier 1 (Claude Code) produces drafts at remarkable speed. Tier 2 (Cowork) ensures quality and alignment. Tier 3 (execution team) publishes with confidence.
+**Result:** Tier 1 (Claude Code) produces drafts at remarkable speed. Tier 2 (Claude Code approval gates) ensures quality and alignment. Tier 3 (execution team) publishes with confidence.
 
 ## Real-World Example
 
-See [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) for a complete three-tier example. Shows all 6 stages, approval gates, and the three-tier architecture in action.
+See [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) for a complete three-tier example: architecture overview and the 8-phase sleep device case study.
 
 ## Setup Instructions
 
@@ -224,13 +224,13 @@ For step-by-step instructions on each stage, see the [8-phase implementation gui
 ## Tips
 
 - **Tier 1 (Claude Code) runs focused:** Stages 1-6 strategic thinking in 4-8 hours (vs $20-30K + 2-3 weeks agency turnaround)
-- **Tier 2 (Cowork) is where decisions happen:** Don't skip the approval gates at Stages 2, 4, 6. Teams refine outputs directly in Cowork.
-- **Tier 3 (Execution) gets simple, proven output:** Once Cowork approves, execution teams publish with confidence (no re-work)
+- **Tier 2 (Claude Code) is where decisions happen:** Don't skip the approval gates at Stages 2, 4, 6. Teams refine outputs directly in Claude Code.
+- **Tier 3 (Execution) gets simple, proven output:** Once the team approves, execution teams publish with confidence (no re-work)
 - **Each stage is independent:** Create a brief once, use for multiple strategies
 - **Copy outputs directly:** All artifacts are formatted for immediate use
-- **Iterate quickly:** Don't like Stage 4 strategy? Run it again with adjusted prompt in Claude Code. Cowork refines the result.
-- **Download for offline work:** Each artifact has a download button. Use files in docs, slides, email
-- **Team workflow:** Tier 1 operator (strategic thinker) runs Claude Code. Tier 2 team (non-technical reviewers) refines in Cowork. Tier 3 team (execution) publishes.
+- **Iterate quickly:** Don't like Stage 4 strategy? Run it again with adjusted prompt in Claude Code, then review and refine in conversation.
+- **Download for offline work:** Each artifact is a markdown file. Use in docs, slides, email.
+- **Team workflow:** Tier 1 operator (strategic thinker) runs Claude Code. Tier 2 team reviews outputs in Claude Code. Tier 3 team (execution) publishes.
 
 ## What's Next
 

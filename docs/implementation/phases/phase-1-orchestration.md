@@ -362,26 +362,32 @@ The orchestrator will:
 ## Full Workflow: All Phases
 
 ```bash
-# Phase 1: Validation (research)
+# Phase 1: Validation (market research)
 python orchestration/cli/run_workflow.py --project marketing-os --phase 1 --save-checkpoint p1
 
 # Phase 2: Strategy (positioning, GTM)
 python orchestration/cli/run_workflow.py --project marketing-os --phase 2 --checkpoint p1.md --save-checkpoint p2
 
-# Phase 3: Planning (roadmap, requirements)
+# Phase 3: Design & Architecture
 python orchestration/cli/run_workflow.py --project marketing-os --phase 3 --checkpoint p2.md --save-checkpoint p3
 
-# Phase 4: Content (copy, assets)
+# Phase 4: Build & Development
 python orchestration/cli/run_workflow.py --project marketing-os --phase 4 --checkpoint p3.md --save-checkpoint p4
 
-# Phase 5: Deployment (launch, publishing)
+# Phase 5: Testing & QA
 python orchestration/cli/run_workflow.py --project marketing-os --phase 5 --checkpoint p4.md --save-checkpoint p5
 
-# Phase 6: Monitoring (analytics, optimization)
+# Phase 6: Launch Execution
 python orchestration/cli/run_workflow.py --project marketing-os --phase 6 --checkpoint p5.md --save-checkpoint p6
+
+# Phase 7: Growth & Optimization
+python orchestration/cli/run_workflow.py --project marketing-os --phase 7 --checkpoint p6.md --save-checkpoint p7
+
+# Phase 8: Operations & Learning
+python orchestration/cli/run_workflow.py --project marketing-os --phase 8 --checkpoint p7.md --save-checkpoint p8
 ```
 
-Each phase takes 30 minutes. Full workflow: ~3 hours.
+Each phase takes 30-60 minutes. Full workflow: ~4-6 hours.
 
 ---
 

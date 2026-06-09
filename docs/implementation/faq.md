@@ -4,7 +4,7 @@
 
 - Yes, because it's designed for non-technical teams to actively participate.
 - **Tier 1 (Strategic thinking):** One person runs Claude Code + gstack skills (4-8 hours for full 6-stage workflow)
-- **Tier 2 (Approvals):** Your team reviews outputs in Claude Desktop Cowork. Non-technical team members can edit captions, adjust strategy, or request changes directly. No context switching, no copy-paste friction.
+- **Tier 2 (Approvals):** Your team reviews outputs in Claude Code. Team members can discuss, edit, and request changes directly in conversation. No context switching, no copy-paste friction.
 - **Tier 3 (Execution):** Simple tools (Linktree, Canva, scheduling) publish approved work
 - Everyone sees context preserved automatically
 - Adoption compounds:
@@ -33,14 +33,14 @@ This system is designed so your team stays in control at decision points:
 
 **Tier 1 (Claude Code)** produces drafts at speed. Strategic thinker runs Stages 1-6.
 
-**Tier 2 (Claude Desktop Cowork)** is where approvals happen:
+**Tier 2 (Claude Code)** is where approvals happen:
 - **Stage 2 (Brand Voice):** Brand/marketing lead reviews tone, persona, messaging. CFO approves if brand costs involved.
 - **Stage 4 (Strategy):** Product lead validates messaging, CFO reviews channel budget, team approves positioning.
 - **Stage 6 (Reports):** Performance analyst reviews metrics, leadership approves learnings for next cycle.
 
-**Tier 3 (Execution)** publishes once Cowork approves. No surprises, no re-work.
+**Tier 3 (Execution)** publishes once the team approves. No surprises, no re-work.
 
-Cowork is a single conversation where all stakeholders see the same context. Non-technical team members can edit copy directly — they don't need to understand gstack or Claude Code.
+Outputs are structured markdown files. All stakeholders can review them in Claude Code or any editor, discuss changes in conversation, and approve before execution.
 
 ---
 
@@ -61,7 +61,7 @@ Four key differences:
 
 1. **Speed:**
    - Agencies take 2-3 weeks (scope, draft, revisions, final)
-   - This system: 4-8 hours strategic work (Claude Code) + 1-2 days approval (Cowork) + execution. You control the timeline and iterate faster
+   - This system: 4-8 hours strategic work (Claude Code) + 1-2 days team review + execution. You control the timeline and iterate faster
 
 2. **Cost:**
    - Agency: $20-30K per campaign (depending on scope and complexity)
@@ -69,7 +69,7 @@ Four key differences:
 
 3. **Control:**
    - Agencies deliver final copy
-   - This system: your team reviews and refines at Stages 2, 4, 6 in Cowork before anything ships. If the brand voice feels off or the strategy doesn't align, fix it in Cowork (not after publishing)
+   - This system: your team reviews and refines at Stages 2, 4, 6 in Claude Code before anything ships. If the brand voice feels off or the strategy doesn't align, fix it in Claude Code (not after publishing)
 
 4. **Learning:**
    - Agencies deliver outputs
@@ -79,7 +79,7 @@ Four key differences:
 
 ## What if we want to adapt this to our specific workflow?
 
-Build custom skills using `/skill-creator` or `/mcp-builder`. The system is extensible.
+Build custom skills using `/skill-creator`. The system is extensible.
 
 Examples:
 - Add a "Compliance Review" stage between Strategy and Content
