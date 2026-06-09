@@ -14,10 +14,10 @@ This document demonstrates a complete **8-phase product launch orchestration** f
 
 ## Where to Find Phase Outputs
 
-All completed phase outputs are centralized in the parent repo's orchestration folder: `../../../orchestration/outputs/`
+All completed phase outputs are stored in the `./outputs/` folder:
 
 ```
-orchestration/outputs/
+outputs/
 ├── phase_01_research/
 │   └── research_report.md (✅ 50 pages)
 ├── phase_02_strategy/
@@ -36,7 +36,7 @@ orchestration/outputs/
     └── operations_summary.md (📋 coming soon)
 ```
 
-**Note:** Outputs are stored in the parent repo's orchestration folder to centralize all product launch assets. This README documents the structure and links to Phase outputs.
+**Note:** All orchestration outputs are mirrored here from the parent repo's orchestration folder. This keeps marketing-os self-contained and shareable.
 
 ---
 
@@ -249,7 +249,7 @@ Command: `/orchestration smart-sleep-device --phase 6`
 - **Profitability:** Breakeven EBITDA Month 21; 24% EBITDA margin by Month 27
 
 **View Complete Output:**
-- [Phase 7 Growth & Optimization Plan](../../../orchestration/outputs/phase_07_growth/growth_optimization_plan.md) (30-35 pages, fully cited)
+- [Phase 7 Growth & Optimization Plan](./outputs/phase_07_growth/growth_optimization_plan.md) (30-35 pages, fully cited)
   - Section 1: Executive Summary (12-month targets, success criteria, capital requirements)
   - Section 2: Growth Strategy & Market Expansion (D2C/B2B acquisition, segment GTM, geographic expansion, partnerships)
   - Section 3: CAC & LTV Analysis (D2C/healthcare/corporate unit economics, payback period, profitability projections)
