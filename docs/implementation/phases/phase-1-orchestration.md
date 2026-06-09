@@ -1,11 +1,12 @@
 # Phase 1: Validation - Orchestration Guide
 
-**Goal:** Automate market research and validation using the orchestration engine.
-
-**Timeline:** ~30 minutes (vs 4-6 hours manual)  
-**Automated Skills:** 5 (Tavily research, /investigate, /customer-research, /competitor-profiling, Opus synthesis)  
-**Output:** Validation report ready for approval  
-**Checkpoints:** Auto-saved before and after execution
+| | |
+|---|---|
+| **Goal** | Automate market research and validation using the orchestration engine |
+| **Timeline** | ~30 minutes (vs 4-6 hours manual) |
+| **Automated Skills** | 5 (Tavily research, /investigate, /customer-research, /competitor-profiling, Opus synthesis) |
+| **Output** | Validation report ready for approval |
+| **Checkpoints** | Auto-saved before and after execution |
 
 ---
 
@@ -361,33 +362,26 @@ The orchestrator will:
 
 ## Full Workflow: All Phases
 
+| Phase | Name | Command | Duration |
+|-------|------|---------|----------|
+| 1 | Validation | `--phase 1 --save-checkpoint p1` | 30-60 min |
+| 2 | Strategy (positioning, GTM) | `--phase 2 --checkpoint p1.md --save-checkpoint p2` | 30-60 min |
+| 3 | Design and Architecture | `--phase 3 --checkpoint p2.md --save-checkpoint p3` | 30-60 min |
+| 4 | Build and Development | `--phase 4 --checkpoint p3.md --save-checkpoint p4` | 30-60 min |
+| 5 | Testing and QA | `--phase 5 --checkpoint p4.md --save-checkpoint p5` | 30-60 min |
+| 6 | Launch Execution | `--phase 6 --checkpoint p5.md --save-checkpoint p6` | 30-60 min |
+| 7 | Growth and Optimization | `--phase 7 --checkpoint p6.md --save-checkpoint p7` | 30-60 min |
+| 8 | Operations and Learning | `--phase 8 --checkpoint p7.md --save-checkpoint p8` | 30-60 min |
+
+Full workflow: ~4-6 hours. Each command follows the same pattern:
+
 ```bash
-# Phase 1: Validation (market research)
-python orchestration/cli/run_workflow.py --project marketing-os --phase 1 --save-checkpoint p1
-
-# Phase 2: Strategy (positioning, GTM)
-python orchestration/cli/run_workflow.py --project marketing-os --phase 2 --checkpoint p1.md --save-checkpoint p2
-
-# Phase 3: Design & Architecture
-python orchestration/cli/run_workflow.py --project marketing-os --phase 3 --checkpoint p2.md --save-checkpoint p3
-
-# Phase 4: Build & Development
-python orchestration/cli/run_workflow.py --project marketing-os --phase 4 --checkpoint p3.md --save-checkpoint p4
-
-# Phase 5: Testing & QA
-python orchestration/cli/run_workflow.py --project marketing-os --phase 5 --checkpoint p4.md --save-checkpoint p5
-
-# Phase 6: Launch Execution
-python orchestration/cli/run_workflow.py --project marketing-os --phase 6 --checkpoint p5.md --save-checkpoint p6
-
-# Phase 7: Growth & Optimization
-python orchestration/cli/run_workflow.py --project marketing-os --phase 7 --checkpoint p6.md --save-checkpoint p7
-
-# Phase 8: Operations & Learning
-python orchestration/cli/run_workflow.py --project marketing-os --phase 8 --checkpoint p7.md --save-checkpoint p8
+python orchestration/cli/run_workflow.py \
+  --project marketing-os \
+  --phase <N> \
+  --checkpoint <prev>.md \
+  --save-checkpoint <N>
 ```
-
-Each phase takes 30-60 minutes. Full workflow: ~4-6 hours.
 
 ---
 

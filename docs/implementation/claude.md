@@ -1,276 +1,246 @@
 # Claude Settings for Marketing OS
 
-System prompt and configuration for the three-tier workflow automation system.
+8-phase orchestration system for full product launches from research to operations.
 
-**This pattern works for any domain:** Marketing campaigns, HR briefs, legal docs, sales outreach, product launches, internal comms. Same system, different input.
+**What this is:** Automated workflow that turns a product idea into a launched, optimized product in 1-2 weeks instead of 3-4 months.
+
+**How it works:** Multi-phase orchestration (Python CLI) + human approval gates + skill coordination. Each phase asks clarifying questions, runs subagents, synthesizes findings, and pauses for your approval.
 
 ## Three-Tier Architecture
 
-**Tier 1 (Strategic Intelligence):** Claude Code + Research APIs + custom skills power the workflow
-**Tier 2 (Human-AI Collaboration):** Claude Code approval gates ensure team reviews before execution
-**Tier 3 (Team Execution):** Non-technical teams use simple tools to publish, track, and iterate
+**Tier 1 (Strategic Intelligence):** Python orchestration + Tavily/Perplexity APIs + gstack skills coordinate all 8 phases
+**Tier 2 (Human-AI Collaboration):** Approval gates after each phase let you review and refine before proceeding
+**Tier 3 (Team Execution):** Non-technical teams execute the approved outputs using simple tools
 
-This system is designed so Tier 1 produces strategic outputs, Tier 2 teams review and refine those outputs, and Tier 3 executes with confidence.
+This system is designed so Tier 1 produces strategic outputs at scale, Tier 2 teams review and refine those outputs, and Tier 3 executes with confidence.
 
-## System Prompt
+## System Architecture
 
-You are Claude, helping teams run end-to-end workflows using the gstack ecosystem.
+The orchestration system coordinates:
+- **Tavily API:** Real-time market research and trend data
+- **Perplexity API:** Fallback research if Tavily is unavailable
+- **Anthropic API:** Opus 4.7 (phases 1-3) and Sonnet 4.6 (phases 4-8) for synthesis
+- **gstack skills:** 75+ skills orchestrated across all 8 phases
+- **Approval gates:** Human review + revision loops after each phase
+- **Checkpoint system:** Save/restore state anytime, resume from any phase
 
-Your role:
-1. Help teams structure ideas into comprehensive strategic briefs (Stage 1)
-2. Define voice, messaging, tone, personality (Stage 2) → **human review checkpoint**
-3. Research context, markets, competitors, trends (Stage 3)
-4. Build positioning and channel strategy (Stage 4) → **human review checkpoint**
-5. Generate content that's copy-paste ready (Stage 5)
-6. Project performance with industry benchmarks (Stage 6) → **human review checkpoint**
+## 8-Phase Workflow
 
-**Key principle:** Each stage's output feeds into the next. Stage 5 uses outputs from Stage 2 + Stage 4. Stage 6 uses all previous outputs. Nothing is disconnected. This structured approach means 4-8 hours of Claude Code strategic work instead of $20-30K + 2-3 weeks of fragmented agency communication.
+**Phase 1: Research** - Market validation and opportunity assessment  
+**Phase 2: Strategy** - Go-to-market positioning and pricing  
+**Phase 3: Design** - Product design and architecture  
+**Phase 4: Build** - Development and implementation  
+**Phase 5: Testing** - QA, validation, and optimization  
+**Phase 6: Launch** - Execution and go-live  
+**Phase 7: Growth** - Growth loops and scaling  
+**Phase 8: Operations** - Monitoring, learning, and iteration  
 
-**Approval gates in Claude Code:** Stages 2, 4, and 6 pause for team review. Team members refine outputs directly in conversation before Tier 3 execution. This ensures human judgment stays in the loop at strategic decision points.
+**Total timeline:** 1-2 weeks (vs 3-4 months manual)
 
-You have access to gstack skills for structured thinking and Claude's native capabilities for generation.
+## Skills by Phase
 
-## Skills by Stage
+What orchestration happens under the hood at each phase:
 
-Each stage invokes specific gstack skills. Here's what runs under the hood at each point:
+### Phase 1: Research - Market Validation
 
-### Stage 1: Brief
+| Subagent | What it does | Duration |
+|----------|-------------|----------|
+| Tavily API | Surface-level market research (trends, news, discussions) | 10-15s |
+| `/investigate` | Deep-dive root cause analysis (why problems exist, missing solutions) | 30-45s |
+| `/customer-research` | Understand customer needs (personas, pain points, willingness to pay) | 20-30s |
+| `/competitor-profiling` | Competitive landscape mapping (feature matrix, gaps, positioning) | 20-30s |
+| Opus 4.7 | Synthesize findings into strategic recommendations + confidence scoring | 10-20s |
 
-| Skill | What it does |
-|-------|-------------|
-| `/office-hours` | Validates the product idea, surfaces hard questions about demand and positioning before briefing |
-| `/brainstorm` | Structures the validated idea into a formal marketing brief (audience, goals, tone direction) |
+**Output:** 30-50 page research report with market sizing, competitor analysis, customer validation, risk assessment
 
-### Stage 2: Brand Voice — human review checkpoint
+### Phase 2: Strategy - Go-to-Market
 
-| Skill | What it does |
-|-------|-------------|
-| `/brainstorm` | Defines tone of voice, persona, messaging pillars, and sample brand phrases |
+| Subagent | What it does | Duration |
+|----------|-------------|----------|
+| `/product-marketing` | Positioning statement and messaging hierarchy | 20-30s |
+| `/pricing` | Revenue model, pricing strategy, unit economics | 20-30s |
+| `/sales-enablement` | Sales collateral, pitch deck, buyer journey | 20-30s |
+| Opus 4.7 | Synthesize strategy into executable GTM plan | 10-20s |
 
-### Stage 3: Research
+**Output:** 5-8 page strategy document with positioning, pricing, GTM timeline, sales strategy
 
-| Skill | What it does |
-|-------|-------------|
-| `/investigate` | Market sizing (TAM/SAM/SOM), competitor analysis, audience validation, PESTLE summary |
+### Phase 3: Design - Architecture & UX
 
-### Stage 4: Strategy — human review checkpoint
+| Subagent | What it does |
+|----------|-------------|
+| `/design-consultation` | UX philosophy and interaction patterns |
+| `/plan-eng-review` | Technical architecture and data pipeline |
+| `/plan-design-review` | Design system and visual tokens |
 
-| Skill | What it does |
-|-------|-------------|
-| `/plan-ceo-review` | Positioning statement, messaging hierarchy, channel recommendations, GTM timeline |
+**Output:** Design system, architecture blueprint, wireframes, component library
 
-### Stage 5: Content
+### Phase 4: Build - Development
 
-Native Claude prompt — no skill invocation. Automatically inherits Stage 2 voice + Stage 4 strategy. Nothing is copied manually; context flows through.
+| Subagent | What it does |
+|----------|-------------|
+| `/skill-creator` | Custom skill development for product-specific workflows |
+| `/plan-eng-review` | API design, database schema, deployment architecture |
 
-### Stage 6: Reports — human review checkpoint
+**Output:** Feature-complete codebase, API documentation, deployment guide
 
-Native Claude prompt — no skill invocation. Projects reach, engagement, and ROI per platform using industry benchmarks.
+### Phase 5: Testing - QA & Validation
+
+| Subagent | What it does |
+|----------|-------------|
+| `/qa` | Quality assurance, test coverage, edge case validation |
+| `/investigate` | Root cause analysis for bugs and issues |
+
+**Output:** QA report, test coverage, performance benchmarks, optimization recommendations
+
+### Phase 6: Launch - Execution
+
+| Subagent | What it does |
+|----------|-------------|
+| `/ship` | Deployment, monitoring setup, go-live checklist |
+| `/context-save` | Checkpoint creation for post-launch reference |
+
+**Output:** Go-live report, monitoring dashboard, launch metrics
+
+### Phase 7: Growth - Optimization
+
+| Subagent | What it does |
+|----------|-------------|
+| `/autoplan` | Growth loop design and optimization strategy |
+| `/investigate` | Performance analysis and bottleneck identification |
+
+**Output:** Growth roadmap, KPI targets, optimization priorities
+
+### Phase 8: Operations - Learning & Iteration
+
+| Subagent | What it does |
+|----------|-------------|
+| `/plan-ceo-review` | Post-launch review and next-cycle strategy |
+| `/context-save` | Final checkpoint for documentation |
+
+**Output:** Operations report, learning summary, iteration backlog
 
 ---
 
-### Additional Skills
+## Workflow: How to Run
 
-For design and architecture work (applies to product launches, not campaign-only runs):
+### Non-Technical Path (Recommended)
 
-| Skill | When to use |
-|-------|-------------|
-| `/design-consultation` | UX philosophy and interaction model decisions |
-| `/plan-eng-review` | Technical architecture, data pipeline, storage decisions |
-| `/plan-design-review` | Design system, component library, visual tokens |
-| `/autoplan` | Full orchestration across all 6 stages in one run |
+```bash
+# Phase 1: Research
+/orchestration [product-name]
 
-For quality and publishing:
+# Phase 2: Strategy (when Phase 1 approved)
+/orchestration [product-name] --phase 2
 
-| Skill | When to use |
-|-------|-------------|
-| `/review` | Code or content review before merging or publishing |
-| `/qa` | Quality assurance before shipping |
-| `/ship` | Deploy and publish final outputs |
-
-### Context Management (Every Session)
-
-| Skill | When to use |
-|-------|-------------|
-| `/context-save` | End of session — saves all decisions, outputs, and stage progress |
-| `/context-restore` | Start of session — loads prior state, zero context loss across sessions |
-
-## Workflow Stages (Copy-Paste Prompts)
-
-### Stage 1: Brief
-**Command:** `/brainstorm`
-
-**Prompt template:**
-```
-Create a marketing brief for [PRODUCT].
-
-Include: product description, target audience, key benefits, 
-primary channels, success metrics.
+# Continue through phases 3-8
+/orchestration [product-name] --phase 3
+# ... and so on
 ```
 
-**Example:** 
-```
-Create a marketing brief for Accounting OS, a SaaS tool that 
-automates bookkeeping for small businesses. The tool integrates 
-with bank accounts and generates financial reports automatically.
+**Each phase:**
+1. Asks 6 clarifying questions about your product/market
+2. Runs subagents (Tavily, skills, Opus synthesis)
+3. Presents results for approval
+4. Saves checkpoint automatically
+5. Proceeds to next phase when approved
 
-Include: product description, target audience, key benefits, 
-primary channels, success metrics.
-```
+### Technical Path (CLI)
 
-**Output:** Structured brief artifact (copy/paste directly)
+```bash
+python orchestration/cli/run_workflow.py \
+  --project [product-name] \
+  --phase 1 \
+  --save-checkpoint phase1-complete
 
-### Stage 2: Brand Voice
-**Command:** `/brainstorm`
-
-**Prompt template:**
-```
-Define brand voice for [PRODUCT].
-
-Provide: target persona, tone of voice, key messaging pillars, 
-sample phrases that sound like our brand.
-```
-
-**Example:**
-```
-Define brand voice for Accounting OS. Our target is busy small 
-business owners who find accounting overwhelming.
-
-Provide: target persona, tone of voice, key messaging pillars, 
-sample phrases that sound like our brand.
+# With checkpoint restore
+python orchestration/cli/run_workflow.py \
+  --project [product-name] \
+  --phase 2 \
+  --checkpoint ~/.gstack/projects/claude-system/checkpoints/phase1-complete.md \
+  --save-checkpoint phase2-complete
 ```
 
-**Output:** Brand guidelines artifact with persona, tone, pillars, sample phrases
+### Options
 
-### Stage 3: Research
-**Command:** `/investigate`
-
-**Prompt template:**
-```
-Research the [MARKET] for [PRODUCT].
-
-Provide: PESTLE analysis summary, TAM/SAM/SOM, top 3 competitors, 
-market trends, customer pain points.
-```
-
-**Example:**
-```
-Research the small business accounting software market for 
-Accounting OS.
-
-Provide: PESTLE analysis summary, TAM/SAM/SOM, top 3 competitors, 
-market trends, customer pain points.
-```
-
-**Output:** Market research artifact with sizing, competitors, trends, pains
-
-### Stage 4: Strategy
-**Command:** `/plan-ceo-review`
-
-**Prompt template:**
-```
-Create marketing strategy for [PRODUCT] using this research 
-and brand voice.
-
-Provide: positioning statement, messaging hierarchy, 
-recommended channels with rationale, go-to-market timeline.
-```
-
-**Example:**
-```
-Create marketing strategy for Accounting OS using the research 
-and brand voice above.
-
-Provide: positioning statement, messaging hierarchy, 
-recommended channels with rationale, go-to-market timeline.
-```
-
-**Output:** Strategy artifact with positioning, messaging hierarchy, channels, GTM timeline
-
-### Stage 5: Content
-**Command:** Native Claude prompt (no slash command)
-
-**Prompt template:**
-```
-Using the brief, brand voice, and strategy above, create 
-content drafts for these platforms:
-
-- Facebook (200 char post)
-- Instagram (caption + hashtags)
-- TikTok (short script)
-- LinkedIn (professional post)
-- Twitter/X (thread, 3 tweets)
-- Threads (casual post)
-
-Make each sound like our brand voice.
-```
-
-**Output:** 6 artifact files, one per platform (all copy-paste ready)
-
-### Stage 6: Reports
-**Command:** Native Claude prompt (no slash command)
-
-**Prompt template:**
-```
-Create a sample campaign report for [PRODUCT] showing: 
-projected reach per platform, estimated engagement rates, 
-projected conversions, ROI estimate. Use industry benchmarks.
-```
-
-**Output:** Campaign metrics artifact with platform performance, conversions, revenue projection
+- `--checkpoint <path>` - Resume from a previous checkpoint
+- `--save-checkpoint <name>` - Save state after phase completes
+- `--no-approval` - Skip approval gate (auto-approve)
+- `--verbose` - Show all subagent invocations and synthesis steps
 
 ## Approval Gates: The Human-AI Collaboration Loop
 
-**Stages 2, 4, and 6 pause for team review in Claude Code.**
+**After each phase, the system pauses for your approval.**
 
-This is the core differentiator: AI generates strategic outputs, but your team reviews and refines them before execution. Team members can directly edit captions, adjust strategy, or request changes in the same conversation.
+This is the core differentiator: The orchestration runs all subagents and synthesis automatically, but you decide whether to proceed to the next phase.
 
-**How it works:**
+**Approval options:**
 
-1. **Stage 2 (Brand Voice):** Team reviews tone, persona, messaging pillars. Founder or marketing lead can refine directly. If tone doesn't feel right, fix it before Stage 5 uses it.
-
-2. **Stage 4 (Strategy):** Team reviews positioning, channel selection, content calendar. CFO approves budget. Product lead validates messaging. Changes flow directly to Stage 5 content generation.
-
-3. **Stage 6 (Reports):** Team analyzes performance, approves learnings, prioritizes next-cycle changes. The conversation becomes the input for Stage 1 of next week's cycle.
+- **Approve** → Accept findings, proceed to next phase, checkpoint saved automatically
+- **Revise** → Provide feedback, system asks diagnostic questions, re-run phase with refined scope
+- **Unclear** → Not enough information, system suggests additional research, gather more data, re-run
 
 **Why approval gates matter:**
-- No "AI generated this, I have to accept it" — teams actively shape outputs
-- One unified conversation for all approvals (not 6 separate files)
-- Context preserved from Brief through Reports to next cycle
-- Team stays in control at decision points
+- Team stays in control at every decision point
+- Revision loops let you refine scope without restarting
+- Checkpoints preserve all context between phases
+- No surprises - every phase outcome is reviewed before proceeding
 
-**Result:** Tier 1 (Claude Code) produces drafts at remarkable speed. Tier 2 (Claude Code approval gates) ensures quality and alignment. Tier 3 (execution team) publishes with confidence.
+**Result:** Tier 1 orchestrates all phases automatically. Tier 2 (approval gates) ensures human judgment stays in the loop. Tier 3 executes with confidence.
+
+## Checkpoint Management
+
+The system auto-saves checkpoints in `~/.gstack/projects/claude-system/checkpoints/`:
+
+- **Format:** `ddmmyy-hhmm-[description].md` (e.g., `090624-1430-phase1-research-approved.md`)
+- **Contents:** Metadata, all answered questions, phase results, synthesis output
+- **Use:** Resume from any checkpoint anytime, zero context loss
+
+**Resume example:**
+```bash
+/orchestration [product-name] --phase 3 \
+  --checkpoint ~/.gstack/projects/claude-system/checkpoints/060626-1500-phase2-strategy-approved.md
+```
 
 ## Real-World Example
 
-See [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) for a complete three-tier example: architecture overview and the 8-phase sleep device case study.
+See [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) for a complete three-tier example: architecture overview and the sleep device case study showing Phases 1-4 in detail.
 
 ## Setup Instructions
 
 Follow [setup.md](setup.md) to install:
-1. Claude CLI
-2. gstack (globally)
-3. Claude Code extension in VS Code
-4. Clone this repo
+1. Python 3.8+
+2. Get API keys (Tavily, Perplexity, Anthropic)
+3. Configure `.env` file with keys
+4. Test installation
+5. Run first phase
 
-For step-by-step instructions on each stage, see the [8-phase implementation guide](./phases/).
+For step-by-step instructions on each phase, see [phases/](./phases/).
 
 ## Tips
 
-- **Tier 1 (Claude Code) runs focused:** Stages 1-6 strategic thinking in 4-8 hours (vs $20-30K + 2-3 weeks agency turnaround)
-- **Tier 2 (Claude Code) is where decisions happen:** Don't skip the approval gates at Stages 2, 4, 6. Teams refine outputs directly in Claude Code.
-- **Tier 3 (Execution) gets simple, proven output:** Once the team approves, execution teams publish with confidence (no re-work)
-- **Each stage is independent:** Create a brief once, use for multiple strategies
-- **Copy outputs directly:** All artifacts are formatted for immediate use
-- **Iterate quickly:** Don't like Stage 4 strategy? Run it again with adjusted prompt in Claude Code, then review and refine in conversation.
-- **Download for offline work:** Each artifact is a markdown file. Use in docs, slides, email.
-- **Team workflow:** Tier 1 operator (strategic thinker) runs Claude Code. Tier 2 team reviews outputs in Claude Code. Tier 3 team (execution) publishes.
+- **1-2 weeks total:** ~30-60 minutes per phase (8 phases = full product launch)
+- **Ask clarifying questions:** Each phase asks 6 questions - answer honestly, system uses them to customize research/strategy
+- **Approval gates are not optional:** Review each phase output carefully. Tier 2 is where your team shapes the product direction.
+- **Revise without restarting:** If Phase 2 strategy doesn't match your vision, use revision feedback to refine. Don't restart Phase 1.
+- **Context flows through:** Phase 5 (Testing) uses findings from all prior phases. Phase 8 (Operations) feeds back to next product cycle.
+- **Checkpoints are your safety net:** Crash mid-phase? Resume from last checkpoint, zero context loss.
+- **Team workflow:** Tier 1 runs orchestration automatically. Tier 2 reviews each phase output. Tier 3 implements the approved strategy.
 
-## What's Next
+## Status
 
-Phase 2 will add:
-- Real social media publishing (Facebook, Instagram, TikTok, LinkedIn, Twitter/X) from Tier 3
-- Analytics dashboard showing live campaign performance
-- Campaign calendar and scheduling automation
-- Consulting-grade market research reports (50+ pages with PESTLE, Porter's, SWOT, TAM/SAM/SOM)
-- Web UI alongside IDE option for non-technical teams
+✅ **Phases 1-2:** Fully implemented and tested (210+ tests passing)  
+📋 **Phases 3-8:** Specification ready, implementation in progress
+
+## Next Steps
+
+After Phase 2, you'll have:
+- Complete market research (Phase 1)
+- GTM strategy with positioning and pricing (Phase 2)
+
+Ready to proceed to:
+- Phase 3: Design & architecture
+- Phase 4: Build & development
+- Phase 5: Testing & QA
+- Phase 6: Launch execution
+- Phase 7: Growth & optimization
+- Phase 8: Operations & learning

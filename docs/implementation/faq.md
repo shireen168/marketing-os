@@ -3,27 +3,26 @@
 ## Will our team actually use this?
 
 - Yes, because it's designed for non-technical teams to actively participate.
-- **Tier 1 (Strategic thinking):** One person runs Claude Code + gstack skills (4-8 hours for full 6-stage workflow)
-- **Tier 2 (Approvals):** Your team reviews outputs in Claude Code. Team members can discuss, edit, and request changes directly in conversation. No context switching, no copy-paste friction.
-- **Tier 3 (Execution):** Simple tools (Linktree, Canva, scheduling) publish approved work
-- Everyone sees context preserved automatically
+- **Tier 1 (Orchestration):** One person types `/orchestration [product]` and the system runs 8 phases automatically (~1-2 weeks for full product launch)
+- **Tier 2 (Approvals):** Your team reviews each phase output. Team members can revise scope, request changes, approve findings. Revision loops let you refine without restarting.
+- **Tier 3 (Execution):** Non-technical teams implement the approved strategy using simple tools
+- Everyone sees context preserved automatically across all 8 phases
 - Adoption compounds:
-  - Day 1 → Ship a campaign
-  - Week 1 → Ship 3-5 campaigns
-  - Month 1 → It has become the team's SOP
+  - Day 1 → Complete Phase 1 (market research)
+  - Week 1 → Complete Phases 1-3 (research, strategy, design)
+  - 2 weeks → Full product launch orchestrated (all 8 phases)
 
 ---
 
-## Is this just a marketing tool?
+## Is this just a product launch tool?
 
-No. The architecture works for any workflow that involves stages building on previous stages.
+No. The 8-phase pattern works for any complex, multi-stage workflow where each phase builds on previous decisions.
 
-- Marketing: Brief → Brand Voice → Research → Strategy → Content → Reports
-- HR: Job Description → Candidate Persona → Interview Questions → Offer Strategy
-- Legal: Case Brief → Regulatory Research → Risk Analysis → Compliance Strategy
-- Finance: Budget → Forecasting → Scenario Analysis → Board Report
+- **Product Launches:** Research → Strategy → Design → Build → Testing → Launch → Growth → Operations
+- **Organizational Change:** Planning → Design → Communication → Training → Rollout → Adoption → Optimization → Learning
+- **Real Estate Development:** Site Analysis → Architecture → Permitting → Construction → QA → Launch → Growth → Operations
 
-Same 6-stage pattern. Same context preservation. Different domain. Templates exist for marketing, but the system is domain-agnostic.
+Same 8-phase pattern. Same checkpoint preservation. Different domain. Currently optimized for product launches, but expandable to any domain with similar phase structure.
 
 ---
 
@@ -31,14 +30,11 @@ Same 6-stage pattern. Same context preservation. Different domain. Templates exi
 
 This system is designed so your team stays in control at decision points:
 
-**Tier 1 (Claude Code)** produces drafts at speed. Strategic thinker runs Stages 1-6.
-
-**Tier 2 (Claude Code)** is where approvals happen:
-- **Stage 2 (Brand Voice):** Brand/marketing lead reviews tone, persona, messaging. CFO approves if brand costs involved.
-- **Stage 4 (Strategy):** Product lead validates messaging, CFO reviews channel budget, team approves positioning.
-- **Stage 6 (Reports):** Performance analyst reviews metrics, leadership approves learnings for next cycle.
-
-**Tier 3 (Execution)** publishes once the team approves. No surprises, no re-work.
+| Tier | Who | Stage | What they do |
+|------|-----|-------|--------------|
+| Tier 1 (Claude Code) | Strategic thinker | Stages 1-6 | Produces drafts at speed |
+| Tier 2 (Claude Code) | Brand/marketing lead, CFO, product lead | Stage 2 (Brand Voice), Stage 4 (Strategy), Stage 6 (Reports) | Reviews tone and persona, validates messaging and budget, approves learnings for next cycle |
+| Tier 3 (Execution) | Execution team | Post-approval | Publishes once the team approves. No surprises, no re-work. |
 
 Outputs are structured markdown files. All stakeholders can review them in Claude Code or any editor, discuss changes in conversation, and approve before execution.
 
@@ -59,21 +55,12 @@ If the team already brief products, research markets, and write strategy, this s
 
 Four key differences:
 
-1. **Speed:**
-   - Agencies take 2-3 weeks (scope, draft, revisions, final)
-   - This system: 4-8 hours strategic work (Claude Code) + 1-2 days team review + execution. You control the timeline and iterate faster
-
-2. **Cost:**
-   - Agency: $20-30K per campaign (depending on scope and complexity)
-   - This system: 4-8 hours of one person's time. Setup once, run unlimited campaigns. Cost per campaign approaches marginal
-
-3. **Control:**
-   - Agencies deliver final copy
-   - This system: your team reviews and refines at Stages 2, 4, 6 in Claude Code before anything ships. If the brand voice feels off or the strategy doesn't align, fix it in Claude Code (not after publishing)
-
-4. **Learning:**
-   - Agencies deliver outputs
-   - This system teaches your team how to think in workflows. After 3 campaigns, your team becomes expert in structuring work
+| Dimension | Agency | This System |
+|-----------|--------|-------------|
+| Speed | 2-3 weeks (scope, draft, revisions, final) | 4-8 hours strategic work + 1-2 days team review + execution |
+| Cost | $20-30K per campaign | 4-8 hours of one person's time. Setup once, run unlimited campaigns. |
+| Control | Delivers final copy | Team reviews and refines at Stages 2, 4, 6 in Claude Code before anything ships |
+| Learning | Delivers outputs | Teaches your team to think in workflows. After 3 campaigns, your team owns the process. |
 
 ---
 
@@ -105,16 +92,11 @@ That's it.
 
 ## What's the learning curve?
 
-- **Day 1:**
-  - Clone repo, run setup, watch onboarding
-  - By end of day, you ship your first campaign
-
-- **Week 1:**
-  - Your team runs 3-5 campaigns independently
-  - Workflow becomes second nature
-
-- **Month 1:**
-  - Your team is faster than agencies, and they own the process
+| Timeframe | Milestone |
+|-----------|-----------|
+| Day 1 | Clone repo, run setup, watch onboarding. Ship your first campaign by end of day. |
+| Week 1 | Your team runs 3-5 campaigns independently. Workflow becomes second nature. |
+| Month 1 | Your team is faster than agencies, and they own the process. |
 
 The system teaches as you use it. Each campaign reinforces the workflow.
 

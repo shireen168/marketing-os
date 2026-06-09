@@ -83,10 +83,10 @@ Expert ← does everything → Outputs → Team executes (or fails)
 ```
 
 Issues:
-- Expert becomes bottleneck
-- Expert must do strategy AND execution AND approval
+- Expert becomes the bottleneck
+- Expert must handle strategy, execution, and approval
 - Scales linearly (add team, expert workload increases)
-- Team doesn't understand decisions (can't adapt)
+- Team doesn't understand decisions and can't adapt
 - No governance trail
 
 ### Solution: Three-Tier Separation
@@ -101,9 +101,9 @@ Tier 3: Team executes at scale (Simple tools)
 
 Benefits:
 - Expert workload is fixed (builds system once, not per campaign)
-- Team understands decisions (visible in Claude Code)
+- Team understands decisions, visible in Claude Code
 - Approvals are transparent (governance trail)
-- Scales: 1 strategist → 1 team of 10 executors
+- Scales: 1 strategist to a team of 10 executors
 - Non-experts can execute
 - System is resilient (strategist leaves, system stays)
 

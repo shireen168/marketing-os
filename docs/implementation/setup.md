@@ -1,133 +1,177 @@
-# Setup Guide: Marketing OS System
+# Setup Guide: Marketing OS Orchestration System
 
-Get your system ready to run marketing ops workflows using the three-tier architecture in 15 minutes.
+Get your system ready to run the 8-phase orchestration system in 30 minutes.
 
 ## Three-Tier Architecture
 
 | Tier | Layer | Setup |
 |------|-------|-------|
-| **Tier 1** | Strategic Intelligence | Claude Code in VS Code (this setup) |
-| **Tier 2** | Human-AI Collaboration | Claude Code (approval gates in conversation) |
-| **Tier 3** | Team Execution | Simple tools (Linktree, Canva, etc.) |
+| **Tier 1** | Strategic Intelligence | Python orchestration + APIs (this setup) |
+| **Tier 2** | Human-AI Collaboration | Approval gates in orchestration (review + revise loops) |
+| **Tier 3** | Team Execution | Simple tools (Canva, schedulers, deployment tools) |
 
 ## Prerequisites
 
 ### Technical Requirements
 - macOS, Windows, or Linux
-- Administrator access (for global gstack installation)
 - ~500MB disk space
-- Active Claude account (free or paid)
+- Python 3.8+ installed
+- Active Claude account (API key required)
+- Three API keys:
+  - **Anthropic API** (for Claude Opus 4.7 and Sonnet 4.6)
+  - **Tavily API** (for market research)
+  - **Perplexity API** (fallback research)
 - Basic terminal/command line familiarity
-- **Tier 1:** VS Code with Claude Code extension
-- **Tier 2:** Claude Code (approval gates in conversation — no separate tool needed)
 
 ### Team Readiness
-Before starting, your team should understand:
 
-- **Marketing:** How to brief a product idea (target audience, channels, success metrics)
-- **Tier 1 operator:** Comfortable with VS Code + Claude Code + gstack commands
-- **Tier 2 reviewers:** Can review markdown files in any editor or in Claude Code conversations (non-technical OK)
-- **Tier 3 executors:** Can use simple tools (Linktree, Canva, scheduling software)
-- **Cross-functional:** Willingness to iterate (outputs are reviewed and approved in Claude Code, not published directly)
+| Role | Requirement |
+|------|-------------|
+| **Product owner** | Can describe product vision, target market, and business goals |
+| **Tier 1 operator** | Can install Python, configure API keys, run orchestration commands |
+| **Tier 2 reviewers** | Can review phase outputs and provide revision feedback (non-technical OK) |
+| **Tier 3 executors** | Can implement the strategy using simple tools (design, scheduling, deployment) |
+| **Cross-functional** | Willingness to iterate (each phase output is reviewed and approved, not auto-executed) |
 
-This is not a "set and forget" system. It's a structured thinking tool that requires team input at each stage.
+This is not a "set and forget" system. Each phase asks 6 clarifying questions and pauses for your approval. Your input directly shapes the product direction.
 
 ### What You'll Get After Setup
-- **Tier 1:** Ability to run 6-stage marketing workflows in VS Code (4-8 hours strategic work per campaign vs $20-30K + 2-3 weeks agency)
-- **Tier 2:** Approval gates in Claude Code where teams refine outputs at Stages 2, 4, 6
-- **Tier 3:** Publication-ready outputs that execution teams can publish with confidence
-- All gstack skills available globally (/brainstorm, /investigate, /plan-ceo-review)
-- Claude Code context preservation across stages
-- Ready to adapt to HR recruiting, legal briefs, sales campaigns, or other departments
+- **Tier 1:** Ability to run 8-phase orchestration workflows from research to launch (1-2 weeks total vs 3-4 months manual)
+- **Tier 2:** Approval gates after each phase where teams review and refine findings via revision feedback
+- **Tier 3:** Fully documented strategy and implementation roadmap ready for execution
+- Full orchestration of 75+ gstack skills across all 8 phases
+- Context preservation across all phases via checkpoint system
+- Ready to use for any product launch (SaaS, hardware, services, etc.)
 
-## Step 1: Install Claude CLI
+## Step 1: Install Python
 
-Download and install Claude CLI from the official source.
+The orchestration system requires Python 3.8 or higher.
 
 **macOS:**
 ```bash
-brew install anthropic/anthropic/claude-cli
+# Using Homebrew
+brew install python3
 ```
 
 **Windows:**
-Download from [claude.sh](https://claude.sh) and follow installer.
+Download from [python.org](https://www.python.org/downloads/) and run the installer.
 
 **Linux:**
 ```bash
-curl -fsSL https://claude.sh/install.sh | bash
+# Ubuntu/Debian
+sudo apt-get install python3
 ```
 
 **Verify:**
 ```bash
-claude --version
+python3 --version
 ```
 
-## Step 2: Install gstack (Global)
+## Step 2: Get API Keys
+
+You need 3 API keys:
+
+### 2a: Anthropic API Key
+1. Go to [console.anthropic.com](https://console.anthropic.com)
+2. Sign in with your Claude account
+3. Click "API keys" → "Create new key"
+4. Copy and save it safely
+
+### 2b: Tavily API Key
+1. Go to [tavily.com](https://tavily.com)
+2. Sign up and create account
+3. Go to API dashboard
+4. Copy and save your API key
+
+### 2c: Perplexity API Key
+1. Go to [perplexity.ai](https://perplexity.ai)
+2. Sign up and create account
+3. Go to API settings
+4. Copy and save your API key
+
+## Step 3: Configure .env File
+
+Create a `.env` file in your project root:
 
 ```bash
-git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack
-cd ~/.claude/skills/gstack
-./setup
+cd /path/to/claude-system
 ```
 
-**Verify:**
-```bash
-gstack --version
+Create the file with your keys:
+
+```
+ANTHROPIC_API_KEY=sk-ant-...
+TAVILY_API_KEY=tvly-...
+PERPLEXITY_API_KEY=pplx-...
 ```
 
-You should see version output. If not, re-run `./setup`.
-
-## Step 3: Install Claude Code Extension
-
-1. Open **Visual Studio Code**
-2. Go to Extensions (Cmd+Shift+X / Ctrl+Shift+X)
-3. Search for "Claude Code"
-4. Click **Install** (published by Anthropic)
-5. Sign in with your Claude account
-
-**Verify:** You should see a Claude icon in the sidebar.
-
-## Step 3b: Optional — Install Claude Desktop (For Team Reviewers)
-
-Tier 2 reviewers can use Claude Desktop (the chat app) as an alternative to Claude Code CLI for discussing and refining outputs. Not required — outputs are markdown files that can be reviewed in any editor.
-
-1. Download Claude Desktop from [claude.ai/download](https://claude.ai/download)
-2. Install and sign in with a Claude account
-3. Share the generated output files with your team for review
-
-**Verify:** You can create a new conversation in Claude Desktop.
-
-## Step 4: Clone Marketing OS Repo
+**Save and secure:** Never commit this file to git. Add to `.gitignore`:
 
 ```bash
-git clone https://github.com/shireen168/marketing-os.git
-cd marketing-os
+echo ".env" >> .gitignore
+git add .gitignore && git commit -m "chore: add .env to gitignore"
 ```
 
-## Step 5: Verify Everything Works
+## Step 4: Clone Repositories
 
-1. Open marketing-os folder in VS Code
-2. Open Claude Code panel (click Claude icon)
-3. Type: `/brainstorm "test prompt"`
-4. You should see a response with formatted output
+```bash
+# Clone parent repo
+git clone https://github.com/shireen168/claude-system.git
+cd claude-system
 
-**If it doesn't work:**
-- Restart VS Code
-- Check that gstack is installed: `~/.claude/skills/gstack/bin/gstack --version`
-- Check Claude CLI is authenticated: `claude auth status`
+# The marketing-os submodule should already be included
+# If not, initialize submodules:
+git submodule update --init --recursive
+```
+
+## Step 5: Test Installation
+
+Test that the orchestration system can access all APIs:
+
+```bash
+python orchestration/cli/run_workflow.py --help
+```
+
+You should see available commands and options. If not:
+- Check Python is installed: `python3 --version`
+- Check `.env` file has all 3 API keys
+- Check keys are valid (test in web consoles)
+
+## Step 6: Run Phase 1 Test
+
+```bash
+# Run Phase 1 of orchestration (non-interactive mode)
+python orchestration/cli/run_workflow.py \
+  --project test-product \
+  --phase 1 \
+  --no-approval
+```
+
+This runs a full Phase 1 (market research) without asking for approval. You should see:
+- Tavily research running
+- /investigate skill running
+- /customer-research skill running
+- /competitor-profiling skill running
+- Opus synthesis running
+- Final research report generated
+
+**If it fails:**
+- Verify all 3 API keys in `.env` are correct
+- Check internet connection is active
+- Review error message for specific API issue
 
 ## You're Ready
 
-Your Tier 1 and Tier 2 infrastructure is set up. Next:
+Your orchestration system is set up. Next:
 
-1. **Tier 1 (Claude Code):** Follow the [8-phase implementation guide](./phases/) to run your first campaign (4-8 hours strategic work across 6 stages)
-2. **Tier 2 (Review):** Share generated outputs with your team. Refine at approval gates (Stages 2, 4, 6) in Claude Code or Claude Desktop.
-3. **Tier 3 (Execution):** Once approved, team publishes, tracks performance, feeds learnings back
+1. **Tier 1 (Orchestration):** Run `/orchestration [product-name]` or use CLI commands from [phases/](./phases/)
+2. **Tier 2 (Review):** Answer clarifying questions and review each phase output. Approve, revise, or ask for more info.
+3. **Tier 3 (Execution):** Implement the approved strategy using simple tools.
 
 ---
 
-**Total setup time:** ~15 minutes (first time only)
+**Total setup time:** ~30 minutes (first time only)
 
-**See it in action:** [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) shows the three-tier architecture in detail.
+**See it in action:** [docs/marketing-campaigns/showcase/](../marketing-campaigns/showcase/) shows a complete sleep device product launch (Phases 1-4).
 
-**For help:** Refer to the phase documentation or the [skills inventory](./skills-inventory.md).
+**For help:** Refer to [phases/phase-1-orchestration.md](./phases/phase-1-orchestration.md) or orchestration troubleshooting.
