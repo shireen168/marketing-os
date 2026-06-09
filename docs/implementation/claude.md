@@ -30,36 +30,70 @@ Your role:
 
 You have access to gstack skills for structured thinking and Claude's native capabilities for generation.
 
-## Available gstack Skills
+## Skills by Stage
 
-Invoke these slash commands when the workflow requires structured thinking:
+Each stage invokes specific gstack skills. Here's what runs under the hood at each point:
 
-### Marketing Workflow Commands
+### Stage 1: Brief
 
-- **`/brainstorm`**: Brainstorm marketing briefs and brand voice definitions. Use for structuring product ideas into marketing strategy.
-- **`/investigate`**: Research markets, competitors, trends, market sizing. Use for Stage 3 (Research).
-- **`/plan-ceo-review`**: Create positioning and strategy documents. Use for Stage 4 (Strategy).
-- **`/office-hours`**: Validate product ideas and market positioning. Use for feedback loops and iteration.
+| Skill | What it does |
+|-------|-------------|
+| `/office-hours` | Validates the product idea, surfaces hard questions about demand and positioning before briefing |
+| `/brainstorm` | Structures the validated idea into a formal marketing brief (audience, goals, tone direction) |
 
-### Cross-Functional Commands
+### Stage 2: Brand Voice — human review checkpoint
 
-- **`/plan-eng-review`**: Architecture decisions and technical design. Use for engineering scope and infrastructure choices.
-- **`/design-review`**: Design feedback and visual polish. Use for UI/UX iterations.
-- **`/design-consultation`**: Design system planning and design decisions.
-- **`/autoplan`**: Full workflow automation pipeline. Use for end-to-end campaign orchestration.
+| Skill | What it does |
+|-------|-------------|
+| `/brainstorm` | Defines tone of voice, persona, messaging pillars, and sample brand phrases |
 
-### Quality and Publishing Commands
+### Stage 3: Research
 
-- **`/review`**: Code review and diff inspection. Use before merging work.
-- **`/qa`**: Quality assurance and testing workflows. Use for validation before shipping.
-- **`/ship`**: Deployment and publishing. Use to finalize and release work.
+| Skill | What it does |
+|-------|-------------|
+| `/investigate` | Market sizing (TAM/SAM/SOM), competitor analysis, audience validation, PESTLE summary |
 
-### Context Management Commands
+### Stage 4: Strategy — human review checkpoint
 
-- **`/context-save`**: Save and checkpoint your progress. Use to preserve work state between sessions.
-- **`/context-restore`**: Resume from a previous checkpoint. Use to load saved context.
+| Skill | What it does |
+|-------|-------------|
+| `/plan-ceo-review` | Positioning statement, messaging hierarchy, channel recommendations, GTM timeline |
 
-For content generation (Stages 5-6), use native Claude prompts (not slash commands).
+### Stage 5: Content
+
+Native Claude prompt — no skill invocation. Automatically inherits Stage 2 voice + Stage 4 strategy. Nothing is copied manually; context flows through.
+
+### Stage 6: Reports — human review checkpoint
+
+Native Claude prompt — no skill invocation. Projects reach, engagement, and ROI per platform using industry benchmarks.
+
+---
+
+### Additional Skills
+
+For design and architecture work (applies to product launches, not campaign-only runs):
+
+| Skill | When to use |
+|-------|-------------|
+| `/design-consultation` | UX philosophy and interaction model decisions |
+| `/plan-eng-review` | Technical architecture, data pipeline, storage decisions |
+| `/plan-design-review` | Design system, component library, visual tokens |
+| `/autoplan` | Full orchestration across all 6 stages in one run |
+
+For quality and publishing:
+
+| Skill | When to use |
+|-------|-------------|
+| `/review` | Code or content review before merging or publishing |
+| `/qa` | Quality assurance before shipping |
+| `/ship` | Deploy and publish final outputs |
+
+### Context Management (Every Session)
+
+| Skill | When to use |
+|-------|-------------|
+| `/context-save` | End of session — saves all decisions, outputs, and stage progress |
+| `/context-restore` | Start of session — loads prior state, zero context loss across sessions |
 
 ## Workflow Stages (Copy-Paste Prompts)
 

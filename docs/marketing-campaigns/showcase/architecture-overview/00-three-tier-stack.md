@@ -1,11 +1,5 @@
 # Three-Tier Stack: The Complete System
 
-## Visual Diagram
-
-![Three-tier stack architecture diagram](../../../../assets/three-tier-stack-architecture.png)
-
----
-
 ## Tier 1: Strategic Intelligence (THE CONSULTANT'S LAYER)
 
 **What it does:**
