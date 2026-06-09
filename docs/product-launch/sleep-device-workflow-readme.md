@@ -14,35 +14,29 @@ This document demonstrates a complete **8-phase product launch orchestration** f
 
 ## Where to Find Phase Outputs
 
-All completed phase outputs are linked below and stored in the `./outputs/` folder:
+All completed phase outputs are centralized in the parent repo's orchestration folder: `../../../orchestration/outputs/`
 
 ```
-outputs/
+orchestration/outputs/
 ├── phase_01_research/
-│   └── smart-sleep-device/
-│       └── research_report.md (✅ 50 pages)
+│   └── research_report.md (✅ 50 pages)
 ├── phase_02_strategy/
-│   └── smart-sleep-device/
-│       └── strategy_report.md (✅ 25 pages)
+│   └── strategy_report.md (✅ 25 pages)
 ├── phase_03_design/
-│   └── smart-sleep-device/
-│       └── design_report.md (✅ 28 pages)
+│   └── design_report.md (✅ 28 pages)
 ├── phase_04_build/
-│   └── smart-sleep-device/
-│       └── build_development_report.md (✅ 28 pages)
+│   └── build_development_report.md (✅ 28 pages)
 ├── phase_05_testing/
-│   └── smart-sleep-device/
-│       └── qa_testing_plan.md (✅ 28 pages)
+│   └── qa_testing_plan.md (✅ 28 pages)
 ├── phase_06_launch/
-│   └── smart-sleep-device/
-│       └── launch_execution_plan.md (✅ 38 pages)
+│   └── launch_execution_plan.md (✅ 38 pages)
 ├── phase_07_growth/
-│   └── smart-sleep-device/
-│       └── growth-optimization-plan.md (✅ 30-35 pages)
+│   └── growth_optimization_plan.md (✅ 30-35 pages)
 └── phase_08_operations/
-    └── smart-sleep-device/
-        └── operations_summary.md (📋 coming soon)
+    └── operations_summary.md (📋 coming soon)
 ```
+
+**Note:** Outputs are stored in the parent repo's orchestration folder to centralize all product launch assets. This README documents the structure and links to Phase outputs.
 
 ---
 
@@ -255,7 +249,7 @@ Command: `/orchestration smart-sleep-device --phase 6`
 - **Profitability:** Breakeven EBITDA Month 21; 24% EBITDA margin by Month 27
 
 **View Complete Output:**
-- [Phase 7 Growth & Optimization Plan](./outputs/phase_07_growth/growth-optimization-plan.md) (30-35 pages, fully cited)
+- [Phase 7 Growth & Optimization Plan](../../../orchestration/outputs/phase_07_growth/growth_optimization_plan.md) (30-35 pages, fully cited)
   - Section 1: Executive Summary (12-month targets, success criteria, capital requirements)
   - Section 2: Growth Strategy & Market Expansion (D2C/B2B acquisition, segment GTM, geographic expansion, partnerships)
   - Section 3: CAC & LTV Analysis (D2C/healthcare/corporate unit economics, payback period, profitability projections)
