@@ -4,22 +4,24 @@ Automated workflow orchestration for the 8-phase product launch framework. Orche
 
 ## Overview
 
-The orchestration system automates product launches through 8 phases:
+A Python-based automation framework that orchestrates multi-phase product launches with human-in-the-loop approval gates:
 
-1. **Research** — Market research, competitive analysis, audience validation
-2. **Strategy** — Market positioning, launch strategy, timeline
-3. **Design** — Product design and architecture
-4. **Build** — Development and implementation
-5. **Testing** — QA, validation, and optimization
-6. **Launch** — Execution and go-live
-7. **Growth** — Growth loops and scaling
-8. **Operations** — Monitoring, learning, and iteration
+| Phase | Focus | Subagents | Gate |
+|-------|-------|-----------|------|
+| 1: Research | Market data, competitors, audience | Tavily, /investigate, /customer-research, /competitor-profiling | Approve/revise findings |
+| 2: Strategy | Positioning, GTM, messaging | /product-marketing, /pricing, /sales-enablement | Validate approach |
+| 3: Design | Product architecture, UX | Design skills, /design-review | Design sign-off |
+| 4: Build | Development, implementation | Build/engineering skills | Technical review |
+| 5: Testing | QA, validation, optimization | /qa, /qa-only, analytics | Quality approval |
+| 6: Launch | Execution, go-live | Deployment, launch skills | Launch readiness |
+| 7: Growth | Growth loops, scaling | Analytics, /ads, growth skills | Growth metrics |
+| 8: Operations | Monitoring, learning, iteration | Monitoring, analytics | Operational review |
 
-**Phase 1:** Research validation using Tavily API with Perplexity fallback. ✅ Complete
-
-**Phase 2:** Strategy development (/product-marketing, /pricing, /sales-enablement). ✅ Complete
-
-**Phases 3-8:** Complete (design, build, testing, launch, growth, operations)
+**Key Orchestration Features:**
+- Adaptive clarifying questions (6-8 per phase)
+- Checkpoint save/restore for zero context loss
+- Approval gates with revision feedback loops
+- Model selection: Opus 4.7 (phases 1-3), Sonnet 4.6 (phases 4-8)
 
 ## Quick Start
 
