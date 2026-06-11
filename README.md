@@ -44,7 +44,7 @@ Works for any offering: physical products, software, services, consulting, campa
 
 | Phase | Focus | Output |
 |-------|-------|--------|
-| **[1. Validation](docs/implementation/phases/phase-1-validation.md)** | Prove the problem is real | Market research, personas, TAM |
+| **[1. Research](docs/implementation/phases/phase-1-research.md)** | Prove the problem is real | Market research, personas, TAM |
 | **[2. Strategy](docs/implementation/phases/phase-2-strategy.md)** | Define positioning + market fit | GTM strategy, pricing, financials |
 | **[3. Design](docs/implementation/phases/phase-3-design.md)** | Architecture + brand identity | Design system, technical spec |
 | **[4. Build](docs/implementation/phases/phase-4-build.md)** | Code + security + infrastructure | Development roadmap, build plan |

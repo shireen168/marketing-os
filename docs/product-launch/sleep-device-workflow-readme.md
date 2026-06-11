@@ -14,26 +14,18 @@ This document demonstrates a complete **8-phase product launch orchestration** f
 
 ## Where to Find Phase Outputs
 
-All completed phase outputs are stored in the `./outputs/` folder:
+All completed phase outputs are stored in the `outputs/smart-sleep-device/` folder with numbered filenames:
 
 ```
-outputs/
-├── phase_01_research/
-│   └── phase_01_research.md (✅ 50 pages)
-├── phase_02_strategy/
-│   └── phase_02_strategy.md (✅ 25 pages)
-├── phase_03_design/
-│   └── phase_03_design.md (✅ 28 pages)
-├── phase_04_build/
-│   └── phase_04_build.md (✅ 28 pages)
-├── phase_05_testing/
-│   └── phase_05_testing.md (✅ 28 pages)
-├── phase_06_launch/
-│   └── phase_06_launch.md (✅ 38 pages)
-├── phase_07_growth/
-│   └── phase_07_growth.md (✅ 30-35 pages)
-└── phase_08_operations/
-    └── phase_08_operations.md (✅ 35 pages)
+outputs/smart-sleep-device/
+├── 01-research_report.md (✅ 50 pages)
+├── 02-strategy_report.md (✅ 25 pages)
+├── 03-design_specs.md (✅ 28 pages)
+├── 04-build_plan.md (✅ 28 pages)
+├── 05-test_plan.md (✅ 28 pages)
+├── 06-launch_campaign.md (✅ 38 pages)
+├── 07-growth_strategy.md (✅ 30-35 pages)
+└── 08-operations_report.md (✅ 35 pages)
 ```
 
 **Note:** All orchestration outputs are mirrored here from the parent repo's orchestration folder. This keeps marketing-os self-contained and shareable.
@@ -65,7 +57,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (50 pages, fully cited)</strong></summary>
 
-[Phase 1 Research Report](./outputs/phase_01_research/phase_01_research.md)
+[Phase 1 Research Report](../../outputs/smart-sleep-device/01-research_report.md)
 
 - Section 1: Executive Summary (TAM analysis, key findings, go-to-market recommendation)
 - Section 2: Global Sleep Tech Market (size, growth rates, CAGR, 2035 projections)
@@ -102,7 +94,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (25 pages, fully cited)</strong></summary>
 
-[Phase 2 Strategy Report](./outputs/phase_02_strategy/phase_02_strategy.md)
+[Phase 2 Strategy Report](../../outputs/smart-sleep-device/02-strategy_report.md)
 
 - Section 2: GTM Strategy & Positioning Options (3 options analyzed)
 - Section 3: Tiered Pricing Architecture (DTC, B2B, B2B2C)
@@ -138,7 +130,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (28 pages, fully cited)</strong></summary>
 
-[Phase 3 Design Report](./outputs/phase_03_design/phase_03_design.md)
+[Phase 3 Design Report](../../outputs/smart-sleep-device/03-design_specs.md)
 
 - Section 2: Design Philosophy & User-Centered Principles (design system, personas, accessibility)
 - Section 3: User Experience & Information Architecture (3 customer journey maps with wireframe descriptions)
@@ -174,7 +166,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (28 pages, fully cited)</strong></summary>
 
-[Phase 4 Build & Development Report](./outputs/phase_04_build/phase_04_build.md)
+[Phase 4 Build & Development Report](../../outputs/smart-sleep-device/04-build_plan.md)
 
 - Section 1: Executive Summary (9-month thesis, resource plan, success criteria)
 - Section 2: Development Team Structure (13 FTE, cross-functional dependencies)
@@ -213,7 +205,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (28 pages, fully cited)</strong></summary>
 
-[Phase 5 QA Testing Plan](./outputs/phase_05_testing/phase_05_testing.md)
+[Phase 5 QA Testing Plan](../../outputs/smart-sleep-device/05-test_plan.md)
 
 - Section 1: Executive Summary (testing thesis, timeline, quality targets, risk prioritization)
 - Section 2: QA Strategy Overview (philosophy, test pyramid, methodology, defect classification)
@@ -252,7 +244,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (38 pages, fully cited)</strong></summary>
 
-[Phase 6 Launch Execution Plan](./outputs/phase_06_launch/phase_06_launch.md)
+[Phase 6 Launch Execution Plan](../../outputs/smart-sleep-device/06-launch_campaign.md)
 
 - Section 1: Executive Summary (6-month thesis, 3-phase timeline, USD 12.5M revenue target)
 - Section 2: Market Entry Strategy (4 segments, positioning vs. Oura/Fitbit/ResMed, dual-channel model)
@@ -293,7 +285,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (30-35 pages, fully cited)</strong></summary>
 
-[Phase 7 Growth & Optimization Plan](./outputs/phase_07_growth/phase_07_growth.md)
+[Phase 7 Growth & Optimization Plan](../../outputs/smart-sleep-device/07-growth_strategy.md)
 
 - Section 1: Executive Summary (12-month targets, success criteria, capital requirements)
 - Section 2: Growth Strategy & Market Expansion (D2C/B2B acquisition, segment GTM, geographic expansion, partnerships)
@@ -333,7 +325,7 @@ outputs/
 <details>
 <summary><strong>View Complete Output (35 pages, fully cited)</strong></summary>
 
-[Phase 8 Operations & Learning Report](./outputs/phase_08_operations/phase_08_operations.md)
+[Phase 8 Operations & Learning Report](../../outputs/smart-sleep-device/08-operations_report.md)
 
 - Section 1: Launch Retrospective (wins, challenges, lessons learned, metrics vs. targets table)
 - Section 2: Operational Health (uptime, NPS, CSAT by touchpoint, team health, financial performance)
