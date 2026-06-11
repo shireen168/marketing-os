@@ -124,10 +124,12 @@ Yes. MIT license. Free to fork, modify, extend, redistribute. Build on it.
 ## Who built this?
 
 - A team that shipped 50+ marketing campaigns in 6 months using Claude Code + manual workflows
-- We saw the pattern: same 6 stages, every time
-- Same context lost between conversations. Built automation to preserve that context. Works.
+- Observed a repeating pattern: Brief → Voice → Research → Strategy → Content → Reports (marketing campaign execution)
+- Abstracted to a universal framework: 8-phase product orchestration that works for campaigns, products, services, internal programs
+- Core insight: context must flow through all stages without reset. Built automation to preserve context end-to-end.
 
 **This is a powerful system:**
-1. Workflow-first
-2. Context-preserving
-3. Scalable-from-day-one
+1. Universal framework (8 phases for any offering)
+2. Context-preserving (no data loss between stages)
+3. Application-specific workflows (campaign execution is one example)
+4. Scalable-from-day-one (works for solo builders to distributed teams)

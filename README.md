@@ -73,31 +73,28 @@ One `/orchestration` command generated a complete strategic playbook across all 
 
 ---
 
-## LEVEL 3: Application: The 6-Stage Campaign System
+## LEVEL 3: Application: Marketing Campaign Execution
 
-Applied to marketing campaigns, the framework streamlines strategic thinking and execution:
+The 8-phase product orchestration (LEVEL 2) applies universally. For **marketing campaigns specifically**, teams use the framework to execute brief-to-performance workflows:
 
-| Stage | What | Output | Review |
-|-------|------|--------|--------|
-| **1. Brief** | Audience + positioning | Strategic direction | - |
-| **2. Voice** | Brand tone + messaging | Voice guidelines | ✅ Team refines |
-| **3. Research** | Markets + competitors | Insights + gaps | - |
-| **4. Strategy** | Channels + positioning | Decision framework | ✅ Team validates |
-| **5. Content** | Platform-specific drafts | Copy-ready content | - |
-| **6. Reports** | Performance projections | ROI forecasts | ✅ Team reviews |
+| Stage | Maps to Phase | What | Output |
+|-------|---------------|------|--------|
+| **1. Brief** | 1-2 (Research + Strategy) | Normalize audience, positioning, constraints | Strategic direction |
+| **2. Voice** | 3 (Design) | Codify tone, persona, linguistic rules | Voice guidelines |
+| **3. Research** | 1 (Research) | Market, competitive, trend data | Insights + gaps |
+| **4. Strategy** | 2 (Strategy) | Channels, positioning, decision framework | Channel plan |
+| **5. Content** | 4 (Build) | Platform-specific drafts with constraints | Copy-ready content |
+| **6. Reports** | 6-7 (Launch + Growth) | Performance projections and feedback loops | ROI forecasts |
 
-Key insight:
-- Each stage inherits context from all previous stages
-- Stage 5 content automatically uses Stage 2 voice + Stage 4 strategy
-- No copy-paste, no context loss
+**Key:** This campaign workflow is a *subset* of the 8-phase framework, optimized for marketing execution. It demonstrates context preservation: Stage 5 content automatically inherits Voice rules from Stage 2 and Strategy from Stage 4.
 
 Timeline:
-- 2-3 days strategic work
+- 2-3 days strategic work (Stages 1-4)
 - Team review (1 day)
 - Execution (1-2 days)
 - Total: 4-6 days (vs agency months)*
 
-*Depends on campaign scope
+*Depends on campaign scope. For product launches, use the full 8-phase framework (LEVEL 2).*
 
 ---
 

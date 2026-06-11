@@ -2,11 +2,11 @@
 
 ## What Doesn't Change (The Foundation)
 
-**The framework stays the same at any scale:**
-- Six stages still flow in order (Brief → Voice → Research → Strategy → Content → Reports)
-- Context still preserved end-to-end (Stage 5 references Stage 2 + 4 automatically)
-- Claude Code still orchestrates (central decision-making logic)
-- Approval gates still happen in Claude Code (human-in-the-loop at each checkpoint)
+**The campaign execution workflow stays the same at any scale:**
+- Six stages flow in order (Brief → Voice → Research → Strategy → Content → Reports) — this is the *campaign application* of the 8-phase product framework
+- Context preserved end-to-end (Stage 5 inherits Voice rules from Stage 2 + Strategy framework from Stage 4)
+- Claude Code orchestrates all stages (central decision-making logic)
+- Approval gates at every checkpoint (human-in-the-loop, no autonomous execution)
 
 **The flow is identical.** What changes is volume, complexity, and integration depth.
 
