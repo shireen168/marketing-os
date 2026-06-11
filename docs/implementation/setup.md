@@ -95,7 +95,7 @@ The orchestration system is available as a standalone package in marketing-os:
 
 ```bash
 # Clone marketing-os repository
-git clone <marketing-os-repository-url>
+git clone https://github.com/shireen168/marketing-os.git
 cd marketing-os
 
 # Navigate to orchestration directory
